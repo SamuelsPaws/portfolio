@@ -1,0 +1,100 @@
+{
+    "lpdh": {
+        "title": "Lady Patricia Dream Homes",
+        "tech": [
+            "next",
+            "tw"
+        ],
+        "implementations": [
+            "Headless CMS (Contentful)",
+            "IDX API",
+            "Localization (English/Spanish)"
+        ],
+        "liveUrl": "https://www.ladypatriciadreamhomes.ca/en",
+        "imgUrl": "/assets/lpdh.webp",
+        "galleryImgUrls": [
+            "/assets/lpdh.webp",
+            "/assets/lpdh.webp",
+            "/assets/lpdh.webp",
+            "/assets/lpdh.webp",
+            "/assets/lpdh.webp",
+            "/assets/lpdh.webp"
+        ]
+    },
+    "plasma-vida": {
+        "title": "Plasma Vida Center",
+        "tech": [
+            "next",
+            "tw"
+        ],
+        "implementations": [
+            "Headless CMS (Contentful)"
+        ],
+        "liveUrl": "https://plasma-vida.vercel.app/",
+        "imgUrl": "/assets/plasma-vida.webp",
+        "galleryImgUrls": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ]
+    },
+    "dwm": {
+        "title": "DWM Designs",
+        "tech": [
+            "next",
+            "tw"
+        ],
+        "implementations": [
+            "Headless CMS (Contentful)"
+        ],
+        "liveUrl": "https://dwmdesigns.ca/",
+        "imgUrl": "/assets/dwm.webp",
+        "galleryImgUrls": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ]
+    },
+    "chess-by-me": {
+        "title": "Chess By Me",
+        "tech": [
+            "js",
+            "html",
+            "css"
+        ],
+        "implementations": [],
+        "liveUrl": "https://chessbyme.netlify.app",
+        "imgUrl": "/assets/chess-by-me.webp",
+        "galleryImgUrls": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ]
+    },
+    "icounter": {
+        "title": "iCounter",
+        "tech": [
+            "py"
+        ],
+        "implementations": [],
+        "liveUrl": "https://dwmdesigns.ca/",
+        "imgUrl": "/assets/icounter.webp",
+        "galleryImgUrls": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ]
+    }
+}

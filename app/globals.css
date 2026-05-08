@@ -2,10 +2,14 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #fafafa;
 }
 
 @theme inline {
+  --spacing-header-height: 4rem;
+  --spacing-mob-header-height: 4rem;
+  --color-mywhite: #fafafa;
+  --color-yellow-550: #D1AF00;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -14,13 +18,50 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fafafa;
     --foreground: #ededed;
   }
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+@layer {
+  .rb {
+    @apply border border-red-500;
+  }
+
+  .bb {
+    @apply border border-blue-600;
+  }
+
+  .gb {
+    @apply border border-green-600;
+  }
+
+  .hover-shadow-lg {
+    @apply lg:hover:shadow-[8px_16px_0px_#0001];
+  }
+  .hover-shadow-sm {
+    @apply lg:hover:shadow-[2px_8px_0px_#0001];
+  }
+
+  .header-padding {
+    @apply pt-mob-header-height lg:pt-header-height;
+  }
+
+  .aspect-og {
+    @apply aspect-[40/21];
+  }
+
+  .no-padding {
+    @apply absolute w-0.5 h-0.5 m-[-1px] p-0 border-[0] overflow-hidden [clip:rect(0_0_0_0)] [clip-path:inset(50%)] whitespace-nowrap;
+  }
 }

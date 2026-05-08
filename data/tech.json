@@ -1,0 +1,26 @@
+{
+    "next": {
+        "text": "Next.js",
+        "bg": "bg-[#333]"
+    },
+    "tw": {
+        "text": "Tailwind CSS",
+        "bg": "bg-sky-600"
+    },
+    "js": {
+        "text": "JavaScript",
+        "bg": "bg-yellow-550"
+    },
+    "html": {
+        "text": "HTML",
+        "bg": "bg-orange-600"
+    },
+    "css": {
+        "text": "CSS",
+        "bg": "bg-sky-500"
+    },
+    "py": {
+        "text": "Python",
+        "bg": "bg-teal-600"
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "Meta": {
+        "languageName": "Deutsch",
+        "flagAlt": "Flagge Deutschlands"
+  },
+  "ProjectData": {
+      "lpdh": {
+          "title": "Lady Patricia Dream Homes",
+          "description": "Persönliche Website eines Immobilienmaklers"
+      },
+      "plasma-vida": {
+          "title": "Plasma Vida Center",
+          "description": "Website für ein Gesundheits- und Wellnessunternehmen"
+      }
+  },
+  "Reusable": {
+      "home": "Startseite",
+      "contact": "Kontakt",
+      "prices": "Preise",
+      "contactMe": "Kontaktieren Sie mich",
+      "tech": "Technologie"
+  },
+  "HomePage": {
+      "h1-1": "Hallo, ich bin Samuel, Frontend-Webentwickler.",
+      "h1-2": "Schauen Sie sich gerne meine Arbeit an.",
+      "heroCta": "Ansehen",
+      "webSectionTitle": "Webentwicklung",
+      "beyondSectionTitle": "Über die Webentwicklung hinaus"
+  }
+}
