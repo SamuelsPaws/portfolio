@@ -1,30 +1,217 @@
 {
-  "Meta": {
-      "languageName": "Français",
+    "Meta": {
+        "languageName": "Français",
         "flagAlt": "Drapeau de la France"
-  },
-  "ProjectData": {
-      "lpdh": {
-          "title": "Lady Patricia Dream Homes",
-          "description": "Site web personnel d’agent immobilier"
-      },
-      "plasma-vida": {
-          "title": "Plasma Vida Center",
-          "description": "Site web d’entreprise de santé et bien-être"
-      }
-  },
-  "Reusable": {
-      "home": "Accueil",
-      "contact": "Contact",
-      "prices": "Tarifs",
-      "contactMe": "Me contacter",
-      "tech": "Technologie"
-  },
-  "HomePage": {
-      "h1-1": "Bonjour, je suis Samuel, développeur web front-end.",
-      "h1-2": "N’hésitez pas à explorer mon travail.",
-      "heroCta": "Voir",
-      "webSectionTitle": "Développement Web",
-      "beyondSectionTitle": "Au-delà du Développement Web"
-  }
+    },
+    "Projects": {
+        "lpdh": {
+            "title": "Lady Patricia Dream Homes",
+            "description": "Site web public pour agente immobilière",
+            "tech": "Next.js, Tailwind CSS",
+            "type": "web-dev",
+            "overview": "Site web axé sur la présentation pour une agente immobilière, conçu pour améliorer la crédibilité, générer des prospects et présenter des biens immobiliers provenant à la fois de son agence (via IDX) et de son inventaire personnel.",
+            "keyFeatures": [
+                "Intégration de l’API IDX pour afficher les annonces immobilières en direct de l’agence",
+                "Annonces personnalisées gérées via le CMS Contentful",
+                "Flux guidé pour aider les utilisateurs à naviguer entre achat et location",
+                "Capture de prospects via des formulaires de contact et des CTA clairs (protégés contre le spam)",
+                "Design entièrement responsive et mobile-first"
+            ],
+            "technicalHighlights": [
+                "Récupération de données côté serveur via les routes API Next.js pour les données des annonces",
+                "Configuration headless CMS avec Contentful, incluant une modélisation de contenu personnalisée pour les annonces",
+                "Internationalisation avec next-intl (support anglais/français), utilisant un routage basé sur la locale et des métadonnées traduites pour le SEO selon la langue",
+                "Architecture orientée SEO avec métadonnées dynamiques par page, balises Open Graph pour le partage social, données structurées (JSON-LD) et génération de sitemap",
+                "Optimisation des performances avec Next.js <Image>, chargement différé des médias et réduction de l’overhead"
+            ],
+            "results": [
+                "Amélioration de la présence en ligne et de la crédibilité pour la cliente",
+                "Plateforme centralisée pour présenter les annonces et capturer des prospects entrants"
+            ],
+            "challenges": [],
+            "whatDemonstrates": [],
+            "myRole": "Développé entièrement par moi de bout en bout (architecture, développement, configuration CMS et SEO). J’ai également créé un tutoriel de remise au client pour la gestion des annonces via Contentful."
+        },
+        "plasma-vida": {
+            "title": "Plasma Vida Center",
+            "description": "Plateforme de services de santé et bien-être",
+            "tech": "Next.js, Tailwind CSS",
+            "type": "web-dev",
+            "overview": "Site web orienté SEO pour un fournisseur de services de santé et bien-être proposant des thérapies IV, des traitements PRP et des services infirmiers à domicile. Conçu pour structurer clairement les services, attirer du trafic organique et convertir les visiteurs en demandes.",
+            "keyFeatures": [
+                "Catalogue de produits piloté par CMS (thérapie IV et PRP) avec pages dynamiques",
+                "Système de filtrage (gamme de prix, catégorie, tri) pour la navigation dans le catalogue",
+                "Pages de services séparées pour les offres infirmières (soins aux personnes âgées, post-hospitalisation, etc.)",
+                "Flux de conversion centré sur WhatsApp avec messages préremplis",
+                "Carrousel promotionnel mettant en avant les produits en réduction"
+            ],
+            "technicalHighlights": [
+                "Architecture headless CMS complète utilisant Contentful (modélisation personnalisée pour produits/services)",
+                "Génération dynamique de pages avec métadonnées par produit/service (orientée SEO)",
+                "Structure SEO programmatique avec pages individuelles pour chaque produit/service, hiérarchie d’URL propre, HTML optimisé pour le crawling, Open Graph + données structurées (JSON-LD)",
+                "Logique de filtrage personnalisée pour le catalogue (UI côté client + données CMS)",
+                "Carrousel animé avec Motion affichant les articles en réduction, détectant les réductions depuis les données CMS",
+                "Optimisations de performance avec Next.js <Image>, lazy loading et animations légères résultant en des temps de chargement rapides"
+            ],
+            "results": [
+                "Base structurée pour la croissance organique SEO",
+                "Segmentation claire des services améliorant la navigation et la compréhension utilisateur",
+                "Flux de conversion à forte intention optimisé pour les demandes via WhatsApp"
+            ],
+            "challenges": [],
+            "whatDemonstrates": [],
+            "myRole": "Développement complet (architecture, développement, configuration CMS, implémentation SEO et rédaction). Livraison au client avec formation CMS pour la gestion continue du contenu."
+        },
+        "dwm": {
+            "title": "DWM Designs",
+            "description": "Site web pour un hub de marque centralisé",
+            "tech": "Next.js, Tailwind CSS",
+            "type": "web-dev",
+            "overview": "Site web de hub multi-entreprises conçu pour unifier et présenter plusieurs petites entreprises sous une seule marque principale, offrant une navigation claire, une priorisation et des parcours de conversion pour chacune.",
+            "keyFeatures": [
+                "Landing page centralisée présentant plusieurs entreprises",
+                "Diaporama principal avec logos et CTA directs pour chaque entreprise",
+                "Design entièrement responsive sur tous les appareils",
+                "Mise en avant prioritaire des services de revêtement de sol (source principale de revenus)",
+                "Page d’information séparée pour les services de revêtement avec CTA orienté conversion"
+            ],
+            "technicalHighlights": [
+                "Système de grille responsive pour des sections de contenu flexibles et visuellement distinctes",
+                "Animations légères pour améliorer l’UX sans impact sur les performances",
+                "CTA email préremplis pour simplifier les demandes utilisateurs"
+            ],
+            "results": [
+                "Présentation simplifiée de plusieurs entreprises dans une expérience cohérente",
+                "Parcours utilisateur clairs réduisant la confusion et améliorant l’engagement",
+                "Le service prioritaire (revêtement de sol) bénéficie d’une visibilité et d’un flux de conversion dédiés"
+            ],
+            "challenges": [],
+            "whatDemonstrates": [],
+            "myRole": "Développement complet (structure, design, développement et décisions UX)"
+        },
+        "chess-by-me": {
+            "title": "Chess By Me",
+            "description": "Jeu d’échecs navigateur avec règles et horloge fonctionnelles",
+            "tech": "JavaScript, HTML, CSS",
+            "type": "other",
+            "overview": "Jeu d’échecs entièrement jouable construit depuis zéro avec l’API HTML canvas, axé sur l’application précise des règles, la gestion de l’état de la partie et l’interaction en temps réel sans bibliothèques externes. Entièrement imaginé et développé par moi sans aide ni inspiration externe.",
+            "keyFeatures": [
+                "Implémentation complète des règles d’échecs avec validation des coups légaux, détection d’échec / mat, roque, prise en passant et promotion",
+                "Interaction drag-and-drop des pièces avec retour visuel",
+                "Mise en évidence des coups légaux (états valides vs invalides)",
+                "Journal des coups en temps réel (notation algébrique standard)",
+                "Multijoueur local (même appareil)"
+            ],
+            "technicalHighlights": [
+                "Représentation du plateau utilisant un tableau 2D avec instances de pièces (classe Piece)",
+                "Pipeline de génération des coups : chaque pièce calcule des coups pseudo-légaux, puis les coups sont filtrés via simulation pour assurer la sécurité du roi",
+                "Système de détection d’échec gérant des contraintes complexes (pièces clouées, menaces multiples)",
+                "Rendu canvas où l’état du plateau est mappé en coordonnées de pixels en temps réel"
+            ],
+            "results": [],
+            "challenges": [
+                "Concevoir un système performant de validation des coups sans récursion excessive",
+                "Gérer des cas limites comme les pièces clouées et les menaces multiples",
+                "Maintenir synchronisés le rendu et la logique de jeu dans une boucle temps réel"
+            ],
+            "whatDemonstrates": [
+                "Solide compréhension des systèmes basés sur l’état",
+                "Capacité à implémenter des moteurs de règles complexes depuis zéro",
+                "Résolution de problèmes sans dépendre de frameworks ou bibliothèques externes"
+            ],
+            "myRole": "Développé entièrement par moi sans bibliothèques externes ni outils de génération de code."
+        },
+        "icounter": {
+            "title": "iCounter",
+            "description": "Application desktop en Python pour suivre mon travail et mes revenus",
+            "tech": "Python",
+            "type": "other",
+            "overview": "Application desktop conçue pour suivre le travail de traduction (payé par enregistrement), automatisant le suivi, le calcul des revenus et les métriques de productivité en temps réel. Créée pour remplacer le suivi manuel et fournir un retour immédiat pendant les sessions de travail.",
+            "keyFeatures": [
+                "Suivi en temps réel des enregistrements traduits et des revenus",
+                "Suivi du temps par session et sprint (workflow démarrer/arrêter)",
+                "Métriques de productivité en direct incluant enregistrements par heure, temps moyen par enregistrement, revenus par heure, temps total de session et revenus",
+                "Journalisation automatique dans un fichier Excel",
+                "Sortie Excel préstructurée pour une conservation persistante des données"
+            ],
+            "technicalHighlights": [
+                "Architecture OOP modulaire avec séparation claire des responsabilités",
+                "Flux de données unidirectionnel : l’UI déclenche des actions, les actions mettent à jour l’état/données et l’état notifie l’UI",
+                "Pattern de type observer pour les mises à jour UI via abonnements à l’état",
+                "Système de timers suivant simultanément session, sprint et temps par enregistrement"
+            ],
+            "results": [],
+            "challenges": [
+                "Maintenir des métriques temporelles précises entre plusieurs timers superposés (session vs sprint vs par lettre)",
+                "Concevoir un modèle propre d’interaction entre UI, état et couches de données",
+                "Garantir des mises à jour statistiques temps réel sans incohérences",
+                "Gestion du format Excel et persistance append fiable"
+            ],
+            "whatDemonstrates": [
+                "Capacité à concevoir des architectures propres et modulaires dans un environnement desktop",
+                "Solide compréhension de la gestion d’état et des patterns de flux de données",
+                "Application pratique de l’automatisation pour éliminer les workflows manuels",
+                "Création d’outils adaptés à de vrais besoins utilisateurs"
+            ],
+            "myRole": "Développé entièrement par moi."
+        }
+    },
+    "Reusable": {
+        "home": "Accueil",
+        "contact": "Contact",
+        "prices": "Tarifs",
+        "contactMe": "Me Contacter",
+        "tech": "Technologies",
+        "projects": "Projets",
+        "webDevProjects": "Projets de Développement Web",
+        "otherProjects": "Autres Projets",
+        "about": "À Propos",
+        "aboutMe": "À Propos de Moi"
+    },
+    "ProjectPage": {
+        "liveLink": "Voir le Site",
+        "tech": "Technologies",
+        "implementations": "Implémentations",
+        "overview": "Vue d’Ensemble",
+        "keyFeatures": "Fonctionnalités Clés",
+        "technicalHighlights": "Points Techniques Importants",
+        "results": "Résultats / Impact",
+        "challenges": "Défis Résolus",
+        "whatDemonstrates": "Ce Que Cela Démontre",
+        "myRole": "Mon Rôle",
+        "seeGallery": "Voir la Galerie"
+    },
+    "HomePage": {
+        "h1-1": "Salut, je suis Samuel, développeur web frontend.",
+        "h1-2": "N’hésitez pas à explorer mon travail.",
+        "heroCta": "Découvrir",
+        "webSectionTitle": "Développement Web",
+        "beyondSectionTitle": "Au-delà du Développement Web"
+    },
+    "AboutPage": {
+        "h1": "À Propos de Moi",
+        "role": "Développeur Web Frontend",
+        "statusTag-1": "Disponible en Freelance",
+        "overview": "Je suis un développeur qui ne se contente pas d’écrire du code fonctionnel, mais qui comprend les systèmes derrière celui-ci. J’aime construire des applications avec une logique plus complexe, des choses qui vont au-delà de l’UI superficielle et nécessitent une vraie réflexion sous le capot. Même si je travaille principalement sur le frontend, j’écris du code que je comprends entièrement, de l’architecture jusqu’à l’implémentation, et je suis à l’aise pour sortir de mon stack principal afin de résoudre des problèmes où qu’ils apparaissent.",
+        "howIThink": "Ma Façon de Penser",
+        "howIThinkOverview": "J’aborde le développement avec un focus sur la structure, la clarté et la compréhension. Avant de construire, j’aime définir comment les choses doivent fonctionner au niveau système afin que le résultat final soit scalable, maintenable et facile à comprendre.",
+        "structureFirst": "La Structure Avant Tout",
+        "structureFirstText": "Je commence par définir l’architecture et les patterns réutilisables dès le début afin d’éviter du travail inutile plus tard et de garder de la cohérence à mesure que les projets évoluent.",
+        "understandDeeply": "Comprendre en Profondeur",
+        "understandDeeplyText": "Je ne dépends pas de solutions boîte noire. Si j’utilise quelque chose, je m’assure de comprendre son fonctionnement, du comportement global jusqu’à la logique sous-jacente lorsque nécessaire.",
+        "debugging": "Debugging par Isolation",
+        "debuggingText": "Quand quelque chose casse, je décompose le problème. J’isole chaque partie du système étape par étape jusqu’à ce que la cause racine devienne évidente.",
+        "usable": "L’Utilisable Avant le Tape-à-l’Œil",
+        "usableText": "Je me concentre sur la création d’interfaces claires et faciles à utiliser. Mon design soutient le produit, il ne détourne pas l’attention.",
+        "currentFocus": "Focus Actuel",
+        "currentFocusText": "Je suis actuellement concentré sur le travail freelance, principalement la création de sites marketing et d’applications orientées contenu conçus pour convertir et évoluer.",
+        "focusedOnFreelance": "Concentré sur le travail freelance",
+        "projectStructuring": "Solide dans la structuration de projets et la transformation d’idées en applications réelles",
+        "reliableIndependent": "Fiable, attentif aux détails et à l’aise pour travailler de manière autonome"
+    },
+    "ContactPage": {
+        "h1": "Entrer en Contact",
+        "overview": "Je suis actuellement disponible pour des projets freelance. N’hésitez pas à me contacter.",
+        "contactPhone": "Me Contacter par Téléphone"
+    }
 }

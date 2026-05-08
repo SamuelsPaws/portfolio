@@ -6,7 +6,7 @@
     "Projects": {
         "lpdh": {
             "title": "Lady Patricia Dream Homes",
-            "description": "Realtor presentation website",
+            "description": "Realtor public facing website",
             "tech": "Next.js, Tailwind CSS",
             "type": "web-dev",
             "overview": "Presentation-focused website for a real estate agent, designed to improve credibility, capture leads, and showcase property listings from both her brokerage (via IDX) and personal inventory.",

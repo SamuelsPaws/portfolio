@@ -1,30 +1,217 @@
 {
-  "Meta": {
+    "Meta": {
         "languageName": "Deutsch",
         "flagAlt": "Flagge Deutschlands"
-  },
-  "ProjectData": {
-      "lpdh": {
-          "title": "Lady Patricia Dream Homes",
-          "description": "Persönliche Website eines Immobilienmaklers"
-      },
-      "plasma-vida": {
-          "title": "Plasma Vida Center",
-          "description": "Website für ein Gesundheits- und Wellnessunternehmen"
-      }
-  },
-  "Reusable": {
-      "home": "Startseite",
-      "contact": "Kontakt",
-      "prices": "Preise",
-      "contactMe": "Kontaktieren Sie mich",
-      "tech": "Technologie"
-  },
-  "HomePage": {
-      "h1-1": "Hallo, ich bin Samuel, Frontend-Webentwickler.",
-      "h1-2": "Schauen Sie sich gerne meine Arbeit an.",
-      "heroCta": "Ansehen",
-      "webSectionTitle": "Webentwicklung",
-      "beyondSectionTitle": "Über die Webentwicklung hinaus"
-  }
+    },
+    "Projects": {
+        "lpdh": {
+            "title": "Lady Patricia Dream Homes",
+            "description": "Öffentliche Website für Immobilienmaklerin",
+            "tech": "Next.js, Tailwind CSS",
+            "type": "web-dev",
+            "overview": "Präsentationsorientierte Website für eine Immobilienmaklerin, entwickelt zur Verbesserung der Glaubwürdigkeit, zur Lead-Generierung und zur Präsentation von Immobilien sowohl aus ihrer Maklerfirma (über IDX) als auch aus ihrem persönlichen Bestand.",
+            "keyFeatures": [
+                "Integrierte IDX-API zur Anzeige von Live-Immobilienanzeigen der Maklerfirma",
+                "Benutzerdefinierte Immobilienanzeigen verwaltet über das Contentful CMS",
+                "Geführter Ablauf zur Unterstützung der Nutzer bei Kauf-/Mietentscheidungen",
+                "Lead-Erfassung durch Kontaktformulare und klare CTAs (spamgeschützt)",
+                "Vollständig responsives Mobile-First-Design"
+            ],
+            "technicalHighlights": [
+                "Serverseitige Datenabfrage über Next.js API-Routen für Immobiliendaten",
+                "Headless-CMS-Setup mit Contentful, einschließlich benutzerdefinierter Content-Modellierung für Immobilienanzeigen",
+                "Internationalisierung mit next-intl (Unterstützung für Englisch/Deutsch), unter Verwendung sprachbasierter Routen und übersetzter Metadaten für SEO pro Sprache",
+                "SEO-orientierte Architektur mit dynamischen Metadaten pro Seite, Open-Graph-Tags für Social Sharing, strukturierten Daten (JSON-LD) und Sitemap-Generierung",
+                "Performance-Optimierung mit Next.js <Image>, Lazy Loading für Medien und Reduzierung von Overhead"
+            ],
+            "results": [
+                "Verbesserte Online-Präsenz und Glaubwürdigkeit für die Kundin",
+                "Zentrale Plattform zur Präsentation von Immobilien und Generierung eingehender Leads"
+            ],
+            "challenges": [],
+            "whatDemonstrates": [],
+            "myRole": "Vollständig von mir umgesetzt (Architektur, Entwicklung, CMS-Setup und SEO). Außerdem habe ich ein Übergabe-Tutorial für die Verwaltung der Immobilienanzeigen über Contentful erstellt."
+        },
+        "plasma-vida": {
+            "title": "Plasma Vida Center",
+            "description": "Plattform für Gesundheits- und Wellnessdienste",
+            "tech": "Next.js, Tailwind CSS",
+            "type": "web-dev",
+            "overview": "SEO-orientierte Website für einen Gesundheits- und Wellnessanbieter mit IV-Therapie, PRP-Behandlungen und On-Demand-Pflegediensten. Entwickelt, um Dienstleistungen klar zu strukturieren, organischen Traffic anzuziehen und Besucher in Anfragen umzuwandeln.",
+            "keyFeatures": [
+                "CMS-gesteuerter Produktkatalog (IV-Therapie & PRP) mit dynamischen Seiten",
+                "Filtersystem (Preisspanne, Kategorie, Sortierung) zur Navigation im Katalog",
+                "Separate Serviceseiten für Pflegeangebote (Seniorenbetreuung, Nachsorge usw.)",
+                "WhatsApp-orientierter Conversion-Flow mit vorausgefüllten Nachrichten",
+                "Werbe-Karussell zur Hervorhebung rabattierter Produkte"
+            ],
+            "technicalHighlights": [
+                "Vollständige Headless-CMS-Architektur mit Contentful (benutzerdefinierte Content-Modellierung für Produkte/Dienstleistungen)",
+                "Dynamische Seitengenerierung mit Metadaten pro Produkt/Dienstleistung (SEO-orientiert)",
+                "Programmgesteuerte SEO-Struktur mit individuellen Seiten für jedes Produkt/jede Dienstleistung, sauberer URL-Hierarchie, für Crawling optimiertem HTML, Open Graph + strukturierten Daten (JSON-LD)",
+                "Benutzerdefinierte Filterlogik für den Katalog (Client-UI + CMS-Daten)",
+                "Mit Motion animiertes Karussell zur Anzeige rabattierter Artikel basierend auf CMS-Daten",
+                "Performance-Optimierungen mit Next.js <Image>, Lazy Loading und leichten Animationen für schnelle Ladezeiten"
+            ],
+            "results": [
+                "Strukturierte Grundlage für organisches SEO-Wachstum",
+                "Klare Segmentierung der Dienstleistungen verbessert Navigation und Verständnis",
+                "Hochintentionierter Conversion-Flow optimiert für WhatsApp-Anfragen"
+            ],
+            "challenges": [],
+            "whatDemonstrates": [],
+            "myRole": "Komplette Umsetzung (Architektur, Entwicklung, CMS-Setup, SEO-Implementierung und Copywriting). Kundenübergabe inklusive CMS-Schulung für die laufende Inhaltsverwaltung."
+        },
+        "dwm": {
+            "title": "DWM Designs",
+            "description": "Website für einen zentralisierten Marken-Hub",
+            "tech": "Next.js, Tailwind CSS",
+            "type": "web-dev",
+            "overview": "Multi-Unternehmens-Hub-Website zur Vereinheitlichung und Präsentation mehrerer kleiner Unternehmen unter einer gemeinsamen Marke, mit klarer Navigation, Priorisierung und Conversion-Pfaden für jedes Unternehmen.",
+            "keyFeatures": [
+                "Zentrale Landingpage zur Präsentation mehrerer Unternehmen",
+                "Hero-Slideshow mit Logos und direkten CTAs pro Unternehmen",
+                "Vollständig responsives Design auf allen Geräten",
+                "Priorisierte Hervorhebung der Bodenbelagsdienste (Haupteinnahmequelle)",
+                "Separate Informationsseite für Bodenbelagsdienste mit conversionorientiertem CTA"
+            ],
+            "technicalHighlights": [
+                "Responsives Grid-System für flexible und visuell getrennte Inhaltsbereiche",
+                "Leichte Animationen zur Verbesserung der UX ohne Performance-Einbußen",
+                "Vorausgefüllte E-Mail-CTAs zur Vereinfachung von Nutzeranfragen"
+            ],
+            "results": [
+                "Vereinfachte Präsentation mehrerer Unternehmen in einer kohärenten Erfahrung",
+                "Klare Nutzerpfade reduzieren Verwirrung und verbessern das Engagement",
+                "Der priorisierte Dienst (Bodenbeläge) erhält fokussierte Sichtbarkeit und Conversion-Flow"
+            ],
+            "challenges": [],
+            "whatDemonstrates": [],
+            "myRole": "Komplette Umsetzung (Struktur, Design, Entwicklung und UX-Entscheidungen)"
+        },
+        "chess-by-me": {
+            "title": "Chess By Me",
+            "description": "Browser-Schachspiel mit funktionierenden Regeln und Schachuhr",
+            "tech": "JavaScript, HTML, CSS",
+            "type": "other",
+            "overview": "Vollständig spielbares Schachspiel, von Grund auf mit der HTML-Canvas-API entwickelt, mit Fokus auf präzise Regelumsetzung, Spielstatusverwaltung und Echtzeitinteraktion ohne externe Bibliotheken. Vollständig von mir selbst konzipiert und entwickelt, ohne externe Hilfe oder Inspiration.",
+            "keyFeatures": [
+                "Vollständige Implementierung der Schachregeln mit legaler Zugvalidierung, Schach-/Matt-Erkennung, Rochade, En Passant und Umwandlung",
+                "Drag-and-Drop-Interaktion der Figuren mit visuellem Feedback",
+                "Hervorhebung legaler Züge (gültige vs. ungültige Zustände)",
+                "Echtzeit-Zugprotokoll (Standard-Algebraische Notation)",
+                "Lokaler Mehrspielermodus (gleiches Gerät)"
+            ],
+            "technicalHighlights": [
+                "Brettdarstellung mittels 2D-Array mit Figureninstanzen (Piece-Klasse)",
+                "Zuggenerierungs-Pipeline: Jede Figur berechnet pseudo-legale Züge, anschließend werden diese per Simulation gefiltert, um die Sicherheit des Königs zu gewährleisten",
+                "Schacherkennungssystem für komplexe Einschränkungen (gefesselte Figuren, mehrere Bedrohungen)",
+                "Canvas-Rendering, bei dem der Spielstatus in Echtzeit auf Pixelkoordinaten abgebildet wird"
+            ],
+            "results": [],
+            "challenges": [
+                "Entwicklung eines performanten Systems zur Zugvalidierung ohne übermäßige Rekursion",
+                "Behandlung von Sonderfällen wie gefesselten Figuren und mehrfachen Bedrohungen",
+                "Synchronisierung von Rendering und Spiellogik in einer Echtzeitschleife"
+            ],
+            "whatDemonstrates": [
+                "Starkes Verständnis zustandsbasierter Systeme",
+                "Fähigkeit, komplexe Regel-Engines von Grund auf zu implementieren",
+                "Problemlösung ohne Abhängigkeit von Frameworks oder externen Bibliotheken"
+            ],
+            "myRole": "Vollständig von mir entwickelt, ohne externe Bibliotheken oder Code-Generierungstools."
+        },
+        "icounter": {
+            "title": "iCounter",
+            "description": "Desktop-App in Python zur Verfolgung meiner Arbeit und Einnahmen",
+            "tech": "Python",
+            "type": "other",
+            "overview": "Desktop-Anwendung zur Verfolgung von Übersetzungsarbeit (Bezahlung pro Datensatz), die Protokollierung, Einkommensberechnung und Echtzeit-Produktivitätsmetriken automatisiert. Entwickelt, um manuelle Nachverfolgung zu ersetzen und sofortiges Feedback während Arbeitssitzungen bereitzustellen.",
+            "keyFeatures": [
+                "Echtzeit-Tracking übersetzter Datensätze und Einnahmen",
+                "Zeitverfolgung basierend auf Sitzungen und Sprints (Start/Stopp-Workflow)",
+                "Live-Produktivitätsmetriken einschließlich Datensätze pro Stunde, durchschnittliche Zeit pro Datensatz, Einnahmen pro Stunde, gesamte Sitzungszeit und Einnahmen",
+                "Automatische Protokollierung in Excel-Dateien",
+                "Vorstrukturierte Excel-Ausgabe zur dauerhaften Datenspeicherung"
+            ],
+            "technicalHighlights": [
+                "Modulare OOP-Architektur mit klarer Trennung der Verantwortlichkeiten",
+                "Unidirektionaler Datenfluss: UI löst Aktionen aus, Aktionen aktualisieren Zustand/Daten und der Zustand benachrichtigt die UI",
+                "Observer-ähnliches Muster für UI-Updates über Zustandsabonnements",
+                "Timersystem zur gleichzeitigen Verfolgung von Sitzung, Sprint und Zeit pro Datensatz"
+            ],
+            "results": [],
+            "challenges": [
+                "Aufrechterhaltung präziser zeitbasierter Metriken bei überlappenden Timern (Sitzung vs. Sprint vs. pro Brief)",
+                "Entwicklung eines sauberen Interaktionsmodells zwischen UI-, Zustands- und Datenschichten",
+                "Sicherstellung von Echtzeit-Statistikupdates ohne Inkonsistenzen",
+                "Umgang mit Excel-Formatierung und zuverlässiger Append-basierter Persistenz"
+            ],
+            "whatDemonstrates": [
+                "Fähigkeit, saubere und modulare Architekturen in Desktop-Umgebungen zu entwerfen",
+                "Starkes Verständnis von State-Management- und Datenflussmustern",
+                "Praktische Anwendung von Automatisierung zur Eliminierung manueller Workflows",
+                "Entwicklung von Tools, die auf reale Nutzerbedürfnisse zugeschnitten sind"
+            ],
+            "myRole": "Vollständig von mir entwickelt."
+        }
+    },
+    "Reusable": {
+        "home": "Startseite",
+        "contact": "Kontakt",
+        "prices": "Preise",
+        "contactMe": "Kontaktiere Mich",
+        "tech": "Technologien",
+        "projects": "Projekte",
+        "webDevProjects": "Webentwicklungsprojekte",
+        "otherProjects": "Weitere Projekte",
+        "about": "Über Mich",
+        "aboutMe": "Über Mich"
+    },
+    "ProjectPage": {
+        "liveLink": "Live-Website Besuchen",
+        "tech": "Technologien",
+        "implementations": "Implementierungen",
+        "overview": "Überblick",
+        "keyFeatures": "Hauptfunktionen",
+        "technicalHighlights": "Technische Highlights",
+        "results": "Ergebnisse / Wirkung",
+        "challenges": "Gelöste Herausforderungen",
+        "whatDemonstrates": "Was Dies Demonstriert",
+        "myRole": "Meine Rolle",
+        "seeGallery": "Galerie Anzeigen"
+    },
+    "HomePage": {
+        "h1-1": "Hi, ich bin Samuel, Frontend-Webentwickler.",
+        "h1-2": "Schau dir gerne meine Arbeit an.",
+        "heroCta": "Ansehen",
+        "webSectionTitle": "Webentwicklung",
+        "beyondSectionTitle": "Mehr Als Webentwicklung"
+    },
+    "AboutPage": {
+        "h1": "Über Mich",
+        "role": "Frontend-Webentwickler",
+        "statusTag-1": "Offen für Freelance-Projekte",
+        "overview": "Ich bin ein Entwickler, der nicht nur funktionierenden Code schreibt, sondern auch die dahinterliegenden Systeme versteht. Ich entwickle gerne Anwendungen mit komplexerer Logik — Dinge, die über oberflächliche UI hinausgehen und echtes Denken unter der Haube erfordern. Obwohl ich hauptsächlich im Frontend arbeite, schreibe ich Code, den ich von der Architektur bis zur Implementierung vollständig verstehe, und ich bewege mich problemlos außerhalb meines Haupt-Stacks, um Probleme zu lösen, wo auch immer sie auftreten.",
+        "howIThink": "Wie Ich Denke",
+        "howIThinkOverview": "Ich gehe Entwicklung mit Fokus auf Struktur, Klarheit und Verständnis an. Bevor ich etwas baue, definiere ich gerne, wie Dinge auf Systemebene funktionieren sollen, damit das Endergebnis skalierbar, wartbar und leicht nachvollziehbar ist.",
+        "structureFirst": "Struktur Zuerst",
+        "structureFirstText": "Ich beginne früh mit der Definition von Architektur und wiederverwendbaren Mustern, um später unnötige Arbeit zu vermeiden und Konsistenz zu gewährleisten, wenn Projekte wachsen.",
+        "understandDeeply": "Tiefes Verständnis",
+        "understandDeeplyText": "Ich verlasse mich nicht auf Black-Box-Lösungen. Wenn ich etwas nutze, stelle ich sicher, dass ich verstehe, wie es funktioniert — vom allgemeinen Verhalten bis zur zugrunde liegenden Logik.",
+        "debugging": "Debugging Durch Isolation",
+        "debuggingText": "Wenn etwas kaputtgeht, zerlege ich das Problem. Ich isoliere jeden Teil des Systems Schritt für Schritt, bis die Ursache offensichtlich wird.",
+        "usable": "Benutzbarkeit Vor Effekten",
+        "usableText": "Ich konzentriere mich darauf, klare und benutzerfreundliche Interfaces zu entwickeln. Mein Design unterstützt das Produkt, es lenkt nicht davon ab.",
+        "currentFocus": "Aktueller Fokus",
+        "currentFocusText": "Aktuell konzentriere ich mich auf Freelance-Arbeit, hauptsächlich auf Marketing-Websites und contentgetriebene Anwendungen, die auf Conversion und Skalierung ausgelegt sind.",
+        "focusedOnFreelance": "Fokus auf Freelance-Arbeit",
+        "projectStructuring": "Stark darin, Projekte zu strukturieren und Ideen in echte Anwendungen umzusetzen",
+        "reliableIndependent": "Zuverlässig, detailorientiert und selbstständiges Arbeiten gewohnt"
+    },
+    "ContactPage": {
+        "h1": "Kontakt Aufnehmen",
+        "overview": "Ich bin derzeit für Freelance-Projekte verfügbar. Kontaktiere mich gerne.",
+        "contactPhone": "Telefonisch Kontaktieren"
+    }
 }
