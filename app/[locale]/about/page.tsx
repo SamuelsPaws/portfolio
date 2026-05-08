@@ -142,7 +142,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="
-                    h-40 p-4 relative
+                    lg:h-45 p-4 relative
                     bg-sky-100
                     border-2 border-black rounded-2xl shadow-[4px_4px_0_#3ac]"
                 >
