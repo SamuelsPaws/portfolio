@@ -3,12 +3,12 @@ import ProjectPageTemplate from "../../ProjectPageTemplate";
 import projectsJson from "@/data/projects.json"
 import { ProjectData, Slug } from "@/lib/types/projectTypes";
 
-export async function generateStaticParams() {
-    return [
-        { slug: 'chess-by-me' },
-        { slug: 'icounter' },
-    ]
-}
+// export async function generateStaticParams() {
+//     return [
+//         { slug: 'chess-by-me' },
+//         { slug: 'icounter' },
+//     ]
+// }
 
 type Props = {
     params: Promise<{

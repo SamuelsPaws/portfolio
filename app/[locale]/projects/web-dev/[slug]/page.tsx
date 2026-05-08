@@ -3,13 +3,13 @@ import ProjectPageTemplate from "../../ProjectPageTemplate";
 import projectsJson from "@/data/projects.json"
 import { ProjectData, Slug } from "@/lib/types/projectTypes";
 
-export async function generateStaticParams() {
-    return [
-        { slug: 'lpdh' },
-        { slug: 'plasma-vida' },
-        { slug: 'dwm' },
-    ]
-}
+// export async function generateStaticParams() {
+//     return [
+//         { slug: 'lpdh' },
+//         { slug: 'plasma-vida' },
+//         { slug: 'dwm' },
+//     ]
+// }
 
 
 
