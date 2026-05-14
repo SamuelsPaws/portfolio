@@ -7,7 +7,11 @@
         "lpdh": {
             "title": "Lady Patricia Dream Homes",
             "description": "Sitio web público para agente inmobiliaria",
-            "tech": "Next.js, Tailwind CSS",
+            "implementations": [
+                "CMS headless (Contentful)",
+                "API IDX",
+                "Localización (inglés/español)"
+            ],
             "type": "web-dev",
             "overview": "Sitio web enfocado en presentación para una agente inmobiliaria, diseñado para mejorar la credibilidad, captar clientes potenciales y mostrar propiedades tanto de su agencia (mediante IDX) como de su inventario personal.",
             "keyFeatures": [
@@ -35,9 +39,11 @@
         "plasma-vida": {
             "title": "Plasma Vida Center",
             "description": "Plataforma de servicios de salud y bienestar",
-            "tech": "Next.js, Tailwind CSS",
+            "implementations": [
+                "CMS headless (Contentful)"
+            ],
             "type": "web-dev",
-            "overview": "Sitio web impulsado por SEO para un proveedor de salud y bienestar que ofrece terapia IV, tratamientos PRP y servicios de enfermería a domicilio. Construido para estructurar servicios claramente, atraer tráfico orgánico y convertir visitantes en consultas.",
+            "overview": "Sitio web enfocado en SEO para un proveedor de salud y bienestar que ofrece terapia IV, tratamientos PRP y servicios de enfermería a domicilio. Construido para estructurar servicios claramente, atraer tráfico orgánico y convertir visitantes en consultas.",
             "keyFeatures": [
                 "Catálogo de productos gestionado por CMS (terapia IV y PRP) con páginas dinámicas",
                 "Sistema de filtros (rango de precio, categoría, ordenamiento) para navegación del catálogo",
@@ -123,7 +129,7 @@
         },
         "icounter": {
             "title": "iCounter",
-            "description": "Aplicación de escritorio hecha en Python para rastrear mi trabajo y ganancias",
+            "description": "Aplicación de escritorio hecha en Python para llevar cuenta de mi trabajo y ganancias",
             "tech": "Python",
             "type": "other",
             "overview": "Aplicación de escritorio construida para rastrear trabajo de traducción (pagado por registro), automatizando el registro, cálculo de ganancias y métricas de productividad en tiempo real. Diseñada para reemplazar el seguimiento manual y proporcionar feedback inmediato durante sesiones de trabajo.",
@@ -186,7 +192,8 @@
         "h1-2": "Siéntete libre de explorar mi trabajo.",
         "heroCta": "Echa un Vistazo",
         "webSectionTitle": "Desarrollo Web",
-        "beyondSectionTitle": "Más Allá del Desarrollo Web"
+        "beyondSectionTitle": "Más Allá del Desarrollo Web",
+        "moreProjects": "Ver más proyectos"
     },
     "AboutPage": {
         "h1": "Sobre Mí",

@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 type ProjectTranslations = {
     description: string,
+    implementations: string[],
     overview: string,
     keyFeatures: string[],
     technicalHighlights: string[],
@@ -22,9 +23,10 @@ interface Props {
 }
 
 export default function ProjectPageTemplate({ projectData, projectTranslations }: Props) {
-    const { title, imgUrl, tech, implementations, liveUrl, galleryImgUrls } = projectData
+    const { title, imgUrl, tech, liveUrl, galleryImgUrls } = projectData
     const {
         description,
+        implementations,
         overview,
         keyFeatures,
         technicalHighlights,
@@ -39,7 +41,7 @@ export default function ProjectPageTemplate({ projectData, projectTranslations }
     return (
     <main className="header-padding">
         <section className="
-            px-8 py-16
+            px-4 py-16
             lg:px-32 lg:py-16
             bg-gray-300"
         >
@@ -68,7 +70,11 @@ export default function ProjectPageTemplate({ projectData, projectTranslations }
                     w-full
                     lg:w-1/2 lg:pr-8"
                 >
-                    <div className="p-8 bg-mywhite rounded-2xl">
+                    <div className="
+                        p-4 lg:p-8
+                        bg-mywhite
+                        rounded-2xl"
+                    >
                         {/* Tech tags */}
                         <div className="
                             mb-4

@@ -1,10 +1,13 @@
 'use client'
 
 import { motion } from "motion/react"
+import { useTranslations } from "next-intl"
 import Link from "next/link"
 
 const MoreProjectsBtn = ({ href, className }: { href: string, className: string }) => {
-  return (
+    const t = useTranslations('HomePage')
+
+    return (
     <Link href={href} className={className}>
         <motion.div
             className="
@@ -15,10 +18,10 @@ const MoreProjectsBtn = ({ href, className }: { href: string, className: string 
             whileHover={{ y: -4, x: -1, }}
             transition={{ duration: 0.2, type: 'spring' }}
         >
-            See More Projects
+            {t('moreProjects')}
         </motion.div>
     </Link>
-  )
+    )
 }
 
 export default MoreProjectsBtn

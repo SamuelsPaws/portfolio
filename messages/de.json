@@ -7,7 +7,11 @@
         "lpdh": {
             "title": "Lady Patricia Dream Homes",
             "description": "Öffentliche Website für Immobilienmaklerin",
-            "tech": "Next.js, Tailwind CSS",
+            "implementations": [
+                "Headless-CMS (Contentful)",
+                "IDX-API",
+                "Lokalisierung (Englisch/Spanisch)"
+            ],
             "type": "web-dev",
             "overview": "Präsentationsorientierte Website für eine Immobilienmaklerin, entwickelt zur Verbesserung der Glaubwürdigkeit, zur Lead-Generierung und zur Präsentation von Immobilien sowohl aus ihrer Maklerfirma (über IDX) als auch aus ihrem persönlichen Bestand.",
             "keyFeatures": [
@@ -35,7 +39,9 @@
         "plasma-vida": {
             "title": "Plasma Vida Center",
             "description": "Plattform für Gesundheits- und Wellnessdienste",
-            "tech": "Next.js, Tailwind CSS",
+            "implementations": [
+                "Headless CMS (Contentful)"
+            ],
             "type": "web-dev",
             "overview": "SEO-orientierte Website für einen Gesundheits- und Wellnessanbieter mit IV-Therapie, PRP-Behandlungen und On-Demand-Pflegediensten. Entwickelt, um Dienstleistungen klar zu strukturieren, organischen Traffic anzuziehen und Besucher in Anfragen umzuwandeln.",
             "keyFeatures": [
@@ -186,7 +192,8 @@
         "h1-2": "Schau dir gerne meine Arbeit an.",
         "heroCta": "Ansehen",
         "webSectionTitle": "Webentwicklung",
-        "beyondSectionTitle": "Mehr Als Webentwicklung"
+        "beyondSectionTitle": "Mehr Als Webentwicklung",
+        "moreProjects": "Weitere Projekte ansehen"
     },
     "AboutPage": {
         "h1": "Über Mich",

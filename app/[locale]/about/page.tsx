@@ -7,8 +7,8 @@ export default function About() {
     return (
     <main className="header-padding">
         <section className="
-            px-8 py-16
-            lg:px-32 lg:py-16
+            px-8 pt-8 pb-16
+            lg:px-32 lg:pt-16 lg:pb-16
             bg-mywhite"
         >
             <h1 className="
@@ -43,7 +43,7 @@ export default function About() {
                         flex flex-col"
                     >
                         <h3 className="
-                            mb-2 lg:mb-2
+                            mb-4 lg:mb-2
                             text-2xl lg:text-3xl font-semibold"
                         >
                             Samuel Baquero, {t('role')}

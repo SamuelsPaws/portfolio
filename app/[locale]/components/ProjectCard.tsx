@@ -49,6 +49,7 @@ const ProjectCard = ({ title, description, imgUrl, tech, href, theme }: ProjectC
           flex-1
           flex flex-col"
         >
+          {/* Title */}
           <h3 className={clsx(
             "mb-2",
             "text-xl lg:text-2xl font-semibold",
@@ -57,9 +58,10 @@ const ProjectCard = ({ title, description, imgUrl, tech, href, theme }: ProjectC
           )}>
             {title}
           </h3>
+          {/* Description */}
           {description &&
             <p className={clsx(
-              "mb-8",
+              "mb-2 lg:mb-8",
               "text-md lg:text-xl",
               theme === 'dark' && "text-gray-300",
               theme === 'light' && "text-gray-600"
@@ -76,10 +78,13 @@ const ProjectCard = ({ title, description, imgUrl, tech, href, theme }: ProjectC
             {tech}
           </p>
         </div>
-        <div className="
-          absolute bottom-8 right-8
-          text-mywhite text-3xl"
-        >
+        <div className={clsx(
+          "absolute",
+          "bottom-4 right-4",
+          "lg:bottom-8 lg:right-8",
+          theme === 'dark' ? "text-mywhite" : "text-black",
+          "text-3xl"
+        )}>
           <i className="fa fa-external-link"></i>
         </div>
       </motion.div>

@@ -79,7 +79,7 @@ export default function Home() {
           >
             <ProjectCard
               title='Chess By Me'
-              description='Browser game of chess with functioning rules and clock'
+              description={tProjects('chess-by-me.description')}
               imgUrl="/assets/chess-by-me.webp"
               tech='JavaScript, HTML, CSS'
               href="/projects/other/chess-by-me"
@@ -87,7 +87,7 @@ export default function Home() {
             />
             <ProjectCard
               title='iCounter'
-              description='Desktop app made with Python for tracking my work and earnings'
+              description={tProjects('icounter.description')}
               imgUrl="/assets/icounter.webp"
               tech='Python'
               href="/projects/other/icounter"

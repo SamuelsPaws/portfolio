@@ -3,15 +3,18 @@ import LangContainer from "./header-sub/LangContainer"
 import { useTranslations } from "next-intl"
 import ProjectsDdContainer from "./header-sub/ProjectsDdContainer"
 import BurgerMenu from "./header-sub/BurgerMenu"
+import LangContainerMob from "./header-sub/LangContainerMob"
 
 const Header = () => {
     const t = useTranslations('Reusable')
 
   return (
+    // pl is 6 not 8 to compensate for Home btn padding
     <header className="
         fixed top-0 left-0
         w-full h-mob-header-height lg:h-header-height
-        pr-8 lg:pr-4
+        pl-6 pr-8
+        lg:pl-6 lg:pr-4
         flex items-center justify-between
         bg-mywhite
         text-black font-semibold z-40"
@@ -19,18 +22,21 @@ const Header = () => {
         <Link
             href="/"
             className="
-                h-full px-8 lg:px-8
+                px-2 py-2
                 grid place-content-center
                 text-xl"
         >
             {t('home').toUpperCase()}
         </Link>
+        <div className="h-full flex items-center gap-8">
+            <LangContainerMob />
+            <BurgerMenu />
+        </div>
         <nav className="
             h-full
             hidden lg:flex items-center gap-8
             text-md tracking-wider"
         >
-            <LangContainer />
             <ProjectsDdContainer />
             <Link
                 href="/about"
@@ -45,7 +51,6 @@ const Header = () => {
                 {t('contactMe').toUpperCase()}
             </Link>
         </nav>
-        <BurgerMenu />
     </header>
   )
 }
