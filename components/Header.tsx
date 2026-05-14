@@ -28,10 +28,16 @@ const Header = () => {
         >
             {t('home').toUpperCase()}
         </Link>
-        <div className="h-full flex items-center gap-8">
+        {/* Mobile-only div */}
+        <div className="
+            h-full
+            flex items-center gap-8
+            lg:hidden"
+        >
             <LangContainerMob />
             <BurgerMenu />
         </div>
+        <LangContainer />
         <nav className="
             h-full
             hidden lg:flex items-center gap-8

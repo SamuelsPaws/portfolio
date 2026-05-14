@@ -19,7 +19,7 @@ const LangContainer = () => {
     // }
 
     return (
-    <div className='h-full flex items-center relative'>
+    <div className='h-full hidden lg:flex items-center relative'>
         <LangBtn setIsMenuOpen={setIsMenuOpen} ref={langBtnRef} />
         <LangMenu
             changeLocale={changeLocale}

@@ -33,6 +33,7 @@ export default async function OtherProject({ params }: Props) {
         }}
         projectTranslations={{
             description: t(`${slug}.description`),
+            implementations: t.raw(`${slug}.implementations`),
             overview: t(`${slug}.overview`),
             keyFeatures: t.raw(`${slug}.keyFeatures`),
             technicalHighlights: t.raw(`${slug}.technicalHighlights`),
