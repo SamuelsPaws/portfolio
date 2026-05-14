@@ -41,7 +41,7 @@ export default function ProjectPageTemplate({ projectData, projectTranslations }
     return (
     <main className="header-padding">
         <section className="
-            px-4 py-16
+            px-8 py-16
             lg:px-32 lg:py-16
             bg-gray-300"
         >
