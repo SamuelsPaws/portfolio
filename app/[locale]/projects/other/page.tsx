@@ -1,15 +1,18 @@
 import { useTranslations } from "next-intl";
 import ProjectsPageTemplate from "../ProjectsPageTemplate";
 import { Projects } from '@/messages/en.json'
+import projectDataJson from '@/data/projects.json'
 
 type Project = {
     title: string,
     description: string,
     imgUrl: string,
-    tech: string,
+    tech: string[],
     href: string,
     theme: string
 }
+
+type ProjectKey = keyof typeof Projects
 
 export default function OtherProjects() {
     const tProjects = useTranslations('Projects')
@@ -20,7 +23,7 @@ export default function OtherProjects() {
                 title: tProjects(`${el}.title`),
                 description: tProjects(`${el}.description`),
                 imgUrl: `/assets/${el}.webp`,
-                tech: tProjects(`${el}.tech`),
+                tech: projectDataJson[el as ProjectKey].tech,
                 href: `/projects/other/${el}`,
                 theme: 'dark'
             }

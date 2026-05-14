@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 type ProjectTranslations = {
     description: string,
-    implementations: string[],
+    implementations: string[] | null,
     overview: string,
     keyFeatures: string[],
     technicalHighlights: string[],
@@ -54,15 +54,17 @@ export default function ProjectPageTemplate({ projectData, projectTranslations }
             >
                 {description}
             </p>
-            <RoundBlackExternal
-                href={liveUrl}
-                textSize="text-lg lg:text-2xl"
-                paddingSize="lg"
-                containerClasses="mb-8 lg:mb-16"
-            >
-                <span>{t('liveLink')}</span>
-                <i className="fa fa-external-link scale-90"></i>
-            </RoundBlackExternal>
+            {liveUrl &&
+                <RoundBlackExternal
+                    href={liveUrl}
+                    textSize="text-lg lg:text-2xl"
+                    paddingSize="lg"
+                    containerClasses="mb-8 lg:mb-16"
+                >
+                    <span>{t('liveLink')}</span>
+                    <i className="fa fa-external-link scale-90"></i>
+                </RoundBlackExternal>
+            }
             {/* Div with two halves for the rest of content */}
             <div className="flex flex-col-reverse lg:flex-row">
                 {/* Left div */}
@@ -99,26 +101,28 @@ export default function ProjectPageTemplate({ projectData, projectTranslations }
                             )}
                         </div>
                         {/* Implementations tags */}
-                        {implementations.length > 0 && <div className="
-                            mb-8
-                            flex gap-4 items-center flex-wrap"
-                        >
-                            <span className="text-xl lg:text-2xl font-semibold tracking-wide">
-                                {t('implementations')}:
-                            </span>
-                            {/* Tags */}
-                            {implementations.map((el, index) =>
-                                <span
-                                    key={index}
-                                    className="
-                                        px-4 py-1 lg:py-2
-                                        text-lg lg:text-xl text-black text-nowrap
-                                        bg-gray-300 rounded-lg lg:rounded-2xl"
-                                >
-                                    {el}
+                        {implementations !== null && <>
+                            {implementations.length > 0 && <div className="
+                                mb-8
+                                flex gap-4 items-center flex-wrap"
+                            >
+                                <span className="text-xl lg:text-2xl font-semibold tracking-wide">
+                                    {t('implementations')}:
                                 </span>
-                            )}
-                        </div>}
+                                {/* Tags */}
+                                {implementations.map((el, index) =>
+                                    <span
+                                        key={index}
+                                        className="
+                                            px-4 py-1 lg:py-2
+                                            text-lg lg:text-xl text-black text-nowrap
+                                            bg-gray-300 rounded-lg lg:rounded-2xl"
+                                    >
+                                        {el}
+                                    </span>
+                                )}
+                            </div>}
+                        </>}
                         {/* Overview */}
                         <h2 className="mb-4 text-xl lg:text-2xl font-semibold">
                             {t('overview')}

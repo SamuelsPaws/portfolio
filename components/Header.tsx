@@ -37,12 +37,12 @@ const Header = () => {
             <LangContainerMob />
             <BurgerMenu />
         </div>
-        <LangContainer />
         <nav className="
             h-full
             hidden lg:flex items-center gap-8
             text-md tracking-wider"
         >
+            <LangContainer />
             <ProjectsDdContainer />
             <Link
                 href="/about"

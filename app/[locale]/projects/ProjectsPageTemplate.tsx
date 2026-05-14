@@ -1,14 +1,17 @@
 import clsx from "clsx";
 import ProjectCard from "../components/ProjectCard";
+import techData from "@/data/tech.json"
 
 type Project = {
     title: string,
     description: string,
     imgUrl: string,
-    tech: string,
+    tech: string[],
     href: string,
     theme: string
 }
+
+type TechKey = keyof typeof techData
 
 interface Props {
     h1: string;
@@ -34,7 +37,7 @@ export default function ProjectsPageTemplate({ projectsData, h1, bgColor }: Prop
                         title={el.title}
                         description={el.description}
                         imgUrl={el.imgUrl}
-                        tech={el.tech}
+                        tech={el.tech.map(el => techData[el as TechKey].text).join(', ')}
                         href={el.href}
                         theme={el.theme}
                     />

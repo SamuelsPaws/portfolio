@@ -71,7 +71,7 @@
         "dwm": {
             "title": "DWM Designs",
             "description": "Sitio web para un hub centralizado de marcas",
-            "tech": "Next.js, Tailwind CSS",
+            "implementations": [],
             "type": "web-dev",
             "overview": "Sitio web tipo hub multiempresa diseñado para unificar y presentar varios pequeños negocios bajo una sola marca principal, proporcionando navegación clara, priorización y rutas de conversión para cada uno.",
             "keyFeatures": [
@@ -98,7 +98,6 @@
         "chess-by-me": {
             "title": "Chess By Me",
             "description": "Juego de ajedrez para navegador con reglas y reloj funcionales",
-            "tech": "JavaScript, HTML, CSS",
             "type": "other",
             "overview": "Juego de ajedrez completamente funcional construido desde cero usando la API de HTML canvas, enfocado en la implementación precisa de reglas, gestión de estado de partida e interacción en tiempo real sin librerías externas. Totalmente concebido y programado por mí sin ayuda o inspiración externa.",
             "keyFeatures": [

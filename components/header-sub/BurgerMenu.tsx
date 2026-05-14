@@ -53,7 +53,7 @@ const BurgerMenu = () => {
             </button>
             {/* Actual menu */}
             <div className={`
-                w-full h-[55vh]
+                w-full h-[60vh]
                 pt-header-height-mob px-8
                 ${isOpen ? 'fixed' : 'hidden'}
                 top-0 left-0
@@ -61,7 +61,7 @@ const BurgerMenu = () => {
             >
                 <ul className="
                     w-full h-full
-                    flex flex-col justify-center items-end gap-4
+                    flex flex-col justify-center items-end gap-6
                     text-xl font-semibold text-white-1"
                 >
                     <li>

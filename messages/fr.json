@@ -71,7 +71,7 @@
         "dwm": {
             "title": "DWM Designs",
             "description": "Site web pour un hub de marque centralisé",
-            "tech": "Next.js, Tailwind CSS",
+            "implementations": [],
             "type": "web-dev",
             "overview": "Site web de hub multi-entreprises conçu pour unifier et présenter plusieurs petites entreprises sous une seule marque principale, offrant une navigation claire, une priorisation et des parcours de conversion pour chacune.",
             "keyFeatures": [
@@ -98,7 +98,6 @@
         "chess-by-me": {
             "title": "Chess By Me",
             "description": "Jeu d’échecs navigateur avec règles et horloge fonctionnelles",
-            "tech": "JavaScript, HTML, CSS",
             "type": "other",
             "overview": "Jeu d’échecs entièrement jouable construit depuis zéro avec l’API HTML canvas, axé sur l’application précise des règles, la gestion de l’état de la partie et l’interaction en temps réel sans bibliothèques externes. Entièrement imaginé et développé par moi sans aide ni inspiration externe.",
             "keyFeatures": [

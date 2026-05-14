@@ -9,7 +9,7 @@ export type ProjectData = {
     title: string;
     tech: Tech[];
     implementations: string[];
-    liveUrl: string;
+    liveUrl: string | null;
     imgUrl: string;
     galleryImgUrls: string[];
 }
