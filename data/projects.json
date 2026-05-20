@@ -1,4 +1,24 @@
 {
+    "plasma-vida": {
+        "title": "Plasma Vida Center",
+        "tech": [
+            "next",
+            "tw"
+        ],
+        "implementations": [
+            "Headless CMS (Contentful)"
+        ],
+        "liveUrl": "https://plasmavidacenter.com/",
+        "imgUrl": "/assets/plasma-vida.webp",
+        "galleryImgUrls": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ]
+    },
     "lpdh": {
         "title": "Lady Patricia Dream Homes",
         "tech": [
@@ -19,26 +39,6 @@
             "/assets/lpdh.webp",
             "/assets/lpdh.webp",
             "/assets/lpdh.webp"
-        ]
-    },
-    "plasma-vida": {
-        "title": "Plasma Vida Center",
-        "tech": [
-            "next",
-            "tw"
-        ],
-        "implementations": [
-            "Headless CMS (Contentful)"
-        ],
-        "liveUrl": "https://plasmavidacenter.com/",
-        "imgUrl": "/assets/plasma-vida.webp",
-        "galleryImgUrls": [
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp"
         ]
     },
     "dwm": {
