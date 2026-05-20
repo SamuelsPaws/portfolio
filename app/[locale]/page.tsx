@@ -41,14 +41,6 @@ export default function Home() {
             lg:flex-row lg:justify-center lg:items-center lg:gap-8"
           >
             <ProjectCard
-              title='Lady Patricia Dream Homes'
-              description={tProjects('lpdh.description')}
-              imgUrl="/assets/lpdh.webp"
-              tech='Next.js, Tailwind CSS'
-              href="/projects/web-dev/lpdh"
-              theme="light"
-            />
-            <ProjectCard
               title="Plasma Vida Center"
               description={tProjects('plasma-vida.description')}
               imgUrl="/assets/plasma-vida.webp"
@@ -56,6 +48,15 @@ export default function Home() {
               href="/projects/web-dev/plasma-vida"
               theme="light"
             />
+            <ProjectCard
+              title='Lady Patricia Dream Homes'
+              description={tProjects('lpdh.description')}
+              imgUrl="/assets/lpdh.webp"
+              tech='Next.js, Tailwind CSS'
+              href="/projects/web-dev/lpdh"
+              theme="light"
+            />
+            
           </div>
           <MoreProjectsBtn
             href="/projects/web-dev"
