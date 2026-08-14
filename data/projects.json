@@ -1,100 +1,248 @@
-{
-    "plasma-vida": {
-        "title": "Plasma Vida Center",
-        "tech": [
-            "next",
-            "tw"
-        ],
-        "implementations": [
-            "Headless CMS (Contentful)"
-        ],
-        "liveUrl": "https://plasmavidacenter.com/",
-        "imgUrl": "/assets/plasma-vida.webp",
-        "galleryImgUrls": [
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp"
-        ]
-    },
-    "lpdh": {
-        "title": "Lady Patricia Dream Homes",
-        "tech": [
-            "next",
-            "tw"
-        ],
-        "implementations": [
-            "Headless CMS (Contentful)",
-            "IDX API",
-            "Localization (English/Spanish)"
-        ],
-        "liveUrl": "https://www.ladypatriciadreamhomes.ca/en",
-        "imgUrl": "/assets/lpdh.webp",
-        "galleryImgUrls": [
-            "/assets/lpdh.webp",
-            "/assets/lpdh.webp",
-            "/assets/lpdh.webp",
-            "/assets/lpdh.webp",
-            "/assets/lpdh.webp",
-            "/assets/lpdh.webp"
-        ]
-    },
-    "dwm": {
-        "title": "DWM Designs",
-        "tech": [
-            "next",
-            "tw"
-        ],
-        "implementations": [
-            "Headless CMS (Contentful)"
-        ],
-        "liveUrl": "https://dwmdesigns.ca/",
-        "imgUrl": "/assets/dwm.webp",
-        "galleryImgUrls": [
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp"
-        ]
-    },
-    "chess-by-me": {
-        "title": "Chess By Me",
-        "tech": [
-            "js",
-            "html",
-            "css"
-        ],
-        "implementations": [],
-        "liveUrl": "https://chessbyme.netlify.app",
-        "imgUrl": "/assets/chess-by-me.webp",
-        "galleryImgUrls": [
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp",
-            "/assets/plasma-vida.webp"
-        ]
-    },
-    "icounter": {
-        "title": "iCounter",
+[
+    {
+        "slug": "ilalo-hotel",
+        "title": "Ilaló Garden Hotel",
+        "type": "web-dev",
         "tech": [
             "py"
         ],
-        "implementations": [],
         "liveUrl": null,
-        "imgUrl": "/assets/icounter.webp",
-        "galleryImgUrls": [
+        "coverSrc": "/assets/icounter.webp",
+        "gallery": [
             "/assets/plasma-vida.webp",
             "/assets/plasma-vida.webp",
             "/assets/plasma-vida.webp",
             "/assets/plasma-vida.webp",
             "/assets/plasma-vida.webp",
             "/assets/plasma-vida.webp"
-        ]
+        ],
+        "description": {
+            "en": "Boutique hotel website with multilingual CMS and advanced SEO",
+            "es": "Sitio web para hotel boutique con CMS multilingüe y SEO avanzado",
+            "fr": "Site web d'hôtel-boutique avec CMS multilingue et SEO avancé",
+            "de": "Website für ein Boutique-Hotel mit mehrsprachigem CMS und fortschrittlicher SEO",
+            "it": "Sito web per hotel boutique con CMS multilingue e SEO avanzata"
+        },
+        "implementations": {
+            "en": [
+                "Headless CMS (Contentful)",
+                "Internationalization (English & Spanish)"
+            ],
+            "es": [
+                "Headless CMS (Contentful)",
+                "Internationalization (English & Spanish)"
+            ],
+            "fr": [
+                "Headless CMS (Contentful)",
+                "Internationalization (English & Spanish)"
+            ],
+            "de": [
+                "Headless CMS (Contentful)",
+                "Internationalization (English & Spanish)"
+            ],
+            "it": [
+                "Headless CMS (Contentful)",
+                "Internationalization (English & Spanish)"
+            ]
+        },
+        "overview": {
+            "en": "Modern multilingual website for a boutique hotel near Quito, designed to showcase accommodations, restaurant, event spaces, and amenities while maximizing organic visibility through technical SEO and structured content.",
+            "es": "Sitio web moderno y multilingüe para un hotel boutique cerca de Quito, diseñado para presentar sus habitaciones, restaurante, espacios para eventos y servicios, maximizando la visibilidad orgánica mediante SEO técnico y contenido estructurado.",
+            "fr": "Site web moderne et multilingue pour un hôtel-boutique situé près de Quito, conçu pour mettre en valeur les chambres, le restaurant, les espaces événementiels et les services tout en maximisant la visibilité organique grâce à un SEO technique et à un contenu structuré.",
+            "de": "Moderne, mehrsprachige Website für ein Boutique-Hotel in der Nähe von Quito, entwickelt, um Zimmer, Restaurant, Veranstaltungsräume und Annehmlichkeiten optimal zu präsentieren und gleichzeitig durch technisches SEO und strukturierte Inhalte maximale organische Sichtbarkeit zu erzielen.",
+            "it": "Sito web moderno e multilingue per un hotel boutique vicino a Quito, progettato per valorizzare le camere, il ristorante, gli spazi per eventi e i servizi, massimizzando al contempo la visibilità organica grazie a una SEO tecnica e a contenuti strutturati."
+        },
+        "keyFeatures": {
+            "en": [
+                "Headless CMS powering rooms, restaurant menu, amenities, and event spaces",
+                "Fully bilingual experience (Spanish & English) with localized routes",
+                "Dynamic room pages generated from CMS content",
+                "Restaurant menu managed entirely through the CMS",
+                "Google Maps integration and direct WhatsApp contact",
+                "Curated testimonials localized for both languages"
+            ],
+            "es": [
+                "CMS headless para administrar habitaciones, restaurante, servicios y espacios para eventos",
+                "Experiencia completamente bilingüe (español e inglés) con rutas localizadas",
+                "Páginas dinámicas de habitaciones generadas desde el CMS",
+                "Menú del restaurante administrado completamente desde el CMS",
+                "Integración con Google Maps y contacto directo por WhatsApp",
+                "Testimonios curados y localizados en ambos idiomas"
+            ],
+            "fr": [
+                "CMS headless pour gérer les chambres, le restaurant, les services et les espaces événementiels",
+                "Expérience entièrement bilingue (espagnol et anglais) avec des routes localisées",
+                "Pages de chambres dynamiques générées à partir du CMS",
+                "Menu du restaurant entièrement administré depuis le CMS",
+                "Intégration de Google Maps et contact direct via WhatsApp",
+                "Témoignages sélectionnés et localisés dans les deux langues"
+            ],
+            "de": [
+                "Headless-CMS zur Verwaltung von Zimmern, Restaurant, Annehmlichkeiten und Veranstaltungsbereichen",
+                "Vollständig zweisprachiges Erlebnis (Spanisch & Englisch) mit lokalisierten Routen",
+                "Dynamische Zimmerseiten, die aus CMS-Inhalten generiert werden",
+                "Komplett über das CMS verwaltete Restaurantkarte",
+                "Google-Maps-Integration und direkter WhatsApp-Kontakt",
+                "Kuratierte und für beide Sprachen lokalisierte Gästebewertungen"
+            ],
+            "it": [
+                "CMS headless per la gestione di camere, ristorante, servizi e spazi per eventi",
+                "Esperienza completamente bilingue (spagnolo e inglese) con percorsi localizzati",
+                "Pagine dinamiche delle camere generate dai contenuti del CMS",
+                "Menu del ristorante gestito interamente tramite CMS",
+                "Integrazione con Google Maps e contatto diretto tramite WhatsApp",
+                "Recensioni selezionate e localizzate in entrambe le lingue"
+            ]
+        },
+        "technicalHighlights": {
+            "en": [
+                "Contentful content modeling for rooms, menus, galleries, testimonials, and hotel content",
+                "Localized App Router architecture with dynamic metadata generation",
+                "Comprehensive SEO implementation including localized metadata, canonical URLs, hreflang alternates, XML sitemap, robots.txt, Open Graph, Twitter Cards, and structured data (JSON-LD)",
+                "Schema.org generators for Hotel, HotelRoom, Restaurant, ContactPage, AboutPage, BreadcrumbList, Organization, and related entities",
+                "Reusable SEO architecture with centralized URL generation and schema helpers",
+                "Performance-focused implementation using Next.js Image optimization, lazy loading, and lightweight animations"
+            ],
+            "es": [
+                "Modelado de contenido en Contentful para habitaciones, menú, galerías, testimonios y contenido del hotel",
+                "Arquitectura con App Router e internacionalización mediante metadatos dinámicos",
+                "Implementación integral de SEO con metadatos localizados, URLs canónicas, hreflang, sitemap XML, robots.txt, Open Graph, Twitter Cards y datos estructurados (JSON-LD)",
+                "Generadores reutilizables de Schema.org para Hotel, HotelRoom, Restaurant, ContactPage, AboutPage, BreadcrumbList, Organization y otras entidades",
+                "Arquitectura SEO reutilizable con generación centralizada de URLs y helpers para esquemas",
+                "Optimización de rendimiento mediante Next.js Image, lazy loading y animaciones ligeras"
+            ],
+             "fr": [
+                "Modélisation du contenu dans Contentful pour les chambres, le menu, les galeries, les témoignages et le contenu de l'hôtel",
+                "Architecture App Router avec internationalisation et génération dynamique des métadonnées",
+                "Implémentation complète du SEO : métadonnées localisées, URL canoniques, balises hreflang, sitemap XML, robots.txt, Open Graph, Twitter Cards et données structurées (JSON-LD)",
+                "Générateurs réutilisables de schémas Schema.org pour Hotel, HotelRoom, Restaurant, ContactPage, AboutPage, BreadcrumbList, Organization et autres entités",
+                "Architecture SEO réutilisable avec génération centralisée des URL et fonctions utilitaires pour les schémas",
+                "Optimisation des performances grâce à Next.js Image, au chargement différé (lazy loading) et à des animations légères"
+            ],
+            "de": [
+                "Content-Modellierung in Contentful für Zimmer, Speisekarten, Galerien, Bewertungen und Hotelinhalte",
+                "Lokalisierte App-Router-Architektur mit dynamischer Metadatengenerierung",
+                "Umfassende SEO-Implementierung mit lokalisierten Metadaten, kanonischen URLs, hreflang-Alternativen, XML-Sitemap, robots.txt, Open Graph, Twitter Cards und strukturierten Daten (JSON-LD)",
+                "Wiederverwendbare Schema.org-Generatoren für Hotel, HotelRoom, Restaurant, ContactPage, AboutPage, BreadcrumbList, Organization und weitere Entitäten",
+                "Wiederverwendbare SEO-Architektur mit zentralisierter URL-Generierung und Schema-Hilfsfunktionen",
+                "Performanceoptimierung durch Next.js Image, Lazy Loading und schlanke Animationen"
+            ],
+            "it": [
+                "Modellazione dei contenuti in Contentful per camere, menu, gallerie, recensioni e contenuti dell'hotel",
+                "Architettura App Router localizzata con generazione dinamica dei metadati",
+                "Implementazione completa della SEO con metadati localizzati, URL canonici, tag hreflang, sitemap XML, robots.txt, Open Graph, Twitter Cards e dati strutturati (JSON-LD)",
+                "Generatori riutilizzabili di Schema.org per Hotel, HotelRoom, Restaurant, ContactPage, AboutPage, BreadcrumbList, Organization e altre entità correlate",
+                "Architettura SEO riutilizzabile con generazione centralizzata degli URL e helper per gli schemi",
+                "Ottimizzazione delle prestazioni tramite Next.js Image, lazy loading e animazioni leggere"
+            ]
+        },
+        "results": {
+            "en": [
+                "Strong technical SEO foundation for long-term organic growth",
+                "Content editors can manage nearly all website content without developer involvement",
+                "Improved accessibility for international guests through complete localization",
+                "Scalable architecture ready for future content expansion"
+            ],
+            "es": [
+                "Base sólida de SEO técnico para impulsar el crecimiento orgánico a largo plazo",
+                "El cliente puede administrar prácticamente todo el contenido sin intervención del desarrollador",
+                "Mayor accesibilidad para huéspedes internacionales mediante una localización completa",
+                "Arquitectura escalable preparada para futuras ampliaciones de contenido"
+            ],
+            "fr": [
+                "Base technique SEO solide pour favoriser une croissance organique à long terme",
+                "Le client peut gérer la quasi-totalité du contenu du site sans intervention du développeur",
+                "Meilleure accessibilité pour les clients internationaux grâce à une localisation complète",
+                "Architecture évolutive prête pour les futures extensions du contenu"
+            ],
+            "de": [
+                "Solide technische SEO-Basis für langfristiges organisches Wachstum",
+                "Der Kunde kann nahezu alle Website-Inhalte ohne Entwicklerunterstützung verwalten",
+                "Verbesserte Zugänglichkeit für internationale Gäste durch vollständige Lokalisierung",
+                "Skalierbare Architektur für zukünftige Inhaltserweiterungen"
+            ],
+             "it": [
+                "Solida base di SEO tecnica per una crescita organica a lungo termine",
+                "Il cliente può gestire quasi tutti i contenuti del sito senza il coinvolgimento di uno sviluppatore",
+                "Maggiore accessibilità per gli ospiti internazionali grazie a una localizzazione completa",
+                "Architettura scalabile pronta per future espansioni dei contenuti"
+            ]
+        },
+        "challenges": {
+            "en": [
+                "Designing a reusable multilingual SEO architecture that worked consistently across static and dynamic routes while avoiding duplicated logic."
+            ],
+            "es": [
+                "Diseñar una arquitectura SEO multilingüe reutilizable que funcionara de forma consistente tanto en rutas estáticas como dinámicas, evitando duplicación de lógica."
+            ],
+            "fr": [
+                "Concevoir une architecture SEO multilingue réutilisable fonctionnant de manière cohérente sur les routes statiques et dynamiques tout en évitant la duplication de logique."
+            ],
+            "de": [
+                "Entwicklung einer wiederverwendbaren mehrsprachigen SEO-Architektur, die sowohl für statische als auch dynamische Routen konsistent funktioniert und gleichzeitig Codeduplizierung vermeidet."
+            ],
+            "it": [
+                "Progettare un'architettura SEO multilingue riutilizzabile, in grado di funzionare in modo coerente sia per le rotte statiche che per quelle dinamiche, evitando la duplicazione della logica."
+            ]
+        },
+        "whatDemonstrates": {
+            "en": [
+                "Advanced technical SEO",
+                "Internationalization (i18n)",
+                "CMS architecture",
+                "Dynamic routing",
+                "Structured data implementation",
+                "Content modeling",
+                "Performance optimization",
+                "Developer experience through reusable abstractions"
+            ],
+            "es": [
+                "SEO técnico avanzado",
+                "Internacionalización (i18n)",
+                "Arquitectura CMS",
+                "Enrutamiento dinámico",
+                "Implementación de datos estructurados",
+                "Modelado de contenido",
+                "Optimización de rendimiento",
+                "Experiencia de desarrollo mediante abstracciones reutilizables"
+            ],
+            "fr": [
+                "SEO technique avancé",
+                "Internationalisation (i18n)",
+                "Architecture CMS",
+                "Routage dynamique",
+                "Implémentation de données structurées",
+                "Modélisation de contenu",
+                "Optimisation des performances",
+                "Expérience développeur grâce à des abstractions réutilisables"
+            ],
+            "de": [
+                "Fortgeschrittene technische SEO",
+                "Internationalisierung (i18n)",
+                "CMS-Architektur",
+                "Dynamisches Routing",
+                "Implementierung strukturierter Daten",
+                "Content-Modellierung",
+                "Performanceoptimierung",
+                "Developer Experience durch wiederverwendbare Abstraktionen"
+            ],
+            "it": [
+                "SEO tecnica avanzata",
+                "Internazionalizzazione (i18n)",
+                "Architettura CMS",
+                "Routing dinamico",
+                "Implementazione di dati strutturati",
+                "Modellazione dei contenuti",
+                "Ottimizzazione delle prestazioni",
+                "Developer experience attraverso astrazioni riutilizzabili"
+            ]
+        },
+        "myRole": {
+            "en": "Full project ownership including architecture, frontend development, CMS modeling, multilingual implementation, technical SEO, structured data, copywriting, localization, and client training for ongoing content management.",
+            "es": "Desarrollo integral del proyecto, incluyendo arquitectura, desarrollo frontend, modelado del CMS, implementación multilingüe, SEO técnico, datos estructurados, redacción de contenido, localización y capacitación al cliente para la gestión continua del sitio.",
+            "fr": "Responsabilité complète du projet : architecture, développement frontend, modélisation du CMS, implémentation multilingue, SEO technique, données structurées, rédaction de contenu, localisation et formation du client à la gestion continue du site.",
+            "de": "Eigenverantwortliche Umsetzung des gesamten Projekts - einschließlich Architektur, Frontend-Entwicklung, CMS-Modellierung, Mehrsprachigkeitsimplementierung, technischer SEO, strukturierter Daten, Copywriting, Lokalisierung sowie Kundenschulung für die eigenständige Content-Pflege.",
+            "it": "Responsabile dell'intero progetto, inclusi architettura, sviluppo frontend, modellazione del CMS, implementazione multilingue, SEO tecnica, dati strutturati, copywriting, localizzazione e formazione del cliente per la gestione autonoma dei contenuti."
+        }
     }
-}
+]

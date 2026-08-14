@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import ProjectPageTemplate from "../../ProjectPageTemplate";
 import projectsJson from "@/data/projects.json"
-import { ProjectData, Slug } from "@/lib/types/projectTypes";
+import { ProjectData, Slug } from "@/lib/types/projectShort";
 
 // export async function generateStaticParams() {
 //     return [

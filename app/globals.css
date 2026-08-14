@@ -8,12 +8,15 @@
 @theme inline {
   --spacing-header-height: 4rem;
   --spacing-mob-header-height: 4rem;
-  --color-mywhite: #fafafa;
+  --text-md: 1rem;
+  --color-br-white: #fafafa;
   --color-yellow-550: #D1AF00;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --shadow-flat-sm: 2px 8px 0 #00000028;
+  --shadow-flat-lg: 4px 16px 0 #00000028;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,7 +53,7 @@ button {
     @apply lg:hover:shadow-[8px_16px_0px_#0001];
   }
   .hover-shadow-sm {
-    @apply lg:hover:shadow-[2px_8px_0px_#0001];
+    @apply lg:hover:shadow-[2px_8px_0px_#0002];
   }
 
   .header-padding {

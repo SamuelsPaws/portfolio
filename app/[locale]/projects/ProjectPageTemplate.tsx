@@ -1,7 +1,7 @@
 import RoundBlackExternal from "@/components/ui-reusables/RoundBlackExternal";
 import Image from "next/image";
 import techData from "@/data/tech.json"
-import { ProjectData } from "@/lib/types/projectTypes";
+import { ProjectData } from "@/lib/types/projectShort";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 

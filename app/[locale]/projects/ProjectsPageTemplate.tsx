@@ -1,25 +1,17 @@
 import clsx from "clsx";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "@/components/ProjectCard";
 import techData from "@/data/tech.json"
-
-type Project = {
-    title: string,
-    description: string,
-    imgUrl: string,
-    tech: string[],
-    href: string,
-    theme: string
-}
+import { ProjectShort } from "@/lib/types/projectShort"
 
 type TechKey = keyof typeof techData
 
 interface Props {
     h1: string;
-    projectsData: Project[];
+    projects: ProjectShort[];
     bgColor: string;
 }
 
-export default function ProjectsPageTemplate({ projectsData, h1, bgColor }: Props) {
+export default function ProjectsPageTemplate({ projects, h1, bgColor }: Props) {
     return (
     <main className="header-padding">
         <section className={clsx(
@@ -31,15 +23,11 @@ export default function ProjectsPageTemplate({ projectsData, h1, bgColor }: Prop
             </h1>
             {/* Div with projects */}
             <div className="flex gap-8 flex-wrap">
-                {projectsData && projectsData.map((el, index) =>
+                {projects.map((el, index) =>
                     <ProjectCard
                         key={index}
-                        title={el.title}
-                        description={el.description}
-                        imgUrl={el.imgUrl}
-                        tech={el.tech.map(el => techData[el as TechKey].text).join(', ')}
-                        href={el.href}
-                        theme={el.theme}
+                        project={el}
+                        theme='dark'
                     />
                 )}
             </div>

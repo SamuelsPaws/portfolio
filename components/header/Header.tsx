@@ -1,9 +1,9 @@
 import Link from "next/link"
-import LangContainer from "./header-sub/LangContainer"
+import LangContainer from "./subcomponents/LangContainer"
 import { useTranslations } from "next-intl"
-import ProjectsDdContainer from "./header-sub/ProjectsDdContainer"
-import BurgerMenu from "./header-sub/BurgerMenu"
-import LangContainerMob from "./header-sub/LangContainerMob"
+import ProjectsDdContainer from "./subcomponents/ProjectsDdContainer"
+import BurgerMenu from "./subcomponents/BurgerMenu"
+import LangContainerMob from "./subcomponents/LangContainerMob"
 
 const Header = () => {
     const t = useTranslations('Reusable')
@@ -16,7 +16,7 @@ const Header = () => {
         pl-6 pr-8
         lg:pl-6 lg:pr-4
         flex items-center justify-between
-        bg-mywhite
+        bg-br-white
         text-black font-semibold z-40"
     >
         <Link

@@ -1,40 +1,25 @@
-import { useTranslations } from "next-intl";
 import ProjectsPageTemplate from "../ProjectsPageTemplate";
-import { Projects } from '@/messages/en.json'
-import projectDataJson from '@/data/projects.json'
+import projectData from '@/data/projects.json'
+import { ProjectShort } from "@/lib/types/projectShort";
+import mapProjectCard from "@/lib/utils/mapProjectCard";
+import { LocaleKey } from "@/lib/types/localeKey";
+import { getTranslations } from "next-intl/server";
+import { ProjectData } from "@/lib/types/projectData";
 
-type Project = {
-    title: string,
-    description: string,
-    imgUrl: string,
-    tech: string[],
-    href: string,
-    theme: string
+type Props = {
+    params: Promise<{
+        locale: LocaleKey
+    }>
 }
 
-type ProjectKey = keyof typeof Projects
-
-export default function WebDevProjects() {
-    const tProjects = useTranslations('Projects')
-
-    // const tPage = useTranslations()
-    const projectsData: Project[] = Object.keys(Projects).map(el => {
-        if (tProjects(`${el}.type`) === 'web-dev') {
-            return {
-                title: tProjects(`${el}.title`),
-                description: tProjects(`${el}.description`),
-                imgUrl: `/assets/${el}.webp`,
-                tech: projectDataJson[el as ProjectKey].tech,
-                href: `/projects/web-dev/${el}`,
-                theme: 'light'
-            }
-        }
-    }).filter(el => el !== undefined)
+export default async function WebDevProjects({ params }: Props) {
+    const { locale } = await params
+    const t = await getTranslations('Projects')
 
     return (
     <ProjectsPageTemplate
         h1="Web Development Projects"
-        projectsData={projectsData}
+        projects={projectData.filter(el => el.type === 'web-dev').map(el => mapProjectCard(el as ProjectData, locale))}
         bgColor="bg-gray-300"
     />
     )

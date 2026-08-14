@@ -190,7 +190,7 @@
         "h1-1": "Salut, je suis Samuel, développeur web frontend.",
         "h1-2": "N’hésitez pas à explorer mon travail.",
         "heroCta": "Découvrir",
-        "webSectionTitle": "Développement Web",
+        "h2WebDev": "Développement Web",
         "beyondSectionTitle": "Au-delà du Développement Web",
         "moreProjects": "Voir plus de projets"
     },

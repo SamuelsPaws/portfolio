@@ -6,7 +6,7 @@
     "Projects": {
         "lpdh": {
             "title": "Lady Patricia Dream Homes",
-            "description": "Realtor public facing website",
+            "description": "real estate broker public facing website",
             "implementations": [
                 "Headless CMS (Contentful)",
                 "IDX API",
@@ -190,7 +190,7 @@
         "h1-1": "Hi, I'm Samuel, front-end web developer.",
         "h1-2": "Feel free to explore my work.",
         "heroCta": "Take a Look",
-        "webSectionTitle": "Web Development",
+        "h2WebDev": "Web Development",
         "beyondSectionTitle": "Beyond Web Development",
         "moreProjects": "See More Projects"
     },

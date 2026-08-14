@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl'
-import GlobeIcon from '../icons/GlobeIcon'
+import GlobeIcon from '../../icons/GlobeIcon'
 import { Ref, SetStateAction } from 'react'
 
 interface Props {
