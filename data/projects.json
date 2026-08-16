@@ -4,10 +4,11 @@
         "title": "Ilaló Garden Hotel",
         "type": "web-dev",
         "tech": [
-            "py"
+            "next",
+            "tw"
         ],
-        "liveUrl": null,
-        "coverSrc": "/assets/icounter.webp",
+        "liveUrl": "https://hotel-ilalo.com/",
+        "coverSrc": "/assets/ilalo-hotel.jpg",
         "gallery": [
             "/assets/plasma-vida.webp",
             "/assets/plasma-vida.webp",
@@ -243,6 +244,853 @@
             "fr": "Responsabilité complète du projet : architecture, développement frontend, modélisation du CMS, implémentation multilingue, SEO technique, données structurées, rédaction de contenu, localisation et formation du client à la gestion continue du site.",
             "de": "Eigenverantwortliche Umsetzung des gesamten Projekts - einschließlich Architektur, Frontend-Entwicklung, CMS-Modellierung, Mehrsprachigkeitsimplementierung, technischer SEO, strukturierter Daten, Copywriting, Lokalisierung sowie Kundenschulung für die eigenständige Content-Pflege.",
             "it": "Responsabile dell'intero progetto, inclusi architettura, sviluppo frontend, modellazione del CMS, implementazione multilingue, SEO tecnica, dati strutturati, copywriting, localizzazione e formazione del cliente per la gestione autonoma dei contenuti."
+        }
+    },
+    {
+        "slug": "lpdh",
+        "title": "Lady Patricia Dream Homes",
+        "type": "web-dev",
+        "tech": [
+            "next",
+            "tw"
+        ],
+        "liveUrl": "https://www.ladypatriciadreamhomes.ca/",
+        "coverSrc": "/assets/lpdh.webp",
+        "gallery": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ],
+        "description": {
+            "en": "Real estate broker public facing website",
+            "es": "Sitio web público para corredora inmobiliaria",
+            "fr": "Site web public pour agente immobilière",
+            "de": "Öffentliche Website für Immobilienmaklerin",
+            "it": "Sito web pubblico per agente immobiliare"
+        },
+        "implementations": {
+            "en": [
+                "Headless CMS (Contentful)",
+                "IDX API integration",
+                "Localization (English/Spanish)"
+            ],
+            "es": [
+                "Headless CMS (Contentful)",
+                "Integración de API IDX",
+                "Multilingüe (English & Spanish)"
+            ],
+            "fr": [
+                "CMS headless (Contentful)",
+                "API IDX",
+                "Localisation (anglais/espagnol)"
+            ],
+            "de": [
+                "Headless-CMS (Contentful)",
+                "IDX-API",
+                "Lokalisierung (Englisch/Spanisch)"
+            ],
+            "it": [
+                "CMS headless (Contentful)",
+                "API IDX",
+                "Localizzazione (inglese/spagnolo)"
+            ]
+        },
+        "overview": {
+            "en": "Presentation-focused website for a real estate agent, designed to improve credibility, capture leads, and showcase property listings from both her brokerage (via IDX) and personal inventory.",
+            "es": "Sitio web enfocado en presentación para una corredora inmobiliaria, diseñado para mejorar la credibilidad, captar clientes potenciales y mostrar propiedades tanto de su agencia (mediante IDX) como de su inventario personal.",
+            "fr": "Site web axé sur la présentation pour une agente immobilière, conçu pour améliorer la crédibilité, générer des prospects et présenter des biens immobiliers provenant à la fois de son agence (via IDX) et de son inventaire personnel.",
+            "de": "Präsentationsorientierte Website für eine Immobilienmaklerin, entwickelt zur Verbesserung der Glaubwürdigkeit, zur Lead-Generierung und zur Präsentation von Immobilien sowohl aus ihrer Maklerfirma (über IDX) als auch aus ihrem persönlichen Bestand.",
+            "it": "Sito web orientato alla presentazione per un'agente immobiliare, progettato per migliorare la credibilità, acquisire lead e mostrare immobili sia della sua agenzia (tramite IDX) che del suo inventario personale."
+        },
+        "keyFeatures": {
+            "en": [
+                "Integrated IDX API to display live brokerage listings",
+                "Custom listings managed via Contentful CMS",
+                "Guided flow to help users navigate buying/renting paths",
+                "Lead capture through contact forms and clear CTAs (spam protected)",
+                "Fully responsive, mobile-first design"
+            ],
+            "es": [
+                "Integración de API IDX para mostrar propiedades en tiempo real de la agencia",
+                "Propiedades personalizadas gestionadas mediante CMS Contentful",
+                "Flujo guiado para ayudar a los usuarios a navegar opciones de compra/alquiler",
+                "Captación de clientes mediante formularios de contacto y CTAs claros (protegidos contra spam)",
+                "Diseño totalmente responsive y mobile-first"
+            ],
+            "fr": [
+                "Intégration de l’API IDX pour afficher les annonces immobilières en direct de l’agence",
+                "Annonces personnalisées gérées via le CMS Contentful",
+                "Flux guidé pour aider les utilisateurs à naviguer entre achat et location",
+                "Capture de prospects via des formulaires de contact et des CTA clairs (protégés contre le spam)",
+                "Design entièrement responsive et mobile-first"
+            ],
+            "de": [
+                "Integrierte IDX-API zur Anzeige von Live-Immobilienanzeigen der Maklerfirma",
+                "Benutzerdefinierte Immobilienanzeigen verwaltet über das Contentful CMS",
+                "Geführter Ablauf zur Unterstützung der Nutzer bei Kauf-/Mietentscheidungen",
+                "Lead-Erfassung durch Kontaktformulare und klare CTAs (spamgeschützt)",
+                "Vollständig responsives Mobile-First-Design"
+            ],
+            "it": [
+                "Integrazione API IDX per mostrare annunci immobiliari live dell'agenzia",
+                "Annunci personalizzati gestiti tramite CMS Contentful",
+                "Flusso guidato per aiutare gli utenti a navigare tra percorsi di acquisto/affitto",
+                "Acquisizione lead tramite moduli di contatto e CTA chiare (protette contro spam)",
+                "Design completamente responsive e mobile-first"
+            ]
+        },
+        "technicalHighlights": {
+            "en": [
+                "Server-side data fetching via Next.js API routes for listing data",
+                "Headless CMS setup with Contentful, including custom content modeling for listings",
+                "Internationalization using next-intl (English/Spanish support), using locale-based routing and implementing translated metadata for SEO per language",
+                "SEO-focused architecture with dynamic metadata per page, Open Graph tags for social sharing, structured data (JSON-LD) and sitemap generation",
+                "Performance optimization with Next.js <Image>, lazy loading media, and overhead reduction"
+            ],
+            "es": [
+                "Obtención de datos del lado del servidor mediante rutas API de Next.js para información de propiedades",
+                "Configuración headless CMS con Contentful, incluyendo modelado de contenido personalizado para propiedades",
+                "Internacionalización usando next-intl (soporte inglés/español), utilizando rutas basadas en locale e implementando metadata traducida para SEO por idioma",
+                "Arquitectura enfocada en SEO con metadata dinámica por página, etiquetas Open Graph para compartir en redes sociales, datos estructurados (JSON-LD) y generación de sitemap",
+                "Optimización de rendimiento con Next.js <Image>, lazy loading de medios y reducción de overhead"
+            ],
+             "fr": [
+                "Récupération de données côté serveur via les routes API Next.js pour les données des annonces",
+                "Configuration headless CMS avec Contentful, incluant une modélisation de contenu personnalisée pour les annonces",
+                "Internationalisation avec next-intl (support anglais/français), utilisant un routage basé sur la locale et des métadonnées traduites pour le SEO selon la langue",
+                "Architecture orientée SEO avec métadonnées dynamiques par page, balises Open Graph pour le partage social, données structurées (JSON-LD) et génération de sitemap",
+                "Optimisation des performances avec Next.js <Image>, chargement différé des médias et réduction de l’overhead"
+            ],
+            "de": [
+                "Serverseitige Datenabfrage über Next.js API-Routen für Immobiliendaten",
+                "Headless-CMS-Setup mit Contentful, einschließlich benutzerdefinierter Content-Modellierung für Immobilienanzeigen",
+                "Internationalisierung mit next-intl (Unterstützung für Englisch/Deutsch), unter Verwendung sprachbasierter Routen und übersetzter Metadaten für SEO pro Sprache",
+                "SEO-orientierte Architektur mit dynamischen Metadaten pro Seite, Open-Graph-Tags für Social Sharing, strukturierten Daten (JSON-LD) und Sitemap-Generierung",
+                "Performance-Optimierung mit Next.js <Image>, Lazy Loading für Medien und Reduzierung von Overhead"
+            ],
+            "it": [
+                "Recupero dati lato server tramite API routes di Next.js per dati immobiliari",
+                "Configurazione headless CMS con Contentful, inclusa modellazione personalizzata dei contenuti per gli annunci",
+                "Internazionalizzazione con next-intl (supporto inglese/italiano), utilizzando routing basato sulla lingua e metadata tradotti per SEO per ogni lingua",
+                "Architettura orientata SEO con metadata dinamici per pagina, tag Open Graph per condivisione social, dati strutturati (JSON-LD) e generazione sitemap",
+                "Ottimizzazione delle performance con Next.js <Image>, lazy loading dei media e riduzione dell'overhead"
+            ]
+        },
+        "results": {
+            "en": [
+                "Improved online presence and credibility for client",
+                "Centralized platform for showcasing listings and capturing inbound leads"
+            ],
+            "es": [
+                "Mejora de presencia online y credibilidad para la cliente",
+                "Plataforma centralizada para mostrar propiedades y captar clientes potenciales"
+            ],
+            "fr": [
+                "Amélioration de la présence en ligne et de la crédibilité pour la cliente",
+                "Plateforme centralisée pour présenter les annonces et capturer des prospects entrants"
+            ],
+            "de": [
+                "Verbesserte Online-Präsenz und Glaubwürdigkeit für die Kundin",
+                "Zentrale Plattform zur Präsentation von Immobilien und Generierung eingehender Leads"
+            ],
+             "it": [
+                "Migliorata la presenza online e la credibilità per la cliente",
+                "Piattaforma centralizzata per mostrare immobili e acquisire lead in entrata"
+            ]
+        },
+        "challenges": null,
+        "whatDemonstrates": null,
+        "myRole": {
+            "en": "Built end-to-end 100% by me (architecture, development, CMS setup, SEO). Also created a client handoff tutorial for managing listings via Contentful.",
+            "es": "Desarrollado 100% por mí de principio a fin (arquitectura, desarrollo, configuración del CMS y SEO). También creé un tutorial de entrega para la cliente sobre gestión de propiedades mediante Contentful.",
+            "fr": "Développé entièrement par moi de bout en bout (architecture, développement, configuration CMS et SEO). J’ai également créé un tutoriel de remise au client pour la gestion des annonces via Contentful.",
+            "de": "Vollständig von mir umgesetzt (Architektur, Entwicklung, CMS-Setup und SEO). Außerdem habe ich ein Übergabe-Tutorial für die Verwaltung der Immobilienanzeigen über Contentful erstellt.",
+            "it": "Realizzato interamente da me end-to-end (architettura, sviluppo, configurazione CMS e SEO). Ho anche creato un tutorial di handoff per la cliente sulla gestione degli annunci tramite Contentful."
+        }
+    },
+    {
+        "slug": "plasma-vida",
+        "title": "Plasma Vida Center",
+        "type": "web-dev",
+        "tech": [
+            "next",
+            "tw"
+        ],
+        "liveUrl": "https://www.ladypatriciadreamhomes.ca/",
+        "coverSrc": "/assets/plasma-vida.webp",
+        "gallery": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ],
+        "description": {
+            "en": "Health & wellness services platform",
+            "es": "Plataforma de servicios de salud y bienestar",
+            "fr": "Plateforme de services de santé et bien-être",
+            "de": "Plattform für Gesundheits- und Wellnessdienste",
+            "it": "Piattaforma di servizi salute e benessere"
+        },
+        "implementations": {
+            "en": [
+                "Headless CMS (Contentful)"
+            ],
+            "es": [
+                "CMS headless (Contentful)"
+            ],
+            "fr": [
+                "CMS headless (Contentful)"
+            ],
+            "de": [
+                "Headless CMS (Contentful)"
+            ],
+            "it": [
+                "CMS headless (Contentful)"
+            ]
+        },
+        "overview": {
+            "en": "SEO-driven website for a health and wellness provider offering IV therapy, PRP treatments, and on-demand nursing services. Built to structure services clearly, attract organic traffic, and convert visitors into inquiries.",
+            "es": "Sitio web enfocado en SEO para un proveedor de salud y bienestar que ofrece terapia IV, tratamientos PRP y servicios de enfermería a domicilio. Construido para estructurar servicios claramente, atraer tráfico orgánico y convertir visitantes en consultas.",
+            "fr": "Site web orienté SEO pour un fournisseur de services de santé et bien-être proposant des thérapies IV, des traitements PRP et des services infirmiers à domicile. Conçu pour structurer clairement les services, attirer du trafic organique et convertir les visiteurs en demandes.",
+            "de": "SEO-orientierte Website für einen Gesundheits- und Wellnessanbieter mit IV-Therapie, PRP-Behandlungen und On-Demand-Pflegediensten. Entwickelt, um Dienstleistungen klar zu strukturieren, organischen Traffic anzuziehen und Besucher in Anfragen umzuwandeln.",
+            "it": "Sito web guidato dal SEO per un fornitore di servizi salute e benessere che offre terapia IV, trattamenti PRP e servizi infermieristici on-demand. Costruito per strutturare chiaramente i servizi, attirare traffico organico e convertire i visitatori in richieste."
+        },
+        "keyFeatures": {
+            "en": [
+                "CMS-driven product catalog (IV therapy & PRP) with dynamic pages",
+                "Filtering system (price range, category, sorting) for catalog navigation",
+                "Separate service pages for nursing offerings (elderly care, post-hospital, etc.)",
+                "WhatsApp-first conversion flow with pre-filled messages",
+                "Promotional carousel highlighting discounted products"
+            ],
+            "es": [
+                "Catálogo de productos gestionado por CMS (terapia IV y PRP) con páginas dinámicas",
+                "Sistema de filtros (rango de precio, categoría, ordenamiento) para navegación del catálogo",
+                "Páginas separadas para servicios de enfermería (cuidado de adultos mayores, post-hospitalización, etc.)",
+                "Flujo de conversión enfocado en WhatsApp con mensajes prellenados",
+                "Carrusel promocional destacando productos con descuento"
+            ],
+            "fr": [
+                "Catalogue de produits piloté par CMS (thérapie IV et PRP) avec pages dynamiques",
+                "Système de filtrage (gamme de prix, catégorie, tri) pour la navigation dans le catalogue",
+                "Pages de services séparées pour les offres infirmières (soins aux personnes âgées, post-hospitalisation, etc.)",
+                "Flux de conversion centré sur WhatsApp avec messages préremplis",
+                "Carrousel promotionnel mettant en avant les produits en réduction"
+            ],
+            "de": [
+                "CMS-gesteuerter Produktkatalog (IV-Therapie & PRP) mit dynamischen Seiten",
+                "Filtersystem (Preisspanne, Kategorie, Sortierung) zur Navigation im Katalog",
+                "Separate Serviceseiten für Pflegeangebote (Seniorenbetreuung, Nachsorge usw.)",
+                "WhatsApp-orientierter Conversion-Flow mit vorausgefüllten Nachrichten",
+                "Werbe-Karussell zur Hervorhebung rabattierter Produkte"
+            ],
+            "it": [
+                "Catalogo prodotti gestito da CMS (terapia IV e PRP) con pagine dinamiche",
+                "Sistema di filtri (fascia di prezzo, categoria, ordinamento) per la navigazione del catalogo",
+                "Pagine separate per servizi infermieristici (assistenza anziani, post-ospedalizzazione, ecc.)",
+                "Flusso di conversione orientato a WhatsApp con messaggi precompilati",
+                "Carousel promozionale che evidenzia prodotti scontati"
+            ]
+        },
+        "technicalHighlights": {
+            "en": [
+                "Fully headless CMS architecture using Contentful (custom content modeling for products/services)",
+                "Dynamic page generation with metadata per product/service (SEO-focused)",
+                "Programmatic SEO structure with individual pages for each product/service, clean URL hierarchy, clean and intentional HTML optimized for crawling, Open Graph + structured data (JSON-LD)",
+                "Custom filtering logic for catalog (client-side UI + CMS data)",
+                "Carousel animated with Motion displaying discounted items, detecting discounts from CMS data",
+                "Performance optimizations with Next.js <Image> and lazy loading and lightweight animation resulting in fast load times"
+            ],
+            "es": [
+                "Arquitectura completamente headless CMS usando Contentful (modelado personalizado para productos/servicios)",
+                "Generación dinámica de páginas con metadata por producto/servicio (enfoque SEO)",
+                "Estructura SEO programática con páginas individuales para cada producto/servicio, jerarquía de URLs limpia, HTML limpio e intencional optimizado para crawling, Open Graph + datos estructurados (JSON-LD)",
+                "Lógica personalizada de filtros para el catálogo (UI del lado del cliente + datos del CMS)",
+                "Carrusel animado con Motion mostrando productos con descuento, detectando descuentos desde datos del CMS",
+                "Optimizaciones de rendimiento con Next.js <Image>, lazy loading y animaciones ligeras que resultan en tiempos de carga rápidos"
+            ],
+             "fr": [
+                "Architecture headless CMS complète utilisant Contentful (modélisation personnalisée pour produits/services)",
+                "Génération dynamique de pages avec métadonnées par produit/service (orientée SEO)",
+                "Structure SEO programmatique avec pages individuelles pour chaque produit/service, hiérarchie d’URL propre, HTML optimisé pour le crawling, Open Graph + données structurées (JSON-LD)",
+                "Logique de filtrage personnalisée pour le catalogue (UI côté client + données CMS)",
+                "Carrousel animé avec Motion affichant les articles en réduction, détectant les réductions depuis les données CMS",
+                "Optimisations de performance avec Next.js <Image>, lazy loading et animations légères résultant en des temps de chargement rapides"
+            ],
+            "de": [
+                "Vollständige Headless-CMS-Architektur mit Contentful (benutzerdefinierte Content-Modellierung für Produkte/Dienstleistungen)",
+                "Dynamische Seitengenerierung mit Metadaten pro Produkt/Dienstleistung (SEO-orientiert)",
+                "Programmgesteuerte SEO-Struktur mit individuellen Seiten für jedes Produkt/jede Dienstleistung, sauberer URL-Hierarchie, für Crawling optimiertem HTML, Open Graph + strukturierten Daten (JSON-LD)",
+                "Benutzerdefinierte Filterlogik für den Katalog (Client-UI + CMS-Daten)",
+                "Mit Motion animiertes Karussell zur Anzeige rabattierter Artikel basierend auf CMS-Daten",
+                "Performance-Optimierungen mit Next.js <Image>, Lazy Loading und leichten Animationen für schnelle Ladezeiten"
+            ],
+            "it": [
+                "Architettura headless CMS completa utilizzando Contentful (modellazione personalizzata per prodotti/servizi)",
+                "Generazione dinamica delle pagine con metadata per prodotto/servizio (orientato SEO)",
+                "Struttura SEO programmatica con pagine individuali per ogni prodotto/servizio, gerarchia URL pulita, HTML ottimizzato per il crawling, Open Graph + dati strutturati (JSON-LD)",
+                "Logica di filtro personalizzata per il catalogo (UI lato client + dati CMS)",
+                "Carousel animato con Motion che mostra articoli scontati, rilevando gli sconti dai dati CMS",
+                "Ottimizzazioni delle performance con Next.js <Image>, lazy loading e animazioni leggere che portano a tempi di caricamento rapidi"
+            ]
+        },
+        "results": {
+            "en": [
+                "Structured foundation for organic SEO growth",
+                "Clear service segmentation improves user navigation and understanding",
+                "High-intent conversion flow optimized for WhatsApp-based inquiries"
+            ],
+            "es": [
+                "Base estructurada para crecimiento orgánico mediante SEO",
+                "La segmentación clara de servicios mejora la navegación y comprensión del usuario",
+                "Flujo de conversión de alta intención optimizado para consultas vía WhatsApp"
+            ],
+            "fr": [
+                "Base structurée pour la croissance organique SEO",
+                "Segmentation claire des services améliorant la navigation et la compréhension utilisateur",
+                "Flux de conversion à forte intention optimisé pour les demandes via WhatsApp"
+            ],
+            "de": [
+                "Strukturierte Grundlage für organisches SEO-Wachstum",
+                "Klare Segmentierung der Dienstleistungen verbessert Navigation und Verständnis",
+                "Hochintentionierter Conversion-Flow optimiert für WhatsApp-Anfragen"
+            ],
+             "it": [
+                "Base strutturata per crescita SEO organica",
+                "Segmentazione chiara dei servizi che migliora navigazione e comprensione utente",
+                "Flusso di conversione ad alta intenzione ottimizzato per richieste tramite WhatsApp"
+            ]
+        },
+        "challenges": null,
+        "whatDemonstrates": null,
+        "myRole": {
+            "en": "Full build (architecture, development, CMS setup, SEO implementation, and copywriting). Delivered client handoff with CMS training for ongoing content management.",
+            "es": "Desarrollo completo (arquitectura, desarrollo, configuración del CMS, implementación SEO y copywriting). Entrega al cliente con capacitación en CMS para gestión continua de contenido.",
+            "fr": "Développement complet (architecture, développement, configuration CMS, implémentation SEO et rédaction). Livraison au client avec formation CMS pour la gestion continue du contenu.",
+            "de": "Komplette Umsetzung (Architektur, Entwicklung, CMS-Setup, SEO-Implementierung und Copywriting). Kundenübergabe inklusive CMS-Schulung für die laufende Inhaltsverwaltung.",
+            "it": "Sviluppo completo (architettura, sviluppo, configurazione CMS, implementazione SEO e copywriting). Consegna al cliente con formazione CMS per gestione continua dei contenuti."
+        }
+    },
+    {
+        "slug": "chess-by-me",
+        "title": "Chess By Me",
+        "type": "other",
+        "tech": [
+            "js",
+            "html",
+            "css"
+        ],
+        "liveUrl": "https://www.ladypatriciadreamhomes.ca/",
+        "coverSrc": "/assets/chess.webp",
+        "gallery": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ],
+        "description": {
+            "en": "Browser game of chess with functioning rules and clock",
+            "es": "Juego de ajedrez para navegador con reglas y reloj funcionales",
+            "fr": "Jeu d’échecs navigateur avec règles et horloge fonctionnelles",
+            "de": "Browser-Schachspiel mit funktionierenden Regeln und Schachuhr",
+            "it": "Gioco di scacchi browser con regole e orologio funzionanti"
+        },
+        "implementations": null,
+        "overview": {
+            "en": "Fully playable chess game built from scratch using the HTML canvas API, focusing on accurate rule enforcement, game state management, and real-time interaction without external libraries. Fully envisioned and written by me without outside help or inspiration.",
+            "es": "Juego de ajedrez completamente funcional construido desde cero usando la API de HTML canvas, enfocado en la implementación precisa de reglas, gestión de estado de partida e interacción en tiempo real sin librerías externas. Totalmente concebido y programado por mí sin ayuda o inspiración externa.",
+            "fr": "Jeu d’échecs entièrement jouable construit depuis zéro avec l’API HTML canvas, axé sur l’application précise des règles, la gestion de l’état de la partie et l’interaction en temps réel sans bibliothèques externes. Entièrement imaginé et développé par moi sans aide ni inspiration externe.",
+            "de": "Vollständig spielbares Schachspiel, von Grund auf mit der HTML-Canvas-API entwickelt, mit Fokus auf präzise Regelumsetzung, Spielstatusverwaltung und Echtzeitinteraktion ohne externe Bibliotheken. Vollständig von mir selbst konzipiert und entwickelt, ohne externe Hilfe oder Inspiration.",
+            "it": "Gioco di scacchi completamente giocabile costruito da zero utilizzando l'API HTML canvas, focalizzato su applicazione accurata delle regole, gestione dello stato di gioco e interazione real-time senza librerie esterne. Interamente ideato e sviluppato da me senza aiuti o ispirazioni esterne."
+        },
+        "keyFeatures": {
+            "en": [
+                "Complete implementation of chess rules, with legal move validation, check / checkmate detection, castling, en passant, promotion",
+                "Drag-and-drop piece interaction with visual feedback",
+                "Legal move highlighting (valid vs invalid states)",
+                "Real-time move notation log (standard algebraic notation)",
+                "Local multiplayer (same device)"
+            ],
+            "es": [
+                "Implementación completa de reglas de ajedrez, incluyendo validación de movimientos legales, detección de jaque / jaque mate, enroque, captura al paso y promoción",
+                "Interacción drag-and-drop de piezas con feedback visual",
+                "Resaltado de movimientos legales (estados válidos vs inválidos)",
+                "Registro de movimientos en tiempo real (notación algebraica estándar)",
+                "Multijugador local (mismo dispositivo)"
+            ],
+            "fr": [
+                "Implémentation complète des règles d’échecs avec validation des coups légaux, détection d’échec / mat, roque, prise en passant et promotion",
+                "Interaction drag-and-drop des pièces avec retour visuel",
+                "Mise en évidence des coups légaux (états valides vs invalides)",
+                "Journal des coups en temps réel (notation algébrique standard)",
+                "Multijoueur local (même appareil)"
+            ],
+            "de": [
+                "Vollständige Implementierung der Schachregeln mit legaler Zugvalidierung, Schach-/Matt-Erkennung, Rochade, En Passant und Umwandlung",
+                "Drag-and-Drop-Interaktion der Figuren mit visuellem Feedback",
+                "Hervorhebung legaler Züge (gültige vs. ungültige Zustände)",
+                "Echtzeit-Zugprotokoll (Standard-Algebraische Notation)",
+                "Lokaler Mehrspielermodus (gleiches Gerät)"
+            ],
+            "it": [
+                "Implementazione completa delle regole degli scacchi, inclusa validazione mosse legali, rilevamento scacco / scacco matto, arrocco, en passant e promozione",
+                "Interazione drag-and-drop dei pezzi con feedback visivo",
+                "Evidenziazione mosse legali (stati validi vs invalidi)",
+                "Registro mosse in tempo reale (notazione algebrica standard)",
+                "Multiplayer locale (stesso dispositivo)"
+            ]
+        },
+        "technicalHighlights": {
+            "en": [
+                "Board representation using a 2D array with piece instances (Piece class)",
+                "Move generation pipeline: each piece computes pseudo-legal moves, then moves are filtered via simulation to ensure king safety",
+                "Check detection system handling complex constraints (pinned pieces, multiple checks)",
+                "Canvas rendering where board state is mapped to pixel coordinates in real time"
+            ],
+            "es": [
+                "Representación del tablero usando un array 2D con instancias de piezas (clase Piece)",
+                "Pipeline de generación de movimientos: cada pieza calcula movimientos pseudo-legales, luego los movimientos son filtrados mediante simulación para garantizar la seguridad del rey",
+                "Sistema de detección de jaque manejando restricciones complejas (piezas clavadas, múltiples amenazas)",
+                "Renderizado en canvas donde el estado del tablero se mapea a coordenadas de píxeles en tiempo real"
+            ],
+             "fr": [
+                "Représentation du plateau utilisant un tableau 2D avec instances de pièces (classe Piece)",
+                "Pipeline de génération des coups : chaque pièce calcule des coups pseudo-légaux, puis les coups sont filtrés via simulation pour assurer la sécurité du roi",
+                "Système de détection d’échec gérant des contraintes complexes (pièces clouées, menaces multiples)",
+                "Rendu canvas où l’état du plateau est mappé en coordonnées de pixels en temps réel"
+            ],
+            "de": [
+                "Brettdarstellung mittels 2D-Array mit Figureninstanzen (Piece-Klasse)",
+                "Zuggenerierungs-Pipeline: Jede Figur berechnet pseudo-legale Züge, anschließend werden diese per Simulation gefiltert, um die Sicherheit des Königs zu gewährleisten",
+                "Schacherkennungssystem für komplexe Einschränkungen (gefesselte Figuren, mehrere Bedrohungen)",
+                "Canvas-Rendering, bei dem der Spielstatus in Echtzeit auf Pixelkoordinaten abgebildet wird"
+            ],
+            "it": [
+                "Rappresentazione della scacchiera tramite array 2D con istanze dei pezzi (classe Piece)",
+                "Pipeline di generazione mosse: ogni pezzo calcola mosse pseudo-legali, poi le mosse vengono filtrate tramite simulazione per garantire la sicurezza del re",
+                "Sistema di rilevamento scacco che gestisce vincoli complessi (pezzi inchiodati, minacce multiple)",
+                "Rendering canvas dove lo stato della scacchiera viene mappato in coordinate pixel in tempo reale"
+            ]
+        },
+        "results": null,
+        "challenges": {
+            "en": [
+                "Designing a performant move validation system without excessive recursion",
+                "Handling edge cases like pinned pieces and multi-source checks",
+                "Keeping rendering and game logic in sync in a real-time loop"
+            ],
+            "es": [
+                "Diseñar un sistema eficiente de validación de movimientos sin recursión excesiva",
+                "Manejar casos límite como piezas clavadas y amenazas múltiples",
+                "Mantener sincronizados renderizado y lógica de juego en un loop en tiempo real"
+            ],
+            "fr": [
+                "Concevoir un système performant de validation des coups sans récursion excessive",
+                "Gérer des cas limites comme les pièces clouées et les menaces multiples",
+                "Maintenir synchronisés le rendu et la logique de jeu dans une boucle temps réel"
+            ],
+            "de": [
+                "Entwicklung eines performanten Systems zur Zugvalidierung ohne übermäßige Rekursion",
+                "Behandlung von Sonderfällen wie gefesselten Figuren und mehrfachen Bedrohungen",
+                "Synchronisierung von Rendering und Spiellogik in einer Echtzeitschleife"
+            ],
+            "it": [
+                "Progettare un sistema efficiente di validazione mosse senza ricorsione eccessiva",
+                "Gestire edge case come pezzi inchiodati e minacce multiple",
+                "Mantenere sincronizzati rendering e logica di gioco in un loop real-time"
+            ]
+        },
+        "whatDemonstrates": {
+            "en": [
+                "Strong understanding of state-driven systems",
+                "Ability to implement complex rule engines from scratch",
+                "Problem-solving without reliance on frameworks or external libraries"
+            ],
+            "es": [
+                "Fuerte comprensión de sistemas basados en estado",
+                "Capacidad para implementar motores de reglas complejas desde cero",
+                "Resolución de problemas sin depender de frameworks o librerías externas"
+            ],
+            "fr": [
+                "Solide compréhension des systèmes basés sur l’état",
+                "Capacité à implémenter des moteurs de règles complexes depuis zéro",
+                "Résolution de problèmes sans dépendre de frameworks ou bibliothèques externes"
+            ],
+            "de": [
+                "Starkes Verständnis zustandsbasierter Systeme",
+                "Fähigkeit, komplexe Regel-Engines von Grund auf zu implementieren",
+                "Problemlösung ohne Abhängigkeit von Frameworks oder externen Bibliotheken"
+            ],
+            "it": [
+                "Forte comprensione di sistemi basati sullo stato",
+                "Capacità di implementare motori di regole complesse da zero",
+                "Problem solving senza dipendere da framework o librerie esterne"
+            ]
+        },
+        "myRole": {
+            "en": "Made fully by me without external libraries or code generation tools (AI).",
+            "es": "Desarrollado completamente por mí sin librerías externas ni herramientas de generación de código (IA).",
+            "fr": "Développé entièrement par moi sans bibliothèques externes ni outils de génération de code.",
+            "de": "Vollständig von mir entwickelt, ohne externe Bibliotheken oder Code-Generierungstools.",
+            "it": "Realizzato completamente da me senza librerie esterne né strumenti di generazione codice."
+        }
+    },
+    {
+        "slug": "icounter",
+        "title": "iCounter",
+        "type": "web-dev",
+        "tech": [
+            "py"
+        ],
+        "liveUrl": null,
+        "coverSrc": "/assets/icounter.webp",
+        "gallery": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ],
+        "description": {
+            "en": "Desktop app made with Python for tracking my work and earnings",
+            "es": "Aplicación de escritorio hecha en Python para llevar cuenta de mi trabajo y ganancias",
+            "fr": "Application desktop en Python pour suivre mon travail et mes revenus",
+            "de": "Desktop-App in Python zur Verfolgung meiner Arbeit und Einnahmen",
+            "it": "App desktop in Python per tracciare lavoro e guadagni"
+        },
+        "implementations": null,
+        "overview": {
+            "en": "Desktop application built to track translation work (paid per record), automating logging, earnings calculation, and real-time productivity metrics. Designed to replace manual tracking and provide immediate feedback during work sessions.",
+            "es": "Aplicación de escritorio construida para rastrear trabajo de traducción (pagado por registro), automatizando el registro, cálculo de ganancias y métricas de productividad en tiempo real. Diseñada para reemplazar el seguimiento manual y proporcionar feedback inmediato durante sesiones de trabajo.",
+            "fr": "Application desktop conçue pour suivre le travail de traduction (payé par enregistrement), automatisant le suivi, le calcul des revenus et les métriques de productivité en temps réel. Créée pour remplacer le suivi manuel et fournir un retour immédiat pendant les sessions de travail.",
+            "de": "Desktop-Anwendung zur Verfolgung von Übersetzungsarbeit (Bezahlung pro Datensatz), die Protokollierung, Einkommensberechnung und Echtzeit-Produktivitätsmetriken automatisiert. Entwickelt, um manuelle Nachverfolgung zu ersetzen und sofortiges Feedback während Arbeitssitzungen bereitzustellen.",
+            "it": "Applicazione desktop costruita per tracciare lavoro di traduzione (pagato per record), automatizzando registrazione, calcolo guadagni e metriche di produttività in tempo reale. Progettata per sostituire il tracciamento manuale e fornire feedback immediato durante le sessioni di lavoro."
+        },
+        "keyFeatures": {
+            "en": [
+                "Real-time tracking of records translated and earnings",
+                "Session and sprint-based time tracking (start/stop workflow)",
+                "Live productivity metrics including records per hour, average time per record, earnings per hour, total session time and earnings",
+                "Automatic logging to Excel file",
+                "Pre-structured Excel output for persistent record keeping"
+            ],
+            "es": [
+                "Seguimiento en tiempo real de registros traducidos y ganancias",
+                "Control de tiempo por sesión y sprint (flujo start/stop)",
+                "Métricas de productividad en vivo incluyendo registros por hora, tiempo promedio por registro, ganancias por hora, tiempo total de sesión y ganancias",
+                "Registro automático en archivo Excel",
+                "Salida Excel preestructurada para almacenamiento persistente"
+            ],
+            "fr": [
+                "Suivi en temps réel des enregistrements traduits et des revenus",
+                "Suivi du temps par session et sprint (workflow démarrer/arrêter)",
+                "Métriques de productivité en direct incluant enregistrements par heure, temps moyen par enregistrement, revenus par heure, temps total de session et revenus",
+                "Journalisation automatique dans un fichier Excel",
+                "Sortie Excel préstructurée pour une conservation persistante des données"
+            ],
+            "de": [
+                "Echtzeit-Tracking übersetzter Datensätze und Einnahmen",
+                "Zeitverfolgung basierend auf Sitzungen und Sprints (Start/Stopp-Workflow)",
+                "Live-Produktivitätsmetriken einschließlich Datensätze pro Stunde, durchschnittliche Zeit pro Datensatz, Einnahmen pro Stunde, gesamte Sitzungszeit und Einnahmen",
+                "Automatische Protokollierung in Excel-Dateien",
+                "Vorstrukturierte Excel-Ausgabe zur dauerhaften Datenspeicherung"
+            ],
+            "it": [
+                "Implementazione completa delle regole degli scacchi, inclusa validazione mosse legali, rilevamento scacco / scacco matto, arrocco, en passant e promozione",
+                "Interazione drag-and-drop dei pezzi con feedback visivo",
+                "Evidenziazione mosse legali (stati validi vs invalidi)",
+                "Registro mosse in tempo reale (notazione algebrica standard)",
+                "Multiplayer locale (stesso dispositivo)"
+            ]
+        },
+        "technicalHighlights": {
+            "en": [
+                "Modular OOP architecture with clear separation of concerns",
+                "Unidirectional data flow: UI triggers actions, actions update state/data, state notifies UI",
+                "Observer-style pattern for UI updates via state subscriptions",
+                "Timer system that tracks session, sprint, and per-record timing concurrently"
+            ],
+            "es": [
+                "Arquitectura OOP modular con separación clara de responsabilidades",
+                "Flujo de datos unidireccional: la UI dispara acciones, las acciones actualizan estado/datos y el estado notifica a la UI",
+                "Patrón tipo observer para actualizaciones de UI mediante suscripciones al estado",
+                "Sistema de temporizadores que rastrea simultáneamente sesión, sprint y tiempo por registro"
+            ],
+             "fr": [
+                "Architecture OOP modulaire avec séparation claire des responsabilités",
+                "Flux de données unidirectionnel : l’UI déclenche des actions, les actions mettent à jour l’état/données et l’état notifie l’UI",
+                "Pattern de type observer pour les mises à jour UI via abonnements à l’état",
+                "Système de timers suivant simultanément session, sprint et temps par enregistrement"
+            ],
+            "de": [
+                "Modulare OOP-Architektur mit klarer Trennung der Verantwortlichkeiten",
+                "Unidirektionaler Datenfluss: UI löst Aktionen aus, Aktionen aktualisieren Zustand/Daten und der Zustand benachrichtigt die UI",
+                "Observer-ähnliches Muster für UI-Updates über Zustandsabonnements",
+                "Timersystem zur gleichzeitigen Verfolgung von Sitzung, Sprint und Zeit pro Datensatz"
+            ],
+            "it": [
+                "Tracciamento in tempo reale di record tradotti e guadagni",
+                "Monitoraggio tempo basato su sessioni e sprint (workflow start/stop)",
+                "Metriche di produttività live incluse record per ora, tempo medio per record, guadagni per ora, tempo totale sessione e guadagni",
+                "Registrazione automatica in file Excel",
+                "Output Excel prestrutturato per archiviazione persistente"
+            ]
+        },
+        "results": null,
+        "challenges": {
+            "en": [
+                "Maintaining accurate time-based metrics across overlapping timers (session vs sprint vs per-letter)",
+                "Designing a clean interaction model between UI, state, and data layers",
+                "Ensuring real-time stat updates without introducing inconsistency",
+                "Handling Excel formatting and reliable append-based persistence"
+            ],
+            "es": [
+                "Mantener métricas precisas basadas en tiempo entre temporizadores superpuestos (sesión vs sprint vs por item)",
+                "Diseñar un modelo limpio de interacción entre UI, estado y capas de datos",
+                "Garantizar actualizaciones estadísticas en tiempo real sin inconsistencias",
+                "Manejo de formato Excel y persistencia confiable basada en append"
+            ],
+            "fr": [
+                "Maintenir des métriques temporelles précises entre plusieurs timers superposés (session vs sprint vs par lettre)",
+                "Concevoir un modèle propre d’interaction entre UI, état et couches de données",
+                "Garantir des mises à jour statistiques temps réel sans incohérences",
+                "Gestion du format Excel et persistance append fiable"
+            ],
+            "de": [
+                "Aufrechterhaltung präziser zeitbasierter Metriken bei überlappenden Timern (Sitzung vs. Sprint vs. pro Brief)",
+                "Entwicklung eines sauberen Interaktionsmodells zwischen UI-, Zustands- und Datenschichten",
+                "Sicherstellung von Echtzeit-Statistikupdates ohne Inkonsistenzen",
+                "Umgang mit Excel-Formatierung und zuverlässiger Append-basierter Persistenz"
+            ],
+            "it": [
+                "Mantenere metriche temporali accurate tra timer sovrapposti (sessione vs sprint vs per lettera)",
+                "Progettare un modello pulito di interazione tra UI, stato e layer dati",
+                "Garantire aggiornamenti statistiche real-time senza introdurre inconsistenze",
+                "Gestione formattazione Excel e persistenza affidabile basata su append"
+            ]
+        },
+        "whatDemonstrates": {
+            "en": [
+                "Ability to design clean, modular architectures in a desktop environment",
+                "Strong understanding of state management and data flow patterns",
+                "Practical application of automation to eliminate manual workflows",
+                "Building tools tailored to actual user needs"
+            ],
+            "es": [
+                "Capacidad para diseñar arquitecturas limpias y modulares en un entorno de escritorio",
+                "Fuerte comprensión de patrones de gestión de estado y flujo de datos",
+                "Aplicación práctica de automatización para eliminar flujos manuales",
+                "Construcción de herramientas adaptadas a necesidades reales de usuario"
+            ],
+            "fr": [
+                "Capacité à concevoir des architectures propres et modulaires dans un environnement desktop",
+                "Solide compréhension de la gestion d’état et des patterns de flux de données",
+                "Application pratique de l’automatisation pour éliminer les workflows manuels",
+                "Création d’outils adaptés à de vrais besoins utilisateurs"
+            ],
+            "de": [
+                "Fähigkeit, saubere und modulare Architekturen in Desktop-Umgebungen zu entwerfen",
+                "Starkes Verständnis von State-Management- und Datenflussmustern",
+                "Praktische Anwendung von Automatisierung zur Eliminierung manueller Workflows",
+                "Entwicklung von Tools, die auf reale Nutzerbedürfnisse zugeschnitten sind"
+            ],
+            "it": [
+                "Capacità di progettare architetture pulite e modulari in ambiente desktop",
+                "Forte comprensione di gestione stato e pattern di flusso dati",
+                "Applicazione pratica dell'automazione per eliminare workflow manuali",
+                "Costruzione di strumenti adattati a reali necessità utente"
+            ]
+        },
+        "myRole": {
+            "en": "Made fully by me.",
+            "es": "Desarrollado completamente por mí.",
+            "fr": "Développé entièrement par moi.",
+            "de": "Vollständig von mir entwickelt.",
+            "it": "Realizzato completamente da me."
+        }
+    },
+    {
+        "slug": "hivissual",
+        "title": "Hivissual",
+        "type": "web-dev",
+        "tech": [
+            "next",
+            "tw"
+        ],
+        "liveUrl": null,
+        "coverSrc": "/assets/icounter.webp",
+        "gallery": [
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp",
+            "/assets/plasma-vida.webp"
+        ],
+        "description": {
+            "en": "Professional portfolio website for a photographer and content creator",
+            "es": "Aplicación de escritorio hecha en Python para llevar cuenta de mi trabajo y ganancias",
+            "fr": "Application desktop en Python pour suivre mon travail et mes revenus",
+            "de": "Desktop-App in Python zur Verfolgung meiner Arbeit und Einnahmen",
+            "it": "App desktop in Python per tracciare lavoro e guadagni"
+        },
+        "implementations": null,
+        "overview": {
+            "en": "Desktop application built to track translation work (paid per record), automating logging, earnings calculation, and real-time productivity metrics. Designed to replace manual tracking and provide immediate feedback during work sessions.",
+            "es": "Aplicación de escritorio construida para rastrear trabajo de traducción (pagado por registro), automatizando el registro, cálculo de ganancias y métricas de productividad en tiempo real. Diseñada para reemplazar el seguimiento manual y proporcionar feedback inmediato durante sesiones de trabajo.",
+            "fr": "Application desktop conçue pour suivre le travail de traduction (payé par enregistrement), automatisant le suivi, le calcul des revenus et les métriques de productivité en temps réel. Créée pour remplacer le suivi manuel et fournir un retour immédiat pendant les sessions de travail.",
+            "de": "Desktop-Anwendung zur Verfolgung von Übersetzungsarbeit (Bezahlung pro Datensatz), die Protokollierung, Einkommensberechnung und Echtzeit-Produktivitätsmetriken automatisiert. Entwickelt, um manuelle Nachverfolgung zu ersetzen und sofortiges Feedback während Arbeitssitzungen bereitzustellen.",
+            "it": "Applicazione desktop costruita per tracciare lavoro di traduzione (pagato per record), automatizzando registrazione, calcolo guadagni e metriche di produttività in tempo reale. Progettata per sostituire il tracciamento manuale e fornire feedback immediato durante le sessioni di lavoro."
+        },
+        "keyFeatures": {
+            "en": [
+                "Real-time tracking of records translated and earnings",
+                "Session and sprint-based time tracking (start/stop workflow)",
+                "Live productivity metrics including records per hour, average time per record, earnings per hour, total session time and earnings",
+                "Automatic logging to Excel file",
+                "Pre-structured Excel output for persistent record keeping"
+            ],
+            "es": [
+                "Seguimiento en tiempo real de registros traducidos y ganancias",
+                "Control de tiempo por sesión y sprint (flujo start/stop)",
+                "Métricas de productividad en vivo incluyendo registros por hora, tiempo promedio por registro, ganancias por hora, tiempo total de sesión y ganancias",
+                "Registro automático en archivo Excel",
+                "Salida Excel preestructurada para almacenamiento persistente"
+            ],
+            "fr": [
+                "Suivi en temps réel des enregistrements traduits et des revenus",
+                "Suivi du temps par session et sprint (workflow démarrer/arrêter)",
+                "Métriques de productivité en direct incluant enregistrements par heure, temps moyen par enregistrement, revenus par heure, temps total de session et revenus",
+                "Journalisation automatique dans un fichier Excel",
+                "Sortie Excel préstructurée pour une conservation persistante des données"
+            ],
+            "de": [
+                "Echtzeit-Tracking übersetzter Datensätze und Einnahmen",
+                "Zeitverfolgung basierend auf Sitzungen und Sprints (Start/Stopp-Workflow)",
+                "Live-Produktivitätsmetriken einschließlich Datensätze pro Stunde, durchschnittliche Zeit pro Datensatz, Einnahmen pro Stunde, gesamte Sitzungszeit und Einnahmen",
+                "Automatische Protokollierung in Excel-Dateien",
+                "Vorstrukturierte Excel-Ausgabe zur dauerhaften Datenspeicherung"
+            ],
+            "it": [
+                "Implementazione completa delle regole degli scacchi, inclusa validazione mosse legali, rilevamento scacco / scacco matto, arrocco, en passant e promozione",
+                "Interazione drag-and-drop dei pezzi con feedback visivo",
+                "Evidenziazione mosse legali (stati validi vs invalidi)",
+                "Registro mosse in tempo reale (notazione algebrica standard)",
+                "Multiplayer locale (stesso dispositivo)"
+            ]
+        },
+        "technicalHighlights": {
+            "en": [
+                "Modular OOP architecture with clear separation of concerns",
+                "Unidirectional data flow: UI triggers actions, actions update state/data, state notifies UI",
+                "Observer-style pattern for UI updates via state subscriptions",
+                "Timer system that tracks session, sprint, and per-record timing concurrently"
+            ],
+            "es": [
+                "Arquitectura OOP modular con separación clara de responsabilidades",
+                "Flujo de datos unidireccional: la UI dispara acciones, las acciones actualizan estado/datos y el estado notifica a la UI",
+                "Patrón tipo observer para actualizaciones de UI mediante suscripciones al estado",
+                "Sistema de temporizadores que rastrea simultáneamente sesión, sprint y tiempo por registro"
+            ],
+             "fr": [
+                "Architecture OOP modulaire avec séparation claire des responsabilités",
+                "Flux de données unidirectionnel : l’UI déclenche des actions, les actions mettent à jour l’état/données et l’état notifie l’UI",
+                "Pattern de type observer pour les mises à jour UI via abonnements à l’état",
+                "Système de timers suivant simultanément session, sprint et temps par enregistrement"
+            ],
+            "de": [
+                "Modulare OOP-Architektur mit klarer Trennung der Verantwortlichkeiten",
+                "Unidirektionaler Datenfluss: UI löst Aktionen aus, Aktionen aktualisieren Zustand/Daten und der Zustand benachrichtigt die UI",
+                "Observer-ähnliches Muster für UI-Updates über Zustandsabonnements",
+                "Timersystem zur gleichzeitigen Verfolgung von Sitzung, Sprint und Zeit pro Datensatz"
+            ],
+            "it": [
+                "Tracciamento in tempo reale di record tradotti e guadagni",
+                "Monitoraggio tempo basato su sessioni e sprint (workflow start/stop)",
+                "Metriche di produttività live incluse record per ora, tempo medio per record, guadagni per ora, tempo totale sessione e guadagni",
+                "Registrazione automatica in file Excel",
+                "Output Excel prestrutturato per archiviazione persistente"
+            ]
+        },
+        "results": null,
+        "challenges": {
+            "en": [
+                "Maintaining accurate time-based metrics across overlapping timers (session vs sprint vs per-letter)",
+                "Designing a clean interaction model between UI, state, and data layers",
+                "Ensuring real-time stat updates without introducing inconsistency",
+                "Handling Excel formatting and reliable append-based persistence"
+            ],
+            "es": [
+                "Mantener métricas precisas basadas en tiempo entre temporizadores superpuestos (sesión vs sprint vs por item)",
+                "Diseñar un modelo limpio de interacción entre UI, estado y capas de datos",
+                "Garantizar actualizaciones estadísticas en tiempo real sin inconsistencias",
+                "Manejo de formato Excel y persistencia confiable basada en append"
+            ],
+            "fr": [
+                "Maintenir des métriques temporelles précises entre plusieurs timers superposés (session vs sprint vs par lettre)",
+                "Concevoir un modèle propre d’interaction entre UI, état et couches de données",
+                "Garantir des mises à jour statistiques temps réel sans incohérences",
+                "Gestion du format Excel et persistance append fiable"
+            ],
+            "de": [
+                "Aufrechterhaltung präziser zeitbasierter Metriken bei überlappenden Timern (Sitzung vs. Sprint vs. pro Brief)",
+                "Entwicklung eines sauberen Interaktionsmodells zwischen UI-, Zustands- und Datenschichten",
+                "Sicherstellung von Echtzeit-Statistikupdates ohne Inkonsistenzen",
+                "Umgang mit Excel-Formatierung und zuverlässiger Append-basierter Persistenz"
+            ],
+            "it": [
+                "Mantenere metriche temporali accurate tra timer sovrapposti (sessione vs sprint vs per lettera)",
+                "Progettare un modello pulito di interazione tra UI, stato e layer dati",
+                "Garantire aggiornamenti statistiche real-time senza introdurre inconsistenze",
+                "Gestione formattazione Excel e persistenza affidabile basata su append"
+            ]
+        },
+        "whatDemonstrates": {
+            "en": [
+                "Ability to design clean, modular architectures in a desktop environment",
+                "Strong understanding of state management and data flow patterns",
+                "Practical application of automation to eliminate manual workflows",
+                "Building tools tailored to actual user needs"
+            ],
+            "es": [
+                "Capacidad para diseñar arquitecturas limpias y modulares en un entorno de escritorio",
+                "Fuerte comprensión de patrones de gestión de estado y flujo de datos",
+                "Aplicación práctica de automatización para eliminar flujos manuales",
+                "Construcción de herramientas adaptadas a necesidades reales de usuario"
+            ],
+            "fr": [
+                "Capacité à concevoir des architectures propres et modulaires dans un environnement desktop",
+                "Solide compréhension de la gestion d’état et des patterns de flux de données",
+                "Application pratique de l’automatisation pour éliminer les workflows manuels",
+                "Création d’outils adaptés à de vrais besoins utilisateurs"
+            ],
+            "de": [
+                "Fähigkeit, saubere und modulare Architekturen in Desktop-Umgebungen zu entwerfen",
+                "Starkes Verständnis von State-Management- und Datenflussmustern",
+                "Praktische Anwendung von Automatisierung zur Eliminierung manueller Workflows",
+                "Entwicklung von Tools, die auf reale Nutzerbedürfnisse zugeschnitten sind"
+            ],
+            "it": [
+                "Capacità di progettare architetture pulite e modulari in ambiente desktop",
+                "Forte comprensione di gestione stato e pattern di flusso dati",
+                "Applicazione pratica dell'automazione per eliminare workflow manuali",
+                "Costruzione di strumenti adattati a reali necessità utente"
+            ]
+        },
+        "myRole": {
+            "en": "Made fully by me.",
+            "es": "Desarrollado completamente por mí.",
+            "fr": "Développé entièrement par moi.",
+            "de": "Vollständig von mir entwickelt.",
+            "it": "Realizzato completamente da me."
         }
     }
 ]

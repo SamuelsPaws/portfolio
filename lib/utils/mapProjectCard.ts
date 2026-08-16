@@ -8,7 +8,7 @@ export default function mapProjectCard(project: ProjectData, locale: LocaleKey):
         type: project.type,
         description: project.description[locale],
         tech: project.tech,
-        implementations: project.implementations[locale],
+        implementations: project.implementations ? project.implementations[locale] : null,
         liveUrl: project.liveUrl,
         imgSrc: project.coverSrc,
         slug: project.slug

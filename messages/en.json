@@ -147,7 +147,7 @@
             ],
             "results": [],
             "challenges": [
-                "Maintaining accurate time-based metrics across overlapping timers (session vs sprint vs per-letter)",
+                "Maintaining accurate time-based metrics across overlapping timers (session vs sprint vs per-item)",
                 "Designing a clean interaction model between UI, state, and data layers",
                 "Ensuring real-time stat updates without introducing inconsistency",
                 "Handling Excel formatting and reliable append-based persistence"
@@ -191,7 +191,7 @@
         "h1-2": "Feel free to explore my work.",
         "heroCta": "Take a Look",
         "h2WebDev": "Web Development",
-        "beyondSectionTitle": "Beyond Web Development",
+        "h2Beyond": "Beyond Web Development",
         "moreProjects": "See More Projects"
     },
     "AboutPage": {

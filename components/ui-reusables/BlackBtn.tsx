@@ -31,16 +31,16 @@ const BlackBtn = ({ href, label, external, className, size }: Props) => {
     const getTextSize = (): string => {
         switch (size) {
             case 'sm':
-                return 'text-sm md:text-lg';
+                return 'text-my-lg';
             case 'md':
-                return 'text-md md:text-xl';
+                return 'text-my-xl';
             case 'lg':
-                return 'text-lg md:text-3xl';
+                return 'text-my-2xl';
         }
     }
 
     const defaultCn = clsx(
-        "w-fit block mx-auto",
+        "w-fit block",
         getPadding(),
         "flex items-center gap-4",
         getTextSize(),
@@ -54,6 +54,8 @@ const BlackBtn = ({ href, label, external, className, size }: Props) => {
             href={href}
             target="_blank"
             className={clsx(defaultCn, className)}
+            variants={variants}
+            whileHover="hovered"
         >
             {label}
         </motion.a>
@@ -62,13 +64,13 @@ const BlackBtn = ({ href, label, external, className, size }: Props) => {
 
     return (
     <motion.div
+        className={clsx("w-fit block rounded-2xl", className)}
         variants={variants}
         whileHover="hovered"
-        className="w-fit block mx-auto rounded-2xl"
     >
         <Link
             href={href}
-            className={clsx(defaultCn, className)}
+            className={defaultCn}
         >
             {label}
         </Link>

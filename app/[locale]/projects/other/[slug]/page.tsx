@@ -1,47 +1,36 @@
-import { getTranslations } from "next-intl/server";
+import { notFound } from "next/navigation";
 import ProjectPageTemplate from "../../ProjectPageTemplate";
-import projectsJson from "@/data/projects.json"
-import { ProjectData, Slug } from "@/lib/types/projectShort";
+import projectData from "@/data/projects.json"
+import { ProjectData } from "@/lib/types/projectData";
+import { LocaleKey } from "@/lib/types/localeKey";
 
 // export async function generateStaticParams() {
 //     return [
-//         { slug: 'chess-by-me' },
-//         { slug: 'icounter' },
+//         { slug: 'lpdh' },
+//         { slug: 'plasma-vida' },
+//         { slug: 'dwm' },
 //     ]
 // }
 
 type Props = {
     params: Promise<{
-        slug: Slug
+        slug: string,
+        locale: LocaleKey
     }>
 }
 
 export default async function OtherProject({ params }: Props) {
-    const { slug } = await params
-    const t = await getTranslations('Projects')
-    const projectJson = projectsJson[slug] as ProjectData
+    const { slug, locale } = await params
+    const project = projectData.find(el => el.slug === slug)
+
+    if (project === undefined) {
+        notFound()
+    }
 
     return (
     <ProjectPageTemplate
-        projectData={{
-            title: projectJson.title,
-            imgUrl: projectJson.imgUrl,
-            tech: projectJson.tech,
-            implementations: projectJson.implementations,
-            liveUrl: projectJson.liveUrl,
-            galleryImgUrls: projectJson.galleryImgUrls
-        }}
-        projectTranslations={{
-            description: t(`${slug}.description`),
-            implementations: null,
-            overview: t(`${slug}.overview`),
-            keyFeatures: t.raw(`${slug}.keyFeatures`),
-            technicalHighlights: t.raw(`${slug}.technicalHighlights`),
-            results: t.raw(`${slug}.results`),
-            challenges: t.raw(`${slug}.challenges`),
-            whatDemonstrates: t.raw(`${slug}.whatDemonstrates`),
-            myRole: t.raw(`${slug}.myRole`),
-        }}
+        project={project}
+        locale={locale}
     />
     )
 }

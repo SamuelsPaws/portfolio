@@ -62,10 +62,10 @@ const LangMenu = ({ changeLocale, isMenuOpen, onClose, langBtnCurrent }: Props) 
     <motion.div
         className={clsx(
             "absolute top-full left-1/2 -translate-x-1/2",
-            "p-2",
-            'flex gap-2',
-            "bg-sky-200",
-            "rounded-b-2xl",
+            "p-0",
+            'flex',
+            "bg-br-white",
+            "border-x border-b border-gray-300 rounded-b-2xl overflow-hidden shadow-md",
         )}
         ref={ref}
         variants={variants}
@@ -78,6 +78,7 @@ const LangMenu = ({ changeLocale, isMenuOpen, onClose, langBtnCurrent }: Props) 
                 assocLocale={el}
                 changeLocale={changeLocale}
                 label={el === 'it' ? 'ITA' : el.toUpperCase()}
+                isLast={index >= locales.length - 2}
             />
         )}
     </motion.div>

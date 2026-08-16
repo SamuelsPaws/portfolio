@@ -5,7 +5,7 @@ export type ProjectShort = {
     type: string,
     description: string,
     tech: string[],
-    implementations: string[],
+    implementations: string[] | null,
     liveUrl: string | null,
     imgSrc: string,
     slug: string

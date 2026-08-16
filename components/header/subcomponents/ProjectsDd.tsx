@@ -52,7 +52,7 @@ const ProjectsDd = ({ isDdOpen, setIsDdOpen, btnCurrent }: Props) => {
             w-max
             absolute top-full left-1/2 -translate-x-1/2
             flex flex-col
-            border-2 border-black rounded-b-2xl overflow-hidden"
+            border-x-2 border-b-2 border-black rounded-b-2xl overflow-hidden"
         variants={variants}
         animate={isDdOpen ? 'open' : 'closed'}
         initial={false}
@@ -63,7 +63,7 @@ const ProjectsDd = ({ isDdOpen, setIsDdOpen, btnCurrent }: Props) => {
             className='
                 p-4
                 grid place-content-center
-                bg-mywhite hover:bg-gray-300
+                bg-br-white hover:bg-gray-300 duration-200
                 text-lg'
         >
             Web Development
@@ -74,7 +74,7 @@ const ProjectsDd = ({ isDdOpen, setIsDdOpen, btnCurrent }: Props) => {
             className='
                 p-4
                 grid place-content-center
-                bg-mywhite hover:bg-gray-300
+                bg-br-white hover:bg-gray-300 duration-200
                 text-lg
                 border-t-2 border-black'
         >

@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import Image from "next/image"
@@ -6,19 +7,22 @@ interface Props {
     label: string;
     changeLocale: (locale: string) => void;
     assocLocale: string;
+    isLast: boolean;
 }
 
-const LangItemBtn = ({ label, changeLocale, assocLocale }: Props) => {
+const LangItemBtn = ({ label, changeLocale, assocLocale, isLast }: Props) => {
     const t = useTranslations('Meta')
 
     return (
     <button
         onClick={() => changeLocale(assocLocale)}
-        className="
-            w-24 py-2
-            flex justify-center items-center gap-3 lg:gap-2
-            bg-mywhite
-            rounded-xl select-none lg:hover:bg-sky-100 duration-200"
+        className={clsx(
+            "px-4 py-4",
+            "flex justify-center items-center gap-3 lg:gap-2",
+            "bg-br-white",
+            "select-none lg:hover:bg-gray-200 duration-200",
+            !isLast && "border-r border-gray-400"
+        )}
     >
         <div className="
             h-8 aspect-square
@@ -33,7 +37,7 @@ const LangItemBtn = ({ label, changeLocale, assocLocale }: Props) => {
                 alt={t('flagAlt')}
             />
         </div>
-        <span className="text-md lg:text-lg">{label}</span>
+        <span className="text-md lg:text-lg text-black">{label}</span>
     </button>
     )
 }

@@ -1,3 +1,4 @@
+import CustomIcon from "@/components/CustomIcon";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -8,8 +9,8 @@ export default function About() {
     <main className="header-padding">
         <section className="
             px-8 pt-8 pb-16
-            lg:px-32 lg:pt-16 lg:pb-16
-            bg-mywhite"
+            lg:px-32 lg:py-24
+            bg-br-white"
         >
             <h1 className="
                 mb-8 lg:mb-16
@@ -43,7 +44,7 @@ export default function About() {
                         flex flex-col"
                     >
                         <h3 className="
-                            mb-4 lg:mb-2
+                            mb-4 lg:mb-4
                             text-2xl lg:text-3xl font-semibold"
                         >
                             Samuel Baquero, {t('role')}
@@ -57,19 +58,28 @@ export default function About() {
                         >
                             <span className="
                                 h-8
+                                flex items-center
                                 text-green-700 text-md lg:text-xl"
                             >
-                                <i className="fa fa-map-marker mr-2" aria-hidden="true"></i>
+                                <CustomIcon
+                                    iconId="location"
+                                    className="mr-2"
+                                />
                                 Quito, Ecuador
                             </span>
                             <span className="
                                 h-8
+                                flex items-center
                                 text-green-700 text-md lg:text-xl"
                             >
+                                <CustomIcon
+                                    iconId="check"
+                                    className="mr-2"
+                                />
                                 {t('statusTag-1')}
                             </span>
                         </div>
-                        <p className="text-md xl:text-xl text-gray-600 text-justify leading-8 lg:leading-8">
+                        <p className="text-my-lg text-gray-600 text-justify leading-8 lg:leading-8">
                             {t('overview')}
                         </p>
                     </div>
@@ -189,8 +199,8 @@ export default function About() {
                         {t('focusedOnFreelance')}
                     </span>
                 </div>
-                <div className="
-                    w-full lg:w-150
+                {/* <div className="
+                    w-full lg:w-150 
                     p-4 lg:p-8
                     text-md lg:text-xl
                     border-2 border-black rounded-2xl"
@@ -199,7 +209,7 @@ export default function About() {
                         <i className="fa fa-check text-green-700 mr-4" aria-hidden="true"></i>
                         {t('projectStructuring')}
                     </span>
-                </div>
+                </div> */}
                 <div className="
                     w-full lg:w-150
                     p-4 lg:p-8

@@ -1,0 +1,21 @@
+import CustomIcon from "@/components/CustomIcon";
+
+interface Props {
+    text: string;
+}
+
+const ListItem = ({ text }: Props) => {
+    return (
+    <li>
+        <p className="text-my-md text-gray-700">
+            <CustomIcon
+                iconId="check"
+                className="mr-2"
+            />
+            <span>{text}</span>
+        </p>
+    </li>
+    )
+}
+
+export default ListItem

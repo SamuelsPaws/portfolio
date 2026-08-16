@@ -1,244 +1,148 @@
-import RoundBlackExternal from "@/components/ui-reusables/RoundBlackExternal";
 import Image from "next/image";
 import techData from "@/data/tech.json"
-import { ProjectData } from "@/lib/types/projectShort";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
-
-type ProjectTranslations = {
-    description: string,
-    implementations: string[] | null,
-    overview: string,
-    keyFeatures: string[],
-    technicalHighlights: string[],
-    results: string[],
-    challenges: string[],
-    whatDemonstrates: string[],
-    myRole: string,
-}
+import { ProjectData } from "@/lib/types/projectData";
+import { LocaleKey } from "@/lib/types/localeKey";
+import BlackBtn from "@/components/ui-reusables/BlackBtn";
+import ContentChunk from "./components/ContentChunk";
+import ContentList from "./components/ContentList";
+import mapTechLabel from "@/lib/utils/mapTechLabel";
+import { Tech } from "@/lib/types/tech";
 
 interface Props {
-    projectData: ProjectData;
-    projectTranslations: ProjectTranslations;
+    project: ProjectData;
+    locale: LocaleKey
 }
 
-export default function ProjectPageTemplate({ projectData, projectTranslations }: Props) {
-    const { title, imgUrl, tech, liveUrl, galleryImgUrls } = projectData
-    const {
-        description,
-        implementations,
-        overview,
-        keyFeatures,
-        technicalHighlights,
-        results,
-        challenges,
-        whatDemonstrates,
-        myRole
-    } = projectTranslations
-    
+export default function ProjectPageTemplate({ project, locale }: Props) {
     const t = useTranslations('ProjectPage')
 
     return (
     <main className="header-padding">
         <section className="
             px-8 py-16
-            lg:px-32 lg:py-16
+            lg:px-24 lg:py-24
             bg-gray-300"
         >
-            <h1 className="mb-4 lg:mb-8 text-4xl lg:text-6xl font-semibold">
-                {title}
+            <h1 className="mb-4 lg:mb-8 text-4xl lg:text-5xl font-semibold">
+                {project.title}
             </h1>
             <p className="
-                mb-8
-                text-lg lg:text-2xl text-black"
+                mb-16
+                text-my-lg text-black"
             >
-                {description}
+                {project.description[locale]}
             </p>
-            {liveUrl &&
-                <RoundBlackExternal
-                    href={liveUrl}
-                    textSize="text-lg lg:text-2xl"
-                    paddingSize="lg"
-                    containerClasses="mb-8 lg:mb-16"
-                >
-                    <span>{t('liveLink')}</span>
-                    <i className="fa fa-external-link scale-90"></i>
-                </RoundBlackExternal>
+            {project.liveUrl &&
+                <BlackBtn
+                    href={project.liveUrl}
+                    label={t('liveLink')}
+                    external={true}
+                    size="lg"
+                    className="mb-16"
+                />
             }
+            {/* Tech tags */}
+            <div className="mb-8 flex gap-4 items-center flex-wrap">
+                <span className="text-xl lg:text-2xl font-semibold tracking-wide">
+                    {t('tech')}:
+                </span>
+                {/* Tags */}
+                {project.tech.map((el, index) =>
+                    <span
+                        key={index}
+                        className={clsx(
+                            "px-4 py-1 lg:px-4 lg:py-2",
+                            "text-my-lg text-br-white",
+                            "rounded-full",
+                            techData[el as Tech].bg
+                        )}
+                    >
+                        {mapTechLabel(el)}
+                    </span>
+                )}
+            </div>
             {/* Div with two halves for the rest of content */}
             <div className="flex flex-col-reverse lg:flex-row">
                 {/* Left div */}
                 <div className="
                     w-full
-                    lg:w-1/2 lg:pr-8"
+                    lg:w-1/2 lg:pr-8
+                    flex flex-col gap-8"
                 >
-                    <div className="
-                        p-4 lg:p-8
-                        bg-mywhite
-                        rounded-2xl"
-                    >
-                        {/* Tech tags */}
-                        <div className="
-                            mb-4
-                            flex gap-4 items-center flex-wrap"
-                        >
-                            <span className="text-xl lg:text-2xl font-semibold tracking-wide">
-                                {t('tech')}:
-                            </span>
-                            {/* Tags */}
-                            {tech.map((el, index) =>
-                                <span
-                                    key={index}
-                                    className={clsx(
-                                        "px-4 py-1 lg:px-4 lg:py-2",
-                                        "text-lg lg:text-xl text-mywhite",
-                                        "rounded-lg lg:rounded-2xl",
-                                        techData[el].bg
-                                    )}
-                                >
-                                    {techData[el].text}
-                                </span>
-                            )}
-                        </div>
-                        {/* Implementations tags */}
-                        {implementations !== null && <>
-                            {implementations.length > 0 && <div className="
-                                mb-8
-                                flex gap-4 items-center flex-wrap"
-                            >
-                                <span className="text-xl lg:text-2xl font-semibold tracking-wide">
-                                    {t('implementations')}:
-                                </span>
-                                {/* Tags */}
-                                {implementations.map((el, index) =>
-                                    <span
-                                        key={index}
-                                        className="
-                                            px-4 py-1 lg:py-2
-                                            text-lg lg:text-xl text-black text-nowrap
-                                            bg-gray-300 rounded-lg lg:rounded-2xl"
-                                    >
-                                        {el}
-                                    </span>
-                                )}
-                            </div>}
-                        </>}
-                        {/* Overview */}
-                        <h2 className="mb-4 text-xl lg:text-2xl font-semibold">
-                            {t('overview')}
-                        </h2>
-                        <p className="text-md lg:text-lg text-gray-600">
-                            {overview}
+                    {/* Implementations */}
+                    {project.implementations && (
+                        <ContentChunk title={t('implementations')}>
+                            <ContentList
+                                items={project.implementations[locale]}
+                            />
+                        </ContentChunk>
+                    )}
+                    {/* Overview */}
+                    <ContentChunk title={t('overview')}>
+                        <p className="mt-4 text-my-md text-gray-700 text-justify">
+                            {project.overview[locale]}
                         </p>
-                        {/* Key features */}
-                        <h2 className="mt-8 mb-4 text-xl lg:text-2xl font-semibold">
-                            {t('keyFeatures')}
-                        </h2>
-                        <ul className="
-                            flex flex-col gap-2
-                            text-md lg:text-lg text-gray-600"
+                    </ContentChunk>
+                    {/* Key features */}
+                    <ContentChunk title={t('keyFeatures')}>
+                        <ContentList
+                            items={project.keyFeatures[locale]}
+                        />
+                    </ContentChunk>
+                    {/* Technical highlights */}
+                    <ContentChunk title={t('technicalHighlights')} expandable={true}>
+                        <ContentList
+                            items={project.technicalHighlights[locale]}
+                        />
+                    </ContentChunk>
+                    {/* Results/impact - Optional, used for Web Dev */}
+                    {project.results && (
+                        <ContentChunk title={t('results')}>
+                            <ContentList
+                                items={project.results[locale]}
+                            />
+                        </ContentChunk>
+                    )}
+                    {/* Challenges solved - Optional, used for Other projects */}
+                    {project.challenges && (
+                        <ContentChunk
+                            title={t('challenges')}
+                            expandable
                         >
-                            {keyFeatures.map((el, index) =>
-                                <li key={index}>
-                                    <span><i className="fa fa-check mr-2 scale-90"></i>{el}</span>
-                                </li>
-                            )}
-                        </ul>
-                        {/* Technical highlights */}
-                        <h2 className="
-                            mt-8 mb-4
-                            text-xl lg:text-2xl font-semibold"
-                        >
-                            {t('technicalHighlights')}
-                        </h2>
-                        <ul className="
-                            flex flex-col gap-2
-                            text-md lg:text-lg text-gray-600"
-                        >
-                            {technicalHighlights.map((el, index) =>
-                                <li key={index}>
-                                    <span><i className="fa fa-check mr-2 scale-90"></i>{el}</span>
-                                </li>
-                            )}
-                        </ul>
-                        {/* Results/impact - Optional, used for Web Dev */}
-                        {results.length > 0 && <>
-                            <h2 className="
-                                mt-8 mb-4
-                                text-xl lg:text-2xl font-semibold"
-                            >
-                                {t('results')}
-                            </h2>
-                            <ul className="
-                                flex flex-col gap-2
-                                text-md lg:text-lg text-gray-600"
-                            >
-                                {results.map((el, index) =>
-                                    <li key={index}>
-                                        <span><i className="fa fa-check mr-2 scale-90"></i>{el}</span>
-                                    </li>
-                                )}
-                            </ul>
-                        </>}
-                        {/* Challenges solved - Optional, used for Other projects */}
-                        {challenges.length > 0 && <>
-                            <h2 className="
-                                mt-8 mb-4
-                                text-xl lg:text-2xl font-semibold"
-                            >
-                                {t('challenges')}
-                            </h2>
-                            <ul className="
-                                flex flex-col gap-2
-                                text-md lg:text-lg text-gray-600"
-                            >
-                                {challenges.map((el, index) =>
-                                    <li key={index}>
-                                        <span><i className="fa fa-check mr-2 scale-90"></i>{el}</span>
-                                    </li>
-                                )}
-                            </ul>
-                        </>}
-                        {/* What this demonstrates - Optional, used for Other projects */}
-                        {whatDemonstrates.length > 0 && <>
-                            <h2 className="
-                                mt-8 mb-4
-                                text-xl lg:text-2xl font-semibold"
-                            >
-                                {t('whatDemonstrates')}
-                            </h2>
-                            <ul className="
-                                flex flex-col gap-2
-                                text-md lg:text-lg text-gray-600"
-                            >
-                                {whatDemonstrates.map((el, index) =>
-                                    <li key={index}>
-                                        <span><i className="fa fa-check mr-2 scale-90"></i>{el}</span>
-                                    </li>
-                                )}
-                            </ul>
-                        </>}
-                        {/* My role */}
-                        <h2 className="
-                            mt-8 mb-4
-                            text-xl lg:text-2xl font-semibold"
-                        >
-                            {t('myRole')}
-                        </h2>
-                        <p className="text-md lg:text-lg text-gray-600">
-                            {myRole}
+                            <ContentList
+                                items={project.challenges[locale]}
+                            />
+                        </ContentChunk>
+                    )}
+                    {/* What this demonstrates - Optional, used for Other projects */}
+                    {/* {project.whatDemonstrates && (
+                        <ContentChunk title={t('whatDemonstrates')}>
+                            <ContentList
+                                items={project.whatDemonstrates[locale]}
+                            />
+                        </ContentChunk>
+                    )} */}
+                    {/* My role */}
+                    <ContentChunk title={t('myRole')}>
+                        <p className="mt-4 text-my-md text-gray-700 text-justify">
+                            {project.myRole[locale]}
                         </p>
-                    </div>
+                    </ContentChunk>
                 </div>
                 {/* Right div (images) */}
                 <div className="w-full lg:w-1/2">
                     <Image
-                        src={imgUrl}
+                        src={project.coverSrc}
                         width={1200}
                         height={630}
-                        className="mb-8 w-full aspect-[40/21] rounded-2xl"
+                        className="
+                            w-full aspect-[40/21]
+                            sticky top-[calc(var(--spacing-header-height)+2rem)]
+                            rounded-2xl"
                         priority
-                        alt={title}
+                        alt={project.title}
                     />
                     {/* Gallery */}
                     {/* <div className="

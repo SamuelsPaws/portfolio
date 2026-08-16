@@ -1,15 +1,16 @@
 'use client'
+import CustomIcon, { IconId } from "@/components/CustomIcon";
 import clsx from "clsx";
 import { motion } from "motion/react";
 
 interface ContactItemProps {
     href: string;
-    iconClass: string;
+    iconId: IconId;
     text: string;
     newTab: boolean;
 }
 
-const ContactItem = ({ href, iconClass, text, newTab }: ContactItemProps) => {
+const ContactItem = ({ href, iconId, text, newTab }: ContactItemProps) => {
   return (
     <motion.a
         href={href}
@@ -20,7 +21,9 @@ const ContactItem = ({ href, iconClass, text, newTab }: ContactItemProps) => {
         whileHover={{ letterSpacing: '1px' }}
         transition={{ duration: 0.3, type: 'spring' }}
     >
-        <i className={clsx("fa", iconClass)}></i>
+        <CustomIcon
+            iconId={iconId}
+        />
         <span className="underline">
             {text}
         </span>
