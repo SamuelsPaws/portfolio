@@ -78,6 +78,7 @@ const LangMenuMob = ({ changeLocale, isMenuOpen, onClose, langBtnCurrent }: Prop
                 assocLocale={el}
                 changeLocale={changeLocale}
                 label={el === 'it' ? 'ITA' : el.toUpperCase()}
+                isLast={index >= locales.length - 1}
             />
         )}
     </motion.div>
