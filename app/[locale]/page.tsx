@@ -43,6 +43,7 @@ export default async function Home({ params }: Props) {
                 size={'md'}
             />
         </section>
+        {/* Bump */}
         {/* Web dev projects */}
         <SectionSt
             title={t('h2WebDev')}
