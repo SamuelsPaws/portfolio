@@ -1,6 +1,4 @@
 import ProjectCard from "@/components/ProjectCard";
-import SectionTitleH2 from "./components/SectionTitleH2";
-import MoreProjectsBtn from "./components/MoreProjectsBtn";
 import BlackBtn from "@/components/ui-reusables/BlackBtn";
 import projectData from "@/data/projects.json"
 import featuredProjects from "@/data/featuredProjects.json"
