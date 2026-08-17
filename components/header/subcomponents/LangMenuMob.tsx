@@ -3,7 +3,7 @@ import { motion } from "motion/react"
 import LangItemBtn from "./LangItemBtn"
 import clsx from "clsx";
 import { useParams } from "next/navigation";
-import { Ref, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const locales = [
     'en',
