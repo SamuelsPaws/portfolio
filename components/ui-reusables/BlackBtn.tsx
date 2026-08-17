@@ -3,6 +3,7 @@ import { springyHover } from "@/lib/motion-variants/springyHover";
 import clsx from "clsx";
 import { motion, Variants } from "motion/react";
 import Link from "next/link";
+import CustomIcon from "../CustomIcon";
 
 type TextSize = 'sm' | 'md' | 'lg'
 
@@ -42,7 +43,7 @@ const BlackBtn = ({ href, label, external, className, size }: Props) => {
     const defaultCn = clsx(
         "w-fit block",
         getPadding(),
-        "flex items-center gap-4",
+        "flex items-center gap-2",
         getTextSize(),
         "text-br-white font-semibold",
         "bg-black rounded-2xl"
@@ -57,7 +58,11 @@ const BlackBtn = ({ href, label, external, className, size }: Props) => {
             variants={variants}
             whileHover="hovered"
         >
-            {label}
+            <span>{label}</span>
+            <CustomIcon
+                iconId="external"
+                className="ml-2 scale-140"
+            />
         </motion.a>
         )
     }

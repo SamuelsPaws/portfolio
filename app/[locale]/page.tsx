@@ -8,6 +8,7 @@ import mapProjectCard from "@/lib/utils/mapProjectCard";
 import { getTranslations } from "next-intl/server";
 import { LocaleKey } from "@/lib/types/localeKey";
 import SectionSt from "@/components/SectionSt";
+import { projectSorterWeb } from "@/lib/utils/prioritySort";
 
 type Props = {
     params: Promise<{
@@ -38,7 +39,7 @@ export default async function Home({ params }: Props) {
                 {t('h1-1')}<br />{t('h1-2')}
             </h1>
             <BlackBtn
-                href="/projects"
+                href="/projects/web-dev"
                 label={t('heroCta')}
                 external={false}
                 size={'md'}
@@ -55,7 +56,7 @@ export default async function Home({ params }: Props) {
                 flex flex-col gap-8
                 lg:flex-row lg:justify-center lg:items-center lg:gap-8"
             >
-                {projects.filter(el => featuredProjects["web-dev"].includes(el.slug)).map((el, index) => (
+                {projects.filter(el => featuredProjects["web-dev"].includes(el.slug)).sort(projectSorterWeb).map((el, index) => (
                     <ProjectCard
                         key={index}
                         project={el}
@@ -91,7 +92,7 @@ export default async function Home({ params }: Props) {
                 ))}
             </div>
             <BlackBtn
-                href="/projects/web-dev"
+                href="/projects/other"
                 label={t('moreProjects')}
                 external={false}
                 size='md'

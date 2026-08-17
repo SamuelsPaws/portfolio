@@ -11,7 +11,7 @@ export default function Contact() {
             <section className="
                 px-8 py-16
                 lg:px-32 lg:py-32
-                bg-mywhite"
+                bg-br-white"
             >
                 <h1 className="
                     mb-4 text-4xl
@@ -55,7 +55,7 @@ export default function Contact() {
                     text-2xl lg:text-3xl"
                 >
                     <span>
-                        +593 98 489 2528
+                        098 489 2528
                     </span>
                     <CopyBtn text="+593984892528" />
                 </div>

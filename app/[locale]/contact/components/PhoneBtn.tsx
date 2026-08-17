@@ -18,7 +18,7 @@ const PhoneBtn = () => {
             whileHover={{ y: -8, x: -2, }}
             transition={{ duration: 0.2, type: 'spring' }}
         >
-            <span className="text-mywhite text-3xl lg:text-4xl">
+            <span className="text-br-white text-3xl lg:text-4xl">
                 Call Now
             </span>
         </motion.div>

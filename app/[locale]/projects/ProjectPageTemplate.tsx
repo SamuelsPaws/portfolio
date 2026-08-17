@@ -40,7 +40,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                     label={t('liveLink')}
                     external={true}
                     size="lg"
-                    className="mb-16"
+                    className="mb-8 md:mb-16"
                 />
             }
             {/* Tech tags */}

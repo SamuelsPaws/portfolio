@@ -745,7 +745,7 @@
     {
         "slug": "icounter",
         "title": "iCounter",
-        "type": "web-dev",
+        "type": "other",
         "tech": [
             "py"
         ],
@@ -925,8 +925,8 @@
             "next",
             "tw"
         ],
-        "liveUrl": null,
-        "coverSrc": "/assets/icounter.webp",
+        "liveUrl": "https://hivissual.com/",
+        "coverSrc": "/assets/hivissual.jpg",
         "gallery": [
             "/assets/plasma-vida.webp",
             "/assets/plasma-vida.webp",
@@ -936,161 +936,176 @@
             "/assets/plasma-vida.webp"
         ],
         "description": {
-            "en": "Professional portfolio website for a photographer and content creator",
-            "es": "Aplicación de escritorio hecha en Python para llevar cuenta de mi trabajo y ganancias",
-            "fr": "Application desktop en Python pour suivre mon travail et mes revenus",
-            "de": "Desktop-App in Python zur Verfolgung meiner Arbeit und Einnahmen",
-            "it": "App desktop in Python per tracciare lavoro e guadagni"
+            "en": "Professional portfolio website for a studio specializing in commercial audiovisual production.",
+            "es": "Sitio web de portafolio profesional para un estudio de producción audiovisual comercial.",
+            "fr": "Site web de portfolio professionnel pour un studio créatif de production audiovisuelle.",
+            "de": "Professionelle Portfolio-Website für ein Studio mit Schwerpunkt auf Werbefotografie.",
+            "it": "Sito portfolio professionale per uno studio creativo specializzato in produzione audiovisuale commerciale."
         },
-        "implementations": null,
+        "implementations": {
+            "en": [
+                "Headless CMS (Contentful)"
+            ],
+            "es": [
+                "CMS headless (Contentful)"
+            ],
+            "fr": [
+                "CMS headless (Contentful)"
+            ],
+            "de": [
+                "Headless CMS (Contentful)"
+            ],
+            "it": [
+                "CMS headless (Contentful)"
+            ]
+        },
         "overview": {
-            "en": "Desktop application built to track translation work (paid per record), automating logging, earnings calculation, and real-time productivity metrics. Designed to replace manual tracking and provide immediate feedback during work sessions.",
-            "es": "Aplicación de escritorio construida para rastrear trabajo de traducción (pagado por registro), automatizando el registro, cálculo de ganancias y métricas de productividad en tiempo real. Diseñada para reemplazar el seguimiento manual y proporcionar feedback inmediato durante sesiones de trabajo.",
-            "fr": "Application desktop conçue pour suivre le travail de traduction (payé par enregistrement), automatisant le suivi, le calcul des revenus et les métriques de productivité en temps réel. Créée pour remplacer le suivi manuel et fournir un retour immédiat pendant les sessions de travail.",
-            "de": "Desktop-Anwendung zur Verfolgung von Übersetzungsarbeit (Bezahlung pro Datensatz), die Protokollierung, Einkommensberechnung und Echtzeit-Produktivitätsmetriken automatisiert. Entwickelt, um manuelle Nachverfolgung zu ersetzen und sofortiges Feedback während Arbeitssitzungen bereitzustellen.",
-            "it": "Applicazione desktop costruita per tracciare lavoro di traduzione (pagato per record), automatizzando registrazione, calcolo guadagni e metriche di produttività in tempo reale. Progettata per sostituire il tracciamento manuale e fornire feedback immediato durante le sessioni di lavoro."
+            "en": "Modern portfolio website for a creative studio specializing in commercial photography, video production, and content strategy. Designed to showcase visual work, communicate services clearly, and convert visitors into clients through a polished, brand-focused online presence.",
+            "es": "Sitio web de portafolio moderno para un estudio creativo especializado en fotografía comercial, producción audiovisual y estrategia de contenido. Diseñado para exhibir su trabajo visual, comunicar sus servicios con claridad y convertir visitantes en clientes mediante una presencia digital profesional y alineada con la marca.",
+            "fr": "Site portfolio moderne pour un studio créatif spécialisé dans la photographie commerciale, la production audiovisuelle et la stratégie de contenu. Conçu pour mettre en valeur son travail visuel, présenter clairement ses services et transformer les visiteurs en clients grâce à une présence en ligne soignée et cohérente.",
+            "de": "Moderne Portfolio-Website für ein Kreativstudio mit Schwerpunkt auf Werbefotografie, Videoproduktion und Content-Strategie. Entwickelt, um visuelle Arbeiten wirkungsvoll zu präsentieren, Dienstleistungen klar zu kommunizieren und Besucher durch einen professionellen Markenauftritt in Kunden zu verwandeln.",
+            "it": "Sito portfolio moderno per uno studio creativo specializzato in fotografia commerciale, produzione video e strategia dei contenuti. Progettato per valorizzare i lavori realizzati, presentare chiaramente i servizi e trasformare i visitatori in clienti attraverso una presenza digitale professionale e coerente con il brand."
         },
         "keyFeatures": {
             "en": [
-                "Real-time tracking of records translated and earnings",
-                "Session and sprint-based time tracking (start/stop workflow)",
-                "Live productivity metrics including records per hour, average time per record, earnings per hour, total session time and earnings",
-                "Automatic logging to Excel file",
-                "Pre-structured Excel output for persistent record keeping"
+                "Headless CMS powering portfolio projects, testimonials, and site content",
+                "Dynamic portfolio gallery generated from CMS content",
+                "Professional showcase for photography, video production, and creative services",
+                "Interactive quotation system with configurable services and estimated price ranges",
+                "Client-managed testimonials and portfolio updates without developer involvement"
             ],
             "es": [
-                "Seguimiento en tiempo real de registros traducidos y ganancias",
-                "Control de tiempo por sesión y sprint (flujo start/stop)",
-                "Métricas de productividad en vivo incluyendo registros por hora, tiempo promedio por registro, ganancias por hora, tiempo total de sesión y ganancias",
-                "Registro automático en archivo Excel",
-                "Salida Excel preestructurada para almacenamiento persistente"
+                "CMS headless para la gestión del portafolio, testimonios y contenido del sitio",
+                "Galería de proyectos dinámica generada a partir del contenido del CMS",
+                "Presentación profesional de servicios de fotografía, producción audiovisual y contenido creativo",
+                "Sistema interactivo de cotización con selección de servicios y rangos de precios estimados",
+                "Gestión autónoma de testimonios y proyectos del portafolio sin intervención del desarrollador"
             ],
             "fr": [
-                "Suivi en temps réel des enregistrements traduits et des revenus",
-                "Suivi du temps par session et sprint (workflow démarrer/arrêter)",
-                "Métriques de productivité en direct incluant enregistrements par heure, temps moyen par enregistrement, revenus par heure, temps total de session et revenus",
-                "Journalisation automatique dans un fichier Excel",
-                "Sortie Excel préstructurée pour une conservation persistante des données"
+                "CMS headless pour la gestion du portfolio, des témoignages et du contenu du site",
+                "Galerie de projets dynamique générée à partir du contenu du CMS",
+                "Présentation professionnelle des services de photographie, de production audiovisuelle et de création de contenu",
+                "Système interactif de devis avec sélection des services et estimation des fourchettes de prix",
+                "Gestion autonome des témoignages et des projets du portfolio sans intervention du développeur"
             ],
             "de": [
-                "Echtzeit-Tracking übersetzter Datensätze und Einnahmen",
-                "Zeitverfolgung basierend auf Sitzungen und Sprints (Start/Stopp-Workflow)",
-                "Live-Produktivitätsmetriken einschließlich Datensätze pro Stunde, durchschnittliche Zeit pro Datensatz, Einnahmen pro Stunde, gesamte Sitzungszeit und Einnahmen",
-                "Automatische Protokollierung in Excel-Dateien",
-                "Vorstrukturierte Excel-Ausgabe zur dauerhaften Datenspeicherung"
+                "Headless-CMS zur Verwaltung von Portfolio-Projekten, Referenzen und Website-Inhalten",
+                "Dynamische Portfolio-Galerie, die aus CMS-Inhalten generiert wird",
+                "Professionelle Präsentation von Werbefotografie, Videoproduktion und kreativen Dienstleistungen",
+                "Interaktives Angebotsformular mit Serviceauswahl und geschätzten Preisbereichen",
+                "Eigenständige Verwaltung von Referenzen und Portfolio-Projekten ohne Entwickler"
             ],
             "it": [
-                "Implementazione completa delle regole degli scacchi, inclusa validazione mosse legali, rilevamento scacco / scacco matto, arrocco, en passant e promozione",
-                "Interazione drag-and-drop dei pezzi con feedback visivo",
-                "Evidenziazione mosse legali (stati validi vs invalidi)",
-                "Registro mosse in tempo reale (notazione algebrica standard)",
-                "Multiplayer locale (stesso dispositivo)"
+                "CMS headless per la gestione del portfolio, delle testimonianze e dei contenuti del sito",
+                "Galleria dinamica dei progetti generata dai contenuti del CMS",
+                "Presentazione professionale di fotografia commerciale, produzione video e servizi creativi",
+                "Sistema interattivo di preventivazione con selezione dei servizi e fasce di prezzo indicative",
+                "Gestione autonoma di testimonianze e progetti del portfolio senza l'intervento dello sviluppatore"
             ]
         },
         "technicalHighlights": {
             "en": [
-                "Modular OOP architecture with clear separation of concerns",
-                "Unidirectional data flow: UI triggers actions, actions update state/data, state notifies UI",
-                "Observer-style pattern for UI updates via state subscriptions",
-                "Timer system that tracks session, sprint, and per-record timing concurrently"
+                "Fully headless CMS architecture using Contentful for portfolio projects, testimonials, and site content",
+                "SEO-focused architecture with clean URL hierarchy, semantic HTML, Open Graph metadata, and structured data (JSON-LD)",
+                "Interactive quotation system with configurable services and real-time estimated pricing logic",
+                "Responsive gallery and portfolio experience built with reusable React components and smooth Motion animations",
+                "Performance optimizations using Next.js Image, lazy loading, and optimized asset delivery for a fast browsing experience"
             ],
             "es": [
-                "Arquitectura OOP modular con separación clara de responsabilidades",
-                "Flujo de datos unidireccional: la UI dispara acciones, las acciones actualizan estado/datos y el estado notifica a la UI",
-                "Patrón tipo observer para actualizaciones de UI mediante suscripciones al estado",
-                "Sistema de temporizadores que rastrea simultáneamente sesión, sprint y tiempo por registro"
+                "Arquitectura completamente headless con Contentful para la gestión de proyectos del portafolio, testimonios y contenido del sitio",
+                "Arquitectura orientada al SEO con jerarquía de URLs limpia, HTML semántico, metadatos Open Graph y datos estructurados (JSON-LD)",
+                "Sistema interactivo de cotización con servicios configurables y lógica de cálculo de rangos de precios en tiempo real",
+                "Experiencia de galería y portafolio responsive construida con componentes reutilizables de React y animaciones fluidas con Motion",
+                "Optimizaciones de rendimiento mediante Next.js Image, carga diferida y entrega optimizada de recursos para una navegación rápida"
             ],
-             "fr": [
-                "Architecture OOP modulaire avec séparation claire des responsabilités",
-                "Flux de données unidirectionnel : l’UI déclenche des actions, les actions mettent à jour l’état/données et l’état notifie l’UI",
-                "Pattern de type observer pour les mises à jour UI via abonnements à l’état",
-                "Système de timers suivant simultanément session, sprint et temps par enregistrement"
+            "fr": [
+                "Architecture entièrement headless avec Contentful pour gérer les projets du portfolio, les témoignages et le contenu du site",
+                "Architecture optimisée pour le SEO avec une hiérarchie d'URL propre, un HTML sémantique, des métadonnées Open Graph et des données structurées (JSON-LD)",
+                "Système de devis interactif avec services configurables et estimation des fourchettes de prix en temps réel",
+                "Galerie et portfolio responsives développés avec des composants React réutilisables et des animations fluides avec Motion",
+                "Optimisations des performances grâce à Next.js Image, au chargement différé et à une livraison optimisée des ressources"
             ],
             "de": [
-                "Modulare OOP-Architektur mit klarer Trennung der Verantwortlichkeiten",
-                "Unidirektionaler Datenfluss: UI löst Aktionen aus, Aktionen aktualisieren Zustand/Daten und der Zustand benachrichtigt die UI",
-                "Observer-ähnliches Muster für UI-Updates über Zustandsabonnements",
-                "Timersystem zur gleichzeitigen Verfolgung von Sitzung, Sprint und Zeit pro Datensatz"
+                "Vollständig headless CMS-Architektur mit Contentful für Portfolio-Projekte, Referenzen und Website-Inhalte",
+                "SEO-orientierte Architektur mit sauberer URL-Struktur, semantischem HTML, Open-Graph-Metadaten und strukturierten Daten (JSON-LD)",
+                "Interaktives Angebotssystem mit konfigurierbaren Leistungen und Echtzeitberechnung von Preisbereichen",
+                "Responsive Galerie- und Portfolio-Erlebnis mit wiederverwendbaren React-Komponenten und flüssigen Motion-Animationen",
+                "Leistungsoptimierungen durch Next.js Image, Lazy Loading und optimierte Bereitstellung von Ressourcen für schnelle Ladezeiten"
             ],
             "it": [
-                "Tracciamento in tempo reale di record tradotti e guadagni",
-                "Monitoraggio tempo basato su sessioni e sprint (workflow start/stop)",
-                "Metriche di produttività live incluse record per ora, tempo medio per record, guadagni per ora, tempo totale sessione e guadagni",
-                "Registrazione automatica in file Excel",
-                "Output Excel prestrutturato per archiviazione persistente"
+                "Architettura completamente headless con Contentful per la gestione dei progetti del portfolio, delle testimonianze e dei contenuti del sito",
+                "Architettura orientata alla SEO con gerarchia di URL pulita, HTML semantico, metadati Open Graph e dati strutturati (JSON-LD)",
+                "Sistema interattivo di preventivazione con servizi configurabili e calcolo in tempo reale delle fasce di prezzo",
+                "Esperienza responsive per galleria e portfolio realizzata con componenti React riutilizzabili e animazioni fluide con Motion",
+                "Ottimizzazioni delle prestazioni tramite Next.js Image, lazy loading e distribuzione ottimizzata delle risorse per tempi di caricamento ridotti"
             ]
         },
-        "results": null,
+        "results": {
+            "en": [
+                "Established a professional online presence that strengthens brand credibility and showcases the studio's creative work.",
+                "SEO-ready foundation with excellent performance, accessibility, and best practices, supporting long-term organic visibility.",
+                "Empowered the client to independently manage portfolio projects and testimonials while providing a compelling platform to attract new clients."
+            ],
+            "es": [
+                "Creó una presencia digital profesional que fortalece la credibilidad de la marca y exhibe el trabajo creativo del estudio.",
+                "Base optimizada para SEO con excelente rendimiento, accesibilidad y cumplimiento de buenas prácticas, favoreciendo la visibilidad orgánica a largo plazo.",
+                "Permitió al cliente gestionar de forma autónoma su portafolio y testimonios, además de contar con una plataforma sólida para captar nuevos clientes."
+            ],
+            "fr": [
+                "Création d'une présence en ligne professionnelle renforçant la crédibilité de la marque et mettant en valeur le travail créatif du studio.",
+                "Base optimisée pour le SEO avec d'excellentes performances, une grande accessibilité et le respect des bonnes pratiques, favorisant la visibilité organique à long terme.",
+                "Le client peut désormais gérer lui-même son portfolio et ses témoignages tout en disposant d'une plateforme convaincante pour attirer de nouveaux clients."
+            ],
+            "de": [
+                "Aufbau einer professionellen Online-Präsenz, die die Glaubwürdigkeit der Marke stärkt und die kreativen Arbeiten des Studios wirkungsvoll präsentiert.",
+                "SEO-fähige Grundlage mit hervorragender Performance, Barrierefreiheit und Einhaltung bewährter Standards für langfristige organische Sichtbarkeit.",
+                "Der Kunde kann Portfolio-Projekte und Referenzen eigenständig verwalten und verfügt über eine überzeugende Plattform zur Gewinnung neuer Kunden."
+            ],
+            "it": [
+                "Realizzazione di una presenza online professionale che rafforza la credibilità del brand e valorizza il lavoro creativo dello studio.",
+                "Base ottimizzata per la SEO con prestazioni eccellenti, elevata accessibilità e rispetto delle migliori pratiche, favorendo la visibilità organica nel lungo periodo.",
+                "Il cliente può gestire autonomamente portfolio e testimonianze, disponendo al tempo stesso di una piattaforma efficace per acquisire nuovi clienti."
+            ]
+        },
         "challenges": {
             "en": [
-                "Maintaining accurate time-based metrics across overlapping timers (session vs sprint vs per-letter)",
-                "Designing a clean interaction model between UI, state, and data layers",
-                "Ensuring real-time stat updates without introducing inconsistency",
-                "Handling Excel formatting and reliable append-based persistence"
+                "Designing a modern UI and polished UX that reflects the studio's visual identity while keeping the interface intuitive.",
+                "Translating the client's creative philosophy into a cohesive digital brand through typography, layout, animation, and visual hierarchy.",
+                "Building a high-performance portfolio gallery using strategic image loading, preloading, and asset optimization techniques.",
+                "Balancing rich visual interactions with excellent Core Web Vitals by relying on native CSS whenever possible and using Motion only where it added meaningful value."
             ],
             "es": [
-                "Mantener métricas precisas basadas en tiempo entre temporizadores superpuestos (sesión vs sprint vs por item)",
-                "Diseñar un modelo limpio de interacción entre UI, estado y capas de datos",
-                "Garantizar actualizaciones estadísticas en tiempo real sin inconsistencias",
-                "Manejo de formato Excel y persistencia confiable basada en append"
+                "Diseñar una interfaz moderna y una experiencia de usuario cuidada que reflejara la identidad visual del estudio sin sacrificar la usabilidad.",
+                "Traducir la filosofía creativa del cliente en una identidad digital coherente mediante tipografía, composición, animaciones y jerarquía visual.",
+                "Desarrollar una galería de portafolio de alto rendimiento utilizando estrategias de carga de imágenes, precarga selectiva y optimización de recursos.",
+                "Equilibrar una experiencia visual atractiva con excelentes Core Web Vitals, priorizando CSS nativo y utilizando Motion únicamente cuando aportaba un valor real."
             ],
             "fr": [
-                "Maintenir des métriques temporelles précises entre plusieurs timers superposés (session vs sprint vs par lettre)",
-                "Concevoir un modèle propre d’interaction entre UI, état et couches de données",
-                "Garantir des mises à jour statistiques temps réel sans incohérences",
-                "Gestion du format Excel et persistance append fiable"
+                "Concevoir une interface moderne et une expérience utilisateur soignée reflétant l'identité visuelle du studio tout en restant intuitive.",
+                "Transformer la philosophie créative du client en une identité numérique cohérente grâce à la typographie, à la mise en page, aux animations et à la hiérarchie visuelle.",
+                "Créer une galerie de portfolio très performante grâce au chargement stratégique des images, au préchargement sélectif et à l'optimisation des ressources.",
+                "Trouver l'équilibre entre une expérience visuelle riche et d'excellents Core Web Vitals en privilégiant le CSS natif et en utilisant Motion uniquement lorsque cela apportait une réelle valeur."
             ],
             "de": [
-                "Aufrechterhaltung präziser zeitbasierter Metriken bei überlappenden Timern (Sitzung vs. Sprint vs. pro Brief)",
-                "Entwicklung eines sauberen Interaktionsmodells zwischen UI-, Zustands- und Datenschichten",
-                "Sicherstellung von Echtzeit-Statistikupdates ohne Inkonsistenzen",
-                "Umgang mit Excel-Formatierung und zuverlässiger Append-basierter Persistenz"
+                "Entwicklung einer modernen Benutzeroberfläche und einer hochwertigen User Experience, die die visuelle Identität des Studios widerspiegelt und gleichzeitig intuitiv bleibt.",
+                "Übertragung der kreativen Philosophie des Kunden in eine konsistente digitale Markenidentität durch Typografie, Layout, Animationen und visuelle Hierarchie.",
+                "Entwicklung einer leistungsstarken Portfolio-Galerie mit strategischem Bildladen, gezieltem Preloading und optimierter Ressourcenverwaltung.",
+                "Ausgewogenes Verhältnis zwischen aufwendigen visuellen Effekten und hervorragenden Core Web Vitals durch den bevorzugten Einsatz von nativem CSS und Motion nur dort, wo es echten Mehrwert bot."
             ],
             "it": [
-                "Mantenere metriche temporali accurate tra timer sovrapposti (sessione vs sprint vs per lettera)",
-                "Progettare un modello pulito di interazione tra UI, stato e layer dati",
-                "Garantire aggiornamenti statistiche real-time senza introdurre inconsistenze",
-                "Gestione formattazione Excel e persistenza affidabile basata su append"
+                "Progettare un'interfaccia moderna e un'esperienza utente curata che rispecchiasse l'identità visiva dello studio mantenendo la navigazione intuitiva.",
+                "Tradurre la filosofia creativa del cliente in un'identità digitale coerente attraverso tipografia, layout, animazioni e gerarchia visiva.",
+                "Realizzare una galleria portfolio ad alte prestazioni grazie a strategie di caricamento delle immagini, precaricamento selettivo e ottimizzazione delle risorse.",
+                "Bilanciare un'esperienza visiva ricca con eccellenti Core Web Vitals, privilegiando il CSS nativo e utilizzando Motion solo quando offriva un reale valore aggiunto."
             ]
         },
-        "whatDemonstrates": {
-            "en": [
-                "Ability to design clean, modular architectures in a desktop environment",
-                "Strong understanding of state management and data flow patterns",
-                "Practical application of automation to eliminate manual workflows",
-                "Building tools tailored to actual user needs"
-            ],
-            "es": [
-                "Capacidad para diseñar arquitecturas limpias y modulares en un entorno de escritorio",
-                "Fuerte comprensión de patrones de gestión de estado y flujo de datos",
-                "Aplicación práctica de automatización para eliminar flujos manuales",
-                "Construcción de herramientas adaptadas a necesidades reales de usuario"
-            ],
-            "fr": [
-                "Capacité à concevoir des architectures propres et modulaires dans un environnement desktop",
-                "Solide compréhension de la gestion d’état et des patterns de flux de données",
-                "Application pratique de l’automatisation pour éliminer les workflows manuels",
-                "Création d’outils adaptés à de vrais besoins utilisateurs"
-            ],
-            "de": [
-                "Fähigkeit, saubere und modulare Architekturen in Desktop-Umgebungen zu entwerfen",
-                "Starkes Verständnis von State-Management- und Datenflussmustern",
-                "Praktische Anwendung von Automatisierung zur Eliminierung manueller Workflows",
-                "Entwicklung von Tools, die auf reale Nutzerbedürfnisse zugeschnitten sind"
-            ],
-            "it": [
-                "Capacità di progettare architetture pulite e modulari in ambiente desktop",
-                "Forte comprensione di gestione stato e pattern di flusso dati",
-                "Applicazione pratica dell'automazione per eliminare workflow manuali",
-                "Costruzione di strumenti adattati a reali necessità utente"
-            ]
-        },
+        "whatDemonstrates": null,
         "myRole": {
-            "en": "Made fully by me.",
-            "es": "Desarrollado completamente por mí.",
-            "fr": "Développé entièrement par moi.",
-            "de": "Vollständig von mir entwickelt.",
-            "it": "Realizzato completamente da me."
+            "en": "Full project ownership including architecture, UI/UX design, frontend development, CMS modeling, technical SEO, structured data implementation, performance optimization, copywriting, and client training for ongoing portfolio and content management.",
+            "es": "Responsable integral del proyecto, incluyendo arquitectura, diseño UI/UX, desarrollo frontend, modelado del CMS, SEO técnico, implementación de datos estructurados, optimización de rendimiento, redacción de contenidos y capacitación del cliente para la gestión continua del portafolio y del contenido.",
+            "fr": "Responsabilité complète du projet, incluant l'architecture, la conception UI/UX, le développement frontend, la modélisation du CMS, le SEO technique, l'implémentation des données structurées, l'optimisation des performances, la rédaction des contenus et la formation du client pour la gestion continue du portfolio et du contenu.",
+            "de": "Vollständige Projektverantwortung einschließlich Architektur, UI/UX-Design, Frontend-Entwicklung, CMS-Modellierung, technischem SEO, Implementierung strukturierter Daten, Performance-Optimierung, Texterstellung sowie Kundenschulung für die eigenständige Verwaltung von Portfolio und Inhalten.",
+            "it": "Responsabilità completa del progetto, comprendente architettura, progettazione UI/UX, sviluppo frontend, modellazione del CMS, SEO tecnico, implementazione dei dati strutturati, ottimizzazione delle prestazioni, copywriting e formazione del cliente per la gestione autonoma del portfolio e dei contenuti."
         }
     }
 ]

@@ -170,10 +170,11 @@ export default function About() {
         </section>
         <section className="
             px-8 py-16
-            lg:px-32 lg:py-16 bg-mywhite"
+            md:px-32 md:py-24 bg-mywhite
+            border-b border-b-gray-600"
         >
             <h2 className="
-                mb-8 lg:mb-16
+                mb-8 md:mb-16
                 text-3xl lg:text-5xl font-semibold"
             >
                 {t('currentFocus')}
@@ -191,33 +192,30 @@ export default function About() {
                 <div className="
                     w-full lg:w-150
                     p-4 lg:p-8
+                    flex items-center
                     text-md lg:text-xl
                     border-2 border-black rounded-2xl"
                 >
                     <span>
-                        <i className="fa fa-check text-green-700 mr-4" aria-hidden="true"></i>
+                        <CustomIcon
+                            iconId="check"
+                            className="text-green-600 mr-2"
+                        />
                         {t('focusedOnFreelance')}
                     </span>
                 </div>
-                {/* <div className="
-                    w-full lg:w-150 
-                    p-4 lg:p-8
-                    text-md lg:text-xl
-                    border-2 border-black rounded-2xl"
-                >
-                    <span>
-                        <i className="fa fa-check text-green-700 mr-4" aria-hidden="true"></i>
-                        {t('projectStructuring')}
-                    </span>
-                </div> */}
                 <div className="
                     w-full lg:w-150
                     p-4 lg:p-8
+                    flex items-center
                     text-md lg:text-xl
                     border-2 border-black rounded-2xl"
                 >
                     <span>
-                        <i className="fa fa-check text-green-700 mr-4" aria-hidden="true"></i>
+                        <CustomIcon
+                            iconId="check"
+                            className="text-green-600 mr-2"
+                        />
                         {t('reliableIndependent')}
                     </span>
                 </div>

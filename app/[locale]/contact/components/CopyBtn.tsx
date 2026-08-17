@@ -1,5 +1,6 @@
 'use client'
 
+import CustomIcon from "@/components/CustomIcon"
 import clsx from "clsx"
 import { useState } from "react"
 
@@ -30,18 +31,15 @@ const CopyBtn = ({ text }: { text: string }) => {
         className={clsx(
             "w-10 h-10",
             "grid place-content-center",
-            recentlyClicked ? 'bg-gray-300' : 'bg-mywhite',
+            recentlyClicked ? 'bg-gray-300' : 'bg-br-white',
             "lg:hover:bg-gray-300",
-            "border-2 border-black rounded-lg"
+            "border-2 border-black rounded-md"
         )}
     >
-        <i
-            className={clsx(
-                "fa lg:scale-75",
-                recentlyClicked ? 'fa-check' : 'fa-copy'
-            )}
-            aria-hidden="true"
-        ></i>
+        <CustomIcon
+            iconId={recentlyClicked ? "check" : "copy"}
+            className=""
+        />
     </button>
   )
 }
