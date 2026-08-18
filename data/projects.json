@@ -585,7 +585,7 @@
             "html",
             "css"
         ],
-        "liveUrl": "https://www.ladypatriciadreamhomes.ca/",
+        "liveUrl": "https://chessbyme.netlify.app",
         "coverSrc": "/assets/chess-by-me.webp",
         "gallery": [
             "/assets/plasma-vida.webp",
