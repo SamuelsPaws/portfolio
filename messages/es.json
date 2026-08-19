@@ -313,6 +313,10 @@
             "twitterTitle": "Contacto | Samuel Baquero",
             "twitterDescription": "Disponible para proyectos freelance de desarrollo web, colaboraciones y asesorías técnicas. Contáctame por correo, teléfono o redes sociales.",
             "category": "Tecnología"
+        },
+        "ProjectSlug": {
+            "category": "Tecnología",
+            "webProject": "Proyecto Web"
         }
     }
 }
