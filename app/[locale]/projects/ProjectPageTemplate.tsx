@@ -1,5 +1,6 @@
 import Image from "next/image";
 import techData from "@/data/tech.json"
+import projectData from "@/data/projects.json"
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import { ProjectData } from "@/lib/types/projectData";
@@ -9,6 +10,12 @@ import ContentChunk from "./components/ContentChunk";
 import ContentList from "./components/ContentList";
 import mapTechLabel from "@/lib/utils/mapTechLabel";
 import { Tech } from "@/lib/types/tech";
+import Gallery from "@/components/gallery/Gallery";
+import { resultsGalleries, showcaseGalleries } from "@/data/galleries";
+import SectionSt from "@/components/SectionSt";
+import mapProjectCard from "@/lib/utils/mapProjectCard";
+import ProjectCard from "@/components/ProjectCard";
+import { projectSorterWeb } from "@/lib/utils/prioritySort";
 
 interface Props {
     project: ProjectData;
@@ -17,6 +24,16 @@ interface Props {
 
 export default function ProjectPageTemplate({ project, locale }: Props) {
     const t = useTranslations('ProjectPage')
+    const otherProjects = projectData.filter(el => el.type === project.type && el.slug !== project.slug)
+
+    const getSorterFn = () => {
+        switch(project.type) {
+            case 'web-dev':
+                return projectSorterWeb;
+            default:
+                return projectSorterWeb;
+        }
+    }
 
     return (
     <main className="header-padding">
@@ -25,52 +42,47 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
             lg:px-24 lg:py-24
             bg-gray-300"
         >
-            <h1 className="mb-4 lg:mb-8 text-4xl lg:text-5xl font-semibold">
-                {project.title}
-            </h1>
-            <p className="
-                mb-16
-                text-my-lg text-black"
-            >
-                {project.description[locale]}
-            </p>
-            {project.liveUrl &&
-                <BlackBtn
-                    href={project.liveUrl}
-                    label={t('liveLink')}
-                    external={true}
-                    size="lg"
-                    className="mb-8 md:mb-16"
-                />
-            }
-            {/* Tech tags */}
-            <div className="mb-8 flex gap-4 items-center flex-wrap">
-                <span className="text-xl lg:text-2xl font-semibold tracking-wide">
-                    {t('tech')}:
-                </span>
-                {/* Tags */}
-                {project.tech.map((el, index) =>
-                    <span
-                        key={index}
-                        className={clsx(
-                            "px-4 py-1 lg:px-4 lg:py-2",
-                            "text-my-lg text-br-white",
-                            "rounded-full",
-                            techData[el as Tech].bg
-                        )}
-                    >
-                        {mapTechLabel(el)}
-                    </span>
-                )}
-            </div>
-            {/* Div with two halves for the rest of content */}
-            <div className="flex flex-col-reverse lg:flex-row">
+            {/* Div with grid for columns */}
+            <div className="grid grid-cols-[1fr_1fr] gap-8">
                 {/* Left div */}
-                <div className="
-                    w-full
-                    lg:w-1/2 lg:pr-8
-                    flex flex-col gap-8"
-                >
+                <div className="flex flex-col gap-8">
+                    {/* Title */}
+                    <h1 className="text-4xl md:text-5xl xl:text-6xl font-semibold">
+                        {project.title}
+                    </h1>
+                    {/* Tech tags */}
+                    <div className="flex gap-4">
+                        {project.tech.map((el, index) =>
+                            <span
+                                key={index}
+                                className={clsx(
+                                    "px-4 py-1 lg:px-4 lg:py-2",
+                                    "text-my-lg text-br-white",
+                                    "rounded-lg",
+                                    techData[el as Tech].bg
+                                )}
+                            >
+                                {mapTechLabel(el)}
+                            </span>
+                        )}
+                    </div>
+                    {/* Description */}
+                    <p className="
+                        mb-8
+                        text-my-lg text-black"
+                    >
+                        {project.description[locale]}
+                    </p>
+                    {/* Live site */}
+                    {project.liveUrl &&
+                        <BlackBtn
+                            href={project.liveUrl}
+                            label={t('liveLink')}
+                            external={true}
+                            size="lg"
+                            className="mb-4 md:mb-8"
+                        />
+                    }
                     {/* Implementations */}
                     {project.implementations && (
                         <ContentChunk title={t('implementations')}>
@@ -132,79 +144,84 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                     </ContentChunk>
                 </div>
                 {/* Right div (images) */}
-                <div className="w-full lg:w-1/2">
+                {/* sticky top-[calc(var(--spacing-header-height)+2rem)] */}
+                <div className="flex flex-col gap-8">
                     <Image
                         src={project.coverSrc}
                         width={1200}
                         height={630}
                         className="
                             w-full aspect-[40/21]
-                            sticky top-[calc(var(--spacing-header-height)+2rem)]
                             rounded-2xl"
                         priority
                         alt={project.title}
                     />
-                    {/* Gallery */}
-                    {/* <div className="
-                        w-full relative aspect-og
-                        grid grid-cols-4 grid-rows-2 gap-8
-                        rounded-2xl overflow-hidden
-                        select-none cursor-pointer group hover:gap-2 duration-200
-                        before:content-[''] before:absolute before:inset-0 before:bg-black/60 before:z-10"
-                    >
-                        <span className="
-                            absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20
-                            text-mywhite text-4xl group-hover:text-[2.5rem] duration-200"
+                    {/* Galleries */}
+                    {showcaseGalleries[project.slug] && (
+                        <div className={clsx(
+                            "w-full",
+                            "flex flex-col gap-8"
+                        )}>
+                            <h2 className="text-3xl text-black font-semibold">
+                                {t('ssRecordings')}
+                            </h2>
+                            <Gallery
+                                gridVersion='projectSlug'
+                                gridClassName="
+                                    w-full
+                                    grid grid-cols-3 auto-rows-[200px] gap-4"
+                                media={showcaseGalleries[project.slug]}
+                            />
+                        </div>
+                    )}
+                    {resultsGalleries[project.slug] && (
+                        <div className="
+                            w-full
+                            flex flex-col gap-8"
                         >
-                            {t('seeGallery')}
-                        </span>
-                        COMMENT Images
-                        <div className="w-full h-full rounded-2xl overflow-hidden">
-                            <img
-                                src={'/assets/lpdh.webp'}
-                                className="w-full h-full object-cover rounded-2xl"
-                                alt={title}
+                            <h2 className="text-3xl text-black font-semibold">
+                                {t('resultsGallery')}
+                            </h2>
+                            <Gallery
+                                gridVersion='projectSlug'
+                                gridClassName="
+                                    w-full
+                                    grid grid-cols-3 auto-rows-[200px] gap-4"
+                                media={resultsGalleries[project.slug]}
                             />
                         </div>
-                        <div className="row-span-2 w-full h-full rounded-2xl overflow-hidden">
-                            <img
-                                src={'/assets/lpdh.webp'}
-                                className="w-full h-full object-cover rounded-2xl"
-                                alt={title}
-                            />
-                        </div>
-                        <div className="w-full h-full rounded-2xl overflow-hidden">
-                            <img
-                                src={'/assets/lpdh.webp'}
-                                className="w-full h-full object-cover rounded-2xl"
-                                alt={title}
-                            />
-                        </div>
-                        <div className="row-span-2 w-full h-full rounded-2xl overflow-hidden">
-                            <img
-                                src={'/assets/lpdh.webp'}
-                                className="w-full h-full object-cover rounded-2xl"
-                                alt={title}
-                            />
-                        </div>
-                        <div className="w-full h-full rounded-2xl overflow-hidden">
-                            <img
-                                src={'/assets/lpdh.webp'}
-                                className="w-full h-full object-cover rounded-2xl"
-                                alt={title}
-                            />
-                        </div>
-                        <div className="w-full h-full rounded-2xl overflow-hidden">
-                            <img
-                                src={'/assets/lpdh.webp'}
-                                className="w-full h-full object-cover rounded-2xl"
-                                alt={title}
-                            />
-                        </div>
-                    </div> */}
+                    )}
+                    {/* Live site */}
+                    {project.liveUrl &&
+                        <BlackBtn
+                            href={project.liveUrl}
+                            label={t('liveLink')}
+                            external={true}
+                            size="lg"
+                            className="sticky top-[calc(var(--spacing-header-height)+2rem)] self-end mt-8"
+                        />
+                    }
                 </div>
             </div>
         </section>
+        <SectionSt
+            title={t('h2OtherProjects')}
+            bgColor="bg-gray-400"
+        >
+            <div className="flex flex-wrap gap-8">
+                {otherProjects
+                    .map(el => mapProjectCard(el, locale))
+                    .sort(getSorterFn())
+                    .map((el, index) => (
+                        <ProjectCard
+                            key={index}
+                            project={el}
+                            theme="light"
+                        />
+                    ))
+                }
+            </div>
+        </SectionSt>
     </main>
     )
 }

@@ -17,7 +17,7 @@ const Header = () => {
         lg:pl-6 lg:pr-4
         flex items-center justify-between
         bg-br-white
-        text-black font-semibold z-40"
+        text-black font-semibold z-[9000]"
     >
         <Link
             href="/"

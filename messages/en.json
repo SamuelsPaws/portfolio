@@ -171,7 +171,8 @@
         "webDevProjects": "Web Development Projects",
         "otherProjects": "Other Projects",
         "about": "About",
-        "aboutMe": "About Me"
+        "aboutMe": "About Me",
+        "viewGallery": "View Gallery"
     },
     "ProjectPage": {
         "liveLink": "Visit Live Site",
@@ -184,7 +185,10 @@
         "challenges": "Challenges Solved",
         "whatDemonstrates": "What This Demonstrates",
         "myRole": "My Role",
-        "seeGallery": "See Gallery"
+        "seeGallery": "See Gallery",
+        "ssRecordings": "Screenshots / Recordings",
+        "resultsGallery": "Results Gallery",
+        "h2OtherProjects": "Explore Similar Projects"
     },
     "HomePage": {
         "h1-1": "Hi, I'm Samuel, front-end web developer.",
