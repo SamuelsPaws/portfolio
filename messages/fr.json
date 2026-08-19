@@ -219,5 +219,100 @@
         "h1": "Entrer en Contact",
         "overview": "Je suis actuellement disponible pour des projets freelance. N’hésitez pas à me contacter.",
         "contactPhone": "Me Contacter par Téléphone"
+    },
+    "Metadata": {
+        "Home": {
+            "title": "Samuel Baquero | Développeur Frontend",
+            "description": "Portfolio de Samuel Baquero, développeur frontend spécialisé en Next.js, React, TypeScript et Tailwind CSS. Découvrez des projets web commerciaux conçus avec un fort accent sur les performances, le SEO, l'accessibilité et une expérience utilisateur soignée.",
+            "keywords": [
+                "Samuel Baquero",
+                "Développeur Frontend",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Portfolio"
+            ],
+            "ogTitle": "Samuel Baquero | Développeur Frontend",
+            "ogDescription": "Développeur frontend créant des expériences web modernes, performantes et optimisées pour le SEO avec Next.js, React, TypeScript et Tailwind CSS.",
+            "twitterTitle": "Samuel Baquero | Développeur Frontend",
+            "twitterDescription": "Découvrez des projets web commerciaux axés sur les performances, l'accessibilité et une excellente expérience utilisateur.",
+            "category": "Technologie"
+        },
+        "WebdevProjects": {
+            "title": "Projets de Développement Web | Samuel Baquero",
+            "description": "Découvrez une sélection de projets web commerciaux réalisés pour de véritables entreprises. Des études de cas mettant en avant une architecture frontend moderne, le SEO technique, l'intégration de CMS, l'optimisation des performances et une expérience utilisateur soignée.",
+            "keywords": [
+                "Projets de Développement Web",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Développement Frontend",
+                "Projets Commerciaux",
+                "Études de Cas",
+                "Portfolio"
+            ],
+            "ogTitle": "Projets de Développement Web | Samuel Baquero",
+            "ogDescription": "Sites web commerciaux et études de cas illustrant un développement frontend moderne, le SEO technique, les architectures CMS et des performances optimisées.",
+            "twitterTitle": "Projets de Développement Web | Samuel Baquero",
+            "twitterDescription": "Découvrez des projets web commerciaux conçus avec un fort accent sur les performances, l'évolutivité, le SEO et l'expérience utilisateur.",
+            "category": "Développement Web"
+        },
+        "OtherProjects": {
+            "title": "Autres Projets | Samuel Baquero",
+            "description": "Découvrez des projets logiciels personnels, des applications expérimentales et des défis techniques développés en JavaScript, TypeScript, Python et d'autres technologies. Des jeux aux outils de productivité, ces projets mettent en avant l'architecture logicielle, la résolution de problèmes et des concepts avancés d'ingénierie.",
+            "keywords": [
+                "Projets Personnels",
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "Ingénierie Logicielle",
+                "Développement de Jeux",
+                "Algorithmes",
+                "Portfolio"
+            ],
+            "ogTitle": "Autres Projets | Samuel Baquero",
+            "ogDescription": "Une collection de projets personnels, de jeux et d'expérimentations techniques mettant en valeur l'ingénierie logicielle, l'architecture et la résolution de problèmes.",
+            "twitterTitle": "Autres Projets | Samuel Baquero",
+            "twitterDescription": "Découvrez des applications personnelles, des jeux et des projets expérimentaux illustrant des concepts avancés de programmation et un solide savoir-faire technique.",
+            "category": "Développement Logiciel"
+        },
+        "About": {
+            "title": "À Propos | Samuel Baquero",
+            "description": "Découvrez Samuel Baquero, développeur frontend basé à Quito, en Équateur. Explorez mon approche de l'architecture logicielle, de la résolution de problèmes, du développement d'interfaces et de la création d'applications web évolutives et maintenables.",
+            "keywords": [
+                "À propos de Samuel Baquero",
+                "Développeur Frontend",
+                "Architecture Logicielle",
+                "Résolution de Problèmes",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Ingénierie Logicielle"
+            ],
+            "ogTitle": "À Propos | Samuel Baquero",
+            "ogDescription": "Découvrez le développeur derrière ces projets, sa philosophie d'ingénierie, son approche de l'architecture logicielle et du développement frontend.",
+            "twitterTitle": "À Propos | Samuel Baquero",
+            "twitterDescription": "Découvrez ma philosophie de développement, mon approche technique et les principes qui guident chacun de mes projets.",
+            "category": "Technologie"
+        },
+        "Contact": {
+            "title": "Contact | Samuel Baquero",
+            "description": "Contactez Samuel Baquero pour des projets de développement web en freelance, des collaborations ou des conseils techniques. Vous pouvez me joindre par e-mail, téléphone ou réseaux sociaux pour discuter de votre prochain projet.",
+            "keywords": [
+                "Contact",
+                "Samuel Baquero",
+                "Développeur Frontend Freelance",
+                "Développement Web",
+                "Next.js",
+                "React",
+                "Engager un Développeur",
+                "Développement Logiciel"
+            ],
+            "ogTitle": "Contact | Samuel Baquero",
+            "ogDescription": "Discutons de votre prochain projet web. Contactez-moi pour du développement freelance, des collaborations ou du conseil technique.",
+            "twitterTitle": "Contact | Samuel Baquero",
+            "twitterDescription": "Disponible pour des projets de développement web freelance, des collaborations et du conseil technique. Contactez-moi par e-mail, téléphone ou réseaux sociaux.",
+            "category": "Technologie"
+        }
     }
 }

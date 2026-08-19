@@ -2,6 +2,86 @@ import { useTranslations } from "next-intl";
 import CopyBtn from "./components/CopyBtn";
 import EmailBtn from "./components/EmailBtn";
 import PhoneBtn from "./components/PhoneBtn";
+import portfolioSam from "@/data/portfolioSam";
+import { LocaleKey } from "@/lib/types/localeKey";
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { availableLocales, localeCodesArray } from "@/data/locales";
+
+const BASE_URL = portfolioSam.url;
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: LocaleKey }>
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "Metadata.Contact",
+    });
+
+    const canonical = `${BASE_URL}/${locale}/contact`;
+
+    return {
+        metadataBase: new URL(BASE_URL),
+
+        title: t("title"),
+        description: t("description"),
+        
+        keywords: t.raw("keywords"),
+        applicationName: portfolioSam.name,
+        authors: [
+            {
+                name: portfolioSam.author,
+            },
+        ],
+        creator: portfolioSam.author,
+        publisher: portfolioSam.author,
+        alternates: {
+            canonical,
+            languages: Object.fromEntries(localeCodesArray.map(el => [el[0], `${BASE_URL}/${el[1]}/contact`])),
+        },
+
+        openGraph: {
+            title: t("ogTitle"),
+            description: t("ogDescription"),
+            url: canonical,
+            siteName: portfolioSam.name,
+            locale: availableLocales[locale],
+            type: "website",
+            images: [
+                {
+                    url: portfolioSam.image,
+                    width: 1200,
+                    height: 630,
+                    alt: portfolioSam.name,
+                },
+            ],
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: t("twitterTitle"),
+            description: t("twitterDescription"),
+            images: [portfolioSam.image],
+        },
+
+        category: t('category'),
+
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+                "max-video-preview": -1,
+            },
+        },
+  };
+}
 
 export default function Contact() {
     const t = useTranslations('ContactPage')

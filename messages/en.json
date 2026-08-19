@@ -219,5 +219,100 @@
         "h1": "Get In Touch",
         "overview": "I'm currently available for freelance projects. Feel free to reach out.",
         "contactPhone": "Contact Me Via Phone"
+    },
+    "Metadata": {
+        "Home": {
+            "title": "Samuel Baquero | Frontend Developer",
+            "description": "Portfolio of Samuel Baquero, a frontend developer specializing in Next.js, React, TypeScript, and Tailwind CSS. Explore commercial web projects focused on performance, SEO, accessibility, and thoughtful user experience.",
+            "keywords": [
+                "Samuel Baquero",
+                "Frontend Developer",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Portfolio"
+            ],
+            "ogTitle": "Samuel Baquero | Frontend Developer",
+            "ogDescription": "Frontend developer crafting fast, modern, and SEO-focused web experiences with Next.js, React, TypeScript, and Tailwind CSS.",
+            "twitterTitle": "Samuel Baquero | Frontend Developer",
+            "twitterDescription": "Explore commercial web projects built with a focus on performance, accessibility, and exceptional user experience.",
+            "category": "Technology"
+        },
+        "WebdevProjects": {
+            "title": "Web Development Projects | Samuel Baquero",
+            "description": "Explore a selection of commercial web development projects built for real businesses. Case studies highlighting modern frontend architecture, technical SEO, CMS integrations, performance optimization, and thoughtful user experience.",
+            "keywords": [
+                "Web Development Projects",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Frontend Development",
+                "Commercial Projects",
+                "Case Studies",
+                "Portfolio"
+            ],
+            "ogTitle": "Web Development Projects | Samuel Baquero",
+            "ogDescription": "Commercial websites and case studies showcasing modern frontend development, technical SEO, CMS architecture, and performance-focused engineering.",
+            "twitterTitle": "Web Development Projects | Samuel Baquero",
+            "twitterDescription": "Browse commercial web projects built with a focus on performance, scalability, SEO, and user experience.",
+            "category": "Web Development"
+        },
+        "OtherProjects": {
+            "title": "Other Projects | Samuel Baquero",
+            "description": "Explore personal software projects, experimental applications, and technical challenges built with JavaScript, TypeScript, Python, and other technologies. From games to productivity tools, these projects showcase problem-solving, software architecture, and engineering depth.",
+            "keywords": [
+                "Personal Projects",
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "Software Engineering",
+                "Game Development",
+                "Algorithms",
+                "Portfolio"
+            ],
+            "ogTitle": "Other Projects | Samuel Baquero",
+            "ogDescription": "A collection of personal software projects, games, and technical experiments showcasing software engineering, architecture, and problem-solving.",
+            "twitterTitle": "Other Projects | Samuel Baquero",
+            "twitterDescription": "Discover personal apps, games, and experimental software highlighting advanced programming concepts and technical craftsmanship.",
+            "category": "Software Development"
+        },
+        "About": {
+            "title": "About | Samuel Baquero",
+            "description": "Learn more about Samuel Baquero, a frontend developer based in Quito, Ecuador. Discover my approach to software architecture, problem solving, UI development, and building scalable, maintainable web applications.",
+            "keywords": [
+                "About Samuel Baquero",
+                "Frontend Developer",
+                "Software Architecture",
+                "Problem Solving",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Software Engineering"
+            ],
+            "ogTitle": "About | Samuel Baquero",
+            "ogDescription": "Get to know the developer behind the projects, from engineering philosophy and software architecture to frontend development and technical problem solving.",
+            "twitterTitle": "About | Samuel Baquero",
+            "twitterDescription": "Discover my development philosophy, technical approach, and the principles that guide every project I build.",
+            "category": "Technology"
+        },
+        "Contact": {
+            "title": "Contact | Samuel Baquero",
+            "description": "Get in touch with Samuel Baquero for freelance web development projects, collaborations, or technical consultations. Reach out via email, phone, or social media to discuss your next project.",
+            "keywords": [
+                "Contact",
+                "Samuel Baquero",
+                "Freelance Frontend Developer",
+                "Web Development",
+                "Next.js",
+                "React",
+                "Hire Developer",
+                "Software Development"
+            ],
+            "ogTitle": "Contact | Samuel Baquero",
+            "ogDescription": "Let's discuss your next web project. Get in touch for freelance development, collaborations, or technical consulting.",
+            "twitterTitle": "Contact | Samuel Baquero",
+            "twitterDescription": "Available for freelance web development, collaborations, and technical consulting. Reach out by email, phone, or social media.",
+            "category": "Technology"
+        }
     }
 }

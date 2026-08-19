@@ -219,5 +219,100 @@
         "h1": "Ponte en Contacto",
         "overview": "Actualmente estoy disponible para proyectos freelance. No dudes en contactarme.",
         "contactPhone": "Contáctame por Teléfono"
+    },
+    "Metadata": {
+        "Home": {
+            "title": "Samuel Baquero | Desarrollador Frontend",
+            "description": "Portafolio de Samuel Baquero, desarrollador frontend especializado en Next.js, React, TypeScript y Tailwind CSS. Descubre proyectos comerciales enfocados en rendimiento, SEO, accesibilidad y una experiencia de usuario cuidadosamente diseñada.",
+            "keywords": [
+                "Samuel Baquero",
+                "Desarrollador Frontend",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Portafolio"
+            ],
+            "ogTitle": "Samuel Baquero | Desarrollador Frontend",
+            "ogDescription": "Desarrollador frontend que crea experiencias web modernas, rápidas y optimizadas para SEO con Next.js, React, TypeScript y Tailwind CSS.",
+            "twitterTitle": "Samuel Baquero | Desarrollador Frontend",
+            "twitterDescription": "Conoce proyectos web comerciales desarrollados con un enfoque en rendimiento, accesibilidad y una excelente experiencia de usuario.",
+            "category": "Tecnología"
+        },
+        "WebdevProjects": {
+            "title": "Proyectos de Desarrollo Web | Samuel Baquero",
+            "description": "Explora una selección de proyectos comerciales desarrollados para empresas reales. Casos de estudio que destacan arquitectura frontend moderna, SEO técnico, integración con CMS, optimización de rendimiento y una experiencia de usuario cuidadosamente diseñada.",
+            "keywords": [
+                "Proyectos de Desarrollo Web",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Desarrollo Frontend",
+                "Proyectos Comerciales",
+                "Casos de Estudio",
+                "Portafolio"
+            ],
+            "ogTitle": "Proyectos de Desarrollo Web | Samuel Baquero",
+            "ogDescription": "Sitios web comerciales y casos de estudio que muestran desarrollo frontend moderno, SEO técnico, arquitectura CMS y un enfoque en rendimiento.",
+            "twitterTitle": "Proyectos de Desarrollo Web | Samuel Baquero",
+            "twitterDescription": "Descubre proyectos comerciales desarrollados con un enfoque en rendimiento, escalabilidad, SEO y experiencia de usuario.",
+            "category": "Desarrollo Web"
+        },
+        "OtherProjects": {
+            "title": "Otros Proyectos | Samuel Baquero",
+            "description": "Explora proyectos personales de software, aplicaciones experimentales y desafíos técnicos desarrollados con JavaScript, TypeScript, Python y otras tecnologías. Desde juegos hasta herramientas de productividad, estos proyectos reflejan resolución de problemas, arquitectura de software y profundidad técnica.",
+            "keywords": [
+                "Proyectos Personales",
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "Ingeniería de Software",
+                "Desarrollo de Juegos",
+                "Algoritmos",
+                "Portafolio"
+            ],
+            "ogTitle": "Otros Proyectos | Samuel Baquero",
+            "ogDescription": "Una colección de proyectos personales, juegos y experimentos técnicos que demuestran ingeniería de software, arquitectura y resolución de problemas.",
+            "twitterTitle": "Otros Proyectos | Samuel Baquero",
+            "twitterDescription": "Descubre aplicaciones, juegos y proyectos experimentales que ponen en práctica conceptos avanzados de programación y desarrollo de software.",
+            "category": "Desarrollo de Software"
+        },
+        "About": {
+            "title": "Sobre Mí | Samuel Baquero",
+            "description": "Conoce más sobre Samuel Baquero, desarrollador frontend radicado en Quito, Ecuador. Descubre mi enfoque hacia la arquitectura de software, la resolución de problemas, el desarrollo de interfaces y la creación de aplicaciones web escalables y mantenibles.",
+            "keywords": [
+                "Sobre Samuel Baquero",
+                "Desarrollador Frontend",
+                "Arquitectura de Software",
+                "Resolución de Problemas",
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Ingeniería de Software"
+            ],
+            "ogTitle": "Sobre Mí | Samuel Baquero",
+            "ogDescription": "Conoce al desarrollador detrás de los proyectos, su filosofía de ingeniería, enfoque en arquitectura de software y desarrollo frontend.",
+            "twitterTitle": "Sobre Mí | Samuel Baquero",
+            "twitterDescription": "Descubre mi filosofía de desarrollo, mi enfoque técnico y los principios que guían cada proyecto que construyo.",
+            "category": "Tecnología"
+        },
+        "Contact": {
+            "title": "Contacto | Samuel Baquero",
+            "description": "Ponte en contacto con Samuel Baquero para proyectos de desarrollo web freelance, colaboraciones o asesorías técnicas. Puedes comunicarte por correo electrónico, teléfono o redes sociales para hablar sobre tu próximo proyecto.",
+            "keywords": [
+                "Contacto",
+                "Samuel Baquero",
+                "Desarrollador Frontend Freelance",
+                "Desarrollo Web",
+                "Next.js",
+                "React",
+                "Contratar Desarrollador",
+                "Desarrollo de Software"
+            ],
+            "ogTitle": "Contacto | Samuel Baquero",
+            "ogDescription": "Hablemos sobre tu próximo proyecto web. Contáctame para desarrollo freelance, colaboraciones o asesorías técnicas.",
+            "twitterTitle": "Contacto | Samuel Baquero",
+            "twitterDescription": "Disponible para proyectos freelance de desarrollo web, colaboraciones y asesorías técnicas. Contáctame por correo, teléfono o redes sociales.",
+            "category": "Tecnología"
+        }
     }
 }
