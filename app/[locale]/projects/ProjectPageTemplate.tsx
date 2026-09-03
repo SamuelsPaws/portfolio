@@ -71,7 +71,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                     {/* Description */}
                     <p className="
                         mb-0 md:mb-8
-                        text-my-lg text-black"
+                        text-myf-lg text-black"
                     >
                         {project.description[locale]}
                     </p>
@@ -95,7 +95,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                     )}
                     {/* Overview */}
                     <ContentChunk title={t('overview')}>
-                        <p className="mt-4 text-my-md text-gray-700 text-justify">
+                        <p className="mt-4 text-myf-lg text-gray-700 text-justify">
                             {project.overview[locale]}
                         </p>
                     </ContentChunk>
@@ -140,7 +140,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                     )} */}
                     {/* My role */}
                     <ContentChunk title={t('myRole')}>
-                        <p className="mt-4 text-my-md text-gray-700 text-justify">
+                        <p className="mt-4 text-myf-lg text-gray-700 text-justify">
                             {project.myRole[locale]}
                         </p>
                     </ContentChunk>

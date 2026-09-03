@@ -7,7 +7,7 @@ interface Props {
 const ListItem = ({ text }: Props) => {
     return (
     <li>
-        <p className="text-my-md text-gray-700">
+        <p className="text-myf-lg text-gray-700">
             <CustomIcon
                 iconId="check"
                 className="mr-2"
