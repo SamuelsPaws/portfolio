@@ -43,7 +43,9 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
             bg-gray-300"
         >
             {/* Div with grid for columns */}
-            <div className="grid grid-cols-[1fr_1fr] gap-8">
+            <div className="
+                grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8"
+            >
                 {/* Left div */}
                 <div className="flex flex-col gap-8">
                     {/* Title */}
@@ -68,7 +70,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                     </div>
                     {/* Description */}
                     <p className="
-                        mb-8
+                        mb-0 md:mb-8
                         text-my-lg text-black"
                     >
                         {project.description[locale]}
@@ -80,7 +82,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                             label={t('liveLink')}
                             external={true}
                             size="lg"
-                            className="mb-4 md:mb-8"
+                            className="mb-0 md:mb-8"
                         />
                     }
                     {/* Implementations */}
@@ -169,7 +171,9 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                                 gridVersion='projectSlug'
                                 gridClassName="
                                     w-full
-                                    grid grid-cols-3 auto-rows-[200px] gap-4"
+                                    grid grid-cols-3
+                                    auto-rows-[120px] gap-2
+                                    md:auto-rows-[200px] md:gap-4"
                                 media={showcaseGalleries[project.slug]}
                             />
                         </div>
@@ -186,7 +190,9 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                                 gridVersion='projectSlug'
                                 gridClassName="
                                     w-full
-                                    grid grid-cols-3 auto-rows-[200px] gap-4"
+                                    grid grid-cols-3
+                                    auto-rows-[120px] gap-2
+                                    md:auto-rows-[200px] md:gap-4"
                                 media={resultsGalleries[project.slug]}
                             />
                         </div>
@@ -198,7 +204,9 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                             label={t('liveLink')}
                             external={true}
                             size="lg"
-                            className="sticky top-[calc(var(--spacing-header-height)+2rem)] self-end mt-8"
+                            className="
+                                sticky top-[calc(var(--spacing-header-height)+2rem)]
+                                mt-8 self-center md:self-end"
                         />
                     }
                 </div>
