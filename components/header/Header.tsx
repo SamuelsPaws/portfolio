@@ -1,24 +1,43 @@
+'use client'
 import Link from "next/link"
 import LangContainer from "./subcomponents/LangContainer"
 import { useTranslations } from "next-intl"
 import ProjectsDdContainer from "./subcomponents/ProjectsDdContainer"
 import BurgerMenu from "./subcomponents/BurgerMenu"
 import LangContainerMob from "./subcomponents/LangContainerMob"
+import { useEffect, useState } from "react"
+import clsx from "clsx"
 
 const Header = () => {
+    const [isAtTop, setIsAtTop] = useState<boolean>(true);
     const t = useTranslations('Reusable')
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsAtTop(window.scrollY < 100);
+        }
+
+        handleScroll()
+
+        window.addEventListener("scroll", handleScroll, { passive: true })
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
 
   return (
     // pl is 6 not 8 to compensate for Home btn padding
-    <header className="
-        fixed top-0 left-0
-        w-full h-mob-header-height lg:h-header-height
-        pl-6 pr-8
-        lg:pl-6 lg:pr-4
-        flex items-center justify-between
-        bg-br-white
-        text-black font-semibold z-[9000]"
-    >
+    <header className={clsx(
+        "fixed top-0 left-0",
+        "w-full h-mob-header-height lg:h-header-height",
+        "pl-6 pr-8",
+        "lg:pl-6 lg:pr-4",
+        "flex items-center justify-between",
+        "bg-br-white",
+        "text-black font-semibold z-[9000] duration-600",
+        isAtTop ? "shadow-none" : "shadow-md"
+    )}>
         <Link
             href="/"
             className="

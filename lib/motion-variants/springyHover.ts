@@ -7,7 +7,7 @@ export const springyHover: Variants = {
         transition: {
             type: 'spring',
             stiffness: 400,
-            damping: 15,
+            damping: 16,
         },
         boxShadow: 'var(--shadow-flat-sm)'
     }
@@ -20,7 +20,7 @@ export const springyHoverBigger: Variants = {
         transition: {
             type: 'spring',
             stiffness: 400,
-            damping: 16,
+            damping: 20,
         },
         boxShadow: 'var(--shadow-flat-lg)'
     }
@@ -28,7 +28,7 @@ export const springyHoverBigger: Variants = {
 
 export const springyHoverRevealBig: Variants = {
     hidden: {
-        y: 16,
+        y: 24,
         scale: 0.95,
         opacity: 0
     },
@@ -39,7 +39,7 @@ export const springyHoverRevealBig: Variants = {
         transition: {
             type: 'spring',
             stiffness: 400,
-            damping: 16,
+            damping: 18,
         }
     },
     hovered: {
@@ -48,7 +48,7 @@ export const springyHoverRevealBig: Variants = {
         transition: {
             type: 'spring',
             stiffness: 400,
-            damping: 16,
+            damping: 18,
         },
         boxShadow: 'var(--shadow-flat-lg)'
     }

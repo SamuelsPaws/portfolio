@@ -38,7 +38,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
     return (
     <main className="header-padding">
         <section className="
-            px-8 py-16
+            px-8 py-12
             lg:px-24 lg:py-24
             bg-gray-300"
         >
@@ -47,9 +47,9 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                 grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8"
             >
                 {/* Left div */}
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 md:gap-8">
                     {/* Title */}
-                    <h1 className="text-4xl md:text-5xl xl:text-6xl font-semibold">
+                    <h1 className="text-3xl md:text-5xl xl:text-6xl font-semibold">
                         {project.title}
                     </h1>
                     {/* Tech tags */}
@@ -58,7 +58,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                             <span
                                 key={index}
                                 className={clsx(
-                                    "px-4 py-1 lg:px-4 lg:py-2",
+                                    "px-4 py-2 lg:px-4 lg:py-2",
                                     "text-my-lg text-br-white",
                                     "rounded-lg",
                                     techData[el as Tech].bg
@@ -69,12 +69,21 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                         )}
                     </div>
                     {/* Description */}
-                    <p className="
-                        mb-0 md:mb-8
-                        text-myf-lg text-black"
-                    >
+                    <p className="text-myf-lg text-black">
                         {project.description[locale]}
                     </p>
+                    {/* Mobile image */}
+                    <Image
+                        src={project.coverSrc}
+                        width={1200}
+                        height={630}
+                        className="
+                            md:hidden
+                            w-full aspect-[40/21]
+                            rounded-2xl"
+                        priority
+                        alt={project.title}
+                    />
                     {/* Live site */}
                     {project.liveUrl &&
                         <BlackBtn
@@ -82,7 +91,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                             label={t('liveLink')}
                             external={true}
                             size="lg"
-                            className="mb-0 md:mb-8"
+                            className="self-center md:self-start"
                         />
                     }
                     {/* Implementations */}
@@ -153,6 +162,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                         width={1200}
                         height={630}
                         className="
+                            hidden md:block
                             w-full aspect-[40/21]
                             rounded-2xl"
                         priority

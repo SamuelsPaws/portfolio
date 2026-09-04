@@ -14,7 +14,11 @@ const TechIcon = ({ fileName, text }: { fileName: string, text: string }) => {
           alt={text}
         />
       </div>
-      <span className="text-[8px] xl:text-sm text-center">
+      <span className="
+        hidden md:block
+        md:text-xs xl:text-sm
+        text-center"
+      >
         {text}
       </span>
     </div>
