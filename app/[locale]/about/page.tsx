@@ -107,12 +107,12 @@ export default function About() {
                     rounded-4xl overflow-hidden shadow-lg"
                 >
                     <Image
-                        src="/assets/about-photo.webp"
+                        src="/assets/headshot.JPG"
                         fill
                         sizes="100%"
-                        className="w-full object-cover object-top"
+                        className="w-full object-cover object-[50%_18%]"
                         priority
-                        alt="Picture of Samuel"
+                        alt="Photo of Samuel"
                     />
                 </div>
                 {/* Right div, general container 2/2 */}
@@ -168,7 +168,7 @@ export default function About() {
         </section>
         <section className="
             px-8 py-16
-            lg:px-32 lg:py-16
+            lg:px-32 lg:py-24
             bg-gray-300"
         >
             <h2 className="
