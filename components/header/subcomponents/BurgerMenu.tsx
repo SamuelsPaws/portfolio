@@ -25,7 +25,7 @@ const BurgerMenu = () => {
 
     return (
         <div className="
-            h-7 aspect-square lg:hidden
+            h-6 aspect-square lg:hidden
             text-white-1"
         >
             {/* Burger icon */}
@@ -34,18 +34,21 @@ const BurgerMenu = () => {
                 className="w-full h-full z-50 relative"
             >
                 <div className={`
-                    h-0.5 w-full bg-black
+                    h-0.5 w-full
+                    ${isOpen ? "bg-br-white" : "bg-black"}
                     absolute top-1 left-0
                     duration-300 ease-in-out
                     ${isOpen ? ' rotate-45 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' : ''}`}
                 ></div>
                 <div className={`
-                    h-0.5 w-full bg-black
+                    h-0.5 w-full
+                    ${isOpen ? "bg-br-white" : "bg-black"}
                     absolute left-0 top-1/2 -translate-y-1/2
                     ${isOpen ? 'opacity-0' : 'opacity-100'}`}
                 ></div>
                 <div className={`
-                    h-0.5 w-full bg-black
+                    h-0.5 w-full
+                    ${isOpen ? "bg-br-white" : "bg-black"}
                     absolute bottom-1 left-0
                     duration-300 ease-in-out
                     ${isOpen ? ' -rotate-45 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' : ''}`}
@@ -53,16 +56,16 @@ const BurgerMenu = () => {
             </button>
             {/* Actual menu */}
             <div className={`
-                w-full h-[60vh]
+                w-full h-[70vh]
                 pt-header-height-mob px-8
                 ${isOpen ? 'fixed' : 'hidden'}
                 top-0 left-0
-                bg-green-400 shadow-md`}
+                bg-black shadow-md`}
             >
                 <ul className="
                     w-full h-full
                     flex flex-col justify-center items-end gap-6
-                    text-xl font-semibold text-white-1"
+                    text-xl font-semibold text-br-white"
                 >
                     <li>
                         <Link
