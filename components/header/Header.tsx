@@ -2,11 +2,13 @@
 import Link from "next/link"
 import LangContainer from "./subcomponents/LangContainer"
 import { useTranslations } from "next-intl"
-import ProjectsDdContainer from "./subcomponents/ProjectsDdContainer"
-import BurgerMenu from "./subcomponents/BurgerMenu"
+import BurgerMenu from "./subcomponents/nav/BurgerMenu"
 import LangContainerMob from "./subcomponents/LangContainerMob"
 import { useEffect, useState } from "react"
 import clsx from "clsx"
+import navLinks from "@/data/nav"
+import NavLinkDesk from "./subcomponents/nav/NavLinkDesk"
+import ThemeBtn from "./subcomponents/ThemeBtn"
 
 const Header = () => {
     const [isAtTop, setIsAtTop] = useState<boolean>(true);
@@ -34,8 +36,9 @@ const Header = () => {
         "pl-6 pr-8",
         "lg:pl-6 lg:pr-4",
         "flex items-center justify-between",
-        "bg-br-white",
-        "text-black font-semibold z-[9000] duration-600",
+        "bg-br-white dark:bg-br-black",
+        "text-black dark:text-br-white",
+        "font-semibold z-[9000] duration-600",
         isAtTop ? "shadow-none" : "shadow-md"
     )}>
         <Link
@@ -61,20 +64,17 @@ const Header = () => {
             hidden lg:flex items-center gap-8
             text-md tracking-wider"
         >
+            <ThemeBtn />
             <LangContainer />
-            <ProjectsDdContainer />
-            <Link
-                href="/about"
-                className="px-2"
-            >
-                {t('about').toUpperCase()}
-            </Link>
-            <Link
-                href="/contact"
-                className="px-6 py-2 bg-black text-white rounded-full"
-            >
-                {t('contactMe').toUpperCase()}
-            </Link>
+            <ul className="flex items-center gap-8">
+                {navLinks.slice(1).map((el, index) => (
+                    <NavLinkDesk
+                        key={index}
+                        item={el}
+                        isLast={index >= navLinks.length - 2}
+                    />
+                ))}
+            </ul>
         </nav>
     </header>
   )

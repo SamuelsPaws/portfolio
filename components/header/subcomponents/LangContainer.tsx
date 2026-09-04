@@ -20,7 +20,11 @@ const LangContainer = () => {
 
     return (
     <div className='h-full hidden lg:flex items-center relative'>
-        <LangBtn setIsMenuOpen={setIsMenuOpen} ref={langBtnRef} />
+        <LangBtn
+            isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
+            ref={langBtnRef}
+        />
         <LangMenu
             changeLocale={changeLocale}
             isMenuOpen={isMenuOpen}

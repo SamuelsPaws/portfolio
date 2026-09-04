@@ -13,6 +13,22 @@ const locales = [
     'it'
 ]
 
+const variants = {
+    closed: {
+        opacity: 0,
+        y: -10,
+        pointerEvents: 'none'
+    },
+    open: {
+        opacity: 1,
+        y: 0,
+        pointerEvents: 'auto',
+        transition: {
+            duration: 0.2
+        }
+    }
+}
+
 interface Props {
     changeLocale: (locale: string) => void;
     isMenuOpen: boolean;
@@ -25,47 +41,29 @@ const LangMenuMob = ({ changeLocale, isMenuOpen, onClose, langBtnCurrent }: Prop
     const ref = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
-    if (!isMenuOpen) return
+        if (!isMenuOpen) return
 
-    function handlePointerDown(e: PointerEvent) {
-        if (!ref.current) return
- 
-        if (!ref.current.contains(e.target as Node) && !langBtnCurrent?.contains(e.target as Node)) {
-            onClose()
-        }
-    }
-
-    document.addEventListener("pointerdown", handlePointerDown);
-
-    return () => {
-      document.removeEventListener("pointerdown", handlePointerDown);
-    };
-  }, [isMenuOpen, onClose]);
-
-    const variants = {
-        closed: {
-            opacity: 0,
-            y: -10,
-            pointerEvents: 'none'
-        },
-        open: {
-            opacity: 1,
-            y: 0,
-            pointerEvents: 'auto',
-            transition: {
-                duration: 0.2
+        function handlePointerDown(e: PointerEvent) {
+            if (!ref.current) return
+    
+            if (!ref.current.contains(e.target as Node) && !langBtnCurrent?.contains(e.target as Node)) {
+                onClose()
             }
         }
-    }
 
-  return (
+        document.addEventListener("pointerdown", handlePointerDown);
+
+        return () => {
+            document.removeEventListener("pointerdown", handlePointerDown);
+        };
+    }, [isMenuOpen, onClose])
+
+    return (
     <motion.div
         className={clsx(
             "absolute top-full left-1/2 -translate-x-1/2",
-            "p-2",
-            'flex flex-col gap-2',
-            "bg-sky-200",
-            "rounded-b-2xl",
+            'flex flex-col',
+            "border-x border-b border-gray-300 rounded-b-2xl overflow-hidden shadow-md"
         )}
         ref={ref}
         variants={variants}
@@ -78,7 +76,7 @@ const LangMenuMob = ({ changeLocale, isMenuOpen, onClose, langBtnCurrent }: Prop
                 assocLocale={el}
                 changeLocale={changeLocale}
                 label={el === 'it' ? 'ITA' : el.toUpperCase()}
-                isLast={index >= locales.length - 1}
+                isLast={index >= locales.length - 2}
             />
         )}
     </motion.div>

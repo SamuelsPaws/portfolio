@@ -105,11 +105,12 @@ export default async function Home({ params }: Props) {
             h-[102vh]
             px-8 lg:px-16
             flex flex-col items-center justify-center gap-8 lg:gap-16
-            bg-br-white"
+            bg-br-white dark:bg-br-black"
         >
             <h1 className="
                 text-3xl md:text-5xl xl:text-6xl
-                text-center text-black
+                text-center
+                text-black dark:text-br-white
                 font-semibold leading-12 lg:leading-20"
             >
                 {t('h1-1')}<br />{t('h1-2')}
@@ -125,7 +126,7 @@ export default async function Home({ params }: Props) {
         {/* Web dev projects */}
         <SectionSt
             title={t('h2WebDev')}
-            bgColor="bg-gray-400"
+            bgColor="bg-gray-400 dark:bg-br-gray-600"
         >
             {/* Container with the cards */}
             <div className="
@@ -152,7 +153,7 @@ export default async function Home({ params }: Props) {
         {/* Beyond web dev */}
         <SectionSt
             title={t('h2Beyond')}
-            bgColor="bg-br-white"
+            bgColor="bg-br-white dark:bg-br-black"
         >
             {/* Container with the cards */}
             <div className="

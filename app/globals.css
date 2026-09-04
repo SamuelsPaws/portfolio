@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
 	--background: #fafafa;
 	--foreground: #000;
@@ -9,14 +11,43 @@
 	--spacing-header-height: 4rem;
 	--spacing-mob-header-height: 4rem;
 	--text-md: 1rem;
+
 	--color-br-white: #fafafa;
-	--color-yellow-550: #D1AF00;
+	--color-br-black: #121216;
+	--color-br-gray-800: #2b2d31;
+	--color-br-gray-600: #46474d;
+	--color-br-gray-500: #63656e;
+
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--font-sans: var(--font-geist-sans);
 	--font-mono: var(--font-geist-mono);
+
 	--shadow-flat-sm: 2px 8px 0 #00000028;
 	--shadow-flat-lg: 4px 16px 0 #00000028;
+
+	--animate-fade-in-200: fade-in 200ms ease-out forwards;
+	--animate-fade-out-200: fade-out 200ms ease-out forwards;
+
+	@keyframes fade-in {
+		from {
+			opacity: 0
+		}
+
+		to {
+			opacity: 1
+		}
+	}
+
+	@keyframes fade-out {
+		from {
+			opacity: 1
+		}
+
+		to {
+			opacity: 0
+		}
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +78,10 @@ button {
 
 	.gb {
 		@apply border border-green-600;
+	}
+
+	.hover-animated-underline {
+		@apply after:content-[''] after:w-0 hover:after:w-[90%] after:duration-200 after:ease-out after:h-[2px] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:bg-black;
 	}
 
 	.text-my-sm {

@@ -7,6 +7,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import Footer from "@/components/footer/Footer";
+import Script from "next/script";
 
 const outfit = Outfit({
     subsets: ['latin'],
@@ -34,6 +35,7 @@ export default async function RootLayout({
     <html
       lang="es"
       className="h-full antialiased"
+      suppressHydrationWarning
     >
         <head>
         </head>

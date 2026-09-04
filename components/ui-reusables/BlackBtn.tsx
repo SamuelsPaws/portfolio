@@ -45,8 +45,10 @@ const BlackBtn = ({ href, label, external, className, size }: Props) => {
         getPadding(),
         "flex items-center gap-2",
         getTextSize(),
-        "text-br-white font-semibold",
-        "bg-black rounded-2xl"
+        "text-br-white dark:text-br-black"
+        ,"font-semibold",
+        "bg-black dark:bg-br-white",
+        "rounded-2xl"
     )
 
     if (external) {

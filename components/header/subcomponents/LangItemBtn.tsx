@@ -19,14 +19,14 @@ const LangItemBtn = ({ label, changeLocale, assocLocale, isLast }: Props) => {
         className={clsx(
             "px-4 py-4",
             "flex justify-center items-center gap-3 lg:gap-2",
-            "bg-br-white",
-            "select-none lg:hover:bg-gray-200 duration-200",
-            !isLast && "border-r border-gray-400"
+            "bg-br-white dark:bg-br-black",
+            "select-none md:hover:bg-gray-200 dark:md:hover:bg-br-gray-800 duration-200",
+            !isLast && "border-b md:border-b-0 md:border-r border-gray-400"
         )}
     >
         <div className="
-            h-8 aspect-square
-            rounded-full overflow-hidden relative"
+            h-6 w-8 relative
+            border border-gray-200 rounded-md overflow-hidden"
         >
             <Image
                 src={`/assets/${assocLocale}.svg`}
@@ -37,7 +37,9 @@ const LangItemBtn = ({ label, changeLocale, assocLocale, isLast }: Props) => {
                 alt={t('flagAlt')}
             />
         </div>
-        <span className="text-md lg:text-lg text-black">{label}</span>
+        <span className="text-md lg:text-lg text-black dark:text-br-white">
+            {label}
+        </span>
     </button>
     )
 }

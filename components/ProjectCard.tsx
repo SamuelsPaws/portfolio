@@ -28,8 +28,8 @@ const ProjectCard = ({ project, theme }: Props) => {
                 "p-4 lg:p-8 relative",
                 "flex flex-col gap-4 lg:gap-4",
                 "rounded-2xl overflow-hidden",
-                theme === 'dark' && "bg-black",
-                theme === 'light' && "bg-br-white"
+                theme === 'dark' && "bg-black dark:bg-gray-300",
+                theme === 'light' && "bg-br-white dark:bg-br-black"
             )}
             variants={variants}
             initial="hidden"
@@ -60,8 +60,8 @@ const ProjectCard = ({ project, theme }: Props) => {
                 <h3 className={clsx(
                     "mb-2",
                     "text-my-xl font-semibold",
-                    theme === 'dark' && "text-br-white",
-                    theme === "light" && "text-black"
+                    theme === 'dark' && "text-br-white dark:text-black",
+                    theme === "light" && "text-black dark:text-br-white"
                 )}>
                     {project.title}
                 </h3>
@@ -69,7 +69,7 @@ const ProjectCard = ({ project, theme }: Props) => {
                 <p className={clsx(
                     "mb-2",
                     "text-myf-lg font-semibold",
-                    theme === 'dark' && "text-green-500",
+                    theme === 'dark' && "text-green-500 dark:text-green-700",
                     theme === 'light' && "text-green-600"
                 )}>
                     {project.tech.map(mapTechLabel).join(', ')}
@@ -78,22 +78,22 @@ const ProjectCard = ({ project, theme }: Props) => {
                 <p className={clsx(
                     "mb-2 lg:mb-8",
                     "text-myf-lg",
-                    theme === 'dark' && "text-gray-300",
-                    theme === 'light' && "text-gray-700"
+                    theme === 'dark' && "text-gray-300 dark:text-black",
+                    theme === 'light' && "text-gray-700 dark:text-gray-200"
                 )}>
                     {project.description}
                 </p>
             </div>
+            {/* Arrow icon */}
             <div className={clsx(
                 "absolute",
                 "bottom-4 right-4",
                 "lg:bottom-8 lg:right-8",
-                theme === 'dark' ? "text-br-white" : "text-black",
+                theme === 'dark' ? "text-br-white dark:text-br-black" : "text-black dark:text-br-white",
                 "text-3xl"
             )}>
                 <CustomIcon
                     iconId="arrowR"
-                    className=""
                 />
             </div>
         </motion.div>

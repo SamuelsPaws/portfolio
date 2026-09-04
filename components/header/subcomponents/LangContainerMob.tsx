@@ -20,7 +20,11 @@ const LangContainerMob = () => {
 
     return (
     <div className='h-full flex items-center relative'>
-        <LangBtn setIsMenuOpen={setIsMenuOpen} ref={langBtnRef} />
+        <LangBtn
+            isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
+            ref={langBtnRef}
+        />
         <LangMenuMob
             changeLocale={changeLocale}
             isMenuOpen={isMenuOpen}
