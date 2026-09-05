@@ -26,7 +26,7 @@ const LangItemBtn = ({ label, changeLocale, assocLocale, isLast }: Props) => {
     >
         <div className="
             h-6 w-8 relative
-            border border-gray-200 rounded-md overflow-hidden"
+            border border-gray-400 dark:borde-gray-600 rounded-md overflow-hidden"
         >
             <Image
                 src={`/assets/${assocLocale}.svg`}

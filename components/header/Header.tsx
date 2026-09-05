@@ -39,7 +39,7 @@ const Header = () => {
         "bg-br-white dark:bg-br-black",
         "text-black dark:text-br-white",
         "font-semibold z-[9000] duration-600",
-        isAtTop ? "shadow-none" : "shadow-md"
+        isAtTop ? "shadow-[0_2px_8px_#0000]" : "shadow-header"
     )}>
         <Link
             href="/"
@@ -66,7 +66,10 @@ const Header = () => {
         >
             <ThemeBtn />
             <LangContainer />
-            <ul className="flex items-center gap-8">
+            <ul className="
+                h-full
+                flex items-center gap-8"
+            >
                 {navLinks.slice(1).map((el, index) => (
                     <NavLinkDesk
                         key={index}

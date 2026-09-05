@@ -25,10 +25,10 @@ const ProjectCard = ({ project, theme }: Props) => {
         <motion.div
             className={clsx(
                 "w-full lg:w-[380px] h-[400px] lg:h-120",
-                "p-4 lg:p-8 relative",
+                "p-4 lg:p-8 relative group",
                 "flex flex-col gap-4 lg:gap-4",
                 "rounded-2xl overflow-hidden",
-                theme === 'dark' && "bg-black dark:bg-gray-300",
+                theme === 'dark' && "bg-black dark:bg-br-gray-600",
                 theme === 'light' && "bg-br-white dark:bg-br-black"
             )}
             variants={variants}
@@ -60,7 +60,7 @@ const ProjectCard = ({ project, theme }: Props) => {
                 <h3 className={clsx(
                     "mb-2",
                     "text-my-xl font-semibold",
-                    theme === 'dark' && "text-br-white dark:text-black",
+                    theme === 'dark' && "text-br-white",
                     theme === "light" && "text-black dark:text-br-white"
                 )}>
                     {project.title}
@@ -69,8 +69,8 @@ const ProjectCard = ({ project, theme }: Props) => {
                 <p className={clsx(
                     "mb-2",
                     "text-myf-lg font-semibold",
-                    theme === 'dark' && "text-green-500 dark:text-green-700",
-                    theme === 'light' && "text-green-600"
+                    theme === 'dark' && "text-orange-400",
+                    theme === 'light' && "text-orange-500"
                 )}>
                     {project.tech.map(mapTechLabel).join(', ')}
                 </p>
@@ -78,7 +78,7 @@ const ProjectCard = ({ project, theme }: Props) => {
                 <p className={clsx(
                     "mb-2 lg:mb-8",
                     "text-myf-lg",
-                    theme === 'dark' && "text-gray-300 dark:text-black",
+                    theme === 'dark' && "text-gray-300 dark:text-br-white",
                     theme === 'light' && "text-gray-700 dark:text-gray-200"
                 )}>
                     {project.description}
@@ -88,9 +88,20 @@ const ProjectCard = ({ project, theme }: Props) => {
             <div className={clsx(
                 "absolute",
                 "bottom-4 right-4",
-                "lg:bottom-8 lg:right-8",
-                theme === 'dark' ? "text-br-white dark:text-br-black" : "text-black dark:text-br-white",
-                "text-3xl"
+                "md:bottom-8 md:right-8",
+                "w-10 md:w-12 aspect-square",
+                "flex justify-center items-center",
+                "duration-400",
+                theme === 'dark' ?
+                    "text-gray-400 md:group-hover:text-orange-400"
+                    :
+                    "text-gray-500 md:group-hover:text-orange-500",
+                "text-2xl md:text-3xl",
+                "border rounded-full",
+                theme === 'dark' ?
+                    "border-gray-400 md:group-hover:border-orange-400"
+                    :
+                    "border-gray-500 md:group-hover:border-orange-500"
             )}>
                 <CustomIcon
                     iconId="arrowR"

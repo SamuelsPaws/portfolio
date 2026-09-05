@@ -40,7 +40,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
         <section className="
             px-8 py-12
             lg:px-24 lg:py-24
-            bg-gray-300"
+            bg-gray-300 dark:bg-br-black"
         >
             {/* Div with grid for columns */}
             <div className="
@@ -49,7 +49,10 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                 {/* Left div */}
                 <div className="flex flex-col gap-8 md:gap-8">
                     {/* Title */}
-                    <h1 className="text-3xl md:text-5xl xl:text-6xl font-semibold">
+                    <h1 className="
+                        text-3xl md:text-5xl xl:text-6xl
+                        text-black dark:text-br-white font-semibold"
+                    >
                         {project.title}
                     </h1>
                     {/* Tech tags */}
@@ -69,7 +72,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                         )}
                     </div>
                     {/* Description */}
-                    <p className="text-myf-lg text-black">
+                    <p className="text-myf-lg text-black dark:text-gray-300">
                         {project.description[locale]}
                     </p>
                     {/* Mobile image */}
@@ -104,7 +107,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                     )}
                     {/* Overview */}
                     <ContentChunk title={t('overview')}>
-                        <p className="mt-4 text-myf-lg text-gray-700 text-justify">
+                        <p className="mt-4 text-myf-lg text-gray-700 dark:text-gray-300 text-justify">
                             {project.overview[locale]}
                         </p>
                     </ContentChunk>
@@ -149,7 +152,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                     )} */}
                     {/* My role */}
                     <ContentChunk title={t('myRole')}>
-                        <p className="mt-4 text-myf-lg text-gray-700 text-justify">
+                        <p className="mt-4 text-myf-lg text-gray-700 dark:text-gray-300 text-justify">
                             {project.myRole[locale]}
                         </p>
                     </ContentChunk>
@@ -174,7 +177,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                             "w-full",
                             "flex flex-col gap-8"
                         )}>
-                            <h2 className="text-3xl text-black font-semibold">
+                            <h2 className="text-3xl text-black dark:text-br-white font-semibold">
                                 {t('ssRecordings')}
                             </h2>
                             <Gallery
@@ -193,7 +196,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                             w-full
                             flex flex-col gap-8"
                         >
-                            <h2 className="text-3xl text-black font-semibold">
+                            <h2 className="text-3xl text-black dark:text-br-white font-semibold">
                                 {t('resultsGallery')}
                             </h2>
                             <Gallery
@@ -224,7 +227,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
         </section>
         <SectionSt
             title={t('h2OtherProjects')}
-            bgColor="bg-gray-400"
+            bgColor="bg-br-white dark:bg-br-gray-800"
         >
             <div className="flex flex-wrap gap-8">
                 {otherProjects
@@ -234,7 +237,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                         <ProjectCard
                             key={index}
                             project={el}
-                            theme="light"
+                            theme="dark"
                         />
                     ))
                 }

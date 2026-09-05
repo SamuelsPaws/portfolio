@@ -31,9 +31,9 @@ const CopyBtn = ({ text }: { text: string }) => {
         className={clsx(
             "w-10 h-10",
             "grid place-content-center",
-            recentlyClicked ? 'bg-gray-300' : 'bg-br-white',
-            "lg:hover:bg-gray-300",
-            "border-2 border-black rounded-md"
+            recentlyClicked ? 'bg-white/20' : 'bg-transparent',
+            "md:hover:bg-white/20",
+            "border-2 border-black dark:border-br-white rounded-md"
         )}
     >
         <CustomIcon

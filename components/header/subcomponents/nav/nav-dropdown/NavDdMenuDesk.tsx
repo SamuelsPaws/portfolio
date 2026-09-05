@@ -59,7 +59,7 @@ const NavDdMenuDesk = ({ isDdOpen, setIsDdOpen, btnCurrent, items }: Props) => {
             w-max
             absolute top-full left-1/2 -translate-x-1/2
             flex flex-col
-            border-x border-b border-gray-300 rounded-b-2xl overflow-hidden shadow-md"
+            border-x border-b border-gray-300 rounded-b-2xl overflow-hidden shadow-header"
         variants={variants}
         animate={isDdOpen ? 'open' : 'closed'}
         initial={false}

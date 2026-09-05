@@ -13,12 +13,12 @@ const PhoneBtn = () => {
                 w-[80%] h-30 mx-auto
                 lg:w-100 lg:h-40
                 grid place-content-center
-                bg-black
+                bg-black dark:bg-br-white
                 rounded-2xl hover-shadow-sm"
             whileHover={{ y: -8, x: -2, }}
             transition={{ duration: 0.2, type: 'spring' }}
         >
-            <span className="text-br-white text-3xl lg:text-4xl">
+            <span className="text-br-white dark:text-black text-3xl lg:text-4xl">
                 Call Now
             </span>
         </motion.div>

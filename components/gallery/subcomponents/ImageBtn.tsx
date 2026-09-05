@@ -45,7 +45,7 @@ const ImageBtn = ({
         className={clsx(
             "relative",
             "group cursor-pointer",
-            "rounded-2xl overflow-hidden",
+            "dark:border dark:border-gray-500 rounded-2xl overflow-hidden",
             className
         )}
         variants={variants}

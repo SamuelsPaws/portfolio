@@ -2,6 +2,8 @@ import clsx from "clsx";
 import ProjectCard from "@/components/ProjectCard";
 import techData from "@/data/tech.json"
 import { ProjectShort } from "@/lib/types/projectShort"
+import SectionSt from "@/components/SectionSt";
+import { useTranslations } from "next-intl";
 
 type TechKey = keyof typeof techData
 
@@ -12,15 +14,14 @@ interface Props {
 }
 
 export default function ProjectsPageTemplate({ projects, h1, bgColor }: Props) {
+    const t = useTranslations('Reusable')
+
     return (
     <main className="header-padding">
-        <section className={clsx(
-            "px-8 lg:px-16 py-16",
-            bgColor
-        )}>
-            <h1 className="mb-16 text-3xl lg:text-6xl font-semibold">
-                {h1}
-            </h1>
+        <SectionSt
+            title={h1}
+            bgColor="bg-gray-300 dark:bg-br-black"
+        >
             {/* Div with projects */}
             <div className="flex gap-8 flex-wrap">
                 {projects.map((el, index) =>
@@ -31,7 +32,7 @@ export default function ProjectsPageTemplate({ projects, h1, bgColor }: Props) {
                     />
                 )}
             </div>
-        </section>
+        </SectionSt>
     </main>
     )
 }

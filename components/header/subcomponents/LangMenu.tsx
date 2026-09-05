@@ -65,7 +65,7 @@ const LangMenu = ({ changeLocale, isMenuOpen, onClose, langBtnCurrent }: Props) 
             "p-0",
             'flex',
             "bg-br-white",
-            "border-x border-b border-gray-300 rounded-b-2xl overflow-hidden shadow-md",
+            "border-x border-b border-gray-300 rounded-b-2xl overflow-hidden shadow-header",
         )}
         ref={ref}
         variants={variants}

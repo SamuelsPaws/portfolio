@@ -1,4 +1,5 @@
 import CustomIcon from "@/components/CustomIcon";
+import SectionSt from "@/components/SectionSt";
 import { availableLocales, localeCodesArray } from "@/data/locales";
 import portfolioSam from "@/data/portfolioSam";
 import { LocaleKey } from "@/lib/types/localeKey";
@@ -89,12 +90,13 @@ export default function About() {
     <main className="header-padding">
         <section className="
             px-8 pt-8 pb-16
-            lg:px-32 lg:py-24
-            bg-br-white"
+            md:px-16 md:py-24
+            bg-br-white dark:bg-br-black"
         >
             <h1 className="
-                mb-8 lg:mb-16
-                text-3xl lg:text-5xl font-semibold"
+                mb-8 md:mb-24
+                text-3xl md:text-6xl
+                text-black dark:text-br-white font-semibold"
             >
                 {t('h1')}
             </h1>
@@ -123,12 +125,13 @@ export default function About() {
                         lg:max-w-200 lg:min-w-[620px] lg:h-full
                         flex flex-col"
                     >
-                        <h3 className="
+                        <h2 className="
                             mb-4 lg:mb-4
-                            text-2xl lg:text-3xl font-semibold"
+                            text-2xl lg:text-3xl
+                            text-black dark:text-br-white font-semibold"
                         >
                             Samuel Baquero, {t('role')}
-                        </h3>
+                        </h2>
                         {/* Tags */}
                         <div className="
                             mb-4 lg:mb-12
@@ -139,7 +142,8 @@ export default function About() {
                             <span className="
                                 h-8
                                 flex items-center
-                                text-green-700 text-md lg:text-xl"
+                                text-green-700 dark:text-green-600
+                                text-md lg:text-xl"
                             >
                                 <CustomIcon
                                     iconId="location"
@@ -150,7 +154,8 @@ export default function About() {
                             <span className="
                                 h-8
                                 flex items-center
-                                text-green-700 text-md lg:text-xl"
+                                text-green-700 dark:text-green-600
+                                text-md lg:text-xl"
                             >
                                 <CustomIcon
                                     iconId="check"
@@ -159,27 +164,24 @@ export default function About() {
                                 {t('statusTag-1')}
                             </span>
                         </div>
-                        <p className="text-my-lg text-gray-600 text-justify leading-8 lg:leading-8">
+                        <p className="
+                            text-my-lg
+                            text-gray-600 dark:text-gray-300
+                            text-justify leading-8 lg:leading-8"
+                        >
                             {t('overview')}
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section className="
-            px-8 py-16
-            lg:px-32 lg:py-24
-            bg-gray-300"
+        <SectionSt
+            title={t('howIThink')}
+            bgColor="bg-gray-300 dark:bg-br-gray-600"
         >
-            <h2 className="
-                mb-8 lg:mb-16
-                text-3xl lg:text-5xl font-semibold"
-            >
-                {t('howIThink')}
-            </h2>
             <p className="
                 max-w-150 mb-8 lg:mb-16
-                text-md xl:text-xl text-black text-justify leading-8"
+                text-md xl:text-xl text-black dark:text-gray-200 text-justify leading-8"
             >
                 {t('howIThinkOverview')}
             </p>
@@ -247,21 +249,14 @@ export default function About() {
                     </div>
                 </div>
             </div>
-        </section>
-        <section className="
-            px-8 py-16
-            md:px-32 md:py-24 bg-mywhite
-            border-b border-b-gray-600"
+        </SectionSt>
+        <SectionSt
+            title={t('currentFocus')}
+            bgColor="bg-br-white dark:bg-br-black"
         >
-            <h2 className="
-                mb-8 md:mb-16
-                text-3xl lg:text-5xl font-semibold"
-            >
-                {t('currentFocus')}
-            </h2>
             <p className="
                 max-w-150 mb-8 lg:mb-16
-                text-md xl:text-xl text-black text-justify leading-8"
+                text-md xl:text-xl text-black dark:text-gray-300 text-justify leading-8"
             >
                 {t('currentFocusText')}
             </p>
@@ -274,12 +269,13 @@ export default function About() {
                     p-4 lg:p-8
                     flex items-center
                     text-md lg:text-xl
-                    border-2 border-black rounded-2xl"
+                    text-black dark:text-br-white
+                    border-2 border-black dark:border-br-white rounded-2xl"
                 >
                     <span>
                         <CustomIcon
                             iconId="check"
-                            className="text-green-600 mr-2"
+                            className="text-green-600 dark:text-green-400 mr-2"
                         />
                         {t('focusedOnFreelance')}
                     </span>
@@ -289,18 +285,19 @@ export default function About() {
                     p-4 lg:p-8
                     flex items-center
                     text-md lg:text-xl
-                    border-2 border-black rounded-2xl"
+                    text-black dark:text-br-white
+                    border-2 border-black dark:border-br-white rounded-2xl"
                 >
                     <span>
                         <CustomIcon
                             iconId="check"
-                            className="text-green-600 mr-2"
+                            className="text-green-600 dark:text-green-400 mr-2"
                         />
                         {t('reliableIndependent')}
                     </span>
                 </div>
             </div>
-        </section>
+        </SectionSt>
     </main>
     )
 }

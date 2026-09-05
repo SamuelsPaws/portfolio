@@ -81,7 +81,7 @@ button {
 	}
 
 	.hover-animated-underline {
-		@apply after:content-[''] after:w-0 hover:after:w-[90%] after:duration-200 after:ease-out after:h-[2px] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:bg-black;
+		@apply after:content-[''] after:w-0 hover:after:w-[90%] after:duration-200 after:ease-out after:h-[2px] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:bg-black dark:after:bg-br-white;
 	}
 
 	.text-my-sm {
@@ -134,5 +134,9 @@ button {
 
 	.no-padding {
 		@apply absolute w-0.5 h-0.5 m-[-1px] p-0 border-[0] overflow-hidden [clip:rect(0_0_0_0)] [clip-path:inset(50%)] whitespace-nowrap;
+	}
+
+	.shadow-header {
+		@apply shadow-[0_4px_8px_#00000018] dark:shadow-[0_4px_8px_#ccccff18];
 	}
 }

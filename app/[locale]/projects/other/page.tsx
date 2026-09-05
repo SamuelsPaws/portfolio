@@ -96,7 +96,7 @@ export default async function WebDevProjects({ params }: Props) {
 
     return (
     <ProjectsPageTemplate
-        h1="Web Development Projects"
+        h1="Other Projects"
         projects={projectData.filter(el => el.type === 'other').map(el => mapProjectCard(el as ProjectData, locale))}
         bgColor="bg-gray-300"
     />

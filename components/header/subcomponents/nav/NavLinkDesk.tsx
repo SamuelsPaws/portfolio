@@ -34,7 +34,10 @@ const NavLinkDesk = ({ item, isLast }: Props) => {
 
     if (item.dropdown) {
         return (
-        <li>
+        <li className="
+            h-full
+            flex items-center"
+        >
             <NavDdDesk
                 item={item}
                 className={isLast ? cnLast : cn}

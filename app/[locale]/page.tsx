@@ -126,7 +126,7 @@ export default async function Home({ params }: Props) {
         {/* Web dev projects */}
         <SectionSt
             title={t('h2WebDev')}
-            bgColor="bg-gray-400 dark:bg-br-gray-600"
+            bgColor="bg-gray-300 dark:bg-br-gray-600"
         >
             {/* Container with the cards */}
             <div className="

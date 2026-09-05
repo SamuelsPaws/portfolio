@@ -17,7 +17,7 @@ const navLinks = [
             },
             {
                 labelKey: 'otherProjects',
-                href: '/projects/web-dev',
+                href: '/projects/other',
                 external: false
             }
         ]

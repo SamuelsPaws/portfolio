@@ -15,7 +15,8 @@ const NavDdItemDesk = ({ item, onClick, isLast }: Props) => {
     const cn = clsx(
         "p-4",
         "grid place-content-center",
-        "bg-br-white hover:bg-gray-200 duration-200",
+        "bg-br-white dark:bg-br-black",
+        "hover:bg-gray-200 dark:hover:bg-br-gray-800 duration-200",
         "text-lg",
         !isLast && "border-b border-gray-400"
     )

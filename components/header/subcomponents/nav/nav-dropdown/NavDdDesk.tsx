@@ -19,7 +19,10 @@ const NavDdDesk = ({ item, className }: Props) => {
     }
 
     return (
-    <div className='relative'>
+    <div className='
+        relative h-full
+        flex items-center'
+    >
         <button
             ref={btnRef}
             onClick={toggleDdOpen}

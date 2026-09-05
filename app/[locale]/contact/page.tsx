@@ -7,6 +7,7 @@ import { LocaleKey } from "@/lib/types/localeKey";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { availableLocales, localeCodesArray } from "@/data/locales";
+import SectionSt from "@/components/SectionSt";
 
 const BASE_URL = portfolioSam.url;
 
@@ -87,60 +88,48 @@ export default function Contact() {
     const t = useTranslations('ContactPage')
 
     return (
-        <main className="header-padding">
-            <section className="
-                px-8 py-16
-                lg:px-32 lg:py-32
-                bg-br-white"
+    <main className="header-padding">
+        <SectionSt
+            title={t('h1')}
+            bgColor="bg-br-white dark:bg-br-black"
+        >
+            <p className="
+                mb-8 text-lg
+                md:mb-16 md:text-xl
+                text-black dark:text-gray-300"
             >
-                <h1 className="
-                    mb-4 text-4xl
-                    lg:mb-8 lg:text-6xl font-semibold"
-                >
-                    {t('h1')}
-                </h1>
-                <p className="
-                    mb-8 text-lg
-                    lg:mb-16 lg:text-xl"
-                >
-                    {t('overview')}
-                </p>
-                <div className="
-                    w-fit mx-auto mb-8 lg:mb-16
-                    flex items-center gap-4
-                    text-xl lg:text-3xl"
-                >
-                    <span>
-                        samsantbaq@gmail.com
-                    </span>
-                    <CopyBtn text="samsantbaq@gmail.com" />
-                </div>
-                <EmailBtn />
-            </section>
-            <section className="
-                px-8 py-16
-                lg:px-32 lg:py-32
-                bg-gray-300"
+                {t('overview')}
+            </p>
+            <div className="
+                w-fit mx-auto mb-8 lg:mb-16
+                flex items-center gap-4
+                text-xl lg:text-3xl
+                text-black dark:text-gray-300"
             >
-                <h2 className="
-                    mb-8 text-4xl
-                    lg:mb-16 lg:text-6xl
-                    text-center font-semibold"
-                >
-                    {t('contactPhone')}
-                </h2>
-                <div className="
-                    w-fit mx-auto mb-16
-                    flex items-center gap-4
-                    text-2xl lg:text-3xl"
-                >
-                    <span>
-                        098 489 2528
-                    </span>
-                    <CopyBtn text="+593984892528" />
-                </div>
-                <PhoneBtn />
-            </section>
-        </main>
+                <span>
+                    samsantbaq@gmail.com
+                </span>
+                <CopyBtn text="samsantbaq@gmail.com" />
+            </div>
+            <EmailBtn />
+        </SectionSt>
+        <SectionSt
+            title={t('contactPhone')}
+            bgColor="bg-gray-300 dark:bg-br-gray-600"
+        >
+            <div className="
+                w-fit mx-auto mb-16
+                flex items-center gap-4
+                text-2xl lg:text-3xl
+                text-black dark:text-gray-300"
+            >
+                <span>
+                    098 489 2528
+                </span>
+                <CopyBtn text="+593984892528" />
+            </div>
+            <PhoneBtn />
+        </SectionSt>
+    </main>
     )
 }

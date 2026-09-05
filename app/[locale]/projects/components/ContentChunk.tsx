@@ -3,7 +3,7 @@ import CustomIcon from "@/components/CustomIcon";
 import clsx from "clsx";
 import { useState } from "react";
 
-const defaultCn = "p-4 lg:p-8 group flex flex-col items-start text-left bg-br-white border border-transparent rounded-2xl"
+const defaultCn = "p-4 lg:p-8 group flex flex-col items-start text-left bg-br-white dark:bg-br-gray-600 border border-transparent rounded-2xl"
 
 interface Props {
     title: string;
@@ -25,16 +25,21 @@ const ContentChunk = ({ title, children, expandable = false }: Props) => {
             className={clsx(defaultCn, "md:hover:border-gray-800 duration-200")}
         >
             <div className="w-full flex justify-between">
-                <h2 className="text-my-xl font-semibold tracking-wide">
+                <h2 className="
+                    text-my-xl text-black dark:text-br-white
+                    font-semibold tracking-wide"
+                >
                     {title}
                 </h2>
                 {/* Button icon */}
                 <div className="
                     w-8 aspect-square
                     flex justify-center items-center
-                    text-gray-500 text-2xl
-                    border border-gray-600 rounded-full
-                    md:group-hover:border-gray-800 md:group-hover:text-gray-700 md:group-hover:shadow-sm duration-200"
+                    text-gray-500 dark:text-gray-400 text-2xl
+                    border border-gray-600 dark:border-gray-400 rounded-full
+                    md:group-hover:border-gray-800 md:group-hover:text-gray-700
+                    dark:md:group-hover:border-br-white dark:md:group-hover:text-br-white
+                    md:group-hover:shadow-sm duration-200"
                 >
                     <CustomIcon
                         iconId="plus"
@@ -58,7 +63,8 @@ const ContentChunk = ({ title, children, expandable = false }: Props) => {
     <div className={defaultCn}
     >
         <h2 className={clsx(
-            "text-my-xl font-semibold tracking-wide"
+            "text-my-xl text-black dark:text-br-white",
+            "font-semibold tracking-wide"
         )}>
             {title}
         </h2>
