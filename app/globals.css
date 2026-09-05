@@ -20,8 +20,8 @@
 
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+
+	--font-serif: var(--font-serif);
 
 	--shadow-flat-sm: 2px 8px 0 #00000028;
 	--shadow-flat-lg: 4px 16px 0 #00000028;
@@ -81,7 +81,7 @@ button {
 	}
 
 	.hover-animated-underline {
-		@apply after:content-[''] after:w-0 hover:after:w-[90%] after:duration-200 after:ease-out after:h-[2px] after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:bg-black dark:after:bg-br-white;
+		@apply after:content-[''] after:w-0 hover:after:w-[90%] after:duration-200 after:ease-out after:h-[2px] after:absolute after:-bottom-0 after:left-1/2 after:-translate-x-1/2 after:bg-black dark:after:bg-br-white;
 	}
 
 	.text-my-sm {

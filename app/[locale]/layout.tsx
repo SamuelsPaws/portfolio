@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Outfit, Playfair_Display } from "next/font/google";
 import "../globals.css";
 import clsx from "clsx";
 import Header from "@/components/header/Header";
@@ -7,11 +7,15 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import Footer from "@/components/footer/Footer";
-import Script from "next/script";
 
 const outfit = Outfit({
     subsets: ['latin'],
     variable: '--font-outfit',
+})
+
+const serif = Playfair_Display({
+    subsets: ['latin'],
+    variable: '--font-serif',
 })
 
 export const metadata: Metadata = {
@@ -42,6 +46,7 @@ export default async function RootLayout({
         <body
             className={clsx(
             outfit.className,
+            serif.variable,
             'relative'
             )}
         >

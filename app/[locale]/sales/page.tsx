@@ -8,48 +8,30 @@ import ProcessStepCard from "./components/ProcessStepCard";
 export default function Sales() {
     return (
     <main className="pt-mob-header-height lg:pt-header-height">
-      {/* Hero */}
-      <section className="
-        lg:min-h-[640px]
-        flex flex-col lg:flex-row
-        bg-[#fafafa]
-        border-b border-gray-200"
-      >
+    	{/* Hero */}
+		<section className="
+			lg:min-h-[640px]
+			flex flex-col lg:flex-row
+			bg-[#fafafa]
+			border-b border-gray-200"
+		>
         {/* Left div */}
         <div className="
-          w-full lg:w-1/2 px-8 lg:px-24 py-6 lg:py-20
-          flex flex-col justify-center gap-4 lg:gap-10"
+			w-full lg:w-1/2 px-8 lg:px-24 py-6 lg:py-20
+			flex flex-col justify-center gap-4 lg:gap-10"
         >
-          <motion.h1
-            className="text-4xl lg:text-7xl font-['Source_Serif_4'] font-semibold text-center lg:text-left leading-12 lg:leading-none"
-            initial={{
-              opacity: 0,
-              y: -15
-            }}
-            animate={{
-              opacity: 1,
-              y: 0
-            }}
-            transition={{
-              duration: 0.5,
-              type: 'spring'
-            }}
-          >We build the <span className="text-emerald-600">digital infrastructure</span> of your travel business.</motion.h1>
-          <motion.p
-            className="text-lg lg:text-xl text-gray-500 font-[300]"
-            initial={{
-              opacity: 0,
-              y: -15
-            }}
-            animate={{
-              opacity: 1,
-              y: 0
-            }}
-            transition={{
-              duration: 1,
-              type: 'spring'
-            }}
-          >We help tourism brands generate more bookings through high-converting websites and digital systems built to sell.</motion.p>
+          	<motion.h1 className="
+				text-4xl md:text-6xl text-center md:text-left
+				font-serif font-semibold leading-12 md:leading-18 tracking-wide"
+          	>
+				We build the <span className="text-orange-500">digital infrastructure</span> of your business.
+			</motion.h1>
+			<motion.p className="
+				text-lg lg:text-xl text-gray-600
+				font-[300]"
+          	>
+				We help brands boost their digital presence through high-converting websites and digital systems built to sell.
+			</motion.p>
           {/* Div with buttons */}
           <motion.div
             className="w-full lg:w-auto flex gap-2 lg:gap-4"
