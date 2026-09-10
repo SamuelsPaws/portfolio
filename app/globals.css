@@ -13,13 +13,21 @@
 	--text-md: 1rem;
 
 	--color-br-white: #fafafa;
-	--color-br-black: #121216;
+	--color-br-black: #020206;
+	--color-br-gray-900: #1F2024;
 	--color-br-gray-800: #2b2d31;
 	--color-br-gray-600: #46474d;
 	--color-br-gray-500: #63656e;
+	--color-br-orange-main: #ff6900;
+	--color-br-orange-main-desat: #e0803a;
+	--color-br-orange-main-desatter: #c7895d;
+	--color-br-orange-500: #ff8129;
 
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
+	--color-whatsapp-600: #25d366;
+	--color-whatsapp-500: #21B85A;
+	--color-whatsapp-400: #16AB4E;
 
 	--font-serif: var(--font-serif);
 
@@ -67,6 +75,10 @@ button {
 	cursor: pointer;
 }
 
+a {
+	cursor: pointer;
+}
+
 @layer {
 	.rb {
 		@apply border border-red-500;
@@ -108,6 +120,54 @@ button {
 		@apply text-xl md:text-2xl xl:text-3xl;
 	}
 
+	.text-main {
+		@apply text-black;
+
+		@variant dark {
+			@apply text-br-white;
+		}
+	}
+
+	.text-secondary {
+		@apply text-gray-600;
+
+		@variant dark {
+			@apply text-gray-300;
+		}
+	}
+
+	.text-gray-title {
+		@apply text-br-gray-600;
+
+		@variant dark {
+			@apply text-gray-300;
+		}
+	}
+
+	.text-faint {
+		@apply text-gray-400;
+
+		@variant dark {
+			@apply text-br-gray-600;
+		}
+	}
+	
+	.bg-main {
+		@apply bg-br-white;
+
+		@variant dark {
+			@apply bg-br-black;
+		}
+	}
+	
+	.bg-secondary {
+		@apply bg-gray-200;
+
+		@variant dark {
+			@apply bg-br-gray-800;
+		}
+	}
+
 	.gap-my-md {
 		@apply gap-4 md:gap-8 xl:gap-12;
 	}
@@ -138,5 +198,54 @@ button {
 
 	.shadow-header {
 		@apply shadow-[0_4px_8px_#00000018] dark:shadow-[0_4px_8px_#ccccff18];
+	}
+
+	.shadow-img {
+		@apply shadow-[8px_8px_20px_0_#00000030];
+
+		@variant dark {
+			@apply shadow-none;
+		}
+	}
+
+	.shadow-img-sm {
+		@apply shadow-[4px_4px_16px_0_#00000018];
+
+		@variant dark {
+			@apply shadow-none;
+		}
+	}
+}
+
+.clip-arrow {
+	clip-path: url('#down-arrow');
+}
+
+@property --scroll-fill-threshold {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 0%;
+}
+
+.scroll-fill {
+	background: linear-gradient(
+		180deg,
+		var(--color-br-orange-main),
+		var(--color-br-orange-main) var(--scroll-fill-threshold),
+		black,
+		black var(--scroll-fill-threshold)
+	);
+	animation: scroll-fill ease-in-out both;
+	animation-timeline: view();
+	animation-range: entry 20% entry 200%;
+}
+
+@keyframes scroll-fill {
+	from {
+		--scroll-fill-threshold: 0%
+	}
+
+	to {
+		--scroll-fill-threshold: 100%
 	}
 }

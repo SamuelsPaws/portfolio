@@ -54,7 +54,7 @@ const BlackBtn = ({ href, label, external, className, size }: Props) => {
     if (external) {
         return (
         <motion.a
-            href={href}
+            href={`/samuel-portfolio${href}`}
             target="_blank"
             className={clsx(defaultCn, className)}
             variants={variants}
@@ -76,7 +76,7 @@ const BlackBtn = ({ href, label, external, className, size }: Props) => {
         whileHover="hovered"
     >
         <Link
-            href={href}
+            href={`/samuel-portfolio${href}`}
             className={defaultCn}
         >
             {label}

@@ -1,0 +1,57 @@
+import Image from "next/image";
+import ProfileSkillBullet from "./ProfileSkillBullet";
+
+interface Props {
+    image: {
+        src: string,
+        width: number,
+        height: number
+    };
+    name: string;
+    role: string;
+    description: string;
+    skills: string[];
+}
+
+const ProfileColumn = ({ image, name, role, description, skills }: Props) => {
+    return (
+    <div className="
+        w-1/2
+        p-16
+        flex flex-col items-center gap-8
+        bg-secondary
+        border border-gray-400 rounded-4xl"
+    >
+        <Image
+            src={image.src}
+            width={image.width}
+            height={image.height}
+            className="
+                w-65 aspect-square
+                object-cover object-[50%_10%]
+                rounded-full border-2 border-br-orange-main-desat/50"
+            alt="Foto de un miembro de Fortales"
+        />
+        <h3 className="text-4xl text-main text-center font-['Source_Serif_4']">
+            {name}
+        </h3>
+        <p className="text-my-lg text-br-orange-main-desat text-center font-semibold">
+            {role}
+        </p>
+        <p className="text-my-md text-secondary text-center">
+            {description}
+        </p>
+        {/* Bullet list */}
+        <ul className="flex justify-center items-center gap-4 flex-wrap">
+            {skills.map((el, index) => (
+                <ProfileSkillBullet
+                    key={index}
+                    text={el}
+                />
+            ))}
+        </ul>
+    </div>
+    )
+}
+
+export default ProfileColumn

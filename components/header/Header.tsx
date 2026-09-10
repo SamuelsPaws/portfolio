@@ -6,13 +6,17 @@ import BurgerMenu from "./subcomponents/nav/BurgerMenu"
 import LangContainerMob from "./subcomponents/LangContainerMob"
 import { useEffect, useState } from "react"
 import clsx from "clsx"
-import navLinks from "@/data/nav"
+import { navLinksFort, navLinksSamPort } from "@/data/nav"
 import NavLinkDesk from "./subcomponents/nav/NavLinkDesk"
 import ThemeBtn from "./subcomponents/ThemeBtn"
+import { usePathname } from "next/navigation"
 
 const Header = () => {
     const [isAtTop, setIsAtTop] = useState<boolean>(true);
     const t = useTranslations('Reusable')
+    
+    const pathname = usePathname()
+    const isSamPortfolio = pathname.split('/').includes('samuel-portfolio')
 
     useEffect(() => {
         const handleScroll = () => {
@@ -28,28 +32,46 @@ const Header = () => {
         }
     }, [])
 
-  return (
+    const navLinks = isSamPortfolio ? navLinksSamPort : navLinksFort
+
+    return (
     // pl is 6 not 8 to compensate for Home btn padding
     <header className={clsx(
         "fixed top-0 left-0",
         "w-full h-mob-header-height lg:h-header-height",
         "pl-6 pr-8",
-        "lg:pl-6 lg:pr-4",
+        "md:pl-8 md:pr-8",
         "flex items-center justify-between",
         "bg-br-white dark:bg-br-black",
         "text-black dark:text-br-white",
         "font-semibold z-[9000] duration-600",
         isAtTop ? "shadow-[0_2px_8px_#0000]" : "shadow-header"
     )}>
-        <Link
-            href="/"
-            className="
-                px-2 py-2
-                grid place-content-center
-                text-xl"
-        >
-            {t('home').toUpperCase()}
-        </Link>
+        {/* Home button */}
+        {isSamPortfolio ? (
+            <Link
+                href="/samuel-portfolio"
+                className="
+                    px-2 py-2
+                    grid place-content-center
+                    text-xl"
+            >
+                {t('home').toUpperCase()}
+            </Link>
+        ) : (
+            <Link
+                href="/"
+                className="
+                    flex items-center gap-2
+                    text-xl"
+            >
+                <img
+                    src="/assets/fortales-logo.svg"
+                    alt="Company Logo"
+                    className="w-8"
+                />
+            </Link>
+        )}
         {/* Mobile-only div */}
         <div className="
             h-full
@@ -57,7 +79,7 @@ const Header = () => {
             lg:hidden"
         >
             <LangContainerMob />
-            <BurgerMenu />
+            <BurgerMenu navLinks={navLinks} />
         </div>
         <nav className="
             h-full
