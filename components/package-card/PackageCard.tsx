@@ -65,7 +65,7 @@ const PackageCard = ({ myPackage, locale, theme, ctaLabel }: Props) => {
         </div>
         {/* Cta */}
         <Link
-            href={`/pricing/starter`}
+            href={`/pricing/${myPackage.slug}`}
             className={clsx(
                 "w-full justify-self-end group",
                 "py-4",
