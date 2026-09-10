@@ -32,11 +32,12 @@ export default async function ({ params }: Props) {
     return (
     <main>
         <section className="
-            px-32 py-32"
+            px-32 py-32
+            bg-main"
         >
             <h1 className="
                 mb-16
-                text-7xl font-['Source_Serif_4']"
+                text-7xl text-main font-['Source_Serif_4']"
             >
                 {myPackage.title[locale]} <span className="text-4xl text-secondary italic">/ {t('descriptor')}</span>
             </h1>
@@ -55,6 +56,7 @@ export default async function ({ params }: Props) {
             <div className="
                 w-[45%]
                 pl-32 pr-16 py-32
+                bg-main
                 border-r border-r-gray-300"
             >
                 <SimpleH2
@@ -77,7 +79,7 @@ export default async function ({ params }: Props) {
             <div className="
                 flex-1
                 pl-16 pr-32 py-32
-                bg-gray-100"
+                bg-gray-100 dark:bg-br-gray-800"
             >
                 <SimpleH2
                     text={t('h2Customize')}
@@ -118,7 +120,7 @@ export default async function ({ params }: Props) {
                         w-full
                         p-4
                         bg-main
-                        text-my-md
+                        text-my-md text-secondary
                         border border-gray-300 rounded-md"
                     placeholder={t('customPlaceholder')}
                 >

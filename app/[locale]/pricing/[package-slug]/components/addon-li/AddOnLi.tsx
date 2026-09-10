@@ -40,7 +40,7 @@ const AddOnLi = ({ addOnData, addOnSlug, locale }: Props) => {
                     addOnState={addOnState}
                     addOnSlug={addOnSlug}
                 />
-                <h3 className="text-my-md text-gray-title font-semibold">
+                <h3 className="text-my-md text-br-gray-600 font-semibold">
                     {addOnData.title[locale]}
                 </h3>
                 <button
