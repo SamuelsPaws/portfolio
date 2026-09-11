@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
     const { locale } = await params;
     const t = await getTranslations({
         locale,
-        namespace: "Metadata.FortPricing",
+        namespace: "Metadata.FortAbout",
     });
 
     const canonical = `${BASE_URL}/${locale}/about`;
