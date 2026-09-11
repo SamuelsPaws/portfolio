@@ -7,7 +7,6 @@ import AddOnLi from "./components/addon-li/AddOnLi"
 import { LocaleKey } from "@/lib/types/localeKey"
 import MoreAddOnsArea from "./components/MoreAddOnsArea"
 import Summary from "./components/Summary"
-import FortSectionCta from "@/components/cta-section/FortSectionCta"
 import StepCard from "@/components/ui-reusables/StepCard"
 import { getTranslations } from "next-intl/server"
 

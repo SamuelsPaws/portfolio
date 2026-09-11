@@ -6,6 +6,7 @@ export type AddOn = {
     paymentDetail: StringPerLocale,
     supportsQuantity: boolean,
     copy: StringPerLocale,
+    includedIn: readonly string[],
     slug: string
 }
 

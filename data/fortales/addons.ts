@@ -25,6 +25,7 @@ export const addOns = [
             de: "Fügen Sie zusätzliche Seiten hinzu, um Ihre Website mit dem Wachstum Ihres Unternehmens zu erweitern.",
             it: "Aggiungi pagine extra per ampliare il tuo sito web man mano che la tua attività cresce."
         },
+        includedIn: [],
         slug: 'extra-pages'
     },
     {
@@ -51,6 +52,7 @@ export const addOns = [
             de: "Erreichen Sie ein größeres Publikum, indem Sie Ihre Website in weiteren Sprachen anbieten.",
             it: "Raggiungi un pubblico più ampio rendendo il tuo sito web disponibile in più lingue."
         },
+        includedIn: [],
         slug: 'extra-languages'
     },
     {
@@ -77,6 +79,7 @@ export const addOns = [
             de: "Verwalten Sie umfangreichere oder komplexere Inhalte mit einem individuell entwickelten Content-Management-System.",
             it: "Gestisci contenuti più estesi o complessi tramite un sistema di gestione dei contenuti sviluppato su misura."
         },
+        includedIn: ['premium'],
         slug: 'advanced-cms'
     },
     {
@@ -103,6 +106,7 @@ export const addOns = [
             de: "Werten Sie Ihre Website mit flüssigen Animationen auf, die das Nutzererlebnis verbessern, ohne die Leistung zu beeinträchtigen.",
             it: "Migliora il tuo sito web con animazioni fluide e coinvolgenti che valorizzano l'esperienza utente senza compromettere le prestazioni."
         },
+        includedIn: ['premium'],
         slug: 'advanced-animations'
     },
     {
@@ -129,6 +133,7 @@ export const addOns = [
             de: "Gehen Sie über die Grundlagen hinaus – mit erweiterten technischen SEO-Optimierungen.",
             it: "Vai oltre le basi con ottimizzazioni avanzate di SEO tecnico e posizionamento sui motori di ricerca."
         },
+        includedIn: ['premium'],
         slug: 'enhanced-seo'
     },
     {
@@ -155,6 +160,7 @@ export const addOns = [
             de: "Verbessern Sie Ihre lokale Sichtbarkeit durch die Optimierung Ihres Google-Unternehmensprofils für die Suche und Google Maps.",
             it: "Migliora la tua visibilità locale ottimizzando il Profilo dell'attività su Google per la Ricerca e Maps."
         },
+        includedIn: [],
         slug: 'google-business'
     },
     {
@@ -181,6 +187,7 @@ export const addOns = [
             de: "Veröffentlichen Sie Artikel, Neuigkeiten und Updates über ein einfach zu verwaltendes Content-System.",
             it: "Pubblica articoli, notizie e aggiornamenti tramite un sistema di gestione dei contenuti semplice da utilizzare."
         },
+        includedIn: ['premium'],
         slug: 'blog-news'
     },
     {
@@ -207,6 +214,7 @@ export const addOns = [
             de: "Erfüllen Sie Datenschutzanforderungen mit einer anpassbaren Lösung für die Cookie-Einwilligung.",
             it: "Rispetta le normative sulla privacy con una soluzione personalizzabile per il consenso ai cookie."
         },
+        includedIn: [],
         slug: 'cookies-implementation'
     },
     {
@@ -233,6 +241,7 @@ export const addOns = [
             de: "Ermöglichen Sie Ihren Kunden, Termine oder Beratungen direkt über Ihre Website zu buchen.",
             it: "Consenti ai tuoi clienti di prenotare appuntamenti o consulenze direttamente dal tuo sito web."
         },
+        includedIn: [],
         slug: 'appointment-booking'
     },
     {
@@ -259,6 +268,7 @@ export const addOns = [
             de: "Helfen Sie Besuchern mit interaktiven Karten und Standortinformationen, Ihr Unternehmen zu finden.",
             it: "Aiuta i visitatori a trovare la tua attività con mappe interattive e informazioni sulla posizione."
         },
+        includedIn: [],
         slug: 'interactive-maps'
     },
     {
@@ -285,6 +295,7 @@ export const addOns = [
             de: "Ermöglichen Sie Besuchern, Dokumente, Bilder oder andere Dateien sicher über Formulare hochzuladen.",
             it: "Consenti ai visitatori di allegare in modo sicuro documenti, immagini o altri file durante l'invio dei moduli."
         },
+        includedIn: [],
         slug: 'file-upload'
     },
     {
@@ -311,6 +322,7 @@ export const addOns = [
             de: "Verbinden Sie Ihre Website mit Drittanbieterdiensten, um Arbeitsabläufe zu automatisieren und Daten zu synchronisieren.",
             it: "Collega il tuo sito web a servizi di terze parti per automatizzare i processi e sincronizzare i dati."
         },
+        includedIn: [],
         slug: 'custom-api'
     },
     {
@@ -337,6 +349,7 @@ export const addOns = [
             de: "Verbinden Sie Ihre Website mit Ihrem ERP-System, um Abläufe zu optimieren und Daten zu synchronisieren.",
             it: "Collega il tuo sito web al tuo sistema ERP per ottimizzare i processi e mantenere i dati sincronizzati."
         },
+        includedIn: [],
         slug: 'erp-integration'
     },
     {
@@ -363,6 +376,7 @@ export const addOns = [
             de: "Übertragen Sie Leads und Kundendaten automatisch an Ihr CRM-System.",
             it: "Invia automaticamente contatti e dati dei clienti alla tua piattaforma CRM."
         },
+        includedIn: [],
         slug: 'crm-integration'
     },
     {
@@ -389,6 +403,7 @@ export const addOns = [
             de: "Akzeptieren Sie sichere Online-Zahlungen über vertrauenswürdige Zahlungsdienstleister.",
             it: "Accetta pagamenti online in modo sicuro tramite fornitori di pagamento affidabili."
         },
+        includedIn: [],
         slug: 'online-payment'
     },
     {
@@ -415,6 +430,7 @@ export const addOns = [
             de: "Verkaufen Sie Produkte online mit einer umfassenden E-Commerce-Lösung, die auf Ihr Unternehmen zugeschnitten ist.",
             it: "Vendi i tuoi prodotti online con una soluzione e-commerce completa pensata per la tua attività."
         },
+        includedIn: [],
         slug: 'ecommerce'
     },
     {
@@ -441,6 +457,7 @@ export const addOns = [
             de: "Erstellen oder optimieren Sie Ihre Markenidentität mit einem professionellen Logo, individuellen Grafiken und einem stimmigen visuellen Erscheinungsbild.",
             it: "Crea o rinnova l'identità del tuo marchio con un logo professionale, grafiche personalizzate ed elementi visivi coerenti."
         },
+        includedIn: [],
         slug: 'brand-design'
     },
     {
@@ -467,6 +484,7 @@ export const addOns = [
             de: "Präsentieren Sie Ihr Unternehmen mit hochwertigen Fotos, die Vertrauen schaffen und Ihre Website hervorheben.",
             it: "Valorizza la tua attività con fotografie professionali di alta qualità che trasmettono fiducia e fanno risaltare il tuo sito web."
         },
+        includedIn: [],
         slug: 'professional-photography'
     },
 ] as const
