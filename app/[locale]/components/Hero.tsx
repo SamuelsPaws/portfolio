@@ -20,7 +20,7 @@ const Hero = () => {
             flex flex-col justify-center gap-8 md:gap-8"
         >
             <h1 className="
-                text-4xl md:text-6xl text-center md:text-left
+                text-4xl md:text-5xl xl:text-6xl text-center md:text-left
                 text-black dark:text-br-white
                 font-serif font-semibold leading-12 md:leading-18 tracking-wide
                 opacity-0 animate-fade-in-right-600"
@@ -38,7 +38,7 @@ const Hero = () => {
             {/* Div with buttons */}
             <div className="
                 w-full md:w-auto
-                flex flex-col gap-4
+                flex flex-col gap-4 flex-wrap
                 md: md:flex-row md:gap-4
                 opacity-0 animate-fade-in-right-1000"
             >
@@ -72,7 +72,7 @@ const Hero = () => {
         {/* Right div (image) */}
         <div className="
             w-full h-80 relative
-            md:w-[540px] md:h-auto md:aspect-square
+            md:w-[540px] md:h-auto md:max-h-140 md:aspect-square
             rounded-4xl overflow-hidden shadow-img
             opacity-0 animate-fade-in-left-slow"
         >

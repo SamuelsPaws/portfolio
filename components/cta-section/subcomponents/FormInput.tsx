@@ -1,15 +1,25 @@
 import clsx from "clsx";
+import { ChangeEvent } from "react";
 
 interface Props {
     label: string;
     inputId: string;
+    onChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
     className?: string;
     optional?: boolean;
     type?: 'text' | 'email' | 'textarea' | 'number';
     optionalLabel: string;
 }
 
-const FormInput = ({ label, inputId, className, optional = false, type = 'text', optionalLabel }: Props) => {
+const FormInput = ({
+    label,
+    inputId,
+    onChange,
+    className,
+    optional = false,
+    type = 'text',
+    optionalLabel
+}: Props) => {
     const oneLineInputCn = `
         px-4 py-2
         text-myf-md text-secondary
@@ -19,7 +29,9 @@ const FormInput = ({ label, inputId, className, optional = false, type = 'text',
     const textInputComponent = (
         <input
             id={inputId}
+            name={inputId}
             type="text"
+            onChange={onChange}
             className={oneLineInputCn}
         />
     )
@@ -27,6 +39,8 @@ const FormInput = ({ label, inputId, className, optional = false, type = 'text',
     const emailInputComponent = (
         <input
             id={inputId}
+            name={inputId}
+            onChange={onChange}
             type="email"
             className={oneLineInputCn}
         />
@@ -35,6 +49,8 @@ const FormInput = ({ label, inputId, className, optional = false, type = 'text',
     const textAreaComponent = (
         <textarea
             id={inputId}
+            name={inputId}
+            onChange={onChange}
             className="
                 h-16
                 px-4 py-2

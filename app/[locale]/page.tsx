@@ -283,7 +283,7 @@ export default async function FortalesHome({ params }: Props) {
                 {t('h3NeedMore')}
             </h3>
             <p className="
-                w-2/3 mx-auto mb-8
+                w-full md:w-2/3 mx-auto mb-8
                 text-secondary text-my-md text-center"
             >
                 {t('needMoreCopy')}

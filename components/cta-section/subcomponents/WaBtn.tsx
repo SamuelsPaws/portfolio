@@ -1,7 +1,7 @@
 'use client'
 import CustomIcon from "@/components/CustomIcon"
 import organization from "@/data/fortales/organization";
-import { smoothReveal } from "@/lib/motion-variants/smoothReveal";
+import { smoothRevealHover } from "@/lib/motion-variants/smoothReveal";
 import { motion } from "motion/react";
 
 interface Props {
@@ -20,11 +20,11 @@ const WaBtn = ({ label, prefill }: Props) => {
             flex items-center gap-4
             bg-whatsapp-500
             text-my-xl text-br-white
-            rounded-full
-            md:hover:scale-105 duration-400 ease-out"
-        variants={smoothReveal}
+            rounded-full"
+        variants={smoothRevealHover}
         initial="hidden"
         whileInView="visible"
+        whileHover="hovered"
         viewport={{ once: true, margin: '-24px 0px' }}
     >
         <span>{label}</span>

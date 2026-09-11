@@ -10,7 +10,7 @@ const cnMain = `
     flex justify-center items-center gap-3
     bg-black dark:bg-br-white
     text-my-lg text-br-white dark:text-black
-    rounded-full
+    rounded-full whitespace-nowrap
 `
 
 const cnSecondary = `
@@ -18,7 +18,7 @@ const cnSecondary = `
     flex justify-center items-center gap-3
     text-my-lg text-br-gray-800 dark:text-gray-300
     bg-transparent
-    border border-br-gray-800 dark:border-gray-300 rounded-full
+    border border-br-gray-800 dark:border-gray-300 rounded-full whitespace-nowrap
 `
 
 const cns = {

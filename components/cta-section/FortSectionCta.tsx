@@ -7,6 +7,7 @@ import CustomIcon from "../CustomIcon"
 import CenterH2 from "../CenterH2"
 import { useTranslations } from "next-intl"
 import WaBtn from "./subcomponents/WaBtn"
+import CtaForm from "./subcomponents/CtaForm"
 
 interface Props {
     bgColor: string;
@@ -62,76 +63,7 @@ const FortSectionCta = ({ bgColor }: Props) => {
             {/* Right column */}
             <div className="w-full md:w-1/2 flex justify-center">
                 {/* Form */}
-                <form
-                    action=""
-                    className="
-                        w-full md:w-[90%]
-                        px-8 py-8 md:p-8
-                        grid grid-cols-2 items-end gap-4 md:gap-8
-                        bg-main
-                        border border-gray-300 rounded-4xl shadow-img-sm"
-                >
-                    <FormInput
-                        label={t('formName')}
-                        inputId="customerName"
-                        optionalLabel={t('optional')}
-                        className="col-span-2 md:col-span-1"
-                    />
-                    <FormInput
-                        label={t('formEmail')}
-                        inputId="customerEmail"
-                        type="email"
-                        optionalLabel={t('optional')}
-                        className="col-span-2 md:col-span-1"
-                    />
-                    <FormInput
-                        label={t('formCompany')}
-                        inputId="customerCompany"
-                        className="col-span-2"
-                        optional
-                        optionalLabel={t('optional')}
-                    />
-                    <FormInput
-                        label={t('formNeed')}
-                        inputId="projectNeed"
-                        className="col-span-2"
-                        type="textarea"
-                        optionalLabel={t('optional')}
-                    />
-                    <FormInput
-                        label={t('formBudget')}
-                        inputId="budget"
-                        optional
-                        optionalLabel={t('optional')}
-                        className="col-span-2 md:col-span-1"
-                    />
-                    <FormInput
-                        label={t('formTimeline')}
-                        inputId="timeline"
-                        optional
-                        optionalLabel={t('optional')}
-                        className="col-span-2 md:col-span-1"
-                    />
-                    <button
-                        type="submit"
-                        className={clsx(
-                            "w-full col-span-2 group",
-                            "py-4",
-                            "flex justify-center items-center gap-3",
-                            "bg-black dark:bg-br-white",
-                            "text-my-md text-br-white dark:text-black",
-                            "rounded-full"
-                        )}
-                    >
-                        <span className="md:group-hover:pl-4 duration-200">
-                            {t('formSubmit')}
-                        </span>
-                        <CustomIcon
-                            iconId="arrowR"
-                            className="scale-110"
-                        />
-                    </button>
-                </form>
+                <CtaForm />
             </div>
         </div>
         <CenterH2
