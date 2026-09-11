@@ -268,12 +268,14 @@ export default async function FortalesHome({ params }: Props) {
                     locale={locale}
                     theme={packageThemes.flat}
                     ctaLabel={t('packageCta')}
+                    everythingInLabel={t('everythingIn')}
                 />
                 <PackageCard
                     myPackage={myPackages.premium}
                     locale={locale}
                     theme={packageThemes.orangeBold}
                     ctaLabel={t('packageCta')}
+                    everythingInLabel={t('everythingIn')}
                 />
             </div>
             <h3 className="

@@ -91,6 +91,7 @@ export const myPackages = {
                 priority: true
             },
         ],
+        everythingIn: [],
         slug: 'starter'
     },
     premium: {
@@ -205,6 +206,7 @@ export const myPackages = {
                 priority: true
             },
         ],
+        everythingIn: ['starter'],
         slug: 'premium'
     }
 }
@@ -215,6 +217,7 @@ export const packageThemes = {
         borderClasses: 'border border-black dark:border-br-white',
         checkBgColor: 'bg-gray-400',
         checkColor: 'text-gray-200',
+        themedTextColor: 'text-br-gray-title',
         ctaBgColor: 'bg-black dark:bg-br-white',
         ctaTextColor: 'text-br-white dark:text-black',
         shadow: 'shadow-none'
@@ -224,6 +227,7 @@ export const packageThemes = {
         borderClasses: 'border-2 border-br-orange-main',
         checkBgColor: 'bg-br-orange-main',
         checkColor: 'text-br-white',
+        themedTextColor: 'text-br-orange-main',
         ctaBgColor: 'bg-br-orange-main',
         ctaTextColor: 'text-br-white',
         shadow: 'shadow-[4px_4px_16px_0_#0002] dark:shadow-[4px_4px_16px_0_#ff690030]'

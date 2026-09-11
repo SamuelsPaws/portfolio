@@ -11,9 +11,10 @@ interface Props {
     locale: LocaleKey;
     theme: PackageTheme;
     ctaLabel: string;
+    everythingInLabel: string;
 }
 
-const PackageCard = ({ myPackage, locale, theme, ctaLabel }: Props) => {
+const PackageCard = ({ myPackage, locale, theme, ctaLabel, everythingInLabel }: Props) => {
     const features = myPackage.features.filter(el => el.priority).map(el => el.text[locale])
 
     return (
@@ -54,6 +55,14 @@ const PackageCard = ({ myPackage, locale, theme, ctaLabel }: Props) => {
                 w-full mb-8
                 flex flex-col gap-4"
             >
+                {myPackage.everythingIn.length > 0 && (
+                    <li className={clsx(
+                        "text-my-md font-semibold",
+                        theme.themedTextColor
+                    )}>
+                        {everythingInLabel} Starter
+                    </li>
+                )}
                 {features.map((el, index) => (
                     <PackageBenefit
                         key={index}

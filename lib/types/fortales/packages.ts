@@ -12,6 +12,7 @@ export type PackageType = {
     description: StringPerLocale,
     descriptionLong: StringPerLocale,
     features: PackageBenefitType[],
+    everythingIn: string[],
     slug: string
 }
 
@@ -20,6 +21,7 @@ export interface PackageTheme {
     borderClasses?: string;
     checkBgColor: string;
     checkColor: string;
+    themedTextColor: string;
     ctaBgColor: string;
     ctaTextColor: string;
     shadow?: string;

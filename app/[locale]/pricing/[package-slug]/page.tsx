@@ -17,6 +17,11 @@ import { availableLocales } from "@/data/locales"
 const themes = {
 }
 
+const noRepeat = [
+    'Up to 6 pages',
+    'Up to 2 languages'
+]
+
 type Props = {
     params: Promise<{
         'package-slug': 'starter' | 'premium',
@@ -122,6 +127,22 @@ export default async function ({ params }: Props) {
     const myPackage = myPackages[slug]
     const availableAddOns = addOns.filter(el => !(el.includedIn as readonly string[]).includes(slug))
 
+    const getFeaturesFromOther = () => {
+        if (myPackage.everythingIn[0]) {
+            const otherPackage = myPackages[myPackage.everythingIn[0] as 'starter' | 'premium'] ?? undefined
+
+            if (otherPackage !== undefined) {
+                return otherPackage.features.filter(el => !noRepeat.includes(el.text.en))
+            }
+
+            return null
+        }
+
+        return null
+    }
+
+    const featuresFromOther = getFeaturesFromOther()
+
     return (
     <main>
         <section className="
@@ -171,6 +192,14 @@ export default async function ({ params }: Props) {
                             text={el}
                         />
                     ))}
+                    {featuresFromOther && (
+                        featuresFromOther.map(el => el.text[locale]).map((el, index) => (
+                            <FeatureLi
+                                key={index}
+                                text={el}
+                            />
+                        ))
+                    )}
                 </ul>
             </div>
             {/* Right div */}
