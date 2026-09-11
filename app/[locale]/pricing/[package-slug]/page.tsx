@@ -27,7 +27,7 @@ export default async function ({ params }: Props) {
     const t = await getTranslations('FortPackageSlug')
 
     const myPackage = myPackages[slug]
-    const availableAddOns = addOns.filter(el => !el.includedIn.includes(slug))
+    const availableAddOns = addOns.filter(el => !(el.includedIn as readonly string[]).includes(slug))
 
     return (
     <main>

@@ -487,4 +487,4 @@ export const addOns = [
         includedIn: [],
         slug: 'professional-photography'
     },
-]
+] as const
