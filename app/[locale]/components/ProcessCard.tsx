@@ -13,7 +13,7 @@ const ProcessCard = ({ title, number, text, place }: Props) => {
         "w-full md:w-[75%]",
         place,
         "flex flex-col",
-        "rounded-4xl overflow-hidden shadow-img-sm"
+        "rounded-2xl md:rounded-4xl overflow-hidden shadow-img-sm"
     )}>
         {/* Upper part */}
         <div className="
