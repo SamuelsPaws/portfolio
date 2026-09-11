@@ -1,6 +1,6 @@
 'use client'
 import { addOns } from "@/data/fortales/addons"
-import EnableToggle from "../EnableToggle";
+import EnableToggle from "./subcomponents/EnableToggle";
 import { AddOn } from "@/lib/types/fortales/addons";
 import { LocaleKey } from "@/lib/types/localeKey";
 import ExpandableArea from "@/components/ExpandableArea";
