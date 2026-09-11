@@ -1,12 +1,16 @@
 'use client'
-import navLinks from "@/data/nav";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react"
 import NavLinkMob from "./NavLinkMob";
 import clsx from "clsx";
 import ThemeBtn from "../ThemeBtn";
+import { NavLinkType } from "@/lib/types/nav";
 
-const BurgerMenu = () => {
+interface Props {
+    navLinks: NavLinkType[];
+}
+
+const BurgerMenu = ({ navLinks }: Props) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const t = useTranslations('Reusable')
 

@@ -1,303 +1,323 @@
+import FortSectionSt from "@/components/FortSectionSt";
+import SimpleH2 from "@/components/SimpleH2";
+import Eyebrow from "@/components/ui-reusables/Eyebrow";
+import Image from "next/image";
+import IconInfoCard from "@/components/ui-reusables/IconInfoCard";
+import ValuesBullet from "./components/ValuesBullet";
+import ProfileColumn from "./components/ProfileColumn";
+import WhyWorkItem from "./components/why-work-table/subcomponents/WhyWorkItem";
+import clsx from "clsx";
 import CustomIcon from "@/components/CustomIcon";
-import SectionSt from "@/components/SectionSt";
-import { availableLocales, localeCodesArray } from "@/data/locales";
-import portfolioSam from "@/data/portfolioSam";
-import { LocaleKey } from "@/lib/types/localeKey";
-import { Metadata } from "next";
+import FortalesTableItem from "./components/why-work-table/subcomponents/FortalesTableItem";
+import WhyWorkRow from "./components/why-work-table/subcomponents/WhyWorkRow";
+import WhyWorkTable from "./components/why-work-table/WhyWorkTable";
+import FaqCard from "./components/FaqCard";
+import SimpleH3 from "@/components/SimpleH3";
+import Link from "next/link";
+import FortSectionCta from "@/components/cta-section/FortSectionCta";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
+import { teamSkills } from "@/data/fortales/teamSkills";
+import { LocaleKey } from "@/lib/types/localeKey";
 
-const BASE_URL = portfolioSam.url;
-
-export async function generateMetadata({
-    params,
-}: {
-    params: Promise<{ locale: LocaleKey }>
-}): Promise<Metadata> {
-    const { locale } = await params;
-    const t = await getTranslations({
-        locale,
-        namespace: "Metadata.About",
-    });
-
-    const canonical = `${BASE_URL}/${locale}/about`;
-
-    return {
-        metadataBase: new URL(BASE_URL),
-
-        title: t("title"),
-        description: t("description"),
-        
-        keywords: t.raw("keywords"),
-        applicationName: portfolioSam.name,
-        authors: [
-            {
-                name: portfolioSam.author,
-            },
-        ],
-        creator: portfolioSam.author,
-        publisher: portfolioSam.author,
-        alternates: {
-            canonical,
-            languages: Object.fromEntries(localeCodesArray.map(el => [el[0], `${BASE_URL}/${el[1]}/about`])),
-        },
-
-        openGraph: {
-            title: t("ogTitle"),
-            description: t("ogDescription"),
-            url: canonical,
-            siteName: portfolioSam.name,
-            locale: availableLocales[locale],
-            type: "website",
-            images: [
-                {
-                    url: portfolioSam.image,
-                    width: 1200,
-                    height: 630,
-                    alt: portfolioSam.name,
-                },
-            ],
-        },
-
-        twitter: {
-            card: "summary_large_image",
-            title: t("twitterTitle"),
-            description: t("twitterDescription"),
-            images: [portfolioSam.image],
-        },
-
-        category: t('category'),
-
-        robots: {
-            index: true,
-            follow: true,
-            googleBot: {
-                index: true,
-                follow: true,
-                "max-image-preview": "large",
-                "max-snippet": -1,
-                "max-video-preview": -1,
-            },
-        },
-  };
+type Props = {
+    params: Promise<{
+        locale: LocaleKey
+    }>
 }
 
-export default function About() {
-    const t = useTranslations('AboutPage')
+export default async function About({ params }: Props) {
+    const { locale } = await params
+    const t = await getTranslations('FortAbout')
 
     return (
-    <main className="header-padding">
+    <main>
+        {/* Hero */}
         <section className="
-            px-8 pt-8 pb-16
-            md:px-16 md:py-24
-            bg-br-white dark:bg-br-black"
+            px-32 py-32
+            bg-main"
         >
-            <h1 className="
-                mb-8 md:mb-24
-                text-3xl md:text-6xl
-                text-black dark:text-br-white font-semibold"
+            {/* Content wrapper */}
+            <div className="
+                w-full
+                flex items-center gap-32"
             >
-                {t('h1')}
-            </h1>
-            <div className="flex gap-8 flex-wrap">
-                {/* Left div with image 1/2 */}
+                {/* Left div */}
                 <div className="
-                    w-full
-                    lg:w-100 lg:min-w-100
-                    aspect-square relative
-                    rounded-4xl overflow-hidden shadow-lg"
+                    w-1/2"
                 >
-                    <Image
-                        src="/assets/headshot.JPG"
-                        fill
-                        sizes="100%"
-                        className="w-full object-cover object-[50%_18%]"
-                        priority
-                        alt="Photo of Samuel"
-                    />
-                </div>
-                {/* Right div, general container 2/2 */}
-                <div className="flex-1 flex justify-center">
-                    {/* Div with vertical content */}
-                    <div className="
-                        w-full
-                        lg:max-w-200 lg:min-w-[620px] lg:h-full
-                        flex flex-col"
+                    {/* Eyebrow */}
+                    <Eyebrow text={t('heroBrow').toUpperCase()} />
+                    <h1 className="
+                        mb-8
+                        text-5xl text-main font-['Source_Serif_4'] leading-16"
                     >
-                        <h2 className="
-                            mb-4 lg:mb-4
-                            text-2xl lg:text-3xl
-                            text-black dark:text-br-white font-semibold"
-                        >
-                            Samuel Baquero, {t('role')}
-                        </h2>
-                        {/* Tags */}
-                        <div className="
-                            mb-4 lg:mb-12
-                            flex
-                            flex-col gap-0
-                            lg:flex-row lg:gap-8"
-                        >
-                            <span className="
-                                h-8
-                                flex items-center
-                                text-green-700 dark:text-green-600
-                                text-md lg:text-xl"
-                            >
-                                <CustomIcon
-                                    iconId="location"
-                                    className="mr-2"
-                                />
-                                Quito, Ecuador
-                            </span>
-                            <span className="
-                                h-8
-                                flex items-center
-                                text-green-700 dark:text-green-600
-                                text-md lg:text-xl"
-                            >
-                                <CustomIcon
-                                    iconId="check"
-                                    className="mr-2"
-                                />
-                                {t('statusTag-1')}
-                            </span>
-                        </div>
-                        <p className="
-                            text-my-lg
-                            text-gray-600 dark:text-gray-300
-                            text-justify leading-8 lg:leading-8"
-                        >
-                            {t('overview')}
+                        {t('h1')}
+                    </h1>
+                    <p className="
+                        mb-4
+                        text-my-md text-secondary"
+                    >
+                        {t('subhead1')}
+                    </p>
+                    <p className="text-my-md text-secondary">
+                        {t('subhead2')}
+                    </p>
+                </div>
+                {/* Right image */}
+                <Image
+                    src="/assets/hero-about.jpg"
+                    width={935}
+                    height={995}
+                    className="
+                        w-1/2 h-120
+                        object-cover object-top
+                        rounded-4xl shadow-img"
+                    alt="Foto del equipo de Fortales"
+                />
+            </div>
+        </section>
+        {/* Our story */}
+        <FortSectionSt
+            bgColor="bg-secondary"
+        >
+            {/* Upper content wrapper */}
+            <div className="
+                w-full mb-16
+                flex items-start gap-16"
+            >
+                <div className="w-1/2">
+                    <img
+                        src="/assets/undraw-ideas.svg"
+                        className="w-full h-80 object-contain"
+                        alt="Una persona pensando"
+                    />    
+                </div>
+                <div className="
+                    w-1/2"
+                >
+                    <Eyebrow text={t('storyBrow').toUpperCase()} />
+                    <SimpleH2
+                        text={t('h2Story')}
+                        className="mb-8 text-5xl"
+                    />
+                    {/* Paragraphs */}
+                    <div className="flex flex-col gap-4">
+                        <p className="text-my-md text-secondary">
+                            {t('storyCopy1')}
+                        </p>
+                        <p className="text-my-md text-secondary">
+                            {t('storyCopy2')}
                         </p>
                     </div>
                 </div>
             </div>
-        </section>
-        <SectionSt
-            title={t('howIThink')}
-            bgColor="bg-gray-300 dark:bg-br-gray-600"
+            <div className="
+                w-full
+                flex justify-center gap-8"
+            >
+                <IconInfoCard
+                    iconId="bulb"
+                    title={t('h3Business')}
+                    description={t('businessCopy')}
+                />
+                <IconInfoCard
+                    iconId="handshake-far"
+                    title={t('h3Collaboration')}
+                    description={t('collaborationCopy')}
+                />
+                <IconInfoCard
+                    iconId="growth"
+                    title={t('h3Growth')}
+                    description={t('growthCopy')}
+                />
+            </div>
+        </FortSectionSt>
+        {/* Values */}
+        <FortSectionSt
+            title={t('h2Values')}
+            bgColor="bg-main"
         >
             <p className="
-                max-w-150 mb-8 lg:mb-16
-                text-md xl:text-xl text-black dark:text-gray-200 text-justify leading-8"
+                w-2/3 mx-auto mb-16
+                text-secondary text-my-md text-center leading-8"
             >
-                {t('howIThinkOverview')}
+                {t('valuesCopy')}
             </p>
+            {/* Values grid */}
             <div className="
-                grid grid-cols-1 lg:grid-cols-2 gap-8"
+                w-fit mx-auto mb-16
+                grid grid-cols-2 gap-16"
             >
-                <div className="
-                    lg:h-45 p-4 relative
-                    bg-yellow-100
-                    border-2 border-black rounded-2xl shadow-[4px_4px_0_#bb0]"
-                >
-                    <h3 className="mb-4 text-lg lg:text-xl font-semibold">
-                        {t('structureFirst')}
-                    </h3>
-                    <p className="text-md lg:text-lg">
-                        {t('structureFirstText')}
-                    </p>
-                    <div className="absolute top-3 right-4 text-md">
-                        <i className="fa fa-university" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div className="
-                    lg:h-45 p-4 relative
-                    bg-pink-100
-                    border-2 border-black rounded-2xl shadow-[4px_4px_0_#d8b]"
-                >
-                    <h3 className="mb-4 text-lg lg:text-xl font-semibold">
-                        {t('understandDeeply')}
-                    </h3>
-                    <p className="text-md lg:text-lg">
-                        {t('understandDeeplyText')}
-                    </p>
-                    <div className="absolute top-3 right-4 text-lg">
-                        <i className="fa fa-check-circle" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div className="
-                    lg:h-45 p-4 relative
-                    bg-green-100
-                    border-2 border-black rounded-2xl shadow-[4px_4px_0_#6ca]"
-                >
-                    <h3 className="mb-4 text-lg lg:text-xl font-semibold">
-                        {t('debugging')}
-                    </h3>
-                    <p className="text-md lg:text-lg">
-                        {t('debuggingText')}
-                    </p>
-                    <div className="absolute top-3 right-4 text-xl">
-                        <i className="fa fa-bug" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div className="
-                    lg:h-45 p-4 relative
-                    bg-sky-100
-                    border-2 border-black rounded-2xl shadow-[4px_4px_0_#3ac]"
-                >
-                    <h3 className="mb-4 text-lg lg:text-xl font-semibold">
-                        {t('usable')}
-                    </h3>
-                    <p className="text-md lg:text-lg">
-                        {t('usableText')}
-                    </p>
-                    <div className="absolute top-3 right-4 text-xl">
-                        <i className="fa fa-paint-brush" aria-hidden="true"></i>
-                    </div>
-                </div>
+                <IconInfoCard
+                    iconId="building"
+                    title={t('h3ValuesBiz')}
+                    description={t('valuesBizCopy')}
+                    bgColor="bg-br-white dark:bg-br-gray-800"
+                />
+                <IconInfoCard
+                    iconId="message-bubble"
+                    title={t('h3Communication')}
+                    description={t('communicationCopy')}
+                    bgColor="bg-br-white dark:bg-br-gray-800"
+                />
+                <IconInfoCard
+                    iconId="heart"
+                    title={t('h3Last')}
+                    description={t('lastCopy')}
+                    bgColor="bg-br-white dark:bg-br-gray-800"
+                />
+                <IconInfoCard
+                    iconId="calendar-clock"
+                    title={t('h3Partner')}
+                    description={t('partnerCopy')}
+                    bgColor="bg-br-white dark:bg-br-gray-800"
+                />
             </div>
-        </SectionSt>
-        <SectionSt
-            title={t('currentFocus')}
-            bgColor="bg-br-white dark:bg-br-black"
+            {/* Lower bullet points */}
+            <div className="
+                w-full
+                px-16 py-16
+                flex justify-between items-center
+                bg-br-orange-main/10
+                rounded-4xl border border-br-orange-main/20"
+            >
+                <ValuesBullet
+                    iconId="handHeart"
+                    text={t('pricingBullet')}
+                />
+                <ValuesBullet
+                    iconId="bulb"
+                    text={t('recsBullet')}
+                />
+                <ValuesBullet
+                    iconId="headset"
+                    text={t('supportBullet')}
+                />
+            </div>
+        </FortSectionSt>
+        {/* Team */}
+        <FortSectionSt
+            title={t('h2Team')}
+            bgColor="bg-secondary"
         >
             <p className="
-                max-w-150 mb-8 lg:mb-16
-                text-md xl:text-xl text-black dark:text-gray-300 text-justify leading-8"
+                w-2/3 mx-auto mb-16
+                text-my-md text-secondary text-center leading-8"
             >
-                {t('currentFocusText')}
+                {t('teamCopy')}
             </p>
+            {/* Profile columns */}
             <div className="
-                w-full lg:w-fit mx-auto
-                flex flex-col gap-8"
+                w-full
+                flex items-stretch gap-16"
+            >
+                <ProfileColumn
+                    image={{
+                        src: '/assets/headshot.JPG',
+                        width: 1023,
+                        height: 1537
+                    }}
+                    name="Samuel Baquero"
+                    role={t('samuelRole').toUpperCase()}
+                    description={t('samuelCopy')}
+                    skills={teamSkills.samuelBaquero.map(el => el[locale])}
+                />
+                <ProfileColumn
+                    image={{
+                        src: '/assets/headshot.JPG',
+                        width: 1023,
+                        height: 1537
+                    }}
+                    name="Wendy Domínguez"
+                    role={t('wenRole').toUpperCase()}
+                    description={t('wenCopy')}
+                    skills={teamSkills.wendyDominguez.map(el => el[locale])}
+                />
+            </div>
+        </FortSectionSt>
+        {/* Why work with us */}
+        <FortSectionSt
+            title={t('h2WhyUs')}
+            bgColor="bg-main"
+        >
+            <p className="
+                w-2/3 mx-auto mb-16
+                text-my-md text-secondary text-center leading-8"
+            >
+                {t('whyUsCopy')}  
+            </p>
+            <WhyWorkTable />
+        </FortSectionSt>
+        {/* Faq */}
+        <FortSectionSt bgColor="bg-secondary">
+            {/* Content wrapper */}
+            <div className="
+                w-full
+                flex items-start gap-32"
             >
                 <div className="
-                    w-full lg:w-150
-                    p-4 lg:p-8
-                    flex items-center
-                    text-md lg:text-xl
-                    text-black dark:text-br-white
-                    border-2 border-black dark:border-br-white rounded-2xl"
+                    flex-1"
                 >
-                    <span>
-                        <CustomIcon
-                            iconId="check"
-                            className="text-green-600 dark:text-green-400 mr-2"
-                        />
-                        {t('focusedOnFreelance')}
-                    </span>
+                    <Eyebrow text={t('faqBrow').toUpperCase()} />
+                    <SimpleH2
+                        text={t('h2Faq')}
+                        className="mb-16 text-5xl"
+                    />
+                    <p className="
+                        mb-16
+                        text-my-md text-secondary leading-8"
+                    >
+                        {t('faqCopy')}
+                    </p>
+                    <div className="
+                        flex flex-col gap-4"
+                    >
+                        {Array(9).fill(null).map((_, i) => (
+                            <FaqCard
+                                key={i}
+                                question={t(`q${i + 1}`)}
+                                answer={t(`a${i + 1}`)}
+                            />
+                        ))}
+                    </div>
                 </div>
                 <div className="
-                    w-full lg:w-150
-                    p-4 lg:p-8
-                    flex items-center
-                    text-md lg:text-xl
-                    text-black dark:text-br-white
-                    border-2 border-black dark:border-br-white rounded-2xl"
+                    w-90
+                    p-8
+                    bg-black/5 dark:bg-br-gray-600
+                    rounded-4xl"
                 >
-                    <span>
+                    <SimpleH3
+                        text={t('h3OtherQuestions')}
+                        className="mb-4 text-3xl leading-10"
+                    />
+                    <p className="
+                        mb-4
+                        text-secondary text-my-sm"
+                    >
+                        {t('otherQuestionsCopy')}
+                    </p>
+                    <Link
+                        href="/contact"
+                        className="
+                            w-full
+                            py-2 md:hover:pl-4 duration-200
+                            flex items-center justify-center gap-2
+                            bg-black dark:bg-br-white
+                            text-my-md text-br-white dark:text-black
+                            rounded-full"
+                    >
+                        <span>{t('otherQuestionsCta')}</span>
                         <CustomIcon
-                            iconId="check"
-                            className="text-green-600 dark:text-green-400 mr-2"
+                            iconId="arrowR"
+                            className="scale-110"
                         />
-                        {t('reliableIndependent')}
-                    </span>
+                    </Link>
                 </div>
             </div>
-        </SectionSt>
+        </FortSectionSt>
+        <FortSectionCta bgColor="bg-main" />
     </main>
     )
 }

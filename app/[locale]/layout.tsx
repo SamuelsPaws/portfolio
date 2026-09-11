@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Playfair_Display } from "next/font/google";
+import { Outfit, Playfair_Display, Cormorant_Garamond } from "next/font/google";
 import "../globals.css";
 import clsx from "clsx";
 import Header from "@/components/header/Header";
@@ -11,6 +11,11 @@ import Footer from "@/components/footer/Footer";
 const outfit = Outfit({
     subsets: ['latin'],
     variable: '--font-outfit',
+})
+
+const cormorant = Cormorant_Garamond({
+    subsets: ['latin'],
+    variable: '--font-corm',
 })
 
 const serif = Playfair_Display({
@@ -47,6 +52,7 @@ export default async function RootLayout({
             className={clsx(
             outfit.className,
             serif.variable,
+            cormorant.variable,
             'relative'
             )}
         >

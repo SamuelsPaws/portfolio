@@ -35,7 +35,7 @@ const ThemeBtn = () => {
             flex items-center justify-between
             bg-br-white dark:bg-gray-200
             md:hover:bg-gray-200 dark:md:hover:bg-gray-300
-            border border-gray-400 md:hover:border-br-black dark:md:hover:border-gray-200
+            border border-gray-400 md:hover:border-gray-600 dark:md:hover:border-gray-200
             rounded-full
             shadow-[inset_-1px_2px_3px_#0004]"
     >

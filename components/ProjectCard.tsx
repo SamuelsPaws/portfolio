@@ -19,7 +19,7 @@ const ProjectCard = ({ project, theme }: Props) => {
 
     return (
     <Link
-        href={`/projects/${project.type}/${project.slug}`}
+        href={`/samuel-portfolio/projects/${project.type}/${project.slug}`}
         className="w-full lg:w-auto"
     >
         <motion.div
