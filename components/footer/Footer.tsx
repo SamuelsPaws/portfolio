@@ -92,23 +92,24 @@ const Footer = () => {
 	
 	return (
 	<footer className="
-		px-16 py-16
+		px-8 py-16
+		md:px-16 md:py-16
 		flex flex-col gap-8
 		bg-br-gray-900"
 	>
 		{/* Content container */}
 		<div className="
 			w-full
-			flex justify-between items-start"
+			flex flex-col md:flex-row justify-between items-start gap-16 md:gap-0"
 		>
 			{/* Emblem card */}
 			<div className="
-				w-80
+				w-full md:w-80 order-1 md:order-0
 				flex flex-col items-center"
 			>
 				<img
 					src="/assets/fortales-logo-light.svg"
-					className="w-[60%] mb-8"
+					className="w-[40%] md:w-[60%] mb-8"
 					alt="Logo de la empresa"
 				/>
 				<span className="
@@ -123,7 +124,10 @@ const Footer = () => {
 				</span>
 			</div>
 			{/* Link columns */}
-			<div className="flex items-start gap-24">
+			<div className="
+				w-full md:w-auto
+				flex flex-col md:flex-row items-end md:items-start gap-8 md:gap-24"
+			>
 				<LinksColumn title={t('navigation')}>
 					<ColumnList>
 						{navLinksFort.map((el, index) => (
@@ -160,7 +164,8 @@ const Footer = () => {
 				</LinksColumn>}
 			</div>
 			<div className="
-				w-110 self-stretch
+				w-full md:w-110 self-stretch
+				order-2
 				p-8
 				flex flex-col justify-between
 				bg-br-gray-600
@@ -196,13 +201,14 @@ const Footer = () => {
 		{/* Lower foot */}
 		<div className="
 			w-full
-			flex justify-between items-center"
+			flex flex-col
+			md:flex-row md:justify-between items-center gap-8"
 		>
-			<span className="text-myf-md text-gray-400">
+			<span className="text-myf-md text-gray-400 text-center md:text-left">
 				© Fortales 2026. {t('allRights')}.
 			</span>
-			{/* Wrapper for between */}
-			<ul className="flex items-center gap-8">
+			{/* Foot links */}
+			<ul className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
 				<LowerFootLink
 					href="/"
 					text={t('terms').toUpperCase()}

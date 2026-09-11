@@ -18,7 +18,7 @@ const PackageCard = ({ myPackage, locale, theme, ctaLabel }: Props) => {
 
     return (
     <div className={clsx(
-        "w-120 p-8",
+        "w-full md:w-120 p-8",
         "flex flex-col justify-between",
         theme.backgroundColor,
         theme.borderClasses,

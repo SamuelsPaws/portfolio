@@ -1,6 +1,5 @@
 import { addOns } from "@/data/fortales/addons"
 import { create } from "zustand"
-import { AddOnState } from "../types/fortales/addons"
 
 export type AddOnsState = {
     [K in (typeof addOns)[number] as K['slug']]:

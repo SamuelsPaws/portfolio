@@ -20,16 +20,16 @@ export default async function Pricing({ params }: Props) {
     const t = await getTranslations('FortPricing')
 
     return (
-    <main className="pt-35 bg-br-white dark:bg-br-black">
+    <main className="pt-24 md:pt-35 bg-br-white dark:bg-br-black">
         <FortSectionSt
             bgColor="bg-br-white dark:bg-br-black"
         >
-            <h1 className="mx-auto mb-16 text-center text-5xl text-main font-['Source_Serif_4']">
+            <h1 className="mx-auto mb-16 text-center text-most-h2 text-main font-['Source_Serif_4']">
                 {t('h1')}
             </h1>
             <div className="
-                w-fit mx-auto
-                flex gap-16"
+                w-full md:w-fit mx-auto
+                flex flex-col md:flex-row gap-8 md:gap-16"
             >
                 <StepCard
                     iconId="box-iso"
@@ -58,7 +58,7 @@ export default async function Pricing({ params }: Props) {
         >
             <div className="
                 w-full
-                flex"
+                flex flex-col md:flex-row gap-8 md:gap-0"
             >
                 <PackageLarge
                     myPackage={myPackages.starter}
@@ -80,14 +80,17 @@ export default async function Pricing({ params }: Props) {
             bgColor="bg-br-white dark:bg-br-black"
         >
             <p className="
-                w-2/3 mx-auto mb-16
-                text-my-md text-secondary text-center leading-8"
+                w-full md:w-2/3 mx-auto mb-16
+                text-my-md text-secondary text-center leading-6 md:leading-8"
             >
                 {t('customizeCopy')}
             </p>
             <SimpleH3
                 text={t('h3AddOns')}
-                className="text-4xl mb-16"
+                className="
+                    text-2xl md:text-4xl
+                    mb-8 md:mb-16
+                    leading-8 md:leading-12"
             />
             <div className="
                 w-full mb-16

@@ -29,7 +29,7 @@ const AddonCard = ({ item, locale }: Props) => {
             {item.copy[locale]}
         </p>
         <div className="flex gap-2 items-end">
-            <span className="text-4xl font-semibold text-main">
+            <span className="text-3xl md:text-4xl font-semibold text-main">
                 ${formatPrice(item.price)}
             </span>
             <span className="text-my-lg text-secondary">

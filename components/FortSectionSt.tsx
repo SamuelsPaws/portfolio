@@ -9,14 +9,16 @@ interface Props {
 const FortSectionSt = ({ title, bgColor, children }: Props) => {
     return (
     <section className={clsx(
-        "px-32 py-32",
+        "px-8 py-16",
+        "md:px-32 md:py-32",
         bgColor
     )}>
         {title && (
             <h2 className="
-                w-2/3 mx-auto mb-16
-                text-5xl text-center text-black dark:text-br-white
-                font-['Source_Serif_4'] leading-16"
+                w-full md:w-2/3 mx-auto
+                mb-8 md:mb-16
+                text-most-h2 text-center text-black dark:text-br-white
+                font-['Source_Serif_4'] leading-10 md:leading-16"
             >
                 {title}
             </h2>

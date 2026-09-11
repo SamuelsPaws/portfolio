@@ -8,10 +8,10 @@ interface Props {
 const IdealForCard = ({ imgSrc, title, description, alt }: Props) => {
     return (
     <div className="
-        w-90
-        flex flex-col gap-8"
+        w-full md:w-90
+        flex flex-col gap-4 md:gap-8"
     >
-        <div className="w-full h-70">
+        <div className="w-full h-50 md:h-70">
             <img
                 src={imgSrc}
                 className="w-full h-full object-contain"

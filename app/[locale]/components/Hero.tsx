@@ -8,15 +8,16 @@ const Hero = () => {
 
     return (
     <section className="
-        px-32 py-32
+        px-8 py-24
+        md:px-32 md:py-32
         flex flex-col
         md:flex-row md:justify-center md:gap-16
-        bg-br-white dark:bg-br-black"
+        bg-main"
     >
         {/* Left div */}
         <div className="
             w-full md:w-[45%]
-            flex flex-col justify-center gap-4 md:gap-8"
+            flex flex-col justify-center gap-8 md:gap-8"
         >
             <h1 className="
                 text-4xl md:text-6xl text-center md:text-left
@@ -34,11 +35,12 @@ const Hero = () => {
             </p>
             {/* Div with buttons */}
             <div className="
-                w-full lg:w-auto
-                flex gap-2 md:gap-4"
+                w-full md:w-auto
+                flex flex-col gap-4
+                md: md:flex-row md:gap-4"
             >
                 <FortCtaBtn
-                    href='/prices'
+                    href='/pricing'
                     label={t('ctaMain')}
                 />
                 <FortCtaBtn
@@ -63,7 +65,7 @@ const Hero = () => {
         </div>
         {/* Right div (image) */}
         <div className="
-            w-full relative
+            w-full h-80 relative
             md:w-[540px] md:h-auto md:aspect-square
             rounded-4xl overflow-hidden shadow-img"
         >

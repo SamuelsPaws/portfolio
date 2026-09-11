@@ -7,7 +7,7 @@ import clsx from "clsx";
 
 const cnMain = `
     px-8 py-4
-    flex items-center gap-3
+    flex justify-center items-center gap-3
     bg-black dark:bg-br-white
     text-my-lg text-br-white dark:text-black
     rounded-full
@@ -15,8 +15,8 @@ const cnMain = `
 
 const cnSecondary = `
     px-8 py-4
-    flex items-center gap-3
-    text-my-md text-br-gray-800 dark:text-gray-300
+    flex justify-center items-center gap-3
+    text-my-lg text-br-gray-800 dark:text-gray-300
     bg-transparent
     border border-br-gray-800 dark:border-gray-300 rounded-full
 `
@@ -73,7 +73,7 @@ const FortCtaBtn = ({ href, label, external = false, type = 'main', centered }: 
 
     return (
     <motion.div
-        className={clsx("w-fit h-fit block rounded-full", centered && centeredCn)}
+        className={clsx("w-full md:w-fit h-fit block rounded-full", centered && centeredCn)}
         variants={variants}
         initial="visible"
         whileHover="hovered"

@@ -20,18 +20,18 @@ const PackageLarge = ({ myPackage, locale, theme, isLast = false, ctaLabel }: Pr
 
     return (
     <div className={clsx(
-        "w-1/2",
-        "p-16",
+        "w-full md:w-1/2",
+        "px-4 py-8 md:p-16",
         "flex flex-col justify-between",
         theme.backgroundColor,
-        !isLast && "border-r border-gray-300"
+        !isLast && "md:border-r border-gray-300"
     )}>
         {/* Wrapper for betweek */}
         <div className="w-full">
             {/* Title */}
             <SimpleH2
                 text={myPackage.title.en}
-                className="mb-8 text-5xl"
+                className="mb-8 text-most-h2"
             />
             {/* Price */}
             <div className="mb-8">

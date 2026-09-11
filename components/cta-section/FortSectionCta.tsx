@@ -21,23 +21,23 @@ const FortSectionCta = ({ bgColor }: Props) => {
         {/* Container with 2 columns */}
         <div className="
             w-full mx-auto mb-32
-            flex gap-16"
+            flex flex-col md:flex-row gap-8 md:gap-16"
         >
             {/* Left column */}
             <div className="
-                w-1/2
-                flex flex-col justify-between"
+                w-full md:w-1/2
+                flex flex-col justify-between gap-8"
             >
                 {/* Wrapper for between */}
                 <div className="w-full">
                     <SimpleH2
                         text={t('h2Cta')}
-                        className="mb-8 text-5xl text-left"
+                        className="mb-8 text-most-h2 text-left"
                     />
                     <p className="mb-8 text-my-md text-secondary">
                         {t('ctaCopy')}
                     </p>
-                    <ul className="flex flex-col gap-8">
+                    <ul className="flex flex-col gap-4 md:gap-8">
                         <CtaTrustItem
                             text={t('ctaConsultation')}
                         />
@@ -58,14 +58,14 @@ const FortSectionCta = ({ bgColor }: Props) => {
                 </p>
             </div>
             {/* Right column */}
-            <div className="w-1/2 flex justify-center">
+            <div className="w-full md:w-1/2 flex justify-center">
                 {/* Form */}
                 <form
                     action=""
                     className="
-                        w-[90%]
-                        p-8
-                        grid grid-cols-2 items-end gap-8
+                        w-full md:w-[90%]
+                        px-4 py-6 md:p-8
+                        grid grid-cols-2 items-end gap-4 md:gap-8
                         bg-main
                         border border-gray-300 rounded-4xl shadow-img-sm"
                 >
@@ -73,12 +73,14 @@ const FortSectionCta = ({ bgColor }: Props) => {
                         label={t('formName')}
                         inputId="customerName"
                         optionalLabel={t('optional')}
+                        className="col-span-2 md:col-span-1"
                     />
                     <FormInput
                         label={t('formEmail')}
                         inputId="customerEmail"
                         type="email"
                         optionalLabel={t('optional')}
+                        className="col-span-2 md:col-span-1"
                     />
                     <FormInput
                         label={t('formCompany')}
@@ -99,12 +101,14 @@ const FortSectionCta = ({ bgColor }: Props) => {
                         inputId="budget"
                         optional
                         optionalLabel={t('optional')}
+                        className="col-span-2 md:col-span-1"
                     />
                     <FormInput
                         label={t('formTimeline')}
                         inputId="timeline"
                         optional
                         optionalLabel={t('optional')}
+                        className="col-span-2 md:col-span-1"
                     />
                     <button
                         type="submit"

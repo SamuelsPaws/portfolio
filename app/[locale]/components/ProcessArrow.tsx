@@ -8,7 +8,7 @@ const ProcessArrow = ({ left }: Props) => {
     return (
     <div
         className={clsx(
-            "w-60 h-44 self-end relative",
+            "w-20 md:w-60 h-16 md:h-44 self-end relative",
             "clip-arrow",
             left ? "place-self-end scale-x-[-100%]" : "place-self-start"
         )}

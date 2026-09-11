@@ -33,15 +33,17 @@ export default async function FortalesHome({ params }: Props) {
             bgColor="bg-gray-200 dark:bg-br-gray-800"
         >
             <p className="
-                w-fit mx-auto mb-16
+                w-fit mx-auto
+                mb-8 md:mb-16
                 text-gray-600 dark:text-gray-300 text-my-lg"
             >
                 {t('idealFor')}:
             </p>
             {/* Ideal for container */}
             <div className="
-                w-fit mx-auto mb-32
-                flex flex-wrap justify-center gap-16"
+                w-fit mx-auto
+                mb-16 md:mb-32
+                flex flex-col md:flex-row flex-wrap justify-center gap-16"
             >
                 <IdealForCard
                     imgSrc="/assets/undraw-upgrade.svg"
@@ -72,20 +74,20 @@ export default async function FortalesHome({ params }: Props) {
                 text={t('h2WhyCare')}
             />
             <div className="
-                w-fit mx-auto
-                flex items-start gap-16"
+                w-full md:w-fit mx-auto
+                flex flex-col md:flex-row items-start gap-16"
             >
                 <Image
                     src="/assets/thinking-woman.jpg"
                     width={900}
                     height={900}
                     className="
-                        w-120 aspect-square
+                        w-full md:w-120 aspect-square
                         object-cover object-center
                         rounded-4xl shadow-img"
                     alt="Mujer observando una página web"
                 />
-                <div className="w-120">
+                <div className="w-full md:w-120">
                     <h3 className="
                         mx-auto mb-8
                         text-my-xl text-gray-title text-center font-semibold"
@@ -104,7 +106,7 @@ export default async function FortalesHome({ params }: Props) {
                     >
                         <WhyCareItem
                             text={t('credibilityCopy')}
-                            iconId="handshake"
+                            iconId="handshake-heart"
                         />
                         <WhyCareItem
                             text={t('visibilityCopy')}
@@ -136,16 +138,16 @@ export default async function FortalesHome({ params }: Props) {
             title={t('h2Process')}
             bgColor="bg-br-white dark:bg-br-black"
         >
+            <ArrowSvgDef />
             <div className="
                 w-full
-                grid grid-cols-2 gap-8"
+                grid grid-cols-[0.5fr_1fr_0.5fr] md:grid-cols-2 gap-x-4 gap-y-8 md:gap-8"
             >
-                <ArrowSvgDef />
                 <ProcessCard
                     title={t('h3StepOne')}
                     number={1}
                     text={t('stepOneCopy')}
-                    place="place-self-end"
+                    place="col-span-2 md:place-self-end md:col-span-1"
                 />
                 <ProcessArrow />
                 <ProcessArrow left />
@@ -153,13 +155,13 @@ export default async function FortalesHome({ params }: Props) {
                     title={t('h3StepTwo')}
                     number={2}
                     text={t('stepTwoCopy')}
-                    place="place-self-start"
+                    place="col-span-2 md:place-self-start md:col-span-1"
                 />
                 <ProcessCard
                     title={t('h3StepThree')}
                     number={3}
                     text={t('stepThreeCopy')}
-                    place="place-self-end"
+                    place="col-span-2 md:place-self-end md:col-span-1"
                 />
                 <ProcessArrow />
                 <ProcessArrow left />
@@ -167,13 +169,13 @@ export default async function FortalesHome({ params }: Props) {
                     title={t('h3StepFour')}
                     number={4}
                     text={t('stepFourCopy')}
-                    place="place-self-start"
+                    place="col-span-2 md:place-self-start md:col-span-1"
                 />
                 <ProcessCard
                     title={t('h3StepFive')}
                     number={5}
                     text={t('stepFiveCopy')}
-                    place="place-self-end"
+                    place="col-span-2 md:place-self-end md:col-span-1"
                 />
             </div>
         </FortSectionSt>
@@ -183,8 +185,8 @@ export default async function FortalesHome({ params }: Props) {
             bgColor="bg-gray-200 dark:bg-br-gray-800"
         >
             <div className="
-                w-fit mx-auto mb-16
-                flex gap-8"
+                w-full md:w-fit mx-auto mb-16
+                flex flex-col md:flex-row gap-8"
             >
                 <PackageCard
                     myPackage={myPackages.starter}

@@ -2,7 +2,7 @@ import { NavLinkType } from "@/lib/types/nav"
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-const cn = 'text-br-white text-my-lg md:hover:underline underline-offset-2'
+const cn = 'text-br-white text-my-lg text-right md:hover:underline underline-offset-2'
 
 interface Props {
     item: NavLinkType;
