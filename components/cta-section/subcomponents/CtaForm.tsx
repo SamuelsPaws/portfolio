@@ -93,6 +93,7 @@ const CtaForm = () => {
     const closeModal = () => {
         setFormState('idle')
         setIsModalOpen(false)
+        window.location.reload()
     }
 
     return (
