@@ -141,7 +141,11 @@
         "formSubmit": "Kostenloses Angebot anfordern",
         "preferWhatsapp": "Lieber per WhatsApp?",
         "whatsappCta": "Mit uns chatten",
-        "optional": "Optional"
+        "optional": "Optional",
+        "submitSuccessTitle": "Ihre Anfrage wurde gesendet.",
+        "submitSuccessCopy": "Vielen Dank für Ihre Anfrage. Wir werden die Details Ihres Projekts sorgfältig prüfen und uns so bald wie möglich mit einem individuellen Angebot bei Ihnen melden. Sie können dieses Fenster nun schließen.",
+        "submitErrorTitle": "Etwas ist schiefgelaufen.",
+        "submitErrorCopy": "Ihre Anfrage konnte im Moment nicht gesendet werden. Bitte versuchen Sie es in wenigen Augenblicken erneut. Sollte das Problem weiterhin bestehen, können Sie uns jederzeit direkt kontaktieren. Wir helfen Ihnen gerne weiter."
     },
     "FortPricing": {
         "h1": "Preise",

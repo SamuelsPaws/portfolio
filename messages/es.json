@@ -141,7 +141,11 @@
         "optional": "Opcional",
         "formSubmit": "Solicitar cotización gratuita",
         "preferWhatsapp": "¿Prefieres WhatsApp?",
-        "whatsappCta": "Escríbenos"
+        "whatsappCta": "Escríbenos",
+        "submitSuccessTitle": "Tu solicitud ha sido enviada.",
+        "submitSuccessCopy": "Gracias por ponerte en contacto con nosotros. Revisaremos cuidadosamente los detalles de tu proyecto y nos comunicaremos contigo lo antes posible con una propuesta personalizada. Ya puedes cerrar esta ventana.",
+        "submitErrorTitle": "Ha ocurrido un inconveniente.",
+        "submitErrorCopy": "No hemos podido enviar tu solicitud en este momento. Inténtalo de nuevo en unos instantes. Si el problema continúa, puedes ponerte en contacto con nosotros directamente y estaremos encantados de ayudarte."
     },
     "FortPricing": {
         "h1": "Precios",

@@ -131,7 +131,11 @@
         "optional": "Facultatif",
         "formSubmit": "Obtenir mon devis gratuit",
         "preferWhatsapp": "Vous préférez WhatsApp ?",
-        "whatsappCta": "Discuter avec nous"
+        "whatsappCta": "Discuter avec nous",
+        "submitSuccessTitle": "Votre demande a été envoyée.",
+        "submitSuccessCopy": "Merci de nous avoir contactés. Nous allons examiner attentivement les détails de votre projet et reviendrons vers vous dans les plus brefs délais avec une proposition personnalisée. Vous pouvez maintenant fermer cette fenêtre.",
+        "submitErrorTitle": "Un problème est survenu.",
+        "submitErrorCopy": "Nous n'avons pas pu envoyer votre demande pour le moment. Veuillez réessayer dans quelques instants. Si le problème persiste, n'hésitez pas à nous contacter directement, nous serons ravis de vous aider."
     },
     "FortPricing": {
         "h1": "Tarifs",

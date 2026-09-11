@@ -144,7 +144,11 @@
         "optional": "Optional",
         "formSubmit": "Get my free quote",
         "preferWhatsapp": "Prefer WhatsApp?",
-        "whatsappCta": "Chat with us"
+        "whatsappCta": "Chat with us",
+        "submitSuccessTitle": "Your request has been sent.",
+        "submitSuccessCopy": "Thank you for reaching out. We'll carefully review your project details and get back to you with a personalized proposal as soon as possible. You can now close this window.",
+        "submitErrorTitle": "Something went wrong.",
+        "submitErrorCopy": "We couldn't send your request at this time. Please try again in a moment. If the issue persists, feel free to contact us directly and we'll be happy to help."
     },
     "FortPricing": {
         "h1": "Pricing",

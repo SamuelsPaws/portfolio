@@ -4,11 +4,13 @@ import FormInput from "./FormInput"
 import CustomIcon from "@/components/CustomIcon"
 import clsx from "clsx"
 import { ChangeEvent, useState } from "react"
+import SubmissionModal from "./SubmissionModal"
 
-type InputData<T> = {
-    value: T,
-    required: boolean
-}
+type FormState =
+    | 'idle'
+    | 'processing'
+    | 'success'
+    | 'error';
 
 type FormData = {
     name: string,
@@ -19,15 +21,20 @@ type FormData = {
     timeline: string
 }
 
+const initialFormData = {
+    name: '',
+    email: '',
+    company: '',
+    projectNeed: '',
+    budget: '',
+    timeline: '',
+}
+
 const CtaForm = () => {
-    const [formData, setFormData] = useState<FormData>({
-        name: '',
-        email: '',
-        company: '',
-        projectNeed: '',
-        budget: '',
-        timeline: '',
-    })
+    const [formData, setFormData] = useState<FormData>(initialFormData)
+    const [formState, setFormState] = useState<FormState>('idle')
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
+    const [modalState, setModalState] = useState<'success' | 'error'>('success')
     const t = useTranslations('FortHome')
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -37,12 +44,29 @@ const CtaForm = () => {
             ...prev,
             [name]: value
         }))
-    }    
+    }
+
+    const handleSuccess = () => {
+        setFormState('success')
+        setModalState('success')
+        setIsModalOpen(true)
+        setFormData(initialFormData)
+    }
+
+    const handleError = () => {
+        setFormState('error')
+        setModalState('error')
+        setIsModalOpen(true)
+        setFormData(initialFormData)
+    }
 
     const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
         e.preventDefault()
 
-        if (formData.name.length) {
+        
+        if (formData.name.length && formData.email.length && formData.projectNeed.length) {
+            setFormState('processing')
+
             try {
                 const response = await fetch("/api/send", {
                     method: "POST",
@@ -53,24 +77,26 @@ const CtaForm = () => {
                 })
     
                 if (!response.ok) {
+                    handleError()
                     throw new Error("Failed to submit request.");
                 }
     
-                const data = await response.json();
-    
-                console.log(data);
-    
-                // Success UI
+                // const data = await response.json();
+                handleSuccess()
             } catch (err) {
                 console.error(err);
-    
-                // Error UI
+                handleError()
             }
         }
+    }
 
+    const closeModal = () => {
+        setFormState('idle')
+        setIsModalOpen(false)
     }
 
     return (
+    <>
     <form
         onSubmit={handleSubmit}
         className="
@@ -132,21 +158,41 @@ const CtaForm = () => {
             className={clsx(
                 "w-full col-span-2 group",
                 "py-4",
-                "flex justify-center items-center gap-3",
+                "flex justify-center items-center",
                 "bg-black dark:bg-br-white",
                 "text-my-md text-br-white dark:text-black",
                 "rounded-full"
             )}
         >
-            <span className="md:group-hover:pl-4 duration-200">
-                {t('formSubmit')}
-            </span>
-            <CustomIcon
-                iconId="arrowR"
-                className="scale-110"
-            />
+            {formState !== 'processing' && (
+                <div className="flex justify-center items-center gap-3">
+                    <span className="md:group-hover:pl-4 duration-200">
+                        {t('formSubmit')}
+                    </span>
+                    <CustomIcon
+                        iconId="arrowR"
+                        className="scale-110"
+                    />
+                </div>
+            )}
+            {formState === 'processing' && (
+                <CustomIcon
+                    iconId="spinner-two"
+                    className="animate-spin-loop"
+                />
+            )}
         </button>
     </form>
+    <SubmissionModal
+        isOpen={isModalOpen}
+        state={modalState}
+        onClose={closeModal}
+        successTitleLabel={t('submitSuccessTitle')}
+        successCopyLabel={t('submitSuccessCopy')}
+        errorTitleLabel={t('submitErrorTitle')}
+        errorCopyLabel={t('submitErrorCopy')}
+    />
+    </>
     )
 }
 

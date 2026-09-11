@@ -74,8 +74,7 @@ const Lightbox = ({ isOpen, onClose, media, previousMedia, nextMedia, currPos, g
                 fixed top-0 left-0 z-[9910]
                 w-screen h-screen
                 bg-black/80"
-        >
-        </div>
+        />
         {/* X button */}
         <XBtn onClick={onClose} />
         {/* Prev and next buttons */}

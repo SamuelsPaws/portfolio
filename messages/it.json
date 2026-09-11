@@ -141,7 +141,11 @@
         "formSubmit": "Richiedi il mio preventivo gratuito",
         "preferWhatsapp": "Preferisci WhatsApp?",
         "whatsappCta": "Chatta con noi",
-        "optional": "Facoltativo"
+        "optional": "Facoltativo",
+        "submitSuccessTitle": "La tua richiesta è stata inviata.",
+        "submitSuccessCopy": "Grazie per averci contattato. Esamineremo con attenzione i dettagli del tuo progetto e ti ricontatteremo al più presto con una proposta personalizzata. Ora puoi chiudere questa finestra.",
+        "submitErrorTitle": "Si è verificato un problema.",
+        "submitErrorCopy": "Non è stato possibile inviare la tua richiesta in questo momento. Ti invitiamo a riprovare tra qualche istante. Se il problema dovesse persistere, puoi contattarci direttamente e saremo felici di aiutarti."
     },
     "FortPricing": {
         "h1": "Prezzi",
