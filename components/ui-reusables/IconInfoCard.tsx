@@ -11,7 +11,7 @@ interface Props {
 const IconInfoCard = ({ iconId, title, description, bgColor = "bg-main" }: Props) => {
     return (
     <div className={clsx(
-        "w-100 p-8",
+        "w-full md:w-100 p-8",
         bgColor,
         "rounded-4xl border border-gray-300 shadow-img-sm"
     )}>

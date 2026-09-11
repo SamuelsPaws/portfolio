@@ -12,7 +12,7 @@ const FortalesTableItem = ({ text }: Props) => {
         <div className="flex items-center gap-4">
             {/* Bullet icon */}
             <div className={clsx(
-                "w-6 aspect-square",
+                "w-4 md:w-6 aspect-square",
                 "flex justify-center items-center",
                 "bg-br-orange-main/20",
                 "text-my-sm text-br-orange-main-desat",
@@ -22,7 +22,7 @@ const FortalesTableItem = ({ text }: Props) => {
                     iconId="check"
                 />
             </div>
-            <span className="text-main text-my-md font-semibold">
+            <span className="flex-1 text-main text-my-md font-semibold">
                 {text}
             </span>
         </div>

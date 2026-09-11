@@ -7,7 +7,7 @@ const ProfileSkillBullet = ({ text }: Props) => {
     <li className="
         px-4 py-2
         bg-gray-300 dark:bg-br-gray-600
-        text-myf-md text-gray-title dark:text-br-white font-semibold
+        text-my-sm text-gray-title dark:text-br-white font-semibold
         rounded-full"
     >
         {text}

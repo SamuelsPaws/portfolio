@@ -20,16 +20,19 @@ export default async function Pricing({ params }: Props) {
     const t = await getTranslations('FortPricing')
 
     return (
-    <main className="pt-24 md:pt-35 bg-br-white dark:bg-br-black">
+    <main className="pt-20 md:pt-35 bg-br-white dark:bg-br-black">
         <FortSectionSt
             bgColor="bg-br-white dark:bg-br-black"
         >
-            <h1 className="mx-auto mb-16 text-center text-most-h2 text-main font-['Source_Serif_4']">
+            <h1 className="
+                mx-auto mb-8 md:mb-16
+                text-center text-most-h2 text-main font-['Source_Serif_4']"
+            >
                 {t('h1')}
             </h1>
             <div className="
                 w-full md:w-fit mx-auto
-                flex flex-col md:flex-row gap-8 md:gap-16"
+                flex flex-col md:flex-row flex-wrap gap-8 md:gap-16"
             >
                 <StepCard
                     iconId="box-iso"

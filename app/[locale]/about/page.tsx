@@ -5,17 +5,12 @@ import Image from "next/image";
 import IconInfoCard from "@/components/ui-reusables/IconInfoCard";
 import ValuesBullet from "./components/ValuesBullet";
 import ProfileColumn from "./components/ProfileColumn";
-import WhyWorkItem from "./components/why-work-table/subcomponents/WhyWorkItem";
-import clsx from "clsx";
 import CustomIcon from "@/components/CustomIcon";
-import FortalesTableItem from "./components/why-work-table/subcomponents/FortalesTableItem";
-import WhyWorkRow from "./components/why-work-table/subcomponents/WhyWorkRow";
 import WhyWorkTable from "./components/why-work-table/WhyWorkTable";
 import FaqCard from "./components/FaqCard";
 import SimpleH3 from "@/components/SimpleH3";
 import Link from "next/link";
 import FortSectionCta from "@/components/cta-section/FortSectionCta";
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { teamSkills } from "@/data/fortales/teamSkills";
 import { LocaleKey } from "@/lib/types/localeKey";
@@ -34,23 +29,23 @@ export default async function About({ params }: Props) {
     <main>
         {/* Hero */}
         <section className="
-            px-32 py-32
+            px-8 py-24
+            md:px-32 md:py-32
             bg-main"
         >
             {/* Content wrapper */}
             <div className="
                 w-full
-                flex items-center gap-32"
+                flex flex-col md:flex-row items-center gap-8 md:gap-32"
             >
                 {/* Left div */}
-                <div className="
-                    w-1/2"
-                >
+                <div className="w-full md:w-1/2">
                     {/* Eyebrow */}
                     <Eyebrow text={t('heroBrow').toUpperCase()} />
                     <h1 className="
-                        mb-8
-                        text-5xl text-main font-['Source_Serif_4'] leading-16"
+                        mb-4 md:mb-8
+                        text-most-h2 text-main
+                        font-['Source_Serif_4'] leading-10 md:leading-16"
                     >
                         {t('h1')}
                     </h1>
@@ -70,7 +65,8 @@ export default async function About({ params }: Props) {
                     width={935}
                     height={995}
                     className="
-                        w-1/2 h-120
+                        w-full md:w-1/2
+                        h-80 md:h-120
                         object-cover object-top
                         rounded-4xl shadow-img"
                     alt="Foto del equipo de Fortales"
@@ -84,22 +80,20 @@ export default async function About({ params }: Props) {
             {/* Upper content wrapper */}
             <div className="
                 w-full mb-16
-                flex items-start gap-16"
+                flex flex-col-reverse md:flex-row items-start gap-16"
             >
-                <div className="w-1/2">
+                <div className="w-full md:w-1/2">
                     <img
                         src="/assets/undraw-ideas.svg"
-                        className="w-full h-80 object-contain"
+                        className="w-full h-60 md:h-80 object-contain"
                         alt="Una persona pensando"
                     />    
                 </div>
-                <div className="
-                    w-1/2"
-                >
+                <div className="w-full md:w-1/2">
                     <Eyebrow text={t('storyBrow').toUpperCase()} />
                     <SimpleH2
                         text={t('h2Story')}
-                        className="mb-8 text-5xl"
+                        className="mb-8 text-most-h2 leading-10 md:leading-16"
                     />
                     {/* Paragraphs */}
                     <div className="flex flex-col gap-4">
@@ -112,9 +106,10 @@ export default async function About({ params }: Props) {
                     </div>
                 </div>
             </div>
+            {/* Cards */}
             <div className="
                 w-full
-                flex justify-center gap-8"
+                flex flex-col md:flex-row justify-center flex-wrap gap-8"
             >
                 <IconInfoCard
                     iconId="bulb"
@@ -139,15 +134,15 @@ export default async function About({ params }: Props) {
             bgColor="bg-main"
         >
             <p className="
-                w-2/3 mx-auto mb-16
-                text-secondary text-my-md text-center leading-8"
+                w-full md:w-2/3 mx-auto mb-16
+                text-secondary text-my-md text-center leading-6 md:leading-8"
             >
                 {t('valuesCopy')}
             </p>
             {/* Values grid */}
             <div className="
                 w-fit mx-auto mb-16
-                grid grid-cols-2 gap-16"
+                grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16"
             >
                 <IconInfoCard
                     iconId="building"
@@ -177,8 +172,9 @@ export default async function About({ params }: Props) {
             {/* Lower bullet points */}
             <div className="
                 w-full
-                px-16 py-16
-                flex justify-between items-center
+                p-8
+                md:px-16 md:py-16
+                flex flex-col md:flex-row justify-between items-start md:items-center gap-8
                 bg-br-orange-main/10
                 rounded-4xl border border-br-orange-main/20"
             >
@@ -202,15 +198,15 @@ export default async function About({ params }: Props) {
             bgColor="bg-secondary"
         >
             <p className="
-                w-2/3 mx-auto mb-16
-                text-my-md text-secondary text-center leading-8"
+                w-full md:w-2/3 mx-auto mb-16
+                text-my-md text-secondary text-center leading-6 md:leading-8"
             >
                 {t('teamCopy')}
             </p>
             {/* Profile columns */}
             <div className="
                 w-full
-                flex items-stretch gap-16"
+                flex flex-col md:flex-row items-stretch gap-8 md:gap-16"
             >
                 <ProfileColumn
                     image={{
@@ -242,8 +238,8 @@ export default async function About({ params }: Props) {
             bgColor="bg-main"
         >
             <p className="
-                w-2/3 mx-auto mb-16
-                text-my-md text-secondary text-center leading-8"
+                w-full md:w-2/3 mx-auto mb-16
+                text-my-md text-secondary text-center leading-6 md:leading-8"
             >
                 {t('whyUsCopy')}  
             </p>
@@ -254,19 +250,20 @@ export default async function About({ params }: Props) {
             {/* Content wrapper */}
             <div className="
                 w-full
-                flex items-start gap-32"
+                flex flex-col md:flex-row items-start gap-16 md:gap-32"
             >
                 <div className="
-                    flex-1"
+                    w-full
+                    md:flex-1 md:w-auto"
                 >
                     <Eyebrow text={t('faqBrow').toUpperCase()} />
                     <SimpleH2
                         text={t('h2Faq')}
-                        className="mb-16 text-5xl"
+                        className="mb-8 md:mb-16 text-most-h2"
                     />
                     <p className="
-                        mb-16
-                        text-my-md text-secondary leading-8"
+                        mb-8 md:mb-16
+                        text-my-md text-secondary leading-6 md:leading-8"
                     >
                         {t('faqCopy')}
                     </p>
@@ -282,8 +279,9 @@ export default async function About({ params }: Props) {
                         ))}
                     </div>
                 </div>
+                {/* Didn't find? */}
                 <div className="
-                    w-90
+                    w-full md:w-90
                     p-8
                     bg-black/5 dark:bg-br-gray-600
                     rounded-4xl"

@@ -20,7 +20,7 @@ const FortSectionCta = ({ bgColor }: Props) => {
     >
         {/* Container with 2 columns */}
         <div className="
-            w-full mx-auto mb-32
+            w-full mx-auto mb-16 md:mb-32
             flex flex-col md:flex-row gap-8 md:gap-16"
         >
             {/* Left column */}
@@ -64,7 +64,7 @@ const FortSectionCta = ({ bgColor }: Props) => {
                     action=""
                     className="
                         w-full md:w-[90%]
-                        px-4 py-6 md:p-8
+                        px-8 py-8 md:p-8
                         grid grid-cols-2 items-end gap-4 md:gap-8
                         bg-main
                         border border-gray-300 rounded-4xl shadow-img-sm"

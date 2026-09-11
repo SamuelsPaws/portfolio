@@ -21,7 +21,7 @@ const FaqCard = ({ question, answer }: Props) => {
         onClick={toggleExpanded}
         className="
             w-full
-            p-8
+            p-4 md:p-8
             flex flex-col
             bg-black/5 dark:bg-white/5
             rounded-xl
@@ -29,7 +29,7 @@ const FaqCard = ({ question, answer }: Props) => {
     >
         {/* Upper part */}
         <div className="flex items-center justify-between">
-            <h3 className="text-my-lg text-gray-title font-semibold">
+            <h3 className="text-my-lg text-gray-title text-left font-semibold">
                 {question}
             </h3>
             <div className="text-my-xl">

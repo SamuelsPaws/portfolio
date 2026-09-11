@@ -43,7 +43,7 @@ const StepCard = ({ iconId, num, title, copy, iconCn }: Props) => {
                 </span>
             </div>
         </div>
-        <h2 className="mb-4 text-my-2xl text-main font-['Source_Serif_4']">
+        <h2 className="mb-4 text-2xl md:text-3xl text-main font-['Source_Serif_4']">
             {title}
         </h2>
         <p className="text-secondary text-my-md">

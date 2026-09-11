@@ -47,8 +47,8 @@ const PackageLarge = ({ myPackage, locale, theme, isLast = false, ctaLabel }: Pr
             </p>
             {/* Features */}
             <ul className="
-                mb-16
-                flex flex-col gap-4"
+                mb-8 md:mb-16
+                flex flex-col gap-2 md:gap-4"
             >
                 {features.map((el, index) => (
                     <PackageFeature
