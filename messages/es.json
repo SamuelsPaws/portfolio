@@ -423,6 +423,50 @@
             "ogDescription": "Descubre la historia, los valores y el equipo de Fortales. Conoce cómo ayudamos a las empresas a crecer con sitios web rápidos, escalables y diseñados para el futuro.",
             "twitterTitle": "Sobre Fortales | Conoce al equipo detrás de tu sitio web",
             "twitterDescription": "Conoce al equipo de Fortales y descubre cómo creamos sitios web pensados para impulsar el crecimiento de tu empresa."
+        },
+        "FortPackageSlug": {
+            "Starter": {
+                "title": "Paquete Starter | Sitios web profesionales adaptados a tu negocio | Fortales",
+                "description": "El paquete Starter incluye todo lo necesario para crear o renovar un sitio web profesional. Comienza con una base sólida y personalízalo con los complementos que mejor se adapten a tu negocio, tus objetivos y su crecimiento.",
+                "keywords": [
+                    "paquete starter",
+                    "sitio web profesional",
+                    "sitio web personalizado",
+                    "sitio web empresarial",
+                    "rediseño web",
+                    "desarrollo web",
+                    "sitio web moderno",
+                    "paquete web",
+                    "diseño web personalizado",
+                    "Fortales"
+                ],
+                "category": "Desarrollo web",
+                "ogTitle": "Paquete Starter | Sitios web profesionales adaptados a tu negocio | Fortales",
+                "ogDescription": "Crea un nuevo sitio web o renueva el actual con un paquete flexible que evoluciona junto a tu empresa.",
+                "twitterTitle": "Paquete Starter | Sitios web profesionales adaptados a tu negocio | Fortales",
+                "twitterDescription": "Un paquete flexible diseñado para adaptarse a las necesidades de tu negocio y crecer con él."
+            },
+            "Premium": {
+                "title": "Paquete Premium | Sitios web avanzados para empresas en crecimiento | Fortales",
+                "description": "El paquete Premium está diseñado para empresas que necesitan funcionalidades avanzadas desde el primer día. Desde integraciones personalizadas hasta soporte multilingüe y una arquitectura escalable, es la opción ideal para proyectos más ambiciosos y preparados para crecer.",
+                "keywords": [
+                    "paquete premium",
+                    "sitio web avanzado",
+                    "desarrollo web personalizado",
+                    "sitio web empresarial",
+                    "sitio web escalable",
+                    "sitio web multilingüe",
+                    "integraciones web",
+                    "desarrollo web profesional",
+                    "diseño web personalizado",
+                    "Fortales"
+                ],
+                "category": "Desarrollo web",
+                "ogTitle": "Paquete Premium | Sitios web avanzados para empresas en crecimiento | Fortales",
+                "ogDescription": "Un paquete completo para empresas que necesitan funcionalidades avanzadas, flexibilidad y una solución preparada para crecer.",
+                "twitterTitle": "Paquete Premium | Sitios web avanzados para empresas en crecimiento | Fortales",
+                "twitterDescription": "Sitios web potentes y escalables para empresas con necesidades más avanzadas."
+            }
         }
     }
 }

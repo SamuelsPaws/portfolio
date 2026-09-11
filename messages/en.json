@@ -426,6 +426,50 @@
             "ogDescription": "Get to know the team, values, and approach behind Fortales. Discover how we help businesses grow with reliable, scalable websites.",
             "twitterTitle": "About Fortales | Meet the Team Behind Your Website",
             "twitterDescription": "Meet the people behind Fortales and learn how we build websites that help businesses grow."
+        },
+        "FortPackageSlug": {
+            "Starter": {
+                "title": "Starter Website Package | Professional Websites Built Around Your Needs | Fortales",
+                "description": "The Starter package gives you everything you need to launch or refresh a professional website. Start with a solid foundation, then personalize it with add-ons that match your business, goals, and future growth.",
+                "keywords": [
+                    "starter website package",
+                    "professional website",
+                    "custom website",
+                    "business website",
+                    "website redesign",
+                    "website development",
+                    "modern website",
+                    "website package",
+                    "custom web design",
+                    "Fortales"
+                ],
+                "category": "Web development",
+                "ogTitle": "Starter Website Package | Professional Websites Built Around Your Needs | Fortales",
+                "ogDescription": "Launch a new website or refresh your existing one with a flexible package that grows alongside your business.",
+                "twitterTitle": "Starter Website Package | Professional Websites Built Around Your Needs | Fortales",
+                "twitterDescription": "A flexible website package designed to adapt to your business and grow with it."
+            },
+            "Premium": {
+                "title": "Premium Website Package | Advanced Websites for Growing Businesses | Fortales",
+                "description": "The Premium package is designed for businesses that need advanced functionality from day one. From custom integrations to multilingual support and scalable architecture, it's built to support ambitious projects and long-term growth.",
+                "keywords": [
+                    "premium website package",
+                    "advanced website",
+                    "custom website development",
+                    "business website",
+                    "scalable website",
+                    "multilingual website",
+                    "website integrations",
+                    "professional web development",
+                    "custom web design",
+                    "Fortales"
+                ],
+                "category": "Web development",
+                "ogTitle": "Premium Website Package | Advanced Websites for Growing Businesses | Fortales",
+                "ogDescription": "A complete website package for businesses that need advanced features, flexibility, and room to grow.",
+                "twitterTitle": "Premium Website Package | Advanced Websites for Growing Businesses | Fortales",
+                "twitterDescription": "Powerful, scalable websites built for businesses with more ambitious requirements."
+            }
         }
     }
 }

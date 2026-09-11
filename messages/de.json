@@ -438,6 +438,50 @@
             "ogDescription": "Lernen Sie das Team, die Werte und die Arbeitsweise von Fortales kennen. Erfahren Sie, wie wir Unternehmen mit zuverlässigen und skalierbaren Websites beim Wachstum unterstützen.",
             "twitterTitle": "Über Fortales | Lernen Sie das Team hinter Ihrer Website kennen",
             "twitterDescription": "Lernen Sie das Team von Fortales kennen und erfahren Sie, wie wir Websites für nachhaltiges Unternehmenswachstum entwickeln."
+        },
+        "FortPackageSlug": {
+            "Starter": {
+                "title": "Starter-Paket | Professionelle Websites nach Ihren Anforderungen | Fortales",
+                "description": "Das Starter-Paket bietet alles, was Sie für eine neue oder überarbeitete professionelle Website benötigen. Beginnen Sie mit einer soliden Grundlage und erweitern Sie sie mit Zusatzleistungen, die zu Ihrem Unternehmen, Ihren Zielen und Ihrem Wachstum passen.",
+                "keywords": [
+                    "Starter-Paket",
+                    "professionelle Website",
+                    "individuelle Website",
+                    "Business-Website",
+                    "Website-Relaunch",
+                    "Webentwicklung",
+                    "moderne Website",
+                    "Website-Paket",
+                    "Webdesign",
+                    "Fortales"
+                ],
+                "category": "Webentwicklung",
+                "ogTitle": "Starter-Paket | Professionelle Websites nach Ihren Anforderungen | Fortales",
+                "ogDescription": "Erstellen Sie eine neue Website oder modernisieren Sie Ihre bestehende mit einem flexiblen Paket, das mit Ihrem Unternehmen wächst.",
+                "twitterTitle": "Starter-Paket | Professionelle Websites nach Ihren Anforderungen | Fortales",
+                "twitterDescription": "Ein flexibles Website-Paket, das sich an Ihr Unternehmen anpasst und mit ihm wächst."
+            },
+            "Premium": {
+                "title": "Premium-Paket | Leistungsstarke Websites für anspruchsvolle Unternehmen | Fortales",
+                "description": "Das Premium-Paket richtet sich an Unternehmen, die von Anfang an erweiterte Funktionen benötigen. Mit individuellen Integrationen, Mehrsprachigkeit und einer skalierbaren Architektur ist es die ideale Lösung für anspruchsvolle Projekte.",
+                "keywords": [
+                    "Premium-Paket",
+                    "fortschrittliche Website",
+                    "individuelle Webentwicklung",
+                    "Business-Website",
+                    "skalierbare Website",
+                    "mehrsprachige Website",
+                    "Website-Integrationen",
+                    "professionelle Webentwicklung",
+                    "Webdesign",
+                    "Fortales"
+                ],
+                "category": "Webentwicklung",
+                "ogTitle": "Premium-Paket | Leistungsstarke Websites für anspruchsvolle Unternehmen | Fortales",
+                "ogDescription": "Ein umfassendes Website-Paket für Unternehmen, die maximale Flexibilität, erweiterte Funktionen und nachhaltige Skalierbarkeit benötigen.",
+                "twitterTitle": "Premium-Paket | Leistungsstarke Websites für anspruchsvolle Unternehmen | Fortales",
+                "twitterDescription": "Leistungsstarke und skalierbare Websites für Unternehmen mit hohen Anforderungen."
+            }
         }
     }
 }

@@ -9,6 +9,10 @@ import MoreAddOnsArea from "./components/MoreAddOnsArea"
 import Summary from "./components/Summary"
 import StepCard from "@/components/ui-reusables/StepCard"
 import { getTranslations } from "next-intl/server"
+import organization from "@/data/fortales/organization"
+import { Metadata } from "next"
+import getLangAlternates from "@/lib/utils/getLangAlternates"
+import { availableLocales } from "@/data/locales"
 
 const themes = {
 }
@@ -18,6 +22,95 @@ type Props = {
         'package-slug': 'starter' | 'premium',
         locale: LocaleKey
     }>
+}
+
+function getPackageNamespace(packageSlug: string): 'Starter' | 'Premium' {
+    switch (packageSlug) {
+        case 'starter':
+            return 'Starter';
+        case 'premium':
+            return 'Premium';
+        default:
+            return 'Starter';
+    }
+}
+
+const BASE_URL = organization.url;
+
+export async function generateMetadata({ params }: {
+    params: Promise<{
+        locale: LocaleKey,
+        'package-slug': 'starter' | 'premium'
+}>,
+}): Promise<Metadata> {
+    const resolvedParams = await params
+    const locale = resolvedParams.locale
+    const packageSlug = resolvedParams['package-slug']
+
+    const langNamespace = getPackageNamespace(packageSlug)
+
+    const t = await getTranslations(`Metadata.FortPackageSlug.${langNamespace}`);
+
+    const canonical = `${BASE_URL}/${locale}/about`;
+
+    return {
+        metadataBase: new URL(BASE_URL),
+
+        title: t("title"),
+        description: t("description"),
+        
+        keywords: t.raw("keywords"),
+        applicationName: organization.name,
+        authors: [
+            {
+                name: organization.author,
+            },
+        ],
+        creator: organization.author,
+        publisher: organization.author,
+        alternates: {
+            canonical,
+            languages: getLangAlternates('/about'),
+        },
+
+        openGraph: {
+            title: t("ogTitle"),
+            description: t("ogDescription"),
+            url: canonical,
+            siteName: organization.name,
+            locale: availableLocales[locale],
+            type: "website",
+            images: [
+                {
+                    url: organization.image,
+                    width: 1200,
+                    height: 630,
+                    alt: organization.name,
+                },
+            ],
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: t("twitterTitle"),
+            description: t("twitterDescription"),
+            images: [organization.image],
+        },
+
+        category: t('category'),
+
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+                "max-video-preview": -1,
+            },
+        },
+  };
 }
 
 export default async function ({ params }: Props) {

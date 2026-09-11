@@ -423,6 +423,50 @@
             "ogDescription": "Faites connaissance avec l'équipe, les valeurs et l'approche de Fortales. Découvrez comment nous aidons les entreprises à se développer grâce à des sites web fiables et évolutifs.",
             "twitterTitle": "À propos de Fortales | Découvrez l'équipe derrière votre site web",
             "twitterDescription": "Découvrez l'équipe Fortales et notre approche pour créer des sites web pensés pour la croissance."
+        },
+        "FortPackageSlug": {
+            "Starter": {
+                "title": "Offre Starter | Des sites web professionnels adaptés à vos besoins | Fortales",
+                "description": "L'offre Starter comprend tout le nécessaire pour créer ou moderniser un site web professionnel. Commencez avec une base solide, puis personnalisez-la grâce aux options qui correspondent à votre activité, à vos objectifs et à votre croissance.",
+                "keywords": [
+                    "offre starter",
+                    "site web professionnel",
+                    "site web sur mesure",
+                    "site web d'entreprise",
+                    "refonte de site web",
+                    "développement web",
+                    "site web moderne",
+                    "offre site web",
+                    "création de site internet",
+                    "Fortales"
+                ],
+                "category": "Développement web",
+                "ogTitle": "Offre Starter | Des sites web professionnels adaptés à vos besoins | Fortales",
+                "ogDescription": "Créez un nouveau site web ou modernisez l'existant avec une offre flexible qui évolue avec votre entreprise.",
+                "twitterTitle": "Offre Starter | Des sites web professionnels adaptés à vos besoins | Fortales",
+                "twitterDescription": "Une offre flexible conçue pour s'adapter à votre entreprise et évoluer avec elle."
+            },
+            "Premium": {
+                "title": "Offre Premium | Des sites web avancés pour les entreprises ambitieuses | Fortales",
+                "description": "L'offre Premium est conçue pour les entreprises qui ont besoin de fonctionnalités avancées dès le départ. Intégrations sur mesure, gestion multilingue et architecture évolutive : tout est pensé pour accompagner les projets les plus ambitieux.",
+                "keywords": [
+                    "offre premium",
+                    "site web avancé",
+                    "développement web sur mesure",
+                    "site web d'entreprise",
+                    "site web évolutif",
+                    "site web multilingue",
+                    "intégrations web",
+                    "développement web professionnel",
+                    "création de site internet",
+                    "Fortales"
+                ],
+                "category": "Développement web",
+                "ogTitle": "Offre Premium | Des sites web avancés pour les entreprises ambitieuses | Fortales",
+                "ogDescription": "Une offre complète pour les entreprises qui recherchent des fonctionnalités avancées, de la flexibilité et une solution conçue pour évoluer.",
+                "twitterTitle": "Offre Premium | Des sites web avancés pour les entreprises ambitieuses | Fortales",
+                "twitterDescription": "Des sites web performants et évolutifs pour les entreprises aux besoins les plus avancés."
+            }
         }
     }
 }
