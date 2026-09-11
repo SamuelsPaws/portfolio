@@ -155,6 +155,7 @@ const SummaryForm = ({ packageSlug }: Props) => {
             label={t('formEmail')}
             className="col-span-2"
             optionalLabel={t('optional')}
+            type="email"
         />
         <FormInput
             inputId="company"
