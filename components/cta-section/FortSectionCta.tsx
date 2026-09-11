@@ -14,6 +14,7 @@ interface Props {
 
 const FortSectionCta = ({ bgColor }: Props) => {
     const t = useTranslations('FortHome')
+    const tR = useTranslations('Reusable')
 
     return (
     <FortSectionSt
@@ -138,7 +139,7 @@ const FortSectionCta = ({ bgColor }: Props) => {
         />
         <WaBtn 
             label={t('whatsappCta')}
-            prefill={t('waEncodedFill')}
+            prefill={tR('waEncodedFill')}
         />
     </FortSectionSt>
     )
