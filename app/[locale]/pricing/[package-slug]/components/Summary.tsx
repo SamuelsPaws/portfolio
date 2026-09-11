@@ -12,6 +12,7 @@ import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import CustomIcon from "@/components/CustomIcon";
 import SummaryH3 from "./SummaryH3";
+import SummaryForm from "./summary-form/SummaryForm";
 
 interface Props {
     locale: LocaleKey;
@@ -19,7 +20,6 @@ interface Props {
 }
 
 const Summary = ({ locale, packageSlug }: Props) => {
-    const t = useTranslations('Reusable')
     const tP = useTranslations('FortPackageSlug')
     const addOnsState = useAddOnsStore((state) => state.addOns)
     const enabledAddOns = Array.from(Object.entries(addOnsState)).map(el => {
@@ -133,61 +133,7 @@ const Summary = ({ locale, packageSlug }: Props) => {
             >
                 {tP('preciseCopy')}
             </p>
-            <form
-                action=""
-                className="
-                    w-full
-                    p-8
-                    grid grid-cols-2 items-end gap-4 md:gap-8
-                    bg-main
-                    border border-gray-300 rounded-4xl shadow-img-sm"
-            >
-                <FormInput
-                    inputId="name"
-                    label={t('formName')}
-                    className="col-span-2"
-                    optionalLabel={t('optional')}
-                />
-                <FormInput
-                    inputId="email"
-                    label={t('formEmail')}
-                    className="col-span-2"
-                    optionalLabel={t('optional')}
-                />
-                <FormInput
-                    inputId="company"
-                    label={t('formCompany')}
-                    className="col-span-2"
-                    optionalLabel={t('optional')}
-                    optional
-                />
-                <FormInput
-                    inputId="phone"
-                    label={t('formPhone')}
-                    className="col-span-2"
-                    optionalLabel={t('optional')}
-                    optional
-                />
-                <button
-                    type="submit"
-                    className={clsx(
-                        "w-full col-span-2 group",
-                        "py-4",
-                        "flex justify-center items-center gap-3",
-                        "bg-black dark:bg-br-white",
-                        "text-my-md text-br-white dark:text-black",
-                        "rounded-full"
-                    )}
-                >
-                    <span className="md:group-hover:pl-4 duration-200">
-                        {t('requestSubmit')}
-                    </span>
-                    <CustomIcon
-                        iconId="arrowR"
-                        className="scale-110"
-                    />
-                </button>
-            </form>
+            <SummaryForm packageSlug={packageSlug} />
         </div>
     </div>
     )

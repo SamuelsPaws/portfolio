@@ -6,12 +6,12 @@ interface Props {
 
 const SummaryH3 = ({ text }: Props) => {
     return (
-    <SimpleH3
-        text={text}
-        className="
-            mb-4 md:mb-8
-            text-2xl md:text-3xl text-main"
-    />
+    <h3 className="
+        mb-4 md:mb-8
+        text-2xl md:text-3xl text-gray-title font-semibold"
+    >
+        {text}
+    </h3>
     )
 }
 
