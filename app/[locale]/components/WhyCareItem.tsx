@@ -1,4 +1,7 @@
+'use client'
 import CustomIcon, { IconId } from "@/components/CustomIcon";
+import { smoothRevealSm } from "@/lib/motion-variants/smoothReveal";
+import { motion } from "motion/react";
 
 interface Props {
     text: string;
@@ -7,11 +10,15 @@ interface Props {
 
 const WhyCareItem = ({ text, iconId }: Props) => {
     return (
-    <div className="
+    <motion.div className="
         px-4
         flex items-center gap-4
         bg-br-white dark:bg-br-gray-600
         rounded-2xl"
+        variants={smoothRevealSm}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: '-24px 0px' }}
     >
         <div className="
             w-8 aspect-square
@@ -29,7 +36,7 @@ const WhyCareItem = ({ text, iconId }: Props) => {
         >
             {text}
         </p>
-    </div>
+    </motion.div>
     )
 }
 

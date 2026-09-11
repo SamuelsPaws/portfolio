@@ -6,6 +6,7 @@ import FormInput from "./subcomponents/FormInput"
 import CustomIcon from "../CustomIcon"
 import CenterH2 from "../CenterH2"
 import { useTranslations } from "next-intl"
+import WaBtn from "./subcomponents/WaBtn"
 
 interface Props {
     bgColor: string;
@@ -135,21 +136,10 @@ const FortSectionCta = ({ bgColor }: Props) => {
         <CenterH2
             text={t('preferWhatsapp')}
         />
-        <a
-            className="
-                w-fit mx-auto
-                px-8 py-4
-                flex items-center gap-4
-                bg-whatsapp-500
-                text-my-xl text-br-white
-                rounded-full
-                md:hover:scale-105 duration-400 ease-out"
-        >
-            <span>{t('whatsappCta')}</span>
-            <CustomIcon
-                iconId="whatsapp"
-            />
-        </a>
+        <WaBtn 
+            label={t('whatsappCta')}
+            prefill={t('waEncodedFill')}
+        />
     </FortSectionSt>
     )
 }

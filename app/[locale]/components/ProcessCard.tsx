@@ -1,4 +1,7 @@
+'use client'
+import { smoothReveal } from "@/lib/motion-variants/smoothReveal";
 import clsx from "clsx";
+import { motion } from "motion/react";
 
 interface Props {
     title: string;
@@ -9,12 +12,18 @@ interface Props {
 
 const ProcessCard = ({ title, number, text, place }: Props) => {
     return (
-    <div className={clsx(
-        "w-full md:w-[75%]",
-        place,
-        "flex flex-col",
-        "rounded-2xl md:rounded-4xl overflow-hidden shadow-img-sm"
-    )}>
+    <motion.div
+        className={clsx(
+            "w-full md:w-[75%]",
+            place,
+            "flex flex-col",
+            "rounded-2xl md:rounded-4xl overflow-hidden shadow-img-sm"
+        )}
+        variants={smoothReveal}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: '-24px 0px' }}
+    >
         {/* Upper part */}
         <div className="
             w-full p-4 md:p-8
@@ -47,7 +56,7 @@ const ProcessCard = ({ title, number, text, place }: Props) => {
                 {text}
             </p>
         </div>
-    </div>
+    </motion.div>
     )
 }
 

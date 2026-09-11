@@ -158,7 +158,8 @@ export default async function FortalesHome({ params }: Props) {
                     className="
                         w-full md:w-120 aspect-square
                         object-cover object-center
-                        rounded-4xl shadow-img"
+                        rounded-4xl shadow-img
+                        scroll-reveal-right"
                     alt="Mujer observando una página web"
                 />
                 <div className="w-full md:w-120">

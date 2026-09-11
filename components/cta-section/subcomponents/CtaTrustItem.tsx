@@ -1,4 +1,7 @@
+'use client'
 import CustomIcon from "@/components/CustomIcon";
+import { smoothRevealSm } from "@/lib/motion-variants/smoothReveal";
+import { motion } from "motion/react";
 
 interface Props {
     text: string;
@@ -6,9 +9,14 @@ interface Props {
 
 const CtaTrustItem = ({ text }: Props) => {
     return (
-    <div className="
-        w-full
-        flex items-center gap-4"
+    <motion.div
+        className="
+            w-full
+            flex items-center gap-4"
+        variants={smoothRevealSm}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: '-24px 0px' }}
     >
         {/* Check icon */}
         <div className="
@@ -23,7 +31,7 @@ const CtaTrustItem = ({ text }: Props) => {
         <p className="flex-1 text-my-xl text-secondary">
             {text}
         </p>
-    </div>
+    </motion.div>
     )
 }
 

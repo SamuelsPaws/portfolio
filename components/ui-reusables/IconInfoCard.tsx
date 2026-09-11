@@ -13,7 +13,7 @@ const IconInfoCard = ({ iconId, title, description, bgColor = "bg-main" }: Props
     <div className={clsx(
         "w-full md:w-100 p-8",
         bgColor,
-        "rounded-4xl border border-gray-300 shadow-img-sm"
+        "rounded-4xl border border-gray-300 shadow-img-sm",
     )}>
         <div className="
             h-8 aspect-square

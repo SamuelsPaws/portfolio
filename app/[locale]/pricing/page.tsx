@@ -95,7 +95,7 @@ export default async function Pricing({ params }: Props) {
     const t = await getTranslations('FortPricing')
 
     return (
-    <main className="pt-20 md:pt-35 bg-br-white dark:bg-br-black">
+    <main className="pt-18 md:pt-24 bg-br-white dark:bg-br-black">
         <FortSectionSt
             bgColor="bg-br-white dark:bg-br-black"
         >

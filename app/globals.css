@@ -35,6 +35,11 @@
 	--shadow-flat-lg: 4px 16px 0 #00000028;
 
 	--animate-fade-in-200: fade-in 200ms ease-out forwards;
+	--animate-fade-in-right-600: fade-in-right 600ms ease-out forwards;
+	--animate-fade-in-right-800: fade-in-right 600ms ease-out 200ms forwards;
+	--animate-fade-in-right-1000: fade-in-right 600ms ease-out 400ms forwards;
+	--animate-fade-in-up-1200: fade-in-up 600ms ease-out 600ms forwards;
+	--animate-fade-in-left-slow: fade-in-left 1200ms ease-out forwards;
 	--animate-fade-out-200: fade-out 200ms ease-out forwards;
 
 	@keyframes fade-in {
@@ -44,6 +49,42 @@
 
 		to {
 			opacity: 1
+		}
+	}
+
+	@keyframes fade-in-right {
+		from {
+			opacity: 0;
+			transform: translateX(-32px);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateX(0)
+		}
+	}
+
+	@keyframes fade-in-left {
+		from {
+			opacity: 0;
+			transform: translateX(32px);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateX(0)
+		}
+	}
+
+	@keyframes fade-in-up {
+		from {
+			opacity: 0;
+			transform: translateY(16px);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateY(0)
 		}
 	}
 
@@ -219,6 +260,14 @@ a {
 			@apply shadow-none;
 		}
 	}
+
+	.shadow-img-lg {
+		@apply shadow-[4px_8px_20px_2px_#00000028];
+
+		@variant dark {
+			@apply shadow-none;
+		}
+	}
 }
 
 .clip-arrow {
@@ -251,5 +300,21 @@ a {
 
 	to {
 		--scroll-fill-threshold: 100%
+	}
+}
+
+.scroll-reveal-right {
+	animation: scroll-reveal-right ease-in-out both;
+	animation-timeline: view();
+	animation-range: entry 0% entry 100%;
+}
+
+@keyframes scroll-reveal-right {
+	from {
+		transform: translateX(-25%);
+	}
+
+	to {
+		transform: translateX(0);
 	}
 }
