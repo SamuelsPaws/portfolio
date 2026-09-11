@@ -40,7 +40,8 @@ const ProcessCard = ({ title, number, text, place }: Props) => {
         <div className="
             w-full p-4 md:p-8
             bg-br-white dark:bg-br-gray-600
-            border-x border-b border-gray-400 dark:border-transparent rounded-b-4xl"
+            border-x border-b border-gray-300 dark:border-transparent
+            rounded-b-2xl md:rounded-b-4xl"
         >
             <p className="text-main text-my-md text-left">
                 {text}
