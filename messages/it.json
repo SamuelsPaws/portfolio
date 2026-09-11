@@ -376,6 +376,27 @@
         "ProjectSlug": {
             "category": "Tecnologia",
             "webProject": "Progetto Web"
+        },
+
+        "FortHome": {
+            "title": "Fortales | Siti web su misura per aziende in crescita",
+            "description": "Fortales progetta e sviluppa siti web veloci, scalabili e multilingue che aiutano le aziende a costruire fiducia, attirare clienti e crescere. Richiedi oggi stesso il tuo preventivo gratuito.",
+            "keywords": [
+                "sviluppo web",
+                "web design",
+                "siti web personalizzati",
+                "siti web aziendali",
+                "siti web multilingue",
+                "agenzia di sviluppo web",
+                "siti web per piccole imprese",
+                "web design professionale",
+                "siti web SEO",
+                "Fortales"
+            ],
+            "ogTitle": "Fortales | Siti web su misura per aziende in crescita",
+            "ogDescription": "Siti web moderni progettati per offrire prestazioni elevate, scalabilità e supportare la crescita della tua azienda. Scopri i nostri pacchetti e richiedi un preventivo gratuito.",
+            "twitterTitle": "Fortales | Siti web su misura per aziende in crescita",
+            "twitterDescription": "Siti web veloci e scalabili progettati per aiutare la tua azienda a crescere."
         }
     }
 }

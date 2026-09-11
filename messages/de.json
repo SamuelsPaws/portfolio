@@ -373,6 +373,27 @@
         "ProjectSlug": {
             "category": "Technologie",
             "webProject": "Web-Projekt"
+        },
+
+        "FortHome": {
+            "title": "Fortales | Individuelle Websites für wachsende Unternehmen",
+            "description": "Fortales entwickelt schnelle, skalierbare und mehrsprachige Websites, die Unternehmen dabei helfen, Vertrauen aufzubauen, Kunden zu gewinnen und nachhaltig zu wachsen. Fordern Sie jetzt Ihr kostenloses Angebot an.",
+            "keywords": [
+                "Webentwicklung",
+                "Webdesign",
+                "individuelle Websites",
+                "Business-Websites",
+                "mehrsprachige Websites",
+                "Webentwicklungsagentur",
+                "Websites für kleine Unternehmen",
+                "professionelles Webdesign",
+                "SEO-Websites",
+                "Fortales"
+            ],
+            "ogTitle": "Fortales | Individuelle Websites für wachsende Unternehmen",
+            "ogDescription": "Moderne Websites mit Fokus auf Performance, Skalierbarkeit und Unternehmenswachstum. Entdecken Sie unsere Website-Pakete und fordern Sie Ihr kostenloses Angebot an.",
+            "twitterTitle": "Fortales | Individuelle Websites für wachsende Unternehmen",
+            "twitterDescription": "Schnelle und skalierbare Websites, die Ihr Unternehmen beim Wachstum unterstützen."
         }
     }
 }
