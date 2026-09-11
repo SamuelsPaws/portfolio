@@ -380,6 +380,27 @@
             "twitterTitle": "Fortales | Sites web sur mesure pour les entreprises en croissance",
             "twitterDescription": "Des sites web rapides et évolutifs pour accompagner la croissance de votre entreprise.",
             "category": "Développement web"
+        },
+        "FortPricing": {
+            "title": "Tarifs des sites web | Offres transparentes et devis sur mesure | Fortales",
+            "description": "Découvrez nos offres de création de sites web, personnalisez-les avec les options dont vous avez besoin et recevez un devis adapté à votre entreprise. Une tarification transparente, sans frais cachés.",
+            "keywords": [
+                "tarifs site web",
+                "prix création site web",
+                "offres site web",
+                "devis site web",
+                "coût développement web",
+                "site web professionnel",
+                "options site web",
+                "agence développement web",
+                "prix site web sur mesure",
+                "Fortales"
+            ],
+            "category": "Développement web",
+            "ogTitle": "Tarifs des sites web | Offres transparentes et devis sur mesure | Fortales",
+            "ogDescription": "Choisissez une offre, personnalisez-la avec les fonctionnalités dont vous avez besoin et recevez un devis clair avant le début du projet.",
+            "twitterTitle": "Tarifs des sites web | Offres transparentes et devis sur mesure | Fortales",
+            "twitterDescription": "Créez le site web idéal grâce à des offres flexibles, des options personnalisables et une tarification transparente."
         }
     }
 }

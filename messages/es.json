@@ -380,6 +380,27 @@
             "twitterTitle": "Fortales | Sitios web a medida para empresas en crecimiento",
             "twitterDescription": "Sitios web rápidos y escalables diseñados para ayudar a que tu empresa crezca.",
             "category": "Desarrollo web"
+        },
+        "FortPricing": {
+            "title": "Precios de sitios web | Paquetes y cotizaciones personalizadas | Fortales",
+            "description": "Explora nuestros paquetes de sitios web, personalízalos con complementos y recibe una cotización adaptada a las necesidades de tu empresa. Precios transparentes y sin costos ocultos.",
+            "keywords": [
+                "precios de sitios web",
+                "precios de diseño web",
+                "paquetes de sitios web",
+                "cotización de sitio web",
+                "costo de desarrollo web",
+                "precios de sitios web para empresas",
+                "complementos para sitios web",
+                "paquetes de desarrollo web",
+                "precio de sitio web personalizado",
+                "Fortales precios"
+            ],
+            "category": "Desarrollo web",
+            "ogTitle": "Precios de sitios web | Paquetes y cotizaciones personalizadas | Fortales",
+            "ogDescription": "Elige un paquete, personalízalo con las funcionalidades que necesites y recibe una cotización clara antes de comenzar cualquier trabajo.",
+            "twitterTitle": "Precios de sitios web | Paquetes y cotizaciones personalizadas | Fortales",
+            "twitterDescription": "Crea el sitio web ideal para tu empresa con paquetes flexibles, complementos opcionales y precios transparentes."
         }
     }
 }

@@ -395,6 +395,27 @@
             "twitterTitle": "Fortales | Individuelle Websites für wachsende Unternehmen",
             "twitterDescription": "Schnelle und skalierbare Websites, die Ihr Unternehmen beim Wachstum unterstützen.",
             "category": "Webentwicklung"
+        },
+        "FortPricing": {
+            "title": "Website-Preise | Transparente Pakete & Individuelle Angebote | Fortales",
+            "description": "Entdecken Sie unsere Website-Pakete, erweitern Sie sie mit passenden Zusatzleistungen und erhalten Sie ein individuelles Angebot für Ihr Unternehmen. Transparente Preise ohne versteckte Kosten.",
+            "keywords": [
+                "Website Preise",
+                "Webdesign Preise",
+                "Website-Pakete",
+                "individuelles Website-Angebot",
+                "Kosten Webentwicklung",
+                "Business-Website Preise",
+                "Website Zusatzleistungen",
+                "Webentwicklungs-Pakete",
+                "individuelle Website Kosten",
+                "Fortales"
+            ],
+            "category": "Webentwicklung",
+            "ogTitle": "Website-Preise | Transparente Pakete & Individuelle Angebote | Fortales",
+            "ogDescription": "Wählen Sie ein Website-Paket, ergänzen Sie es mit den gewünschten Funktionen und erhalten Sie ein klares Angebot, bevor wir mit der Arbeit beginnen.",
+            "twitterTitle": "Website-Preise | Transparente Pakete & Individuelle Angebote | Fortales",
+            "twitterDescription": "Erstellen Sie Ihre ideale Website mit flexiblen Paketen, optionalen Zusatzleistungen und transparenten Preisen."
         }
     }
 }

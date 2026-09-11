@@ -7,6 +7,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import Footer from "@/components/footer/Footer";
+import WhatsappFloat from "@/components/WhatsappFloat";
 
 const outfit = Outfit({
     subsets: ['latin'],
@@ -60,6 +61,7 @@ export default async function RootLayout({
                 <Header />
                 {children}
                 <Footer />
+                <WhatsappFloat />
             </NextIntlClientProvider>
         </body>
     </html>

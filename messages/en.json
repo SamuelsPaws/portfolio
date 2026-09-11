@@ -382,6 +382,27 @@
             "twitterTitle": "Fortales | Custom Websites for Growing Businesses",
             "twitterDescription": "Fast, scalable websites designed to help your business grow.",
             "category": "Web development"
+        },
+        "FortPricing": {
+            "title": "Website Pricing | Transparent Packages & Custom Quotes | Fortales",
+            "description": "Explore our website packages, customize them with add-ons, and receive a personalized quote tailored to your business. Transparent pricing with no hidden costs.",
+            "keywords": [
+                "website pricing",
+                "web design pricing",
+                "website packages",
+                "custom website quote",
+                "website development cost",
+                "business website pricing",
+                "website add-ons",
+                "web development packages",
+                "custom website pricing",
+                "Fortales pricing"
+            ],
+            "category": "Web development",
+            "ogTitle": "Website Pricing | Transparent Packages & Custom Quotes | Fortales",
+            "ogDescription": "Choose a website package, customize it with the features you need, and receive a clear, personalized quote before any work begins.",
+            "twitterTitle": "Website Pricing | Transparent Packages & Custom Quotes | Fortales",
+            "twitterDescription": "Build your ideal website with flexible packages, optional add-ons, and transparent pricing."
         }
     }
 }
