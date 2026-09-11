@@ -359,7 +359,7 @@
             "category": "Tecnología",
             "webProject": "Proyecto Web"
         },
-        
+
         "FortHome": {
             "title": "Fortales | Sitios web a medida para empresas en crecimiento",
             "description": "En Fortales diseñamos y desarrollamos sitios web rápidos, escalables y multilingües que ayudan a las empresas a generar confianza, atraer clientes y crecer. Solicita tu cotización gratuita.",
@@ -378,7 +378,8 @@
             "ogTitle": "Fortales | Sitios web a medida para empresas en crecimiento",
             "ogDescription": "Sitios web modernos, rápidos y escalables diseñados para impulsar el crecimiento de tu empresa. Descubre nuestros paquetes y solicita una cotización gratuita.",
             "twitterTitle": "Fortales | Sitios web a medida para empresas en crecimiento",
-            "twitterDescription": "Sitios web rápidos y escalables diseñados para ayudar a que tu empresa crezca."
+            "twitterDescription": "Sitios web rápidos y escalables diseñados para ayudar a que tu empresa crezca.",
+            "category": "Desarrollo web"
         }
     }
 }

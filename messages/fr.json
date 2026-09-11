@@ -359,7 +359,7 @@
             "category": "Tecnologie",
             "webProject": "Projet Web"
         },
-        
+
         "FortHome": {
             "title": "Fortales | Sites web sur mesure pour les entreprises en croissance",
             "description": "Fortales conçoit et développe des sites web rapides, évolutifs et multilingues qui aident les entreprises à gagner la confiance de leurs clients, attirer de nouveaux prospects et se développer. Demandez votre devis gratuit.",
@@ -378,7 +378,8 @@
             "ogTitle": "Fortales | Sites web sur mesure pour les entreprises en croissance",
             "ogDescription": "Des sites web modernes, rapides et évolutifs conçus pour accompagner la croissance de votre entreprise. Découvrez nos offres et demandez un devis gratuit.",
             "twitterTitle": "Fortales | Sites web sur mesure pour les entreprises en croissance",
-            "twitterDescription": "Des sites web rapides et évolutifs pour accompagner la croissance de votre entreprise."
+            "twitterDescription": "Des sites web rapides et évolutifs pour accompagner la croissance de votre entreprise.",
+            "category": "Développement web"
         }
     }
 }

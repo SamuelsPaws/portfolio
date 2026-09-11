@@ -361,7 +361,7 @@
             "category": "Technology",
             "webProject": "Web Project"
         },
-        
+
         "FortHome": {
             "title": "Fortales | Custom Websites for Growing Businesses",
             "description": "Fortales designs and develops fast, scalable, multilingual websites that help businesses build trust, attract customers, and grow. Get your free custom quote today.",
@@ -380,7 +380,8 @@
             "ogTitle": "Fortales | Custom Websites for Growing Businesses",
             "ogDescription": "Modern websites built for performance, scalability, and business growth. Discover our website packages and request your free custom quote.",
             "twitterTitle": "Fortales | Custom Websites for Growing Businesses",
-            "twitterDescription": "Fast, scalable websites designed to help your business grow."
+            "twitterDescription": "Fast, scalable websites designed to help your business grow.",
+            "category": "Web development"
         }
     }
 }
