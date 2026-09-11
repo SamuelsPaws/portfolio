@@ -27,6 +27,7 @@ export default async function ({ params }: Props) {
     const t = await getTranslations('FortPackageSlug')
 
     const myPackage = myPackages[slug]
+    const availableAddOns = addOns.filter(el => !el.includedIn.includes(slug))
 
     return (
     <main>
@@ -98,7 +99,7 @@ export default async function ({ params }: Props) {
                     w-full
                     flex flex-col gap-4"
                 >
-                    {addOns.slice(0, 6).map((el, index) => (
+                    {availableAddOns.slice(0, 6).map((el, index) => (
                         <AddOnLi
                             key={index}
                             addOnData={el}
@@ -108,7 +109,7 @@ export default async function ({ params }: Props) {
                     ))}
                 </ul>
                 <MoreAddOnsArea
-                    addOns={addOns.slice(6)}
+                    addOns={availableAddOns.slice(6)}
                     locale={locale}
                     seeMoreLabel={t('seeMoreAO')}
                     seeLessLabel={t('seeLessAO')}
