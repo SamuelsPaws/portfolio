@@ -71,7 +71,7 @@ const AddOnLi = ({ addOnData, addOnSlug, locale }: Props) => {
                 >
                     +${formatPrice(addOnData.price)}
                     {addOnData.supportsQuantity && (
-                        <span className="hidden md:block text-my-sm">
+                        <span className="hidden md:inline text-my-sm">
                             {` / ${addOnData.paymentDetail[locale].toLowerCase()}`}
                         </span>
                     )}

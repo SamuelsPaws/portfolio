@@ -21,7 +21,6 @@ const WhatsappFloat = () => {
     >
         <CustomIcon
             iconId="whatsapp"
-            className=""
         />
     </a>
     )

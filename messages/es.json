@@ -402,6 +402,27 @@
             "ogDescription": "Elige un paquete, personalízalo con las funcionalidades que necesites y recibe una cotización clara antes de comenzar cualquier trabajo.",
             "twitterTitle": "Precios de sitios web | Paquetes y cotizaciones personalizadas | Fortales",
             "twitterDescription": "Crea el sitio web ideal para tu empresa con paquetes flexibles, complementos opcionales y precios transparentes."
+        },
+        "FortAbout": {
+            "title": "Sobre Fortales | Conoce al equipo detrás de tu sitio web",
+            "description": "Conoce más sobre Fortales, nuestra historia, nuestros valores y las personas detrás de cada proyecto. Creamos sitios web rápidos, escalables y enfocados en una comunicación clara y relaciones a largo plazo.",
+            "keywords": [
+                "sobre Fortales",
+                "agencia de desarrollo web",
+                "equipo de desarrollo web",
+                "desarrolladores de sitios web",
+                "agencia web para empresas",
+                "desarrollo web profesional",
+                "nuestros valores",
+                "nuestro equipo",
+                "expertos en desarrollo web",
+                "Fortales"
+            ],
+            "category": "Desarrollo web",
+            "ogTitle": "Sobre Fortales | Conoce al equipo detrás de tu sitio web",
+            "ogDescription": "Descubre la historia, los valores y el equipo de Fortales. Conoce cómo ayudamos a las empresas a crecer con sitios web rápidos, escalables y diseñados para el futuro.",
+            "twitterTitle": "Sobre Fortales | Conoce al equipo detrás de tu sitio web",
+            "twitterDescription": "Conoce al equipo de Fortales y descubre cómo creamos sitios web pensados para impulsar el crecimiento de tu empresa."
         }
     }
 }

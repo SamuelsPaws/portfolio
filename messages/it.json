@@ -420,6 +420,27 @@
             "ogDescription": "Scegli un pacchetto, personalizzalo con le funzionalità che ti servono e ricevi un preventivo chiaro prima dell'inizio dei lavori.",
             "twitterTitle": "Prezzi siti web | Pacchetti trasparenti e preventivi personalizzati | Fortales",
             "twitterDescription": "Realizza il sito web ideale con pacchetti flessibili, extra opzionali e prezzi trasparenti."
+        },
+        "FortAbout": {
+            "title": "Chi siamo | Scopri il team di Fortales",
+            "description": "Scopri la storia di Fortales, i nostri valori e le persone dietro ogni progetto. Realizziamo siti web veloci, scalabili e pensati per aiutare le aziende a crescere nel tempo.",
+            "keywords": [
+                "chi è Fortales",
+                "agenzia sviluppo web",
+                "team sviluppo web",
+                "sviluppatori siti web",
+                "agenzia web per aziende",
+                "sviluppo web professionale",
+                "i nostri valori",
+                "il nostro team",
+                "esperti sviluppo web",
+                "Fortales"
+            ],
+            "category": "Sviluppo web",
+            "ogTitle": "Chi siamo | Scopri il team di Fortales",
+            "ogDescription": "Conosci il team, i valori e l'approccio di Fortales. Scopri come aiutiamo le aziende a crescere con siti web affidabili e scalabili.",
+            "twitterTitle": "Chi siamo | Scopri il team di Fortales",
+            "twitterDescription": "Scopri il team di Fortales e come realizziamo siti web progettati per la crescita delle aziende."
         }
     }
 }

@@ -404,6 +404,27 @@
             "ogDescription": "Choose a website package, customize it with the features you need, and receive a clear, personalized quote before any work begins.",
             "twitterTitle": "Website Pricing | Transparent Packages & Custom Quotes | Fortales",
             "twitterDescription": "Build your ideal website with flexible packages, optional add-ons, and transparent pricing."
+        },
+        "FortAbout": {
+            "title": "About Fortales | Meet the Team Behind Your Website",
+            "description": "Learn more about Fortales, our story, our values, and the people behind every project. We build fast, scalable websites with a focus on clear communication and long-term partnerships.",
+            "keywords": [
+                "about Fortales",
+                "web development agency",
+                "website development team",
+                "custom website developers",
+                "small business web agency",
+                "professional web development",
+                "our values",
+                "our team",
+                "website experts",
+                "Fortales"
+            ],
+            "category": "Web development",
+            "ogTitle": "About Fortales | Meet the Team Behind Your Website",
+            "ogDescription": "Get to know the team, values, and approach behind Fortales. Discover how we help businesses grow with reliable, scalable websites.",
+            "twitterTitle": "About Fortales | Meet the Team Behind Your Website",
+            "twitterDescription": "Meet the people behind Fortales and learn how we build websites that help businesses grow."
         }
     }
 }

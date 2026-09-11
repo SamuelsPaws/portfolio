@@ -402,6 +402,27 @@
             "ogDescription": "Choisissez une offre, personnalisez-la avec les fonctionnalités dont vous avez besoin et recevez un devis clair avant le début du projet.",
             "twitterTitle": "Tarifs des sites web | Offres transparentes et devis sur mesure | Fortales",
             "twitterDescription": "Créez le site web idéal grâce à des offres flexibles, des options personnalisables et une tarification transparente."
+        },
+        "FortAbout": {
+            "title": "À propos de Fortales | Découvrez l'équipe derrière votre site web",
+            "description": "Découvrez Fortales, notre histoire, nos valeurs et les personnes qui donnent vie à chaque projet. Nous créons des sites web rapides, évolutifs et conçus pour accompagner durablement la croissance de votre entreprise.",
+            "keywords": [
+                "à propos de Fortales",
+                "agence de développement web",
+                "équipe de développement web",
+                "développeurs de sites web",
+                "agence web pour entreprises",
+                "développement web professionnel",
+                "nos valeurs",
+                "notre équipe",
+                "experts en développement web",
+                "Fortales"
+            ],
+            "category": "Développement web",
+            "ogTitle": "À propos de Fortales | Découvrez l'équipe derrière votre site web",
+            "ogDescription": "Faites connaissance avec l'équipe, les valeurs et l'approche de Fortales. Découvrez comment nous aidons les entreprises à se développer grâce à des sites web fiables et évolutifs.",
+            "twitterTitle": "À propos de Fortales | Découvrez l'équipe derrière votre site web",
+            "twitterDescription": "Découvrez l'équipe Fortales et notre approche pour créer des sites web pensés pour la croissance."
         }
     }
 }

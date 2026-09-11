@@ -14,11 +14,86 @@ import FortSectionCta from "@/components/cta-section/FortSectionCta";
 import { getTranslations } from "next-intl/server";
 import { teamSkills } from "@/data/fortales/teamSkills";
 import { LocaleKey } from "@/lib/types/localeKey";
+import organization from "@/data/fortales/organization";
+import getLangAlternates from "@/lib/utils/getLangAlternates";
+import { availableLocales } from "@/data/locales";
+import { Metadata } from "next";
 
 type Props = {
     params: Promise<{
         locale: LocaleKey
     }>
+}
+
+const BASE_URL = organization.url;
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: LocaleKey }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "Metadata.FortPricing",
+    });
+
+    const canonical = `${BASE_URL}/${locale}/about`;
+
+    return {
+        metadataBase: new URL(BASE_URL),
+
+        title: t("title"),
+        description: t("description"),
+        
+        keywords: t.raw("keywords"),
+        applicationName: organization.name,
+        authors: [
+            {
+                name: organization.author,
+            },
+        ],
+        creator: organization.author,
+        publisher: organization.author,
+        alternates: {
+            canonical,
+            languages: getLangAlternates('/about'),
+        },
+
+        openGraph: {
+            title: t("ogTitle"),
+            description: t("ogDescription"),
+            url: canonical,
+            siteName: organization.name,
+            locale: availableLocales[locale],
+            type: "website",
+            images: [
+                {
+                    url: organization.image,
+                    width: 1200,
+                    height: 630,
+                    alt: organization.name,
+                },
+            ],
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: t("twitterTitle"),
+            description: t("twitterDescription"),
+            images: [organization.image],
+        },
+
+        category: t('category'),
+
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+                "max-video-preview": -1,
+            },
+        },
+  };
 }
 
 export default async function About({ params }: Props) {

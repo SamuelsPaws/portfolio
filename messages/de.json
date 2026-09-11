@@ -417,6 +417,27 @@
             "ogDescription": "Wählen Sie ein Website-Paket, ergänzen Sie es mit den gewünschten Funktionen und erhalten Sie ein klares Angebot, bevor wir mit der Arbeit beginnen.",
             "twitterTitle": "Website-Preise | Transparente Pakete & Individuelle Angebote | Fortales",
             "twitterDescription": "Erstellen Sie Ihre ideale Website mit flexiblen Paketen, optionalen Zusatzleistungen und transparenten Preisen."
+        },
+        "FortAbout": {
+            "title": "Über Fortales | Lernen Sie das Team hinter Ihrer Website kennen",
+            "description": "Erfahren Sie mehr über Fortales, unsere Geschichte, unsere Werte und die Menschen hinter jedem Projekt. Wir entwickeln schnelle, skalierbare Websites mit Fokus auf klare Kommunikation und langfristige Partnerschaften.",
+            "keywords": [
+                "über Fortales",
+                "Webentwicklungsagentur",
+                "Webentwicklungsteam",
+                "Website-Entwickler",
+                "Webagentur für Unternehmen",
+                "professionelle Webentwicklung",
+                "unsere Werte",
+                "unser Team",
+                "Webentwicklungsexperten",
+                "Fortales"
+            ],
+            "category": "Webentwicklung",
+            "ogTitle": "Über Fortales | Lernen Sie das Team hinter Ihrer Website kennen",
+            "ogDescription": "Lernen Sie das Team, die Werte und die Arbeitsweise von Fortales kennen. Erfahren Sie, wie wir Unternehmen mit zuverlässigen und skalierbaren Websites beim Wachstum unterstützen.",
+            "twitterTitle": "Über Fortales | Lernen Sie das Team hinter Ihrer Website kennen",
+            "twitterDescription": "Lernen Sie das Team von Fortales kennen und erfahren Sie, wie wir Websites für nachhaltiges Unternehmenswachstum entwickeln."
         }
     }
 }
