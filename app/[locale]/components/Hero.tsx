@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="
         px-8 py-24
         md:px-32 md:py-32
-        flex flex-col
+        flex flex-col gap-8
         md:flex-row md:justify-center md:gap-16
         bg-main"
     >
