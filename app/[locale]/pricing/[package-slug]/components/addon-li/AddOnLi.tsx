@@ -58,7 +58,7 @@ const AddOnLi = ({ addOnData, addOnSlug, locale }: Props) => {
                 </button>
             </div>
             {/* Wrapper for between right */}
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-4 md:gap-8">
                 {addOnData.supportsQuantity && (
                     <QuantitySelect
                         addOnState={addOnState}
@@ -71,7 +71,7 @@ const AddOnLi = ({ addOnData, addOnSlug, locale }: Props) => {
                 >
                     +${formatPrice(addOnData.price)}
                     {addOnData.supportsQuantity && (
-                        <span className="text-my-sm">
+                        <span className="hidden md:block text-my-sm">
                             {` / ${addOnData.paymentDetail[locale].toLowerCase()}`}
                         </span>
                     )}

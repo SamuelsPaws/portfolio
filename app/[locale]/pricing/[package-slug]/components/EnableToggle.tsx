@@ -20,7 +20,8 @@ const EnableToggle = ({ addOnState, addOnSlug }: Props) => {
     <button
         onClick={toggleEnabled}
         className={clsx(
-            "w-12 h-6 relative",
+            "w-8 min-w-8 h-5",
+            "md:w-12 md:min-w-12 md:h-6 relative",
             "flex items-center",
             addOnState.enabled ? "bg-green-500" : "bg-gray-300",
             "rounded-full border overflow-hidden",

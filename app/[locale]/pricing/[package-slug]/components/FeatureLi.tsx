@@ -10,7 +10,7 @@ const FeatureLi = ({ text }: Props) => {
     <li className="flex items-center gap-4">
         {/* Bullet icon */}
             <div className={clsx(
-                "w-4 aspect-square translate-y-1",
+                "w-4 aspect-square translate-y-0.5 md:translate-y-1",
                 "flex justify-center items-center",
                 "bg-gray-400", // theme.checkBgColor,
                 "text-sm text-br-white", // theme.checkColor,

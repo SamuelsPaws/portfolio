@@ -8,7 +8,7 @@ const QuantityBtn = ({ increases, setter }: Props) => {
     <button
         onClick={setter}
         className="
-            w-6 h-full
+            w-4 md:w-6 h-full
             flex justify-center items-center
             bg-gray-300"
     >

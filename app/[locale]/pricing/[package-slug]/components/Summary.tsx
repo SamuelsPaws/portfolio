@@ -11,6 +11,7 @@ import FormInput from "./FormInput";
 import { useTranslations } from "next-intl";
 import clsx from "clsx";
 import CustomIcon from "@/components/CustomIcon";
+import SummaryH3 from "./SummaryH3";
 
 interface Props {
     locale: LocaleKey;
@@ -88,17 +89,18 @@ const Summary = ({ locale, packageSlug }: Props) => {
     return (
     <div className="
         w-full
-        flex items-start"
+        flex flex-col md:flex-row items-start gap-8 md:gap-16"
     >
         {/* Left div */}
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
             <SimpleH2
                 text={tP('h2Summary')}
-                className="mb-16 text-5xl"
+                className="
+                    mb-8 md:mb-16
+                    text-most-h2"
             />
-            <SimpleH3
+            <SummaryH3
                 text={tP('h3Package')}
-                className="mb-8 text-3xl text-main"
             />
             <p className="mb-8 text-secondary text-my-xl">
                 {myPackage.title[locale]}
@@ -106,27 +108,25 @@ const Summary = ({ locale, packageSlug }: Props) => {
                     {` / $${formatPrice(myPackage.price)}`}
                 </span>
             </p>
-            <SimpleH3
+            <SummaryH3
                 text={tP('h3AddOns')}
-                className="mb-8 text-3xl text-main"
             />
             <SummaryAddOns
                 addOnComponents={summaryAddOns}
                 noAddOnsLabel={tP('noAddOns')}
             />
-            <SimpleH3
+            <SummaryH3
                 text={tP('h3Estimated')}
-                className="mb-8 text-3xl text-main"
             />
             <span className="
-                block mb-8
-                text-5xl text-main font-semibold"
+                block
+                text-3xl md:text-5xl text-main font-semibold"
             >
                 ${formatPrice(getEstimatedTotal())}
             </span>
         </div>
         {/* Right div */}
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
             <p className="
                 w-full mb-8
                 text-secondary text-my-md"
@@ -138,7 +138,7 @@ const Summary = ({ locale, packageSlug }: Props) => {
                 className="
                     w-full
                     p-8
-                    grid grid-cols-2 items-end gap-8
+                    grid grid-cols-2 items-end gap-4 md:gap-8
                     bg-main
                     border border-gray-300 rounded-4xl shadow-img-sm"
             >

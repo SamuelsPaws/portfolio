@@ -31,7 +31,7 @@ const QuantitySelect = ({ addOnState, addOnSlug }: Props) => {
 
     return (
     <div className="
-        h-8 relative
+        h-6 md:h-8 relative
         flex
         rounded-sm border border-gray-400 overflow-hidden"
     >
@@ -44,7 +44,7 @@ const QuantitySelect = ({ addOnState, addOnSlug }: Props) => {
             setter={decreaseAddOnQuantity}
         />
         <div className="
-            w-6 h-full
+            w-4 md:w-6 h-full
             flex justify-center items-center
             bg-br-white"
         >
