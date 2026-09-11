@@ -85,7 +85,7 @@ const AddOnLi = ({ addOnData, addOnSlug, locale }: Props) => {
         >
             <p className="
                 mt-4
-                text-my-sm text-secondary text-left"
+                text-my-sm text-gray-600 text-left"
             >
                 {addOnData.copy[locale]}
             </p>

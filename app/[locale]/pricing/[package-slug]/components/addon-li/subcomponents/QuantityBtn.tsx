@@ -12,7 +12,7 @@ const QuantityBtn = ({ increases, setter }: Props) => {
             flex justify-center items-center
             bg-gray-300"
     >
-        <span className="text-my-sm text-secondary">
+        <span className="text-my-sm text-gray-600">
             {increases ? '+' : '-'}
         </span>
     </button>

@@ -134,7 +134,7 @@ export default async function About({ params }: Props) {
             bgColor="bg-main"
         >
             <p className="
-                w-full md:w-2/3 mx-auto mb-16
+                w-full md:w-2/3 mx-auto mb-8 md:mb-16
                 text-secondary text-my-md text-center leading-6 md:leading-8"
             >
                 {t('valuesCopy')}
@@ -198,7 +198,7 @@ export default async function About({ params }: Props) {
             bgColor="bg-secondary"
         >
             <p className="
-                w-full md:w-2/3 mx-auto mb-16
+                w-full md:w-2/3 mx-auto mb-8 md:mb-16
                 text-my-md text-secondary text-center leading-6 md:leading-8"
             >
                 {t('teamCopy')}
@@ -221,11 +221,11 @@ export default async function About({ params }: Props) {
                 />
                 <ProfileColumn
                     image={{
-                        src: '/assets/headshot.JPG',
+                        src: '/assets/wen-headshot.jpeg',
                         width: 1023,
                         height: 1537
                     }}
-                    name="Wendy Domínguez"
+                    name="Wendy Dominguez"
                     role={t('wenRole').toUpperCase()}
                     description={t('wenCopy')}
                     skills={teamSkills.wendyDominguez.map(el => el[locale])}
@@ -238,7 +238,7 @@ export default async function About({ params }: Props) {
             bgColor="bg-main"
         >
             <p className="
-                w-full md:w-2/3 mx-auto mb-16
+                w-full md:w-2/3 mx-auto mb-8 md:mb-16
                 text-my-md text-secondary text-center leading-6 md:leading-8"
             >
                 {t('whyUsCopy')}  
