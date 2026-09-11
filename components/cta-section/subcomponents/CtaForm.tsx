@@ -33,7 +33,7 @@ const initialFormData = {
 const CtaForm = () => {
     const [formData, setFormData] = useState<FormData>(initialFormData)
     const [formState, setFormState] = useState<FormState>('idle')
-    const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(true)
     const [modalState, setModalState] = useState<'success' | 'error'>('success')
     const t = useTranslations('FortHome')
 

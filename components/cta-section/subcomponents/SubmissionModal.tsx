@@ -47,9 +47,9 @@ const SubmissionModal = ({
         {/* Modal area */}
         <div className={clsx(
             "fixed top-1/2 left-1/2 -translate-1/2 z-[9950]",
-            "w-[40vw] h-[50vh]",
+            "w-[80vw] h-[70vh] md:w-[40vw] md:h-[50vh]",
             "p-8",
-            "flex flex-col items-center justify-center gap-8",
+            "flex flex-col items-center justify-center gap-4 md:gap-8",
             "bg-br-white",
             "rounded-xl md:rounded-2xl overflow-hidden shadow-lg",
             false && "animate-fade-in-up-1200"
