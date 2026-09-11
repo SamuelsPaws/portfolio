@@ -1,10 +1,13 @@
 import organization from "@/data/fortales/organization"
 import CustomIcon from "./CustomIcon"
+import { useTranslations } from "next-intl"
 
 const WhatsappFloat = () => {
+    const t = useTranslations('Reusable')
+
     return (
     <a
-        href={`https://wa.me/${organization.phone}?`}
+        href={`https://wa.me/${organization.phone}?text=${t('waEncodedFill')}`}
         target="_blank"
         rel="noopener noreferrer"
         className="
