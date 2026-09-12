@@ -24,11 +24,11 @@ const FortSectionCta = ({ bgColor }: Props) => {
         {/* Container with 2 columns */}
         <div className="
             w-full mx-auto mb-16 md:mb-32
-            flex flex-col md:flex-row gap-8 md:gap-16"
+            flex flex-col xl:flex-row gap-8 md:gap-16"
         >
             {/* Left column */}
             <div className="
-                w-full md:w-1/2
+                w-full xl:w-1/2
                 flex flex-col justify-between gap-8"
             >
                 {/* Wrapper for between */}
@@ -61,8 +61,7 @@ const FortSectionCta = ({ bgColor }: Props) => {
                 </p>
             </div>
             {/* Right column */}
-            <div className="w-full md:w-1/2 flex justify-center">
-                {/* Form */}
+            <div className="w-full xl:w-1/2 flex justify-center">
                 <CtaForm />
             </div>
         </div>

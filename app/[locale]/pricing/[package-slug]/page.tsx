@@ -166,17 +166,19 @@ export default async function ({ params }: Props) {
                 {t('copy')}
             </p>
         </section>
+        {/* Included and add-ons */}
         <section className="
-            flex flex-col md:flex-row items-stretch
+            flex flex-col lg:flex-row items-stretch
             border-y border-y-gray-300"
         >
             {/* Left div */}
             <div className="
-                w-full md:w-[45%]
+                w-full lg:w-[45%]
                 px-8 py-16
-                md:pl-32 md:pr-16 md:py-32
+                md:pl-16 md:pr-16 md:py-32
+                xl:pl-32
                 bg-main
-                md:border-r border-r-gray-300"
+                lg:border-r border-r-gray-300"
             >
                 <SimpleH2
                     text={t('h2Included')}
@@ -207,7 +209,8 @@ export default async function ({ params }: Props) {
                 w-full
                 md:flex-1 md:w-auto
                 px-8 py-16
-                md:pl-16 md:pr-32 md:py-32
+                md:pl-16 md:pr-16 md:py-32
+                xl:pr-32
                 bg-gray-100 dark:bg-br-gray-800"
             >
                 <SimpleH2
@@ -267,7 +270,8 @@ export default async function ({ params }: Props) {
         >
             <div className="
                 w-full md:w-fit mx-auto
-                flex flex-col md:flex-row gap-8 md:gap-16"
+                flex flex-col gap-8 flex-wrap
+                md:flex-row md:gap-16 md:justify-center"
             >
                 <StepCard
                     iconId="glass-file"

@@ -149,14 +149,14 @@ export default async function FortalesHome({ params }: Props) {
             />
             <div className="
                 w-full md:w-fit mx-auto
-                flex flex-col md:flex-row items-start gap-16"
+                flex flex-col md:flex-row items-start gap-8 xl:gap-16"
             >
                 <Image
                     src="/assets/thinking-woman.jpg"
                     width={900}
                     height={900}
                     className="
-                        w-full md:w-120 aspect-square
+                        w-full md:w-90 xl:w-120 aspect-square
                         object-cover object-center
                         rounded-4xl shadow-img
                         scroll-reveal-right"
@@ -177,7 +177,7 @@ export default async function FortalesHome({ params }: Props) {
                     </p>
                     <div className="
                         w-full
-                        flex flex-col items-start gap-4"
+                        flex flex-col gap-4"
                     >
                         <WhyCareItem
                             text={t('credibilityCopy')}
@@ -216,7 +216,7 @@ export default async function FortalesHome({ params }: Props) {
             <ArrowSvgDef />
             <div className="
                 w-full
-                grid grid-cols-[0.5fr_1fr_0.5fr] md:grid-cols-2 gap-x-4 gap-y-8 md:gap-8"
+                grid grid-cols-[0.25fr_1fr_0.25fr] md:grid-cols-2 gap-x-4 gap-y-8 md:gap-8"
             >
                 <ProcessCard
                     title={t('h3StepOne')}
@@ -260,8 +260,8 @@ export default async function FortalesHome({ params }: Props) {
             bgColor="bg-gray-200 dark:bg-br-gray-800"
         >
             <div className="
-                w-full md:w-fit mx-auto mb-16
-                flex flex-col md:flex-row gap-8"
+                w-full lg:w-fit mx-auto mb-16
+                flex flex-col items-center lg:items-stretch lg:flex-row gap-8"
             >
                 <PackageCard
                     myPackage={myPackages.starter}

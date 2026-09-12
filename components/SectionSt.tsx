@@ -11,7 +11,8 @@ const SectionSt = ({ title, bgColor, children }: Props) => {
     <section className={clsx(
         "px-8 py-12",
         "lg:px-16 lg:py-24",
-        bgColor
+        bgColor,
+        "overflow-hidden"
     )}>
         <h2 className="
             mb-12 md:mb-24

@@ -1,5 +1,5 @@
 'use client'
-import { _Translator, useTranslations } from "next-intl"
+import { useTranslations } from "next-intl"
 import FormInput from "./FormInput"
 import CustomIcon from "@/components/CustomIcon"
 import clsx from "clsx"
@@ -80,11 +80,17 @@ const CtaForm = () => {
                     handleError()
                     throw new Error("Failed to submit request.");
                 }
-    
-                // const data = await response.json();
                 handleSuccess()
+
+                fetch("/api/send-cta-confirmation", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                })
             } catch (err) {
-                console.error(err);
+                console.error(err)
                 handleError()
             }
         }
@@ -101,7 +107,7 @@ const CtaForm = () => {
     <form
         onSubmit={handleSubmit}
         className="
-            w-full md:w-[90%]
+            w-full md:w-[90%] max-w-180
             px-8 py-8 md:p-8
             grid grid-cols-2 items-end gap-4 md:gap-8
             bg-main

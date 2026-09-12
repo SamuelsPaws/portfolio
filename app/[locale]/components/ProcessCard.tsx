@@ -32,11 +32,11 @@ const ProcessCard = ({ title, number, text, place }: Props) => {
         >
             {/* Number */}
             <div className="
-                w-4 md:w-8 aspect-square
+                w-6 md:w-8 aspect-square
                 flex justify-center items-center
                 bg-br-white
                 text-black text-my-md font-semibold
-                rounded-full"
+                rounded-full overflow-hidden"
             >
                 <span>{number}</span>
             </div>
@@ -52,7 +52,7 @@ const ProcessCard = ({ title, number, text, place }: Props) => {
             border-x border-b border-gray-300 dark:border-transparent
             rounded-b-2xl md:rounded-b-4xl"
         >
-            <p className="text-main text-my-md text-left">
+            <p className="text-main text-sm md:text-md xl:text-lg text-left">
                 {text}
             </p>
         </div>
