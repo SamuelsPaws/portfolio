@@ -236,6 +236,7 @@ export const packageThemes = {
         backgroundColor: 'bg-br-orange-500/5 dark:bg-br-orange-500/10',
         checkBgColor: 'bg-br-orange-main',
         checkColor: 'text-br-white',
+        themedTextColor: 'text-br-orange-main',
         ctaBgColor: 'bg-br-orange-main',
         ctaTextColor: 'text-br-white',
     },
