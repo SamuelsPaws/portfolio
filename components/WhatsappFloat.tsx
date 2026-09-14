@@ -1,9 +1,15 @@
+'use client'
 import organization from "@/data/fortales/organization"
 import CustomIcon from "./CustomIcon"
 import { useTranslations } from "next-intl"
+import { usePathname } from "next/navigation"
 
 const WhatsappFloat = () => {
     const t = useTranslations('Reusable')
+    const pathname = usePathname()
+    const isSamPortfolio = pathname.split('/').includes('samuel-portfolio')
+
+    if (isSamPortfolio) return null
 
     return (
     <a
