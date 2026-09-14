@@ -17,6 +17,7 @@ export const addOns = [
             de: "Pro Seite",
             it: "Per pagina"
         },
+        hasUsageCosts: false,
         supportsQuantity: true,
         copy: {
             en: "Add additional pages to expand your website as your business grows.",
@@ -44,6 +45,7 @@ export const addOns = [
             de: "Pro Sprache",
             it: "Per lingua"
         },
+        hasUsageCosts: false,
         supportsQuantity: true,
         copy: {
             en: "Reach a wider audience by making your website available in additional languages.",
@@ -71,6 +73,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Manage larger or more complex content through a custom-built content management system.",
@@ -98,6 +101,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Enhance your website with smooth, engaging animations that elevate the user experience without sacrificing performance.",
@@ -125,6 +129,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Go beyond the basics with advanced technical SEO and search optimization.",
@@ -152,6 +157,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Improve your local visibility by optimizing your Google Business Profile for search and maps.",
@@ -179,6 +185,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Publish articles, news, and updates through an easy-to-manage content system.",
@@ -206,6 +213,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Comply with privacy regulations through a customizable cookie consent solution.",
@@ -233,6 +241,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Allow customers to book appointments or consultations directly through your website.",
@@ -260,6 +269,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Help visitors find your business with interactive maps and location information.",
@@ -287,6 +297,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Allow visitors to securely attach documents, images, or other files when submitting forms.",
@@ -314,6 +325,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Connect your website with third-party services to automate workflows and synchronize data.",
@@ -341,6 +353,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Connect your website with your ERP system to streamline operations and keep data in sync.",
@@ -368,6 +381,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Automatically send leads and customer information to your CRM platform.",
@@ -395,6 +409,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Accept secure online payments through trusted payment providers.",
@@ -422,6 +437,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Sell products online with a complete e-commerce solution tailored to your business.",
@@ -449,6 +465,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Create or refine your brand with a professional logo, custom graphics, and visual elements that give your business a consistent identity.",
@@ -476,6 +493,7 @@ export const addOns = [
             de: 'Einmalige Zahlung',
             it: 'Pagamento unico'
         },
+        hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
             en: "Showcase your business with high-quality photography that builds trust and makes your website stand out.",

@@ -26,6 +26,9 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
     const t = useTranslations('ProjectPage')
     const otherProjects = projectData.filter(el => el.type === project.type && el.slug !== project.slug)
 
+    console.log(project.liveUrl);
+    
+
     const getSorterFn = () => {
         switch(project.type) {
             case 'web-dev':
@@ -172,7 +175,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                         alt={project.title}
                     />
                     {/* Galleries */}
-                    {showcaseGalleries[project.slug] && (
+                    {false && showcaseGalleries[project.slug] && (
                         <div className={clsx(
                             "w-full",
                             "flex flex-col gap-8"
@@ -191,7 +194,7 @@ export default function ProjectPageTemplate({ project, locale }: Props) {
                             />
                         </div>
                     )}
-                    {resultsGalleries[project.slug] && (
+                    {false && resultsGalleries[project.slug] && (
                         <div className="
                             w-full
                             flex flex-col gap-8"

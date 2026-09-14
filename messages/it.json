@@ -164,6 +164,7 @@
         "customAddOnsCopy": "Gli extra sopra riportati sono tra le richieste più comuni, ma rappresentano solo alcune delle possibilità disponibili. Durante la scelta del pacchetto potrai descrivere eventuali funzionalità o integrazioni aggiuntive alla fine del modulo e le includeremo nel tuo preventivo personalizzato. In alternativa, puoi anche contattarci direttamente."
     },
     "FortPackageSlug": {
+        "plusUsageCosts": "+ costi di utilizzo",
         "descriptor": "Pacchetto sito web",
         "copy": "Mancano solo pochi passaggi per ricevere il tuo preventivo personalizzato. Consulta cosa è incluso, personalizza il tuo pacchetto con gli extra di cui hai bisogno e invia la tua richiesta. Esamineremo tutto e ti ricontatteremo con una proposta chiara.",
         "h2Included": "Cosa è incluso",

@@ -167,6 +167,7 @@
         "customAddOnsCopy": "The add-ons above are some of the most common requests, but they're far from the only possibilities. When selecting your package, you can describe any additional features or integrations at the end, and we'll include them in your custom quote. You can also tell us about it by directly getting in touch."
     },
     "FortPackageSlug": {
+        "plusUsageCosts": "+ usage costs",
         "descriptor": "Website package",
         "copy": "You're just a few steps away from your custom quote. Review what's included, personalize your package with any add-ons you need, and submit your request. We'll review everything and get back to you with a clear proposal.",
         "h2Included": "What's included",

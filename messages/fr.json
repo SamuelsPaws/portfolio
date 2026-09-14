@@ -154,6 +154,7 @@
         "customAddOnsCopy": "Les options ci-dessus comptent parmi les demandes les plus fréquentes, mais elles sont loin de couvrir toutes les possibilités. Lors du choix de votre forfait, vous pourrez décrire toute fonctionnalité ou intégration supplémentaire à la fin du formulaire, et nous l'inclurons dans votre devis personnalisé. Vous pouvez également nous en parler directement."
     },
     "FortPackageSlug": {
+        "plusUsageCosts": "+ frais d’utilisation",
         "descriptor": "Pack de site web",
         "copy": "Vous n'êtes plus qu'à quelques étapes de recevoir votre devis personnalisé. Consultez ce qui est inclus, personnalisez votre pack avec les options dont vous avez besoin, puis envoyez votre demande. Nous examinerons votre projet et reviendrons vers vous avec une proposition claire.",
         "h2Included": "Ce qui est inclus",

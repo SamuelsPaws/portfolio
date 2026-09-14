@@ -54,7 +54,7 @@ const BlackBtn = ({ href, label, external, className, size }: Props) => {
     if (external) {
         return (
         <motion.a
-            href={`/samuel-portfolio${href}`}
+            href={href}
             target="_blank"
             className={clsx(defaultCn, className)}
             variants={variants}

@@ -164,6 +164,7 @@
         "customAddOnsCopy": "Los complementos anteriores son algunas de las solicitudes más comunes, pero están lejos de ser las únicas posibilidades. Al seleccionar tu paquete, podrás describir cualquier funcionalidad o integración adicional al final del formulario y la incluiremos en tu cotización personalizada. También puedes contarnos tu idea poniéndote en contacto con nosotros directamente."
     },
     "FortPackageSlug": {
+        "plusUsageCosts": "+ costos de uso",
         "descriptor": "Paquete de sitio web",
         "copy": "Estás a solo unos pasos de recibir tu cotización personalizada. Revisa lo que incluye el paquete, personalízalo con los complementos que necesites y envía tu solicitud. Revisaremos todos los detalles y nos pondremos en contacto contigo con una propuesta clara.",
         "h2Included": "Qué incluye",

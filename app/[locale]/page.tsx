@@ -16,6 +16,8 @@ import FortCtaBtn from "@/components/ui-reusables/FortCtaBtn";
 import organization from "@/data/fortales/organization";
 import { Metadata } from "next";
 import { availableLocales, localeCodesArray } from "@/data/locales";
+import { generateOrgSchema } from "@/lib/seo/schema";
+import JsonLd from "@/components/JsonLd";
 
 type Props = {
     params: Promise<{
@@ -98,8 +100,11 @@ export default async function FortalesHome({ params }: Props) {
     const { locale } = await params
     const t = await getTranslations('FortHome')
 
+    const orgSchema = generateOrgSchema(locale)
+
     return (
     <main>
+        <JsonLd data={orgSchema} />
         <Hero />
         {/* Who it is for */}
         <FortSectionSt
