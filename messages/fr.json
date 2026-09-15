@@ -189,6 +189,50 @@
         "formSubmit": "Obtenir mon devis gratuit",
         "requestSubmit": "Envoyer la demande"
     },
+    "FortContact": {
+        "heroBrow": "CONTACTEZ-NOUS",
+        "h1": "Parlons de votre projet.",
+        "heroCopy": "Dites-nous ce que vous créez, ce que vous souhaitez améliorer ou ce qui vous bloque. Nous vous aiderons à trouver la solution numérique adaptée à votre entreprise.",
+        "consultationBullet": "Consultation gratuite",
+        "quoteBullet": "Devis sans engagement",
+        "replyBullet": "Réponse sous 24 heures",
+        "heroImageAlt": "Des personnes réunies",
+        "h2WhatNext": "Que se passe-t-il après votre prise de contact ?",
+        "whatNextCopy": "Un processus simple, sans pression ni échanges inutiles.",
+        "h3Step1": "Nous examinons votre message",
+        "step1Copy": "Nous prendrons connaissance de vos besoins, de vos objectifs et des informations que vous nous avez transmises.",
+        "h3Step2": "Nous discutons de votre projet",
+        "step2Copy": "Nous vous contacterons pour poser les questions nécessaires afin de comprendre le périmètre du projet et vos objectifs.",
+        "h3Step3": "Vous recevez une proposition claire",
+        "step3Copy": "Si nous pouvons répondre à vos besoins, nous vous enverrons une proposition claire avec la solution recommandée, le périmètre, le calendrier et le tarif.",
+        "directBrow": "CONTACTEZ-NOUS DIRECTEMENT",
+        "h2Direct": "Vous préférez nous parler directement ?",
+        "directCopy": "Aucun problème. Si vous préférez éviter le formulaire, envoyez-nous un message et dites-nous ce que vous avez en tête. Nous vous répondrons personnellement.",
+        "directTeam": "Un contact direct avec notre équipe",
+        "emailLabel": "Écrivez-nous par e-mail",
+        "whatsappLabel": "Écrivez-nous sur WhatsApp",
+        "conversationCta": "Engagez la conversation",
+        "directNote": "Vous échangerez directement avec les personnes qui travailleront sur votre projet.",
+        "faqBrow": "DES QUESTIONS ?",
+        "h2Faq": "Questions fréquentes",
+        "faqCopy": "Quelques informations utiles avant de nous contacter. Si vous ne trouvez pas votre question ici, envoyez-nous simplement un message.",
+        "h3Question": "Vous avez encore une question ?",
+        "questionCopy": "Chaque projet est différent. Envoyez-nous un message, nous serons ravis de vous aider.",
+        "questionCta": "Posez-nous votre question",
+        "ctaBrow": "CONSTRUISONS ENSEMBLE",
+        "h2Cta": "Votre prochain projet peut commencer par un message.",
+        "ctaCopy": "Vous n’avez pas besoin d’un cahier des charges finalisé. Dites-nous ce que vous avez en tête et nous vous aiderons à définir la prochaine étape.",
+        "emailSubject": "Parlons de mon projet",
+        "emailBody": "Bonjour à l’équipe Fortales,\n\nJ’aimerais discuter d’un projet avec vous.\n\nMon entreprise : \nCe dont j’ai besoin : \nMes objectifs : \nLe délai souhaité : \n\nAu plaisir de découvrir vos suggestions !\n\nCordialement,\n",
+        "q1": "Dois-je savoir exactement ce dont j’ai besoin avant de vous contacter ?",
+        "a1": "Pas du tout. Dites-nous ce que vous souhaitez accomplir, ce qui ne fonctionne pas ou ce que vous avez en tête. Nous pouvons vous aider à trouver la bonne approche.",
+        "q2": "La première consultation est-elle gratuite ?",
+        "a2": "Oui. Le premier échange est entièrement gratuit et ne vous engage à rien.",
+        "q3": "Sous quel délai me répondrez-vous ?",
+        "a3": "Nous répondons généralement sous 24 heures les jours ouvrés.",
+        "q4": "Que se passe-t-il après vous avoir contactés ?",
+        "a4": "Nous examinerons votre message, poserons les questions nécessaires et, si nous pouvons répondre à vos besoins, vous enverrons une proposition claire précisant le périmètre, le calendrier et le tarif."
+    },
     "FortAbout": {
         "heroBrow": "À propos de Fortales",
         "h1": "Nous créons des sites web qui aident les entreprises à se développer.",
@@ -267,6 +311,19 @@
 
         "q9": "Dois-je tout avoir préparé avant de commencer ?",
         "a9": "Non. Si vous disposez déjà de contenus, d'une identité visuelle ou de photos, c'est parfait. Sinon, nous vous accompagnerons pour définir ce dont vous avez besoin. Nous ne vous demanderons que les informations nécessaires à chaque étape du projet afin que le processus reste simple et agréable."
+    },
+    "CtaConfirmationEmail": {
+        "subject": "Merci d’avoir contacté Fortales",
+        "preview": "Nous avons bien reçu votre demande et vous répondrons bientôt.",
+        "heading": "Merci pour votre message",
+        "greeting": "Bonjour {name},",
+        "intro": "Merci de nous avoir parlé de votre projet. Nous avons bien reçu votre demande et serons ravis d’en apprendre davantage sur votre entreprise.",
+        "nextHeading": "Et maintenant ?",
+        "nextCopy": "Notre équipe prendra connaissance de votre message et vous répondra, généralement sous 24 heures les jours ouvrés, pour discuter de vos objectifs et des prochaines étapes.",
+        "replyCopy": "Pour ajouter des précisions, il vous suffit de répondre à cet e-mail.",
+        "signOff": "Bien cordialement,",
+        "tagline": "Nous créons des sites web rapides et évolutifs, conçus pour accompagner la croissance de votre entreprise.",
+        "whatsapp": "WhatsApp : {phone}"
     },
     "Metadata": {
         "Home": {
@@ -429,6 +486,22 @@
             "ogDescription": "Faites connaissance avec l'équipe, les valeurs et l'approche de Fortales. Découvrez comment nous aidons les entreprises à se développer grâce à des sites web fiables et évolutifs.",
             "twitterTitle": "À propos de Fortales | Découvrez l'équipe derrière votre site web",
             "twitterDescription": "Découvrez l'équipe Fortales et notre approche pour créer des sites web pensés pour la croissance."
+        },
+        "FortContact": {
+            "title": "Contactez Fortales | Parlons de votre site web",
+            "description": "Parlez-nous de votre projet web. Profitez d’un premier échange gratuit et d’une proposition sans engagement précisant le périmètre, les délais et le tarif.",
+            "keywords": [
+                "contacter Fortales",
+                "conseils création site web",
+                "devis site web",
+                "développement web sur mesure",
+                "création de sites web"
+            ],
+            "category": "Développement web",
+            "ogTitle": "Contactez Fortales | Donnons vie à votre projet",
+            "ogDescription": "Une idée de site web ou envie d’améliorer votre site actuel ? Échangez directement avec notre équipe sur vos objectifs et les prochaines étapes.",
+            "twitterTitle": "Contactez Fortales | Donnons vie à votre projet",
+            "twitterDescription": "Parlez-nous de votre projet. Un premier échange gratuit, des conseils concrets et une proposition claire, sans engagement."
         },
         "FortPackageSlug": {
             "Starter": {

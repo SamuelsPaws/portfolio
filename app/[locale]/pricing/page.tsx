@@ -12,6 +12,8 @@ import organization from "@/data/fortales/organization";
 import { Metadata } from "next";
 import { availableLocales, localeCodesArray } from "@/data/locales";
 import getLangAlternates from "@/lib/utils/getLangAlternates";
+import { generatePricingSchema } from "@/lib/seo/schema";
+import JsonLd from "@/components/JsonLd";
 
 type Props = {
     params: Promise<{
@@ -94,8 +96,11 @@ export default async function Pricing({ params }: Props) {
     const { locale } = await params
     const t = await getTranslations('FortPricing')
 
+    const pricingSchema = await generatePricingSchema(locale)
+
     return (
     <main className="pt-18 md:pt-24 bg-br-white dark:bg-br-black">
+        <JsonLd data={pricingSchema} />
         <FortSectionSt
             bgColor="bg-br-white dark:bg-br-black"
         >

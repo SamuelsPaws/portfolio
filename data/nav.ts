@@ -49,12 +49,12 @@ export const navLinksFort = [
         external: false,
         dropdown: null
     },
-    // {
-    //     labelKey: 'contact',
-    //     href: '/contact',
-    //     external: false,
-    //     dropdown: null
-    // },
+    {
+        labelKey: 'contact',
+        href: '/contact',
+        external: false,
+        dropdown: null
+    },
     {
         labelKey: 'prices',
         href: '/pricing',

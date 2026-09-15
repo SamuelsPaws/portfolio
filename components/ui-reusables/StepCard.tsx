@@ -14,7 +14,7 @@ const StepCard = ({ iconId, num, title, copy, iconCn }: Props) => {
         w-full md:w-100
         p-8
         flex flex-col
-        dark:bg-br-gray-800
+        bg-br-white dark:bg-br-gray-800
         border border-gray-300 rounded-4xl shadow-img-sm"
     >
         {/* Upper part */}

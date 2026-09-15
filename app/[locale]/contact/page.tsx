@@ -2,51 +2,365 @@ import CustomIcon from "@/components/CustomIcon";
 import Eyebrow from "@/components/ui-reusables/Eyebrow";
 import HeroBulletItem from "./components/HeroBulletItem";
 import Image from "next/image";
+import FortSectionSt from "@/components/FortSectionSt";
+import CenteredP from "@/components/ui-reusables/CenteredP";
+import StepCard from "@/components/ui-reusables/StepCard";
+import OrangeWithIcon from "@/components/ui-reusables/OrangeWithIcon";
+import ReachLink from "./components/ReachLink";
+import organization from "@/data/fortales/organization";
+import Link from "next/link";
+import FaqCard from "../about/components/FaqCard";
+import SimpleH2 from "@/components/SimpleH2";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+import type { LocaleKey } from "@/lib/types/localeKey";
+import { availableLocales } from "@/data/locales";
+import getLangAlternates from "@/lib/utils/getLangAlternates";
+import SimpleH3 from "@/components/SimpleH3";
+import FortCtaBtn from "@/components/ui-reusables/FortCtaBtn";
+import { generateContactSchema } from "@/lib/seo/schema";
+import JsonLd from "@/components/JsonLd";
 
-export default function Contact() {
+type Props = {
+    params: Promise<{
+        locale: LocaleKey;
+    }>
+}
+
+const BASE_URL = organization.url;
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: LocaleKey }> }): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "Metadata.FortContact",
+    });
+
+    const canonical = `${BASE_URL}/${locale}/contact`;
+
+    return {
+        metadataBase: new URL(BASE_URL),
+
+        title: t("title"),
+        description: t("description"),
+        
+        keywords: t.raw("keywords"),
+        applicationName: organization.name,
+        authors: [
+            {
+                name: organization.author,
+            },
+        ],
+        creator: organization.author,
+        publisher: organization.author,
+        alternates: {
+            canonical,
+            languages: getLangAlternates('/contact', BASE_URL),
+        },
+
+        openGraph: {
+            title: t("ogTitle"),
+            description: t("ogDescription"),
+            url: canonical,
+            siteName: organization.name,
+            locale: availableLocales[locale],
+            type: "website",
+            images: [
+                {
+                    url: organization.image,
+                    width: 1200,
+                    height: 630,
+                    alt: organization.name,
+                },
+            ],
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: t("twitterTitle"),
+            description: t("twitterDescription"),
+            images: [organization.image],
+        },
+
+        category: t('category'),
+
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+                "max-video-preview": -1,
+            },
+        },
+  };
+}
+
+export default async function Contact({ params }: Props) {
+    const { locale } = await params
+    const t = await getTranslations('FortContact')
+    const emailSubject = t('emailSubject');
+    const emailBody = t('emailBody');
+    const emailHref = `mailto:${organization.email}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
+    const contactSchema = await generateContactSchema(locale)
+
     return (
     <main>
+        <JsonLd data={contactSchema} />
         {/* Hero */}
         <section className="
-            px-32 py-32
-            flex gap-16"
+            px-8 py-24 md:px-16 md:py-32 xl:px-32
+            flex flex-col md:flex-row gap-8 md:gap-16"
         >
             {/* Left div */}
-            <div className="w-[50%]">
-                <Eyebrow text="CONTACT US" />
+            <div className="w-full min-w-0 md:w-1/2">
+                <Eyebrow text={t('heroBrow')} />
                 <h1 className="
                     mb-8
-                    text-6xl font-['Source_Serif_4'] leading-16"
+                    text-4xl md:text-5xl xl:text-6xl font-['Source_Serif_4'] leading-tight xl:leading-16"
                 >
-                    Let's talk about your project.
+                    {t('h1')}
                 </h1>
                 <p className="
                     mb-8
                     text-my-md text-secondary"
                 >
-                    Tell us what you’re building, what you want to improve, or where you’re stuck. We’ll help you find the right digital solution for your business.
+                    {t('heroCopy')}
                 </p>
                 {/* Bullet points */}
                 <div className="
                     w-full mb-8
-                    flex justify-between gap-4"
+                    flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6"
                 >
-                    <HeroBulletItem text="Free consultation" />
-                    <HeroBulletItem text="No-obligation quote" />
-                    <HeroBulletItem text="Reply within 24 hours" />
+                    <HeroBulletItem text={t('consultationBullet')} />
+                    <HeroBulletItem text={t('quoteBullet')} />
+                    <HeroBulletItem text={t('replyBullet')} />
                 </div>
                 <Image
                     src="/assets/hero-img.jpg"
                     width={1280}
                     height={720}
                     className="
-                        w-full h-80
+                        w-full h-56 sm:h-64 lg:h-80
                         object-cover object-center
                         rounded-4xl shadow-img"
-                    alt="Unas personas"
+                    alt={t('heroImageAlt')}
                 />
             </div>
+            {/* Right div */}
         </section>
+        <FortSectionSt
+            title={t('h2WhatNext')}
+            bgColor="bg-secondary"
+        >
+            <CenteredP
+                text={t('whatNextCopy')}
+            />
+            <div className="
+                w-full mx-auto
+                flex flex-col md:flex-row justify-center gap-8 xl:gap-16 flex-wrap"
+            >
+                <StepCard
+                    iconId="search"
+                    num={1}
+                    title={t('h3Step1')}
+                    copy={t('step1Copy')}
+                />
+                <StepCard
+                    iconId="message-bubble"
+                    num={2}
+                    title={t('h3Step2')}
+                    copy={t('step2Copy')}
+                />
+                <StepCard
+                    iconId="file-solid"
+                    num={3}
+                    title={t('h3Step3')}
+                    copy={t('step3Copy')}
+                />
+            </div>
+        </FortSectionSt>
+        <FortSectionSt
+            bgColor="bg-main"
+        >
+            {/* Content wrapper */}
+            <div className="
+                w-full
+                flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-24"
+            >
+                {/* Left div */}
+                <div className="w-full min-w-0 lg:flex-1">
+                    {/* Eyebrow */}
+                    <Eyebrow text={t('directBrow')} />
+                    <h1 className="
+                        mb-4 md:mb-8
+                        text-most-h2 text-main
+                        font-['Source_Serif_4'] leading-10 md:leading-16"
+                    >
+                        {t('h2Direct')}
+                    </h1>
+                    <p className="
+                        mb-4
+                        text-my-md text-secondary"
+                    >
+                        {t('directCopy')}
+                    </p>
+                </div>
+                {/* Right div */}
+                <div className="
+                    w-full min-w-0 lg:flex-1
+                    p-4 sm:p-6 xl:p-8
+                    bg-main
+                    border border-gray-300 rounded-4xl shadow-img-sm"
+                >
+                    <div className="
+                        mb-4 md:mb-8
+                        flex items-center gap-4"
+                    >
+                        <OrangeWithIcon
+                            iconId="people"
+                        />
+                        <span className="text-my-md text-secondary">
+                            {t('directTeam')}
+                        </span>
+                    </div>
+                    <div className="
+                        mb-4 md:mb-8
+                        flex flex-col gap-4"
+                    >
+                        <ReachLink
+                            iconId="email"
+                            href={emailHref}
+                            eyebrow={t('emailLabel')}
+                            mainText={organization.email}
+                        />
+                        <ReachLink
+                            iconId="whatsapp"
+                            href={`https://wa.me/${organization.phone.replace(/\D/g, '')}`}
+                            eyebrow={t('whatsappLabel')}
+                            mainText={t('conversationCta')}
+                        />
+                    </div>
+                    <div className="w-full h-[1px] mb-4 md:mb-8 bg-gray-300"></div>
+                    <div className="
+                        mx-auto
+                        text-my-sm text-secondary text-center"
+                    >
+                        {t('directNote')}
+                    </div>
+                </div>
+            </div>
+        </FortSectionSt>
+        {/* Faq */}
+        <FortSectionSt bgColor="bg-secondary">
+            {/* Content wrapper */}
+            <div className="
+                w-full
+                flex flex-col lg:flex-row items-start gap-8 lg:gap-12 xl:gap-24"
+            >
+                <div className="
+                    w-full min-w-0
+                    lg:flex-1 lg:w-auto"
+                >
+                    <Eyebrow text={t('faqBrow')} />
+                    <SimpleH2
+                        text={t('h2Faq')}
+                        className="mb-8 md:mb-16 text-most-h2"
+                    />
+                    <p className="
+                        mb-8 md:mb-16
+                        text-my-md text-secondary leading-6 md:leading-8"
+                    >
+                        {t('faqCopy')}
+                    </p>
+                    <div className="
+                        flex flex-col gap-4"
+                    >
+                        {Array(4).fill(null).map((_, i) => (
+                            <FaqCard
+                                key={i}
+                                question={t(`q${i + 1}`)}
+                                answer={t(`a${i + 1}`)}
+                            />
+                        ))}
+                    </div>
+                </div>
+                {/* Didn't find? */}
+                <div className="
+                    w-full min-w-0 lg:w-72 xl:w-90 lg:shrink-0
+                    p-6 sm:p-8
+                    bg-black/5 dark:bg-br-gray-600
+                    rounded-4xl"
+                >
+                    <SimpleH3
+                        text={t('h3Question')}
+                        className="mb-4 text-3xl leading-10"
+                    />
+                    <p className="
+                        mb-4
+                        text-secondary text-my-sm"
+                    >
+                        {t('questionCopy')}
+                    </p>
+                    <Link
+                        href="/contact"
+                        className="
+                            w-full
+                            py-2 md:hover:pl-4 duration-200
+                            flex items-center justify-center gap-2
+                            bg-black dark:bg-br-white
+                            text-my-md text-br-white dark:text-black
+                            rounded-full"
+                    >
+                        <span>{t('questionCta')}</span>
+                        <CustomIcon
+                            iconId="arrowR"
+                            className="scale-110"
+                        />
+                    </Link>
+                </div>
+            </div>
+        </FortSectionSt>
+        <FortSectionSt
+            bgColor="bg-main"
+        >
+            <div className="
+                w-full max-w-200 mx-auto mb-4 md:mb-8
+                flex items-center justify-center gap-3 md:gap-4"
+            >
+                <div className="
+                    w-8 md:w-16 h-[1px] shrink-0
+                    bg-br-orange-main"
+                />
+                <span className="min-w-0 text-center text-my-sm md:text-my-md text-br-orange-main font-semibold">
+                    {t('ctaBrow')}
+                </span>
+                <div className="
+                    w-8 md:w-16 h-[1px] shrink-0
+                    bg-br-orange-main"
+                />
+            </div>
+            <h2 className="
+                w-full max-w-200 mx-auto mb-4 md:mb-8
+                text-4xl md:text-5xl xl:text-7xl text-center font-['Source_Serif_4'] leading-tight xl:leading-22"
+            >
+                {t('h2Cta')}
+            </h2>
+            <CenteredP
+                halfMargin
+                text={t('ctaCopy')}
+            />
+            <FortCtaBtn
+                href=""
+                label={t('conversationCta')}
+                centered
+                external
+            />
+        </FortSectionSt>
     </main>
     )
 }

@@ -218,11 +218,11 @@ export default async function FortalesHome({ params }: Props) {
             title={t('h2Process')}
             bgColor="bg-br-white dark:bg-br-black"
         >
-            <ArrowSvgDef />
             <div className="
                 w-full
                 grid grid-cols-[0.25fr_1fr_0.25fr] md:grid-cols-2 gap-x-4 gap-y-8 md:gap-8"
             >
+                <ArrowSvgDef />
                 <ProcessCard
                     title={t('h3StepOne')}
                     number={1}

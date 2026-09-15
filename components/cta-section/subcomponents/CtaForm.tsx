@@ -1,5 +1,5 @@
 'use client'
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import FormInput from "./FormInput"
 import CustomIcon from "@/components/CustomIcon"
 import clsx from "clsx"
@@ -31,6 +31,7 @@ const initialFormData = {
 }
 
 const CtaForm = () => {
+    const locale = useLocale()
     const [formData, setFormData] = useState<FormData>(initialFormData)
     const [formState, setFormState] = useState<FormState>('idle')
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
@@ -87,7 +88,7 @@ const CtaForm = () => {
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify(formData),
+                    body: JSON.stringify({ ...formData, locale }),
                 })
             } catch (err) {
                 console.error(err)

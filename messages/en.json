@@ -192,6 +192,50 @@
         "step3Copy": "You'll receive a clear proposal outlining the scope, timeline, and final price before any work begins.",
         "submitRequest": "Submit request"
     },
+    "FortContact": {
+        "heroBrow": "CONTACT US",
+        "h1": "Let's talk about your project.",
+        "heroCopy": "Tell us what you’re building, what you want to improve, or where you’re stuck. We’ll help you find the right digital solution for your business.",
+        "consultationBullet": "Free consultation",
+        "quoteBullet": "No-obligation quote",
+        "replyBullet": "Reply within 24 hours",
+        "heroImageAlt": "People together",
+        "h2WhatNext": "What happens after you reach out?",
+        "whatNextCopy": "A simple process, with no pressure and no unnecessary back-and-forth.",
+        "h3Step1": "We review your message",
+        "step1Copy": "We’ll take a look at what you need, your goals, and any context you’ve shared with us.",
+        "h3Step2": "We talk through your project",
+        "step2Copy": "We’ll reach out to ask any necessary questions in order to understand the scope and your goals.",
+        "h3Step3": "You get a clear proposal",
+        "step3Copy": "If we’re a good fit, we’ll send you a clear proposal with the recommended solution, scope, timeline, and pricing.",
+        "directBrow": "REACH US DIRECTLY",
+        "h2Direct": "Prefer to talk to us directly?",
+        "directCopy": "No problem. If you’d rather skip the form, send us a message directly and tell us what you have in mind. We’ll get back to you personally.",
+        "directTeam": "A direct line to our team",
+        "emailLabel": "Email us",
+        "whatsappLabel": "WhatsApp us",
+        "conversationCta": "Start a conversation",
+        "directNote": "You’ll be talking directly with the people working on your project.",
+        "faqBrow": "HAVE QUESTIONS?",
+        "h2Faq": "Frequently asked questions",
+        "faqCopy": "A few things you might want to know before reaching out. If you don’t see your question here, just send us a message.",
+        "h3Question": "Still have a question?",
+        "questionCopy": "Every project is different. Send us a message and we’ll be happy to help.",
+        "questionCta": "Ask us directly",
+        "ctaBrow": "LET'S BUILD TOGETHER",
+        "h2Cta": "Your next project can start with a message.",
+        "ctaCopy": "You don’t need a finished brief. Tell us what you have in mind, and we’ll help you figure out the next step.",
+        "emailSubject": "Let's talk about my project",
+        "emailBody": "Hi Fortales team,\n\nI'd love to discuss a project with you.\n\nMy business: \nWhat I need help with: \nMy goals: \nIdeal timeline: \n\nLooking forward to hearing your thoughts!\n\nBest,\n",
+        "q1": "Do I need to know exactly what I need before contacting you?",
+        "a1": "Not at all. Tell us what you’re trying to achieve, what isn’t working, or what you have in mind. We can help you figure out the right approach.",
+        "q2": "Is the initial consultation free?",
+        "a2": "Yes. The first conversation is completely free and there’s no obligation to move forward.",
+        "q3": "How quickly will you get back to me?",
+        "a3": "We usually reply within 24 hours on business days.",
+        "q4": "What happens after I contact you?",
+        "a4": "We’ll review your message, ask any necessary questions, and, if we’re a good fit, send you a clear proposal with scope, timeline, and pricing."
+    },
     "FortAbout": {
         "heroBrow": "About Fortales",
         "h1": "Building websites that help businesses grow.",
@@ -270,6 +314,19 @@
 
         "q9": "Do I need to have everything prepared before we start?",
         "a9": "No. If you already have content, branding, or images, that's great—but if you don't, we'll guide you through what's needed. We'll only ask for the information that's relevant at each stage of the project, so you won't feel overwhelmed."
+    },
+    "CtaConfirmationEmail": {
+        "subject": "Thanks for contacting Fortales",
+        "preview": "We’ve received your request and will be in touch soon.",
+        "heading": "Thanks for reaching out",
+        "greeting": "Hi {name},",
+        "intro": "Thank you for telling us about your project. We’ve received your request and look forward to learning more about your business.",
+        "nextHeading": "What happens next?",
+        "nextCopy": "Our team will review your message and get back to you, usually within 24 hours on business days, to discuss your goals and the next steps.",
+        "replyCopy": "If you’d like to add anything, simply reply to this email.",
+        "signOff": "Best regards,",
+        "tagline": "Building fast, scalable websites that help businesses grow.",
+        "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
         "Home": {
@@ -432,6 +489,22 @@
             "ogDescription": "Get to know the team, values, and approach behind Fortales. Discover how we help businesses grow with reliable, scalable websites.",
             "twitterTitle": "About Fortales | Meet the Team Behind Your Website",
             "twitterDescription": "Meet the people behind Fortales and learn how we build websites that help businesses grow."
+        },
+        "FortContact": {
+            "title": "Contact Fortales | Let's Talk About Your Website",
+            "description": "Tell us about your website project. Get a free consultation and a clear, no-obligation proposal with scope, timeline, and pricing from the Fortales team.",
+            "keywords": [
+                "contact Fortales",
+                "website consultation",
+                "website quote",
+                "custom web development",
+                "web design services"
+            ],
+            "category": "Web development",
+            "ogTitle": "Contact Fortales | Start Your Next Project",
+            "ogDescription": "Have a website idea or need help improving your current site? Talk directly with our team about your goals and the next steps.",
+            "twitterTitle": "Contact Fortales | Start Your Next Project",
+            "twitterDescription": "Tell us about your project. Free initial consultation, practical advice, and a clear proposal with no obligation."
         },
         "FortPackageSlug": {
             "Starter": {
