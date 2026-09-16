@@ -149,6 +149,7 @@ export default async function Contact({ params }: Props) {
                         object-cover object-center
                         rounded-4xl shadow-img"
                     alt={t('heroImageAlt')}
+                    priority
                 />
             </div>
             {/* Right div */}

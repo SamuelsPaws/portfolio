@@ -143,6 +143,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
                             w-full aspect-[3/2] lg:aspect-auto lg:h-140
                             bg-gray-200 dark:bg-br-gray-800
                             object-contain rounded-2xl sm:rounded-4xl shadow-img"
+                        priority
                     />
                 </div>
                 {/* Right div */}

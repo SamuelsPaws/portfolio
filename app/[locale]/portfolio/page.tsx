@@ -133,6 +133,7 @@ export default async function Portfolio({ params }: Props) {
                     rounded-2xl sm:rounded-4xl shadow-img"
                 sizes="(min-width: 1024px) 60vw, 100vw"
                 alt=""
+                priority
             />
         </section>
         <FortSectionSt

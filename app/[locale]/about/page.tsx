@@ -145,6 +145,7 @@ export default async function About({ params }: Props) {
                         object-cover object-top
                         rounded-4xl shadow-img"
                     alt="Foto del equipo de Fortales"
+                    priority
                 />
             </div>
         </section>
