@@ -18,9 +18,10 @@ import FortCtaBtn from "@/components/ui-reusables/FortCtaBtn";
 import organization from "@/data/fortales/organization";
 import { Metadata } from "next";
 import { availableLocales, localeCodesArray } from "@/data/locales";
-import { generateOrgSchema } from "@/lib/seo/schema";
+import { generateBreadcrumbSchema, generateOrgSchema } from "@/lib/seo/schema";
 import JsonLd from "@/components/JsonLd";
 import CenteredP from "@/components/ui-reusables/CenteredP";
+import breadcrumbs, { getBreadcrumbs } from "@/data/breadcrumbs";
 
 type Props = {
     params: Promise<{
@@ -104,10 +105,12 @@ export default async function FortalesHome({ params }: Props) {
     const t = await getTranslations('FortHome')
 
     const orgSchema = generateOrgSchema(locale)
+    const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['home'], organization.url, locale)
 
     return (
     <main>
         <JsonLd data={orgSchema} />
+        <JsonLd data={breadcrumbSchema} />
         <Hero />
         {/* Who it is for */}
         <FortSectionSt

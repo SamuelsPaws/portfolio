@@ -12,6 +12,8 @@ import type { Metadata } from "next";
 import organization from "@/data/fortales/organization";
 import { availableLocales } from "@/data/locales";
 import getLangAlternates from "@/lib/utils/getLangAlternates";
+import { generateBreadcrumbSchema } from "@/lib/seo/schema";
+import { getBreadcrumbs } from "@/data/breadcrumbs";
 
 type Props = {
     params: Promise<{
@@ -93,6 +95,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Portfolio({ params }: Props) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'FortPortfolio' })
+    
+    const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['portfolio'], organization.url, locale)
 
     return (
     <main>

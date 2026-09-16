@@ -4,6 +4,7 @@ import { myPackages } from '@/data/fortales/packages'
 import { addOns } from '@/data/fortales/addons'
 import { availableLocales } from '@/data/locales'
 import { getTranslations } from 'next-intl/server'
+import { Breadcrumb } from '../types/globalTypes'
 
 type JsonLdValue = string | number | boolean | JsonLdValue[] | JsonLdObject
 type JsonLdObject = { [key: string]: JsonLdValue }
@@ -201,4 +202,21 @@ export async function generatePricingSchema(locale: LocaleKey): Promise<JsonLdOb
             catalog
         ]
     }) as JsonLdObject
+}
+
+export function generateBreadcrumbSchema(
+    breadcrumbs: Breadcrumb[],
+    baseUrl: string,
+    locale: LocaleKey
+) {
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": breadcrumbs.map((breadcrumb, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: breadcrumb.name,
+            item: `${baseUrl}/${locale}${breadcrumb.url}`,
+        })),
+    }
 }

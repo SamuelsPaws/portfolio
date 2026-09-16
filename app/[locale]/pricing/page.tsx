@@ -12,8 +12,9 @@ import organization from "@/data/fortales/organization";
 import { Metadata } from "next";
 import { availableLocales, localeCodesArray } from "@/data/locales";
 import getLangAlternates from "@/lib/utils/getLangAlternates";
-import { generatePricingSchema } from "@/lib/seo/schema";
+import { generateBreadcrumbSchema, generatePricingSchema } from "@/lib/seo/schema";
 import JsonLd from "@/components/JsonLd";
+import { getBreadcrumbs } from "@/data/breadcrumbs";
 
 type Props = {
     params: Promise<{
@@ -97,10 +98,12 @@ export default async function Pricing({ params }: Props) {
     const t = await getTranslations('FortPricing')
 
     const pricingSchema = await generatePricingSchema(locale)
+    const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['pricing'], organization.url, locale)
 
     return (
     <main className="pt-18 md:pt-24 bg-br-white dark:bg-br-black">
         <JsonLd data={pricingSchema} />
+        <JsonLd data={breadcrumbSchema} />
         <FortSectionSt
             bgColor="bg-br-white dark:bg-br-black"
         >

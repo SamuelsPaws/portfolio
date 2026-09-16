@@ -20,6 +20,8 @@ import SolutionCard from "./components/SolutionCard";
 import SimpleH2 from "@/components/SimpleH2";
 import RelatedProjectCard from "./components/RelatedProjectCard";
 import FortSectionCta from "@/components/cta-section/FortSectionCta";
+import { generateBreadcrumbSchema } from "@/lib/seo/schema";
+import { getBreadcrumbs } from "@/data/breadcrumbs";
 
 type Props = {
     params: Promise<{

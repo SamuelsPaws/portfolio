@@ -18,6 +18,9 @@ import organization from "@/data/fortales/organization";
 import getLangAlternates from "@/lib/utils/getLangAlternates";
 import { availableLocales } from "@/data/locales";
 import { Metadata } from "next";
+import { generateBreadcrumbSchema } from "@/lib/seo/schema";
+import { getBreadcrumbs } from "@/data/breadcrumbs";
+import JsonLd from "@/components/JsonLd";
 
 type Props = {
     params: Promise<{
@@ -100,8 +103,11 @@ export default async function About({ params }: Props) {
     const { locale } = await params
     const t = await getTranslations('FortAbout')
 
+    const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['about'], organization.url, locale)
+
     return (
     <main>
+        <JsonLd data={breadcrumbSchema} />
         {/* Hero */}
         <section className="
             px-8 py-24

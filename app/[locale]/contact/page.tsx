@@ -19,8 +19,9 @@ import { availableLocales } from "@/data/locales";
 import getLangAlternates from "@/lib/utils/getLangAlternates";
 import SimpleH3 from "@/components/SimpleH3";
 import FortCtaBtn from "@/components/ui-reusables/FortCtaBtn";
-import { generateContactSchema } from "@/lib/seo/schema";
+import { generateBreadcrumbSchema, generateContactSchema } from "@/lib/seo/schema";
 import JsonLd from "@/components/JsonLd";
+import { getBreadcrumbs } from "@/data/breadcrumbs";
 
 type Props = {
     params: Promise<{
@@ -107,10 +108,12 @@ export default async function Contact({ params }: Props) {
     const emailHref = `mailto:${organization.email}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
 
     const contactSchema = await generateContactSchema(locale)
+    const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['contact'], organization.url, locale)
 
     return (
     <main>
         <JsonLd data={contactSchema} />
+        <JsonLd data={breadcrumbSchema} />
         {/* Hero */}
         <section className="
             px-8 py-24 md:px-16 md:py-32 xl:px-32
