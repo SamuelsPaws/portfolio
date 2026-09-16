@@ -168,14 +168,6 @@ export const portfolio: PortfolioProject[] = [
                 de: "Zimmer, Menüs, Galerien, Bewertungen und weitere Hotelinhalte wurden in einem flexiblen CMS strukturiert. So kann das Team die Website selbst aktuell halten, ohne Seiten neu aufzubauen oder für jede Änderung einen Entwickler zu benötigen.",
                 it: "Camere, menu, gallerie, testimonianze e altri contenuti dell’hotel sono stati organizzati in un CMS flessibile. Il team può così mantenere il sito aggiornato senza ricostruire le pagine o dipendere da uno sviluppatore per ogni modifica.",
             },
-            // TODO: Replace with screenshots of the hotel CMS.
-            gallery: [
-                {
-                    "type": "image",
-                    "src": "/assets/ilalo-lifestyle.webp",
-                    "info": null
-                }
-            ],
         },
         {
             title: {
@@ -192,6 +184,95 @@ export const portfolio: PortfolioProject[] = [
                 de: "Die Sichtbarkeit in Suchmaschinen wurde direkt in die Architektur integriert und nicht erst nachträglich ergänzt. Lokalisierte Metadaten, Canonical-URLs, hreflang, Sitemaps, Social Previews und strukturierte Daten helfen Suchmaschinen, jede Seite richtig einzuordnen und das Hotel den passenden Gästen zu zeigen.",
                 it: "La visibilità sui motori di ricerca è stata integrata direttamente nell’architettura del sito. Metadati localizzati, URL canonici, hreflang, sitemap, anteprime social e dati strutturati aiutano i motori di ricerca a comprendere ogni pagina e a mostrare l’hotel al pubblico giusto.",
             },
+            gallery: [
+                {
+                    "type": "image",
+                    "src": "/assets/galleries/ilalo-hotel/gsc-summary.png",
+                    "info": {
+                        "position": "left",
+                        "items": [
+                            {
+                                "type": "title",
+                                "content": {
+                                    "en": "28 days of growing visibility",
+                                    "es": "28 días de mayor visibilidad",
+                                    "fr": "28 jours de visibilité en hausse",
+                                    "de": "28 Tage mit wachsender Sichtbarkeit",
+                                    "it": "28 giorni di visibilità in crescita"
+                                }
+                            },
+                            {
+                                "type": "paragraph",
+                                "content": {
+                                    "en": "In the last 28 days, the hotel’s website received 149 clicks from Google (+964%) and 2.74K appearances in search results (+822%), compared with the previous 28 days. A strong increase in both visibility and clicks through to the website.",
+                                    "es": "En los últimos 28 días, el sitio del hotel recibió 149 clics desde Google (+964%) y registró 2,74 mil apariciones en los resultados de búsqueda (+822%), frente a los 28 días anteriores. Un fuerte aumento tanto en visibilidad como en clics hacia el sitio web.",
+                                    "fr": "Sur les 28 derniers jours, le site de l’hôtel a enregistré 149 clics depuis Google (+964 %) et 2,74 milliers d’apparitions dans les résultats de recherche (+822 %), par rapport aux 28 jours précédents. Une forte progression de la visibilité comme des clics vers le site.",
+                                    "de": "In den letzten 28 Tagen verzeichnete die Hotelwebsite 149 Klicks über Google (+964 %) und 2,74 Tsd. Einblendungen in den Suchergebnissen (+822 %) im Vergleich zu den 28 Tagen davor. Ein deutlicher Zuwachs sowohl bei der Sichtbarkeit als auch bei den Klicks auf die Website.",
+                                    "it": "Negli ultimi 28 giorni, il sito dell’hotel ha registrato 149 clic da Google (+964%) e 2,74 mila apparizioni nei risultati di ricerca (+822%), rispetto ai 28 giorni precedenti. Una forte crescita sia della visibilità sia dei clic verso il sito."
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "image",
+                    "src": "/assets/galleries/ilalo-hotel/gsc-stats.png",
+                    "info": {
+                        "position": "left",
+                        "items": [
+                            {
+                                "type": "title",
+                                "content": {
+                                    "en": "More visibility, more clicks",
+                                    "es": "Más visibilidad, más clics",
+                                    "fr": "Plus de visibilité, plus de clics",
+                                    "de": "Mehr Sichtbarkeit, mehr Klicks",
+                                    "it": "Più visibilità, più clic"
+                                }
+                            },
+                            {
+                                "type": "paragraph",
+                                "content": {
+                                    "en": "The comparison across search terms shows strong growth in both how often the hotel appears on Google and how often people click through to its website. More appearances mean more opportunities to be discovered, while more clicks show that people are taking the next step to explore the hotel.",
+                                    "es": "La comparación entre distintas búsquedas muestra un fuerte crecimiento tanto en las apariciones del hotel en Google como en los clics hacia su sitio web. Más apariciones significan más oportunidades de ser descubierto, y más clics indican que las personas dan el siguiente paso para conocer el hotel.",
+                                    "fr": "La comparaison des différentes recherches montre une forte progression des apparitions de l’hôtel sur Google et des clics vers son site. Plus d’apparitions offrent davantage d’occasions de le découvrir, tandis que les clics montrent que les internautes passent à l’étape suivante pour en savoir plus sur l’hôtel.",
+                                    "de": "Der Vergleich verschiedener Suchanfragen zeigt ein deutliches Wachstum: Das Hotel erscheint häufiger auf Google, und mehr Menschen klicken auf seine Website. Häufigere Einblendungen schaffen mehr Gelegenheiten, entdeckt zu werden. Mehr Klicks zeigen, dass Interessierte den nächsten Schritt machen und sich das Hotel näher ansehen.",
+                                    "it": "Il confronto tra diverse ricerche mostra una forte crescita sia delle apparizioni dell’hotel su Google sia dei clic verso il suo sito. Più apparizioni offrono più occasioni di essere scoperti, mentre più clic indicano che le persone fanno il passo successivo per conoscere meglio l’hotel."
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'image',
+                    src: '/assets/galleries/ilalo-hotel/gsc-graph.jpg',
+                    info: {
+                        "position": "left",
+                        "items": [
+                            {
+                                "type": "title",
+                                "content": {
+                                    "en": "From 24 to 502 appearances in one month",
+                                    "es": "De 24 a 502 apariciones en un mes",
+                                    "fr": "De 24 à 502 apparitions en un mois",
+                                    "de": "Von 24 auf 502 Einblendungen in einem Monat",
+                                    "it": "Da 24 a 502 apparizioni in un mese"
+                                }
+                            },
+                            {
+                                "type": "paragraph",
+                                "content": {
+                                    "en": "The Google Search Console graph shows 502 appearances in search results this month, compared with 24 last month: more than 20 times as many. It is an encouraging early sign that the hotel is becoming easier to find on Google, creating more opportunities for future guests to discover it.",
+                                    "es": "El gráfico de Google Search Console muestra 502 apariciones en los resultados de búsqueda este mes, frente a las 24 del mes anterior: más de 20 veces la cifra anterior. Es una primera señal alentadora de que el hotel es más fácil de encontrar en Google, con más oportunidades para que futuros huéspedes lo descubran.",
+                                    "fr": "Le graphique de Google Search Console montre 502 apparitions dans les résultats de recherche ce mois-ci, contre 24 le mois précédent : plus de 20 fois autant. C’est un premier signe encourageant que l’hôtel devient plus facile à trouver sur Google, offrant davantage d’occasions aux futurs voyageurs de le découvrir.",
+                                    "de": "Die Grafik aus der Google Search Console zeigt diesen Monat 502 Einblendungen in den Suchergebnissen, gegenüber 24 im Vormonat: mehr als das Zwanzigfache. Ein ermutigendes erstes Zeichen dafür, dass das Hotel auf Google leichter zu finden ist und potenzielle Gäste mehr Gelegenheiten haben, es zu entdecken.",
+                                    "it": "Il grafico di Google Search Console mostra 502 apparizioni nei risultati di ricerca questo mese, rispetto alle 24 del mese precedente: oltre 20 volte tanto. È un primo segnale incoraggiante: l’hotel è più facile da trovare su Google e ha più occasioni di farsi scoprire dai futuri ospiti."
+                                }
+                            }
+                        ]
+                    }
+                },
+            ]
         },
         {
             title: {

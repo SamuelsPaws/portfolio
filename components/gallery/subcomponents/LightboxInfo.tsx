@@ -17,7 +17,7 @@ const LightboxInfo = ({ position, items, isOpen, onClick }: Props) => {
         className={clsx(
             "absolute bottom-2 md:bottom-4 z-[9970]",
             position === 'left' ? "left-2 md:left-4" : "right-2 md:right-4",
-            isOpen && "w-[calc(100%_-_1rem)] md:w-80",
+            isOpen && "w-[calc(100%_-_1rem)] md:w-80 xl:w-100",
             "duration-400 group",
             "px-4 py-4",
             "md:px-8 md:py-8",
