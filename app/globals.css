@@ -306,7 +306,7 @@ a {
 	);
 	animation: scroll-fill ease-in-out both;
 	animation-timeline: view();
-	animation-range: entry 20% entry 200%;
+	animation-range: entry 0% entry 200%;
 }
 
 @keyframes scroll-fill {

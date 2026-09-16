@@ -1,16 +1,18 @@
+import { StringPerLocale } from "./globalTypes"
+
 type MediaInfoText = {
     type: 'title' | 'paragraph',
-    content: string
+    content: StringPerLocale
 }
 
 type MediaInfoList = {
     type: 'list',
-    content: string[]
+    content: StringPerLocale[]
 }
 
 export type MediaInfoItem = MediaInfoText | MediaInfoList
 
-type MediaInfo = {
+export type MediaInfo = {
     position: 'left' | 'right',
     items: MediaInfoItem[]
 } | null

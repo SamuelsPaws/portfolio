@@ -15,6 +15,7 @@
         "otherProjects": "Otros Proyectos",
         "about": "Quiénes Somos",
         "aboutMe": "Sobre Mí",
+        "viewGallery": "Ver Galería",
         "fortalesSlogan": "Impulsando el crecimiento de tu negocio, un sitio web a la vez.",
         "navigation": "Navegación",
         "allRights": "Todos los derechos reservados",
@@ -84,6 +85,8 @@
         "contactPhone": "Contáctame por Teléfono"
     },
     "FortHome": {
+        "fullPortfolioCta": "Ver portafolio completo",
+        "caseStudyCta": "Ver el caso de estudio",
         "h1-1": "Construimos la",
         "h1-2": "infraestructura digital",
         "h1-3": "de tu negocio.",
@@ -235,6 +238,11 @@
         "a4": "Revisaremos tu mensaje, haremos las preguntas necesarias y, si podemos ayudarte, te enviaremos una propuesta clara con el alcance, los plazos y el precio."
     },
     "FortPortfolio": {
+        "h2Challenge": "El reto",
+        "h2Goals": "Lo que queríamos mejorar",
+        "h2Solution": "La solución",
+        "relatedProjects": "Descubre otros proyectos destacados",
+        "seeLiveSite": "Visitar sitio",
         "heroBrow": "PROYECTOS DESTACADOS",
         "h1": "Sitios web que dan resultados.",
         "heroCopy": "Una selección de sitios web y experiencias digitales pensados para fortalecer la imagen de tu empresa, facilitar su día a día y ayudarte a crecer con confianza.",
@@ -335,6 +343,73 @@
         "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
+        "FortPortfolioSlug": {
+            "IlaloHotel": {
+                "title": "Sitio web de Ilaló Garden Hotel | Caso de éxito Fortales",
+                "description": "Conoce la renovación web de Ilaló Garden Hotel: carga rápida, contenido en español e inglés, gestión autónoma y un proceso de reserva más claro.",
+                "keywords": [
+                    "diseño web para hoteles",
+                    "sitio web hotel boutique",
+                    "web hotel multilingüe",
+                    "CMS para hoteles",
+                    "Fortales"
+                ],
+                "category": "Desarrollo web",
+                "ogTitle": "Ilaló Garden Hotel | Una web más rápida para el hotel",
+                "ogDescription": "Un sitio de hotel boutique renovado con foco en rendimiento, contenido multilingüe y la información que los huéspedes necesitan antes de reservar.",
+                "twitterTitle": "Ilaló Garden Hotel | Una web más rápida para el hotel",
+                "twitterDescription": "Un sitio de hotel boutique renovado con foco en rendimiento, contenido multilingüe y la información que los huéspedes necesitan antes de reservar."
+            },
+            "Hivissual": {
+                "title": "Portafolio web de Hivissual | Proyecto Fortales",
+                "description": "Descubre el portafolio de Hivissual: galerías dinámicas, contenido que el estudio puede actualizar y un cotizador interactivo para sus servicios.",
+                "keywords": [
+                    "sitio web estudio creativo",
+                    "portafolio de fotografía",
+                    "web producción audiovisual",
+                    "cotizador interactivo",
+                    "Fortales"
+                ],
+                "category": "Desarrollo web",
+                "ogTitle": "Hivissual | Un portafolio a la altura de su trabajo",
+                "ogDescription": "Fotografía y video como protagonistas de un portafolio rápido, con gestión autónoma y cotizaciones según los servicios elegidos.",
+                "twitterTitle": "Hivissual | Un portafolio a la altura de su trabajo",
+                "twitterDescription": "Fotografía y video como protagonistas de un portafolio rápido, con gestión autónoma y cotizaciones según los servicios elegidos."
+            },
+            "PlasmaVidaCenter": {
+                "title": "Sitio web de Plasma Vida Center | Proyecto Fortales",
+                "description": "Explora la web de Plasma Vida Center: catálogo de tratamientos con filtros, páginas de enfermería, gestión de contenido y consultas por WhatsApp.",
+                "keywords": [
+                    "diseño web salud",
+                    "sitio web centro de bienestar",
+                    "catálogo de tratamientos",
+                    "consultas por WhatsApp",
+                    "Fortales"
+                ],
+                "category": "Desarrollo web",
+                "ogTitle": "Plasma Vida Center | Servicios claros, consultas sencillas",
+                "ogDescription": "Un sitio de salud y bienestar que organiza tratamientos y servicios de enfermería y facilita el contacto con el equipo.",
+                "twitterTitle": "Plasma Vida Center | Servicios claros, consultas sencillas",
+                "twitterDescription": "Un sitio de salud y bienestar que organiza tratamientos y servicios de enfermería y facilita el contacto con el equipo."
+            }
+        },
+        "FortPortfolio": {
+            "title": "Portafolio de diseño y desarrollo web | Fortales",
+            "description": "Descubre sitios web de Fortales para hoteles, estudios creativos y centros de salud. Conoce nuestro trabajo en rendimiento, integración de CMS y SEO técnico.",
+            "keywords": [
+                "portafolio de diseño web",
+                "proyectos de desarrollo web",
+                "sitios web para empresas",
+                "integración de CMS",
+                "SEO técnico",
+                "Fortales"
+            ],
+            "category": "Desarrollo web",
+            "ogTitle": "Sitios web para empresas | Portafolio Fortales",
+            "ogDescription": "Explora nuestros proyectos para hoteles, estudios creativos y centros de salud: diseño cuidado, navegación rápida y contenido fácil de gestionar.",
+            "twitterTitle": "Sitios web para empresas | Portafolio Fortales",
+            "twitterDescription": "Descubre proyectos de Fortales que combinan diseño, rendimiento y herramientas prácticas para cada negocio."
+        },
         "Home": {
             "title": "Samuel Baquero | Desarrollador Frontend",
             "description": "Portafolio de Samuel Baquero, desarrollador frontend especializado en Next.js, React, TypeScript y Tailwind CSS. Descubre proyectos comerciales enfocados en rendimiento, SEO, accesibilidad y una experiencia de usuario cuidadosamente diseñada.",

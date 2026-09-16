@@ -1,4 +1,8 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+import organization from "@/data/fortales/organization";
+import { availableLocales } from "@/data/locales";
+import getLangAlternates from "@/lib/utils/getLangAlternates";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import FortSectionSt from "@/components/FortSectionSt";
@@ -12,10 +16,10 @@ import HighlightItem from "../components/project-card/subcomponents/HighlightIte
 import CenteredP from "@/components/ui-reusables/CenteredP";
 import GoalItem from "./components/GoalItem";
 import CenterH2 from "@/components/CenterH2";
-import SimpleH3 from "@/components/SimpleH3";
-import Gallery from "@/components/gallery/Gallery";
-import { showcaseGalleries } from "@/data/galleries";
 import SolutionCard from "./components/SolutionCard";
+import SimpleH2 from "@/components/SimpleH2";
+import RelatedProjectCard from "./components/RelatedProjectCard";
+import FortSectionCta from "@/components/cta-section/FortSectionCta";
 
 type Props = {
     params: Promise<{
@@ -24,11 +28,99 @@ type Props = {
     }>;
 };
 
+function getProjectMetadataNamespace(slug: string) {
+    switch (slug) {
+        case 'ilalo-hotel':
+            return 'IlaloHotel';
+        case 'hivissual':
+            return 'Hivissual';
+        case 'plasma-vida-center':
+            return 'PlasmaVidaCenter';
+        default:
+            notFound();
+    }
+}
+
+const BASE_URL = organization.url;
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale, slug } = await params;
+    const project = portfolio.find(project => project.slug === slug);
+    if (!project) notFound();
+
+    const namespace = getProjectMetadataNamespace(slug);
+    const t = await getTranslations({
+        locale,
+        namespace: `Metadata.FortPortfolioSlug.${namespace}`,
+    });
+
+    const canonical = `${BASE_URL}/${locale}/portfolio/${slug}`;
+
+    return {
+        metadataBase: new URL(BASE_URL),
+
+        title: t("title"),
+        description: t("description"),
+        
+        keywords: t.raw("keywords"),
+        applicationName: organization.name,
+        authors: [
+            {
+                name: organization.author,
+            },
+        ],
+        creator: organization.author,
+        publisher: organization.author,
+        alternates: {
+            canonical,
+            languages: getLangAlternates(`/portfolio/${slug}`, BASE_URL),
+        },
+
+        openGraph: {
+            title: t("ogTitle"),
+            description: t("ogDescription"),
+            url: canonical,
+            siteName: organization.name,
+            locale: availableLocales[locale],
+            type: "website",
+            images: [
+                {
+                    url: project.ogImage,
+                    alt: project.imgAlt[locale],
+                },
+            ],
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: t("twitterTitle"),
+            description: t("twitterDescription"),
+            images: [project.ogImage],
+        },
+
+        category: t('category'),
+
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+                "max-video-preview": -1,
+            },
+        },
+  };
+}
+
 export default async function PortfolioProjectPage({ params }: Props) {
     const { locale, slug } = await params;
     const project = portfolio.find(project => project.slug === slug);
 
     if (!project) notFound();
+
+    const relatedProjects = portfolio.filter(project => project.slug !== slug);
 
     const t = await getTranslations({ locale, namespace: 'FortPortfolio' });
 
@@ -49,6 +141,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
                         sizes="(min-width: 1024px) 50vw, 100vw"
                         className="
                             w-full aspect-[3/2] lg:aspect-auto lg:h-140
+                            bg-gray-200 dark:bg-br-gray-800
                             object-contain rounded-2xl sm:rounded-4xl shadow-img"
                     />
                 </div>
@@ -90,16 +183,22 @@ export default async function PortfolioProjectPage({ params }: Props) {
                             />
                         ))}
                     </div>
-                    <div className="max-w-full [&_a]:whitespace-normal [&_a]:text-center [&_a_span]:min-w-0 [&_svg]:shrink-0">
+                    <div className="flex gap-4">
                         <FortCtaBtn
                             href="#content"
                             label={t('caseStudyCta')}
+                        />
+                        <FortCtaBtn
+                            href={project.liveUrl}
+                            label={t('seeLiveSite')}
+                            type="secondary"
+                            external
                         />
                     </div>
                 </div>
             </section>
             <FortSectionSt
-                title="The challenge"
+                title={t('h2Challenge')}
                 bgColor="bg-secondary"
             >
                 <TargetForScroll id="content" />
@@ -107,7 +206,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
                     text={project.challengeCopy[locale]}
                 />
                 <CenterH2
-                    text="What we wanted to improve"
+                    text={t('h2Goals')}
                 />
                 <div className="
                     w-fit mx-auto
@@ -123,7 +222,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
                 </div>
             </FortSectionSt>
             <FortSectionSt
-                title="The solution"
+                title={t('h2Solution')}
                 bgColor="bg-main"
             >
                 <div className="flex flex-col gap-16">
@@ -132,15 +231,30 @@ export default async function PortfolioProjectPage({ params }: Props) {
                             key={index}
                             title={el.title[locale]}
                             copy={el.copy[locale]}
-                            media={el.gallery ? el.gallery.map(src => ({
-                                type: 'image',
-                                src: src,
-                                info: null
-                            })) : null}
+                            media={el.gallery ? el.gallery : null}
                         />
                     ))}
                 </div>
             </FortSectionSt>
+            <FortSectionSt
+                bgColor="bg-secondary"
+            >
+                <SimpleH2
+                    text={t('relatedProjects')}
+                    className="mb-8 md:mb-16 text-3xl md:text-5xl"
+                />
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 xl:gap-16">
+                    {relatedProjects.map(relatedProject => (
+                        <RelatedProjectCard
+                            key={relatedProject.slug}
+                            project={relatedProject}
+                            locale={locale}
+                            ctaLabel={t('caseStudyCta')}
+                        />
+                    ))}
+                </div>
+            </FortSectionSt>
+            <FortSectionCta bgColor="bg-main" />
         </main>
     );
 }

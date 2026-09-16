@@ -15,6 +15,7 @@
         "otherProjects": "Weitere Projekte",
         "about": "Über Uns",
         "aboutMe": "Über Mich",
+        "viewGallery": "Galerie Ansehen",
         "fortalesSlogan": "Wir unterstützen Ihr Wachstum – Website für Website.",
         "navigation": "Navigation",
         "allRights": "Alle Rechte vorbehalten",
@@ -84,6 +85,8 @@
         "contactPhone": "Telefonisch Kontaktieren"
     },
     "FortHome": {
+        "fullPortfolioCta": "Gesamtes Portfolio ansehen",
+        "caseStudyCta": "Fallstudie ansehen",
         "h1-1": "Wir entwickeln die",
         "h1-2": "digitale Infrastruktur",
         "h1-3": "Ihres Unternehmens.",
@@ -235,6 +238,11 @@
         "a4": "Wir lesen deine Nachricht, stellen die nötigen Fragen und schicken dir, wenn wir zu deinem Projekt passen, ein klares Angebot mit Leistungsumfang, Zeitplan und Kosten."
     },
     "FortPortfolio": {
+        "h2Challenge": "Die Herausforderung",
+        "h2Goals": "Was wir verbessern wollten",
+        "h2Solution": "Die Lösung",
+        "relatedProjects": "Entdecke weitere Projekte",
+        "seeLiveSite": "Website ansehen",
         "heroBrow": "AUSGEWÄHLTE PROJEKTE",
         "h1": "Websites, die etwas bewegen.",
         "heroCopy": "Eine Auswahl an Websites und digitalen Erlebnissen, die Unternehmen helfen, überzeugender aufzutreten, Abläufe zu vereinfachen und mit Zuversicht zu wachsen.",
@@ -350,6 +358,73 @@
         "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
+        "FortPortfolioSlug": {
+            "IlaloHotel": {
+                "title": "Ilaló Garden Hotel: Website-Projekt | Fortales",
+                "description": "Entdecke den neuen Webauftritt des Ilaló Garden Hotels: kurze Ladezeiten, Spanisch und Englisch, eigene Inhaltspflege und ein klarer Buchungsweg.",
+                "keywords": [
+                    "Hotel Webdesign",
+                    "Boutique-Hotel Website",
+                    "mehrsprachige Hotelwebsite",
+                    "Hotel CMS",
+                    "Fortales"
+                ],
+                "category": "Webentwicklung",
+                "ogTitle": "Ilaló Garden Hotel | Ein schnellerer Hotelauftritt",
+                "ogDescription": "Eine Boutique-Hotel-Website mit Fokus auf Performance, mehrsprachige Inhalte und die Fragen der Gäste vor der Buchung.",
+                "twitterTitle": "Ilaló Garden Hotel | Ein schnellerer Hotelauftritt",
+                "twitterDescription": "Eine Boutique-Hotel-Website mit Fokus auf Performance, mehrsprachige Inhalte und die Fragen der Gäste vor der Buchung."
+            },
+            "Hivissual": {
+                "title": "Hivissual: Portfolio-Website | Fortales",
+                "description": "Entdecke Hivissuals Portfolio: dynamische Galerien, eigenständige Inhaltspflege und ein interaktiver Kostenrechner für kreative Leistungen.",
+                "keywords": [
+                    "Kreativstudio Website",
+                    "Fotografie Portfolio",
+                    "Filmproduktion Website",
+                    "interaktiver Kostenrechner",
+                    "Fortales"
+                ],
+                "category": "Webentwicklung",
+                "ogTitle": "Hivissual | Ein Portfolio für kreative Arbeiten",
+                "ogDescription": "Foto- und Videoarbeiten im Mittelpunkt einer schnellen Website mit CMS und individuellen Kostenschätzungen.",
+                "twitterTitle": "Hivissual | Ein Portfolio für kreative Arbeiten",
+                "twitterDescription": "Foto- und Videoarbeiten im Mittelpunkt einer schnellen Website mit CMS und individuellen Kostenschätzungen."
+            },
+            "PlasmaVidaCenter": {
+                "title": "Plasma Vida Center: Website-Projekt | Fortales",
+                "description": "Entdecke die Website von Plasma Vida Center: Behandlungskatalog mit Filtern, Pflegeseiten, CMS und einfache Anfragen über WhatsApp.",
+                "keywords": [
+                    "Gesundheitswebsite",
+                    "Webdesign Gesundheitsanbieter",
+                    "Behandlungskatalog",
+                    "WhatsApp Kontakt",
+                    "Fortales"
+                ],
+                "category": "Webentwicklung",
+                "ogTitle": "Plasma Vida Center | Klare Angebote, einfacher Kontakt",
+                "ogDescription": "Eine Gesundheitswebsite, die Behandlungen und Pflegeleistungen übersichtlich darstellt und die Kontaktaufnahme erleichtert.",
+                "twitterTitle": "Plasma Vida Center | Klare Angebote, einfacher Kontakt",
+                "twitterDescription": "Eine Gesundheitswebsite, die Behandlungen und Pflegeleistungen übersichtlich darstellt und die Kontaktaufnahme erleichtert."
+            }
+        },
+        "FortPortfolio": {
+            "title": "Webdesign & Webentwicklung: Referenzen | Fortales",
+            "description": "Entdecke Websites von Fortales für Hotels, Kreativstudios und Gesundheitsanbieter. Einblicke in schnelle Ladezeiten, CMS-Integration und technisches SEO.",
+            "keywords": [
+                "Webdesign Referenzen",
+                "Webentwicklung Projekte",
+                "Unternehmenswebsites",
+                "CMS-Integration",
+                "technisches SEO",
+                "Fortales"
+            ],
+            "category": "Webentwicklung",
+            "ogTitle": "Websites für Unternehmen | Fortales Referenzen",
+            "ogDescription": "Entdecke ausgewählte Projekte für Hotels, Kreativstudios und Gesundheitsanbieter: durchdachtes Design, schnelle Websites und einfache Inhaltspflege.",
+            "twitterTitle": "Websites für Unternehmen | Fortales Referenzen",
+            "twitterDescription": "Entdecke individuelle Websites von Fortales, die Design, Performance und praktische Funktionen für Unternehmen verbinden."
+        },
         "Home": {
             "title": "Samuel Baquero | Frontend-Entwickler",
             "description": "Portfolio von Samuel Baquero, Frontend-Entwickler mit Spezialisierung auf Next.js, React, TypeScript und Tailwind CSS. Entdecken Sie kommerzielle Webprojekte mit Fokus auf Performance, SEO, Barrierefreiheit und einer durchdachten Benutzererfahrung.",

@@ -1,3 +1,5 @@
+import { portfolio } from "@/data/fortales/portfolio";
+import FeaturedPortfolioCard from "./components/FeaturedPortfolioCard";
 import PackageCard from "@/components/package-card/PackageCard";
 import Hero from "./components/Hero";
 import FortSectionSt from "@/components/FortSectionSt";
@@ -18,6 +20,7 @@ import { Metadata } from "next";
 import { availableLocales, localeCodesArray } from "@/data/locales";
 import { generateOrgSchema } from "@/lib/seo/schema";
 import JsonLd from "@/components/JsonLd";
+import CenteredP from "@/components/ui-reusables/CenteredP";
 
 type Props = {
     params: Promise<{
@@ -211,12 +214,44 @@ export default async function FortalesHome({ params }: Props) {
         >
 
         </FortSectionSt> */}
-        {/* Demo/portfolio PENDING */}
-        {/* Testimonials PENDING */}
+        {/* Portfolio */}
+        <FortSectionSt
+            title="Featured portfolio works"
+            bgColor="bg-main"
+        >
+            <CenteredP
+                text="A selection of websites and digital experiences created to solve real business needs. From stronger visibility and faster performance to smoother customer journeys."
+            />
+            <div className="
+                w-fit mx-auto
+                mb-16 md:mb-32
+                flex flex-col md:flex-row justify-center gap-8 md:gap-16 flex-wrap"
+            >
+                {portfolio.filter((project) => project.featured).map((project) => (
+                    <FeaturedPortfolioCard
+                        key={project.slug}
+                        href={`/portfolio/${project.slug}`}
+                        imgSrc={project.imgSrc}
+                        imgWidth={project.imgW}
+                        imgHeight={project.imgH}
+                        imgAlt={project.imgAlt[locale]}
+                        category={project.eyebrow[locale]}
+                        title={project.title}
+                        description={project.copy[locale]}
+                        ctaLabel={t('caseStudyCta')}
+                    />
+                ))}
+            </div>
+            <FortCtaBtn
+                href="/portfolio"
+                label={t('fullPortfolioCta')}
+                centered
+            />
+        </FortSectionSt>
         {/* Process */}
         <FortSectionSt
             title={t('h2Process')}
-            bgColor="bg-br-white dark:bg-br-black"
+            bgColor="bg-secondary"
         >
             <div className="
                 w-full
@@ -262,7 +297,7 @@ export default async function FortalesHome({ params }: Props) {
         {/* Pricing and packages */}
         <FortSectionSt
             title={t('h2Pricing')}
-            bgColor="bg-gray-200 dark:bg-br-gray-800"
+            bgColor="bg-main"
         >
             <div className="
                 w-full lg:w-fit mx-auto mb-16
@@ -302,7 +337,7 @@ export default async function FortalesHome({ params }: Props) {
             />
         </FortSectionSt>
         {/* CTA */}
-        <FortSectionCta bgColor="bg-main" />
+        <FortSectionCta bgColor="bg-secondary" />
     </main>
     )
 }

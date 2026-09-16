@@ -1,7 +1,9 @@
 import type { IconId } from '@/components/CustomIcon'
 import type { StringPerLocale } from '@/lib/types/globalTypes'
+import { Media } from '../galleryTypes';
 
 export interface PortfolioProject {
+    featured: boolean;
     slug: string;
     liveUrl: string;
     imgSrc: string;
@@ -20,7 +22,7 @@ export interface PortfolioProject {
     solution: {
         title: StringPerLocale;
         copy: StringPerLocale;
-        gallery?: string[];
+        gallery?: Media[];
     }[];
     implementations: StringPerLocale[];
     highlights: {

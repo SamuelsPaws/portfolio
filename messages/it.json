@@ -15,6 +15,7 @@
         "otherProjects": "Altri Progetti",
         "about": "Chi Siamo",
         "aboutMe": "Chi Sono",
+        "viewGallery": "Vedi Galleria",
         "fortalesSlogan": "Ti aiutiamo a crescere, un sito web alla volta.",
         "navigation": "Navigazione",
         "allRights": "Tutti i diritti riservati",
@@ -84,6 +85,8 @@
         "contactPhone": "Contattami Telefonicamente"
     },
     "FortHome": {
+        "fullPortfolioCta": "Visualizza il portfolio completo",
+        "caseStudyCta": "Leggi il caso studio",
         "h1-1": "Costruiamo",
         "h1-2": "l’infrastruttura digitale",
         "h1-3": "del tuo business.",
@@ -235,6 +238,11 @@
         "a4": "Leggeremo il tuo messaggio, faremo le domande necessarie e, se possiamo aiutarti, ti invieremo una proposta chiara con l’ambito del progetto, le tempistiche e il prezzo."
     },
     "FortPortfolio": {
+        "h2Challenge": "La sfida",
+        "h2Goals": "Cosa volevamo migliorare",
+        "h2Solution": "La soluzione",
+        "relatedProjects": "Scopri altri progetti in evidenza",
+        "seeLiveSite": "Visita il sito",
         "heroBrow": "PROGETTI SELEZIONATI",
         "h1": "Siti web che portano risultati.",
         "heroCopy": "Una selezione di siti web ed esperienze digitali pensati per valorizzare la tua attività, semplificare il lavoro quotidiano e aiutarti a crescere con fiducia.",
@@ -352,6 +360,73 @@
         "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
+        "FortPortfolioSlug": {
+            "IlaloHotel": {
+                "title": "Sito Ilaló Garden Hotel | Caso studio Fortales",
+                "description": "Scopri il nuovo sito di Ilaló Garden Hotel: caricamenti rapidi, contenuti in spagnolo e inglese, gestione autonoma e prenotazioni più semplici.",
+                "keywords": [
+                    "sito web hotel",
+                    "web design boutique hotel",
+                    "sito hotel multilingue",
+                    "CMS hotel",
+                    "Fortales"
+                ],
+                "category": "Sviluppo web",
+                "ogTitle": "Ilaló Garden Hotel | Un sito più veloce per l’hotel",
+                "ogDescription": "Un sito per boutique hotel ripensato attorno a prestazioni, contenuti multilingue e informazioni utili prima di prenotare.",
+                "twitterTitle": "Ilaló Garden Hotel | Un sito più veloce per l’hotel",
+                "twitterDescription": "Un sito per boutique hotel ripensato attorno a prestazioni, contenuti multilingue e informazioni utili prima di prenotare."
+            },
+            "Hivissual": {
+                "title": "Portfolio Hivissual | Caso studio Fortales",
+                "description": "Scopri il portfolio Hivissual: gallerie dinamiche, contenuti aggiornabili dallo studio e uno strumento interattivo per stimare i preventivi.",
+                "keywords": [
+                    "sito studio creativo",
+                    "portfolio fotografico",
+                    "sito produzione video",
+                    "preventivi interattivi",
+                    "Fortales"
+                ],
+                "category": "Sviluppo web",
+                "ogTitle": "Hivissual | Un portfolio che valorizza la creatività",
+                "ogDescription": "Foto e video al centro di un portfolio veloce, con gestione autonoma dei contenuti e stime personalizzate dei costi.",
+                "twitterTitle": "Hivissual | Un portfolio che valorizza la creatività",
+                "twitterDescription": "Foto e video al centro di un portfolio veloce, con gestione autonoma dei contenuti e stime personalizzate dei costi."
+            },
+            "PlasmaVidaCenter": {
+                "title": "Sito Plasma Vida Center | Caso studio Fortales",
+                "description": "Esplora il sito di Plasma Vida Center: catalogo trattamenti con filtri, pagine infermieristiche, gestione CMS e richieste via WhatsApp.",
+                "keywords": [
+                    "sito web sanitario",
+                    "sito centro benessere",
+                    "catalogo trattamenti",
+                    "contatto WhatsApp",
+                    "Fortales"
+                ],
+                "category": "Sviluppo web",
+                "ogTitle": "Plasma Vida Center | Servizi chiari, contatti semplici",
+                "ogDescription": "Un sito per la salute e il benessere che organizza trattamenti e servizi infermieristici e facilita il contatto con il team.",
+                "twitterTitle": "Plasma Vida Center | Servizi chiari, contatti semplici",
+                "twitterDescription": "Un sito per la salute e il benessere che organizza trattamenti e servizi infermieristici e facilita il contatto con il team."
+            }
+        },
+        "FortPortfolio": {
+            "title": "Portfolio di web design e sviluppo web | Fortales",
+            "description": "Scopri i siti Fortales per hotel, studi creativi e centri sanitari. Esplora il nostro lavoro su prestazioni, integrazione CMS e SEO tecnica.",
+            "keywords": [
+                "portfolio web design",
+                "progetti sviluppo web",
+                "siti web aziendali",
+                "integrazione CMS",
+                "SEO tecnica",
+                "Fortales"
+            ],
+            "category": "Sviluppo web",
+            "ogTitle": "Siti web per le imprese | Portfolio Fortales",
+            "ogDescription": "Esplora i nostri progetti per hotel, studi creativi e centri sanitari: design curato, navigazione veloce e contenuti facili da gestire.",
+            "twitterTitle": "Siti web per le imprese | Portfolio Fortales",
+            "twitterDescription": "Scopri i progetti Fortales: siti su misura che uniscono design, prestazioni e strumenti utili per le imprese."
+        },
         "Home": {
             "title": "Samuel Baquero | Sviluppatore Frontend",
             "description": "Portfolio di Samuel Baquero, sviluppatore frontend specializzato in Next.js, React, TypeScript e Tailwind CSS. Scopri progetti web commerciali realizzati con particolare attenzione a prestazioni, SEO, accessibilità e un'esperienza utente curata nei dettagli.",

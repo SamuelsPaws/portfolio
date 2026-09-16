@@ -87,6 +87,8 @@
         "contactPhone": "Contact Me Via Phone"
     },
     "FortHome": {
+        "fullPortfolioCta": "View full portfolio",
+        "caseStudyCta": "View case study",
         "h1-1": "We build the",
         "h1-2": "digital infrastructure",
         "h1-3": "of your business.",
@@ -238,6 +240,11 @@
         "a4": "We’ll review your message, ask any necessary questions, and, if we’re a good fit, send you a clear proposal with scope, timeline, and pricing."
     },
     "FortPortfolio": {
+        "h2Challenge": "The challenge",
+        "h2Goals": "What we wanted to improve",
+        "h2Solution": "The solution",
+        "relatedProjects": "See other featured projects",
+        "seeLiveSite": "Visit site",
         "heroBrow": "SELECTED WORK",
         "h1": "Work built to perform.",
         "heroCopy": "A selection of websites and digital experiences designed to help businesses look stronger, work better, and grow with confidence.",
@@ -338,6 +345,73 @@
         "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
+        "FortPortfolioSlug": {
+            "IlaloHotel": {
+                "title": "Ilaló Garden Hotel Website Case Study | Fortales",
+                "description": "Explore the Ilaló Garden Hotel website rebuild: fast loading, Spanish and English content, hotel-managed updates, and a clearer path to booking.",
+                "keywords": [
+                    "hotel website case study",
+                    "boutique hotel web design",
+                    "multilingual hotel website",
+                    "hotel CMS",
+                    "Fortales"
+                ],
+                "category": "Web development",
+                "ogTitle": "Ilaló Garden Hotel | A Faster Hotel Website",
+                "ogDescription": "A boutique hotel website rebuilt around performance, multilingual content, and the questions guests ask before booking.",
+                "twitterTitle": "Ilaló Garden Hotel | A Faster Hotel Website",
+                "twitterDescription": "A boutique hotel website rebuilt around performance, multilingual content, and the questions guests ask before booking."
+            },
+            "Hivissual": {
+                "title": "Hivissual Portfolio Website Case Study | Fortales",
+                "description": "See how Fortales built Hivissual’s creative portfolio with dynamic galleries, independent content updates, and an interactive quote builder.",
+                "keywords": [
+                    "creative studio website",
+                    "photography portfolio case study",
+                    "video production website",
+                    "interactive quote builder",
+                    "Fortales"
+                ],
+                "category": "Web development",
+                "ogTitle": "Hivissual | A Portfolio Built for Creative Work",
+                "ogDescription": "Photography and video take center stage in a fast portfolio website with a CMS and tailored project estimates.",
+                "twitterTitle": "Hivissual | A Portfolio Built for Creative Work",
+                "twitterDescription": "Photography and video take center stage in a fast portfolio website with a CMS and tailored project estimates."
+            },
+            "PlasmaVidaCenter": {
+                "title": "Plasma Vida Center Website Case Study | Fortales",
+                "description": "Discover Plasma Vida Center’s website: a filterable treatment catalog, dedicated nursing pages, CMS updates, and straightforward WhatsApp inquiries.",
+                "keywords": [
+                    "healthcare website case study",
+                    "wellness web design",
+                    "treatment catalog website",
+                    "WhatsApp inquiries",
+                    "Fortales"
+                ],
+                "category": "Web development",
+                "ogTitle": "Plasma Vida Center | Clearer Services, Easier Inquiries",
+                "ogDescription": "A health and wellness website that organizes treatments and nursing services and makes contacting the team simpler.",
+                "twitterTitle": "Plasma Vida Center | Clearer Services, Easier Inquiries",
+                "twitterDescription": "A health and wellness website that organizes treatments and nursing services and makes contacting the team simpler."
+            }
+        },
+        "FortPortfolio": {
+            "title": "Web Design & Development Portfolio | Fortales",
+            "description": "Explore websites built by Fortales for hospitality, creative studios, and healthcare. See our approach to fast performance, CMS integration, and technical SEO.",
+            "keywords": [
+                "web design portfolio",
+                "web development projects",
+                "business websites",
+                "CMS integration",
+                "technical SEO",
+                "Fortales"
+            ],
+            "category": "Web development",
+            "ogTitle": "Websites Built for Business | Fortales Portfolio",
+            "ogDescription": "Discover selected projects for hotels, creative studios, and healthcare providers, with thoughtful design, fast browsing, and easy content management.",
+            "twitterTitle": "Websites Built for Business | Fortales Portfolio",
+            "twitterDescription": "Explore Fortales projects: custom websites combining design, performance, and practical tools for businesses."
+        },
         "Home": {
             "title": "Samuel Baquero | Frontend Developer",
             "description": "Portfolio of Samuel Baquero, a frontend developer specializing in Next.js, React, TypeScript, and Tailwind CSS. Explore commercial web projects focused on performance, SEO, accessibility, and thoughtful user experience.",

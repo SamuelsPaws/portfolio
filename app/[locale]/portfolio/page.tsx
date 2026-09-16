@@ -8,11 +8,86 @@ import type { LocaleKey } from "@/lib/types/localeKey";
 import { portfolio } from "@/data/fortales/portfolio";
 import FortSectionCta from "@/components/cta-section/FortSectionCta";
 import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+import organization from "@/data/fortales/organization";
+import { availableLocales } from "@/data/locales";
+import getLangAlternates from "@/lib/utils/getLangAlternates";
 
 type Props = {
     params: Promise<{
         locale: LocaleKey
     }>
+}
+
+const BASE_URL = organization.url;
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "Metadata.FortPortfolio",
+    });
+
+    const canonical = `${BASE_URL}/${locale}/portfolio`;
+
+    return {
+        metadataBase: new URL(BASE_URL),
+
+        title: t("title"),
+        description: t("description"),
+        
+        keywords: t.raw("keywords"),
+        applicationName: organization.name,
+        authors: [
+            {
+                name: organization.author,
+            },
+        ],
+        creator: organization.author,
+        publisher: organization.author,
+        alternates: {
+            canonical,
+            languages: getLangAlternates('/portfolio', BASE_URL),
+        },
+
+        openGraph: {
+            title: t("ogTitle"),
+            description: t("ogDescription"),
+            url: canonical,
+            siteName: organization.name,
+            locale: availableLocales[locale],
+            type: "website",
+            images: [
+                {
+                    url: organization.image,
+                    width: 1200,
+                    height: 630,
+                    alt: organization.name,
+                },
+            ],
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title: t("twitterTitle"),
+            description: t("twitterDescription"),
+            images: [organization.image],
+        },
+
+        category: t('category'),
+
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+                "max-video-preview": -1,
+            },
+        },
+  };
 }
 
 export default async function Portfolio({ params }: Props) {
@@ -21,6 +96,7 @@ export default async function Portfolio({ params }: Props) {
 
     return (
     <main>
+        {/* Hero */}
         <section className="
             relative lg:min-h-170
             px-8 py-12 sm:py-16 md:px-16 lg:py-32 xl:px-32

@@ -13,7 +13,7 @@ const GoalItem = ({ iconId, text }: Props) => {
         p-8
         flex items-center gap-4
         bg-main
-        rounded-2xl border border-gray-300"
+        rounded-2xl border border-gray-300 dark:border-gray-600"
     >
         <OrangeWithIcon iconId={iconId} />
         <span className="flex-1 text-secondary text-my-md">

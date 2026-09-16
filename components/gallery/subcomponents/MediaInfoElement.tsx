@@ -1,3 +1,5 @@
+import { useLocale } from "next-intl"
+import type { LocaleKey } from "@/lib/types/localeKey"
 import { MediaInfoItem } from "@/lib/types/galleryTypes"
 
 interface Props {
@@ -5,6 +7,7 @@ interface Props {
 }
 
 const MediaInfoElement = ({ item }: Props) => {
+    const locale = useLocale() as LocaleKey
     if (item.type === 'list') {
         return (
         <ul className="flex flex-col gap-2">
@@ -13,7 +16,7 @@ const MediaInfoElement = ({ item }: Props) => {
                     key={index}
                     className="text-gray-200 text-myf-md"
                 >
-                    {el}
+                    {el[locale]}
                 </li>
             ))}
         </ul>
@@ -23,7 +26,7 @@ const MediaInfoElement = ({ item }: Props) => {
     if (item.type === 'title') {
         return (
         <h4 className="text-myf-lg text-br-white text-left font-semibold">
-            {item.content}
+            {item.content[locale]}
         </h4>
         )
     }
@@ -31,7 +34,7 @@ const MediaInfoElement = ({ item }: Props) => {
     if (item.type === 'paragraph') {
         return (
         <p className="text-myf-md text-gray-200 text-left">
-            {item.content}
+            {item.content[locale]}
         </p>
         )
     }

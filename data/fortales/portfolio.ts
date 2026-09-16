@@ -2,8 +2,9 @@ import type { PortfolioProject } from '@/lib/types/fortales/portfolio'
 
 export const portfolio: PortfolioProject[] = [
     {
+        featured: true,
         slug: 'ilalo-hotel',
-        liveUrl: '', // TODO: Add the live website URL.
+        liveUrl: 'https://hotel-ilalo.com', // TODO: Add the live website URL.
         ogImage: '/assets/ilalo-hotel.jpg',
         imgSrc: '/assets/ilalo-lifestyle.webp',
         imgW: 1536,
@@ -92,8 +93,64 @@ export const portfolio: PortfolioProject[] = [
                 it: "Il sito è stato progettato fin dall’inizio con particolare attenzione alle prestazioni. Immagini ottimizzate, lazy loading e animazioni leggere mantengono la navigazione veloce e fluida anche nelle pagine ricche di foto e contenuti.",
             },
             gallery: [
-                '/assets/galleries/ilalo-hotel/home-lh.png',
-                '/assets/galleries/ilalo-hotel/home-lcp.png',
+                {
+                    type: 'image',
+                    src: '/assets/galleries/ilalo-hotel/home-lh.png',
+                    info: {
+                        "position": "right",
+                        "items": [
+                            {
+                                "type": "title",
+                                "content": {
+                                    "en": "Strong Lighthouse results",
+                                    "es": "Excelentes resultados en Lighthouse",
+                                    "fr": "D’excellents résultats Lighthouse",
+                                    "de": "Starke Lighthouse-Ergebnisse",
+                                    "it": "Ottimi risultati Lighthouse"
+                                }
+                            },
+                            {
+                                "type": "paragraph",
+                                "content": {
+                                    "en": "The report shown records scores of 100 and above 90 across the audited categories. It provides a snapshot of the site’s technical quality in this test, reflecting the attention given to performance, accessibility, best practices, and SEO.",
+                                    "es": "El informe muestra puntuaciones de 100 y superiores a 90 en las categorías evaluadas. Es una muestra de la calidad técnica del sitio en esta prueba y del cuidado dedicado al rendimiento, la accesibilidad, las buenas prácticas y el SEO.",
+                                    "fr": "Le rapport affiche des notes de 100 et supérieures à 90 dans les catégories évaluées. Ce test donne un aperçu de la qualité technique du site et du soin apporté aux performances, à l’accessibilité, aux bonnes pratiques et au référencement.",
+                                    "de": "Der Bericht zeigt Bewertungen von 100 und über 90 in den geprüften Kategorien. Dieser Test gibt einen Einblick in die technische Qualität der Website und die Arbeit an Performance, Barrierefreiheit, Best Practices und SEO.",
+                                    "it": "Il report mostra punteggi di 100 e superiori a 90 nelle categorie analizzate. Il test offre un’istantanea della qualità tecnica del sito e dell’attenzione dedicata a prestazioni, accessibilità, buone pratiche e SEO."
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    type: 'image',
+                    src: '/assets/galleries/ilalo-hotel/home-lcp.png',
+                    info: {
+                        "position": "right",
+                        "items": [
+                            {
+                                "type": "title",
+                                "content": {
+                                    "en": "Main content, visible sooner",
+                                    "es": "El contenido principal, visible antes",
+                                    "fr": "Le contenu principal s’affiche plus vite",
+                                    "de": "Hauptinhalte schneller sichtbar",
+                                    "it": "Il contenuto principale appare prima"
+                                }
+                            },
+                            {
+                                "type": "paragraph",
+                                "content": {
+                                    "en": "The recorded Largest Contentful Paint of 0.33 seconds means the largest visible content element rendered quickly in this measurement. For a photography-rich hotel website, that helps guests see the experience sooner instead of waiting for the page to take shape.",
+                                    "es": "El Largest Contentful Paint registrado de 0,33 segundos indica que el elemento de contenido visible más grande se mostró rápidamente en esta medición. En un sitio de hotel con tantas imágenes, esto ayuda a los huéspedes a descubrir la experiencia sin esperar a que la página termine de tomar forma.",
+                                    "fr": "Le Largest Contentful Paint mesuré à 0,33 seconde indique que le plus grand élément de contenu visible s’est affiché rapidement lors de cette mesure. Pour un site hôtelier riche en photos, cela permet aux visiteurs de découvrir plus vite les lieux, sans attendre que la page prenne forme.",
+                                    "de": "Der gemessene Largest Contentful Paint von 0,33 Sekunden zeigt, dass das größte sichtbare Inhaltselement in dieser Messung schnell dargestellt wurde. Bei einer bildreichen Hotelwebsite können Gäste so früher einen Eindruck gewinnen, statt auf den Seitenaufbau zu warten.",
+                                    "it": "Il Largest Contentful Paint rilevato di 0,33 secondi indica che l’elemento di contenuto visibile più grande è apparso rapidamente in questa misurazione. In un sito alberghiero ricco di foto, gli ospiti possono così scoprire prima la struttura, senza attendere che la pagina prenda forma."
+                                }
+                            }
+                        ]
+                    }
+                },
             ]
         },
         {
@@ -111,6 +168,14 @@ export const portfolio: PortfolioProject[] = [
                 de: "Zimmer, Menüs, Galerien, Bewertungen und weitere Hotelinhalte wurden in einem flexiblen CMS strukturiert. So kann das Team die Website selbst aktuell halten, ohne Seiten neu aufzubauen oder für jede Änderung einen Entwickler zu benötigen.",
                 it: "Camere, menu, gallerie, testimonianze e altri contenuti dell’hotel sono stati organizzati in un CMS flessibile. Il team può così mantenere il sito aggiornato senza ricostruire le pagine o dipendere da uno sviluppatore per ogni modifica.",
             },
+            // TODO: Replace with screenshots of the hotel CMS.
+            gallery: [
+                {
+                    "type": "image",
+                    "src": "/assets/ilalo-lifestyle.webp",
+                    "info": null
+                }
+            ],
         },
         {
             title: {
@@ -179,11 +244,11 @@ export const portfolio: PortfolioProject[] = [
             {
                 iconId: 'speed',
                 text: {
-                    en: '0.6s LCP',
-                    es: 'LCP de 0,6 s',
-                    fr: 'LCP de 0,6 s',
-                    de: 'LCP von 0,6 s',
-                    it: 'LCP di 0,6 s'
+                    en: '0.33s LCP',
+                    es: 'LCP de 0,33 s',
+                    fr: 'LCP de 0,33 s',
+                    de: 'LCP von 0,33 s',
+                    it: 'LCP di 0,33 s'
                 }
             },
             {
@@ -199,9 +264,10 @@ export const portfolio: PortfolioProject[] = [
         ]
     },
     {
+        featured: true,
         slug: 'hivissual',
-        liveUrl: '', // TODO: Add the live website URL.
-        ogImage: '/opengraph-image.jpg', // TODO: Replace with the project's Open Graph image.
+        liveUrl: 'https://hivissual.com/',
+        ogImage: '/assets/hivissual.jpg',
         imgSrc: '/assets/hivissual-lifestyle.jpg',
         imgW: 1233,
         imgH: 965,
@@ -220,6 +286,78 @@ export const portfolio: PortfolioProject[] = [
             it: 'PRODUZIONE AUDIOVISIVA'
         },
         title: 'Hivissual',
+        // TODO: Replace gallery placeholders with screenshots of each solution.
+        solution: [
+            {
+                "title": {
+                    "en": "A portfolio that feels like the studio",
+                    "es": "Un portafolio con la identidad del estudio",
+                    "fr": "Un portfolio à l’image du studio",
+                    "de": "Ein Portfolio mit eigener Handschrift",
+                    "it": "Un portfolio che rispecchia lo studio"
+                },
+                "copy": {
+                    "en": "Typography, layout, and restrained motion bring the studio’s visual identity into the website. Dynamic project galleries put photography and video work at the center, while optimized images and selective loading keep browsing fluid.",
+                    "es": "La tipografía, la composición y las animaciones sutiles trasladan la identidad visual del estudio al sitio. Las galerías dinámicas dan protagonismo a la fotografía y al video, con imágenes optimizadas y carga selectiva para mantener una navegación fluida.",
+                    "fr": "La typographie, la mise en page et des animations discrètes traduisent l’identité visuelle du studio. Les galeries dynamiques mettent photos et vidéos au premier plan, tandis que l’optimisation des images et leur chargement sélectif préservent la fluidité.",
+                    "de": "Typografie, Layout und dezente Animationen übertragen die visuelle Identität des Studios auf die Website. Dynamische Projektgalerien stellen Foto- und Videoarbeiten in den Mittelpunkt. Optimierte Bilder und gezieltes Laden sorgen für flüssiges Browsen.",
+                    "it": "Tipografia, impaginazione e animazioni discrete portano sul sito l’identità visiva dello studio. Le gallerie dinamiche mettono al centro foto e video, mentre immagini ottimizzate e caricamento selettivo mantengono fluida la navigazione."
+                },
+                "gallery": [
+                    {
+                        "type": "image",
+                        "src": "/assets/hivissual-lifestyle.jpg",
+                        "info": null
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "Updates without developer support",
+                    "es": "Actualizaciones sin depender de un desarrollador",
+                    "fr": "Des mises à jour en autonomie",
+                    "de": "Inhalte selbstständig aktualisieren",
+                    "it": "Aggiornamenti in autonomia"
+                },
+                "copy": {
+                    "en": "Projects, testimonials, and site content are managed through a headless CMS. Structured content models and client training let the studio publish new work and keep its portfolio current without asking a developer to edit the site.",
+                    "es": "Los proyectos, testimonios y contenidos se gestionan desde un CMS headless. Los modelos de contenido y la capacitación permiten al estudio publicar nuevos trabajos y mantener su portafolio al día sin pedir cambios a un desarrollador.",
+                    "fr": "Les projets, témoignages et contenus sont gérés dans un CMS headless. Des modèles structurés et une formation permettent au studio de publier ses nouvelles réalisations et de tenir son portfolio à jour sans intervention d’un développeur.",
+                    "de": "Projekte, Kundenstimmen und Website-Inhalte werden in einem Headless CMS gepflegt. Strukturierte Inhaltsmodelle und eine Schulung ermöglichen dem Studio, neue Arbeiten ohne Unterstützung durch Entwickler zu veröffentlichen.",
+                    "it": "Progetti, testimonianze e contenuti sono gestiti tramite un CMS headless. Modelli strutturati e formazione consentono allo studio di pubblicare nuovi lavori e aggiornare il portfolio senza l’intervento di uno sviluppatore."
+                },
+                "gallery": [
+                    {
+                        "type": "image",
+                        "src": "/assets/hivissual-lifestyle.jpg",
+                        "info": null
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "From services to a tailored estimate",
+                    "es": "De los servicios a una cotización a medida",
+                    "fr": "Des services à une estimation sur mesure",
+                    "de": "Von der Leistung zur Kostenschätzung",
+                    "it": "Dai servizi a una stima su misura"
+                },
+                "copy": {
+                    "en": "An interactive quote builder lets visitors configure services and see estimated price ranges as their selections change. It gives prospective clients a clearer starting point for discussing a project with the studio.",
+                    "es": "Un cotizador interactivo permite elegir servicios y ver rangos de precios estimados según la selección. Así, los posibles clientes llegan con una idea más clara a la conversación sobre su proyecto.",
+                    "fr": "Un outil de devis interactif permet de choisir des services et de voir les fourchettes de prix estimées évoluer selon la sélection. Les futurs clients disposent ainsi d’une base plus claire pour discuter de leur projet avec le studio.",
+                    "de": "Ein interaktiver Kostenrechner zeigt geschätzte Preisspannen passend zu den ausgewählten Leistungen. So erhalten Interessenten eine klare Grundlage für das anschließende Projektgespräch mit dem Studio.",
+                    "it": "Uno strumento interattivo permette di scegliere i servizi e vedere fasce di prezzo indicative aggiornate in base alla selezione. I potenziali clienti hanno così un punto di partenza più chiaro per discutere il progetto con lo studio."
+                },
+                "gallery": [
+                    {
+                        "type": "image",
+                        "src": "/assets/hivissual-lifestyle.jpg",
+                        "info": null
+                    }
+                ]
+            }
+        ],
         goals: [
             {
                 iconId: 'pencil-ruler',
@@ -309,9 +447,10 @@ export const portfolio: PortfolioProject[] = [
         ]
     },
     {
+        featured: true,
         slug: 'plasma-vida-center',
-        liveUrl: '', // TODO: Add the live website URL.
-        ogImage: '/opengraph-image.jpg', // TODO: Replace with the project's Open Graph image.
+        liveUrl: 'https://plasmavidacenter.com/', // TODO: Add the live website URL.
+        ogImage: '/assets/plasma-vida.webp', // TODO: Replace with the project's Open Graph image.
         imgSrc: '/assets/plasma-vida-lifestyle.jpg',
         imgW: 1364,
         imgH: 1063,
@@ -330,6 +469,78 @@ export const portfolio: PortfolioProject[] = [
             it: 'SALUTE E BENESSERE'
         },
         title: 'Plasma Vida Center',
+        // TODO: Replace gallery placeholders with screenshots of each solution.
+        solution: [
+            {
+                "title": {
+                    "en": "A clearer path through the services",
+                    "es": "Servicios más fáciles de explorar",
+                    "fr": "Des services plus faciles à explorer",
+                    "de": "Leistungen übersichtlich entdecken",
+                    "it": "Servizi più facili da esplorare"
+                },
+                "copy": {
+                    "en": "IV therapy and PRP treatments are organized in a dynamic catalog with category and price filters and sorting options. Dedicated nursing pages give each service its own space, helping visitors find relevant information without mixing distinct offerings together.",
+                    "es": "La sueroterapia y los tratamientos PRP se organizan en un catálogo dinámico con filtros por categoría y precio y opciones de ordenación. Las páginas de enfermería dan a cada servicio su propio espacio para encontrar información sin confundir ofertas distintas.",
+                    "fr": "Les perfusions et traitements PRP sont organisés dans un catalogue dynamique avec filtres par catégorie et prix et options de tri. Des pages dédiées aux soins infirmiers présentent chaque service séparément pour faciliter la recherche d’informations.",
+                    "de": "Infusionstherapien und PRP-Behandlungen sind in einem dynamischen Katalog mit Kategorie- und Preisfiltern sowie Sortierung organisiert. Eigene Seiten für Pflegeleistungen trennen die Angebote klar und erleichtern die Informationssuche.",
+                    "it": "Le terapie infusionali e i trattamenti PRP sono organizzati in un catalogo dinamico con filtri per categoria e prezzo e opzioni di ordinamento. Pagine dedicate ai servizi infermieristici distinguono le diverse offerte e facilitano la ricerca di informazioni."
+                },
+                "gallery": [
+                    {
+                        "type": "image",
+                        "src": "/assets/plasma-vida-lifestyle.jpg",
+                        "info": null
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "A simpler first conversation",
+                    "es": "Una primera conversación más sencilla",
+                    "fr": "Un premier échange plus simple",
+                    "de": "Einfacher ins Gespräch kommen",
+                    "it": "Un primo contatto più semplice"
+                },
+                "copy": {
+                    "en": "WhatsApp links use pre-filled messages to make starting an inquiry easier. Visitors can move from exploring a service to contacting the team without composing a message from scratch or navigating a lengthy form.",
+                    "es": "Los enlaces de WhatsApp incluyen mensajes prellenados para facilitar las consultas. Los visitantes pueden pasar de explorar un servicio a contactar al equipo sin escribir desde cero ni completar un formulario largo.",
+                    "fr": "Les liens WhatsApp proposent des messages préremplis pour faciliter les demandes. Les visiteurs passent de la découverte d’un service à un échange avec l’équipe sans rédiger leur message de zéro ni remplir un long formulaire.",
+                    "de": "WhatsApp-Links mit vorausgefüllten Nachrichten erleichtern die erste Anfrage. Besucher können nach dem Lesen eines Angebots direkt Kontakt aufnehmen, ohne eine Nachricht neu zu formulieren oder ein langes Formular auszufüllen.",
+                    "it": "I link WhatsApp includono messaggi precompilati per facilitare le richieste. Dopo aver esplorato un servizio, i visitatori possono contattare il team senza scrivere da zero o compilare un lungo modulo."
+                },
+                "gallery": [
+                    {
+                        "type": "image",
+                        "src": "/assets/plasma-vida-lifestyle.jpg",
+                        "info": null
+                    }
+                ]
+            },
+            {
+                "title": {
+                    "en": "A catalog the client can maintain",
+                    "es": "Un catálogo que el cliente puede gestionar",
+                    "fr": "Un catalogue géré en autonomie",
+                    "de": "Ein Katalog in eigener Hand",
+                    "it": "Un catalogo gestibile in autonomia"
+                },
+                "copy": {
+                    "en": "The CMS powers the treatment catalog and its dynamic pages, giving the client control over ongoing content updates. A promotional carousel brings discounted offerings into view, and handoff training helps the team maintain the site independently.",
+                    "es": "El CMS alimenta el catálogo de tratamientos y sus páginas dinámicas, para que el cliente gestione las actualizaciones. Un carrusel destaca las ofertas con descuento y la capacitación de entrega ayuda al equipo a mantener el sitio por su cuenta.",
+                    "fr": "Le CMS alimente le catalogue de soins et ses pages dynamiques pour permettre au client de mettre les contenus à jour. Un carrousel met en avant les offres à prix réduit, et une formation accompagne la prise en main du site.",
+                    "de": "Das CMS versorgt den Behandlungskatalog und seine dynamischen Seiten mit Inhalten, die der Kunde selbst aktualisieren kann. Ein Karussell hebt reduzierte Angebote hervor. Eine Schulung bei der Übergabe unterstützt die eigenständige Pflege.",
+                    "it": "Il CMS alimenta il catalogo dei trattamenti e le pagine dinamiche, permettendo al cliente di aggiornare i contenuti. Un carosello mette in evidenza le offerte scontate e la formazione alla consegna aiuta il team a gestire il sito in autonomia."
+                },
+                "gallery": [
+                    {
+                        "type": "image",
+                        "src": "/assets/plasma-vida-lifestyle.jpg",
+                        "info": null
+                    }
+                ]
+            }
+        ],
         goals: [
             {
                 iconId: 'search',
