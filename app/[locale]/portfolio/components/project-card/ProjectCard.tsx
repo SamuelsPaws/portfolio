@@ -82,7 +82,7 @@ const ProjectCard = (props: Props) => {
                     />
                 ))}
             </div>
-            <div className="w-full h-[1px] mb-6 sm:mb-8 bg-gray-400" />
+            <div className="w-full h-[1px] mb-6 sm:mb-8 bg-gray-300" />
             <div className="
                 mb-6 sm:mb-8
                 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6"

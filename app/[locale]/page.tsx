@@ -227,7 +227,7 @@ export default async function FortalesHome({ params }: Props) {
             />
             <div className="
                 w-fit mx-auto
-                mb-16 md:mb-32
+                mb-8 md:mb-32
                 flex flex-col md:flex-row justify-center gap-8 md:gap-16 flex-wrap"
             >
                 {portfolio.filter((project) => project.featured).map((project) => (

@@ -186,7 +186,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
                             />
                         ))}
                     </div>
-                    <div className="flex gap-4">
+                    <div className="flex flex-col md:flex-row gap-4">
                         <FortCtaBtn
                             href="#content"
                             label={t('caseStudyCta')}
@@ -228,7 +228,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
                 title={t('h2Solution')}
                 bgColor="bg-main"
             >
-                <div className="flex flex-col gap-16">
+                <div className="flex flex-col gap-8 md:gap-16">
                     {project.solution.map((el, index) => (
                         <SolutionCard
                             key={index}

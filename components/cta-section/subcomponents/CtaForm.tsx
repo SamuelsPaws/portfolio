@@ -109,10 +109,10 @@ const CtaForm = () => {
         onSubmit={handleSubmit}
         className="
             w-full md:w-[90%] max-w-180
-            px-8 py-8 md:p-8
+            px-4 py-4 md:p-8
             grid grid-cols-2 items-end gap-4 md:gap-8
             bg-main
-            border border-gray-300 rounded-4xl shadow-img-sm"
+            border border-gray-300 rounded-2xl md:rounded-4xl shadow-img-sm"
     >
         <FormInput
             label={t('formName')}

@@ -1,3 +1,5 @@
+import CustomIcon from "@/components/CustomIcon";
+
 interface Props {
     onClick: () => void;
 }
@@ -9,14 +11,12 @@ const XBtn = ({ onClick }: Props) => {
         className="
             fixed z-[9980]
             left-6 top-6
-            lg:left-8 lg:top-8"
+            md:left-8 md:top-8
+            flex justify-center items-center
+            text-br-white text-3xl md:text-4xl"
     >
-        <img
-            src="/assets/x.svg"
-            className="
-                w-4 h-4
-                lg:w-6 lg:h-6
-                opacity-90"
+        <CustomIcon
+            iconId="x"
         />
     </button>
     )

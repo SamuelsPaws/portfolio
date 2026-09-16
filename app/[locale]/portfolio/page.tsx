@@ -14,6 +14,7 @@ import { availableLocales } from "@/data/locales";
 import getLangAlternates from "@/lib/utils/getLangAlternates";
 import { generateBreadcrumbSchema } from "@/lib/seo/schema";
 import { getBreadcrumbs } from "@/data/breadcrumbs";
+import JsonLd from "@/components/JsonLd";
 
 type Props = {
     params: Promise<{
@@ -100,10 +101,11 @@ export default async function Portfolio({ params }: Props) {
 
     return (
     <main>
+        <JsonLd data={breadcrumbSchema} />
         {/* Hero */}
         <section className="
             relative lg:min-h-170
-            px-8 py-12 sm:py-16 md:px-16 lg:py-32 xl:px-32
+            px-8 py-24 md:px-16 md:py-32 xl:px-32
             flex flex-col lg:flex-row items-center gap-8 md:gap-12 xl:gap-16
             bg-main"
         >
@@ -111,7 +113,7 @@ export default async function Portfolio({ params }: Props) {
             <div className="w-full min-w-0 lg:w-1/2 wrap-break-word">
                 <Eyebrow text={t('heroBrow')} />
                 <h1 className="
-                    mb-6 md:mb-8
+                    mb-4 md:mb-8
                     text-4xl sm:text-5xl xl:text-7xl leading-tight text-main font-['Source_Serif_4']"
                 >
                     {t('h1')}

@@ -21,14 +21,14 @@ const IdealForCard = ({ imgSrc, title, description, alt }: Props) => {
         whileInView="visible"
         viewport={{ once: true, margin: '-32px 0px' }}
     >
-        <div className="w-full h-50 md:h-70">
+        <div className="w-full h-40 md:h-70">
             <img
                 src={imgSrc}
                 className="w-full h-full object-contain"
                 alt={alt}
             />
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2 md:gap-4">
             <h3 className="text-br-gray-600 dark:text-gray-300 text-my-lg text-center font-semibold leading-8">
                 {title}
             </h3>
