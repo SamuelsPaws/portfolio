@@ -25,7 +25,10 @@ const MediaInfoElement = ({ item }: Props) => {
 
     if (item.type === 'title') {
         return (
-        <h4 className="text-myf-lg text-br-white text-left font-semibold">
+        <h4 className="
+            mb-2
+            text-myf-lg text-br-white text-left font-semibold"
+        >
             {item.content[locale]}
         </h4>
         )

@@ -1,3 +1,4 @@
+import JsonLd from "@/components/JsonLd";
 import Image from "next/image";
 import type { Metadata } from "next";
 import organization from "@/data/fortales/organization";
@@ -20,7 +21,7 @@ import SolutionCard from "./components/SolutionCard";
 import SimpleH2 from "@/components/SimpleH2";
 import RelatedProjectCard from "./components/RelatedProjectCard";
 import FortSectionCta from "@/components/cta-section/FortSectionCta";
-import { generateBreadcrumbSchema } from "@/lib/seo/schema";
+import { generateBreadcrumbSchema, generatePortfolioProjectSchema } from "@/lib/seo/schema";
 import { getBreadcrumbs } from "@/data/breadcrumbs";
 
 type Props = {
@@ -122,12 +123,17 @@ export default async function PortfolioProjectPage({ params }: Props) {
 
     if (!project) notFound();
 
+    const projectSchema = generatePortfolioProjectSchema(locale, project)
+    const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)[`portfolio/${slug}`], organization.url, locale)
+
     const relatedProjects = portfolio.filter(project => project.slug !== slug);
 
     const t = await getTranslations({ locale, namespace: 'FortPortfolio' });
 
     return (
         <main className="pt-header-height">
+            <JsonLd data={projectSchema} />
+            <JsonLd data={breadcrumbSchema} />
             <section className="
                 px-8 py-12 sm:py-16 md:px-16 lg:py-24 xl:px-32
                 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16

@@ -10,13 +10,14 @@ const XBtn = ({ onClick }: Props) => {
         onClick={onClick}
         className="
             fixed z-[9980]
-            left-6 top-6
+            left-4 top-4
             md:left-8 md:top-8
             flex justify-center items-center
             text-br-white text-3xl md:text-4xl"
     >
         <CustomIcon
             iconId="x"
+            className="opacity-70"
         />
     </button>
     )

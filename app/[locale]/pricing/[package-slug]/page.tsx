@@ -1,3 +1,7 @@
+import JsonLd from "@/components/JsonLd";
+import { generateBreadcrumbSchema, generatePricingPackageSchema } from "@/lib/seo/schema";
+import { getBreadcrumbs } from "@/data/breadcrumbs";
+import { notFound } from "next/navigation";
 import FortSectionSt from "@/components/FortSectionSt"
 import SimpleH2 from "@/components/SimpleH2"
 import { myPackages } from "@/data/fortales/packages"
@@ -36,7 +40,7 @@ function getPackageNamespace(packageSlug: string): 'Starter' | 'Premium' {
         case 'premium':
             return 'Premium';
         default:
-            return 'Starter';
+            notFound();
     }
 }
 
@@ -54,9 +58,9 @@ export async function generateMetadata({ params }: {
 
     const langNamespace = getPackageNamespace(packageSlug)
 
-    const t = await getTranslations(`Metadata.FortPackageSlug.${langNamespace}`);
+    const t = await getTranslations({ locale, namespace: `Metadata.FortPackageSlug.${langNamespace}` });
 
-    const canonical = `${BASE_URL}/${locale}/about`;
+    const canonical = `${BASE_URL}/${locale}/pricing/${packageSlug}`;
 
     return {
         metadataBase: new URL(BASE_URL),
@@ -75,7 +79,7 @@ export async function generateMetadata({ params }: {
         publisher: organization.author,
         alternates: {
             canonical,
-            languages: getLangAlternates('/about'),
+            languages: getLangAlternates(`/pricing/${packageSlug}`, BASE_URL),
         },
 
         openGraph: {
@@ -118,13 +122,16 @@ export async function generateMetadata({ params }: {
   };
 }
 
-export default async function ({ params }: Props) {
+export default async function PricingPackagePage({ params }: Props) {
     const resolved = await params
     const slug = resolved["package-slug"]
     const locale = resolved.locale
     const t = await getTranslations('FortPackageSlug')
 
+    if (!Object.hasOwn(myPackages, slug)) notFound()
     const myPackage = myPackages[slug]
+    const packageSchema = generatePricingPackageSchema(locale, myPackage)
+    const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)[`pricing/${slug}`], organization.url, locale)
     const availableAddOns = addOns.filter(el => !(el.includedIn as readonly string[]).includes(slug))
 
     const getFeaturesFromOther = () => {
@@ -145,6 +152,8 @@ export default async function ({ params }: Props) {
 
     return (
     <main>
+        <JsonLd data={packageSchema} />
+        <JsonLd data={breadcrumbSchema} />
         <section className="
             px-8 pt-24 pb-16
             md:px-32 md:py-32

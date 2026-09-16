@@ -15,17 +15,18 @@ const LightboxInfo = ({ position, items, isOpen, onClick }: Props) => {
     <button
         onClick={onClick}
         className={clsx(
-            "absolute bottom-4 z-[9970]",
-            position === 'left' ? "left-4" : "right-4",
-            isOpen && "w-80",
+            "absolute bottom-2 md:bottom-4 z-[9970]",
+            position === 'left' ? "left-2 md:left-4" : "right-2 md:right-4",
+            isOpen && "w-[calc(100%_-_1rem)] md:w-80",
             "duration-400 group",
-            "px-8 py-8",
+            "px-4 py-4",
+            "md:px-8 md:py-8",
             "flex flex-col gap-4",
             "bg-black/85",
             "text-white",
             "border border-[#fff5] md:hover:border-gray-200 rounded-xl"
     )}>
-        <div className="flex items-center gap-2 text-xl">
+        <div className="flex items-center gap-2 text-my-lg">
             <CustomIcon
                 iconId="info-o"
             />
@@ -33,19 +34,22 @@ const LightboxInfo = ({ position, items, isOpen, onClick }: Props) => {
                 Comments
             </h3>
         </div>
-        {isOpen && <div className={clsx(
-            "grid transition-[grid-template-rows] duration-400 ease-out",
-            isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-        )}>
-            <div className={clsx("overflow-hidden")}>
-                {items.map((el, index) => (
-                    <MediaInfoElement
-                        key={index}
-                        item={el}
-                    />
-                ))}
+        {isOpen && (
+            <div className={clsx(
+                "grid transition-[grid-template-rows] duration-400 ease-out",
+                isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+            )}>
+                <div className={clsx("mt-2 overflow-hidden")}>
+                    {items.map((el, index) => (
+                        <MediaInfoElement
+                            key={index}
+                            item={el}
+                        />
+                    ))}
+                </div>
             </div>
-        </div>}
+
+        )}
         {/* Button icon */}
         {isOpen && (
             <div className="

@@ -97,7 +97,7 @@ export const portfolio: PortfolioProject[] = [
                     type: 'image',
                     src: '/assets/galleries/ilalo-hotel/home-lh.png',
                     info: {
-                        "position": "right",
+                        "position": "left",
                         "items": [
                             {
                                 "type": "title",
@@ -126,7 +126,7 @@ export const portfolio: PortfolioProject[] = [
                     type: 'image',
                     src: '/assets/galleries/ilalo-hotel/home-lcp.png',
                     info: {
-                        "position": "right",
+                        "position": "left",
                         "items": [
                             {
                                 "type": "title",

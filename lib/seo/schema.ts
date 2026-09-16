@@ -1,3 +1,5 @@
+import { portfolio } from '@/data/fortales/portfolio'
+import type { PortfolioProject } from '@/lib/types/fortales/portfolio'
 import organization from '@/data/fortales/organization'
 import type { LocaleKey } from '@/lib/types/localeKey'
 import { myPackages } from '@/data/fortales/packages'
@@ -201,6 +203,200 @@ export async function generatePricingSchema(locale: LocaleKey): Promise<JsonLdOb
             },
             catalog
         ]
+    }) as JsonLdObject
+}
+
+export async function generateAboutSchema(locale: LocaleKey): Promise<JsonLdObject> {
+    const [metadata, about] = await Promise.all([
+        getTranslations({ locale, namespace: 'Metadata.FortAbout' }),
+        getTranslations({ locale, namespace: 'FortAbout' }),
+    ])
+    const url = new URL(`/${locale}/about`, organization.url).href
+    const organizationNode = { ...generateOrgSchema(locale) }
+    delete organizationNode['@context']
+    const provider = { '@id': organizationNode['@id'] }
+
+    return omitEmpty({
+        '@context': 'https://schema.org',
+        '@graph': [
+            organizationNode,
+            {
+                '@type': 'AboutPage',
+                '@id': `${url}#webpage`,
+                url,
+                name: metadata('title'),
+                description: metadata('description'),
+                inLanguage: availableLocales[locale],
+                publisher: provider,
+                about: provider,
+                mainEntity: provider,
+                hasPart: { '@id': `${url}#faq` },
+            },
+            {
+                '@type': 'FAQPage',
+                '@id': `${url}#faq`,
+                name: about('h2Faq'),
+                inLanguage: availableLocales[locale],
+                isPartOf: { '@id': `${url}#webpage` },
+                publisher: provider,
+                // Keep these aligned with the nine FAQ cards on the About page.
+                mainEntity: Array.from({ length: 9 }, (_, index) => ({
+                    '@type': 'Question',
+                    name: about(`q${index + 1}`),
+                    acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: about(`a${index + 1}`),
+                    },
+                })),
+            },
+        ],
+    }) as JsonLdObject
+}
+
+export async function generatePortfolioSchema(locale: LocaleKey): Promise<JsonLdObject> {
+    const metadata = await getTranslations({ locale, namespace: 'Metadata.FortPortfolio' })
+    const url = new URL(`/${locale}/portfolio`, organization.url).href
+    const organizationNode = { ...generateOrgSchema(locale) }
+    delete organizationNode['@context']
+    const provider = { '@id': organizationNode['@id'] }
+
+    return omitEmpty({
+        '@context': 'https://schema.org',
+        '@graph': [
+            organizationNode,
+            {
+                '@type': 'CollectionPage',
+                '@id': `${url}#webpage`,
+                url,
+                name: metadata('title'),
+                description: metadata('description'),
+                inLanguage: availableLocales[locale],
+                publisher: provider,
+                mainEntity: { '@id': `${url}#projects` },
+            },
+            {
+                '@type': 'ItemList',
+                '@id': `${url}#projects`,
+                numberOfItems: portfolio.length,
+                itemListElement: portfolio.map((project, index) => ({
+                    '@type': 'ListItem',
+                    position: index + 1,
+                    item: {
+                        '@type': 'CreativeWork',
+                        '@id': `${url}/${project.slug}#project`,
+                        url: `${url}/${project.slug}`,
+                        name: project.title,
+                        description: project.copy[locale],
+                        image: new URL(project.imgSrc, organization.url).href,
+                        creator: provider,
+                    },
+                })),
+            },
+        ],
+    }) as JsonLdObject
+}
+
+export function generatePortfolioProjectSchema(
+    locale: LocaleKey,
+    project: PortfolioProject,
+): JsonLdObject {
+    const url = new URL(`/${locale}/portfolio/${project.slug}`, organization.url).href
+    const organizationNode = { ...generateOrgSchema(locale) }
+    delete organizationNode['@context']
+    const provider = { '@id': organizationNode['@id'] }
+    const image = {
+        '@type': 'ImageObject',
+        url: new URL(project.ogImage, organization.url).href,
+        caption: project.imgAlt[locale],
+    }
+
+    return omitEmpty({
+        '@context': 'https://schema.org',
+        '@graph': [
+            organizationNode,
+            {
+                '@type': 'WebPage',
+                '@id': `${url}#webpage`,
+                url,
+                name: project.title,
+                description: project.copy[locale],
+                inLanguage: availableLocales[locale],
+                publisher: provider,
+                primaryImageOfPage: image,
+                mainEntity: { '@id': `${url}#project` },
+                relatedLink: project.liveUrl,
+            },
+            {
+                '@type': 'CreativeWork',
+                '@id': `${url}#project`,
+                url,
+                name: project.title,
+                description: project.copy[locale],
+                inLanguage: availableLocales[locale],
+                creator: provider,
+                mainEntityOfPage: { '@id': `${url}#webpage` },
+                image,
+                text: [
+                    project.challengeCopy[locale],
+                    ...project.goals.map(goal => goal.text[locale]),
+                    ...project.solution.map(solution => `${solution.title[locale]}\n${solution.copy[locale]}`),
+                ].join('\n\n'),
+            },
+        ],
+    }) as JsonLdObject
+}
+
+export function generatePricingPackageSchema(
+    locale: LocaleKey,
+    pkg: (typeof myPackages)[keyof typeof myPackages],
+): JsonLdObject {
+    const url = new URL(`/${locale}/pricing/${pkg.slug}`, organization.url).href
+    const organizationNode = { ...generateOrgSchema(locale) }
+    delete organizationNode['@context']
+    const provider = { '@id': organizationNode['@id'] }
+
+    return omitEmpty({
+        '@context': 'https://schema.org',
+        '@graph': [
+            organizationNode,
+            {
+                '@type': 'WebPage',
+                '@id': `${url}#webpage`,
+                url,
+                name: pkg.title[locale],
+                description: pkg.description[locale],
+                inLanguage: availableLocales[locale],
+                publisher: provider,
+                mainEntity: { '@id': `${url}#service` },
+            },
+            {
+                '@type': 'Service',
+                '@id': `${url}#service`,
+                url,
+                name: pkg.title[locale],
+                description: pkg.description[locale],
+                provider,
+                mainEntityOfPage: { '@id': `${url}#webpage` },
+                offers: { '@id': `${url}#offer` },
+            },
+            {
+                '@type': 'Offer',
+                '@id': `${url}#offer`,
+                url,
+                name: pkg.title[locale],
+                description: pkg.description[locale],
+                price: pkg.price / 100,
+                priceCurrency: 'USD',
+                priceSpecification: {
+                    '@type': 'PriceSpecification',
+                    price: pkg.price / 100,
+                    priceCurrency: 'USD',
+                    description: pkg.paymentFrequency[locale],
+                },
+                seller: provider,
+                itemOffered: { '@id': `${url}#service` },
+            },
+        ],
     }) as JsonLdObject
 }
 

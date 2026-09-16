@@ -12,7 +12,7 @@ import type { Metadata } from "next";
 import organization from "@/data/fortales/organization";
 import { availableLocales } from "@/data/locales";
 import getLangAlternates from "@/lib/utils/getLangAlternates";
-import { generateBreadcrumbSchema } from "@/lib/seo/schema";
+import { generateBreadcrumbSchema, generatePortfolioSchema } from "@/lib/seo/schema";
 import { getBreadcrumbs } from "@/data/breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 
@@ -97,11 +97,13 @@ export default async function Portfolio({ params }: Props) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'FortPortfolio' })
     
+    const pageSchema = await generatePortfolioSchema(locale)
     const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['portfolio'], organization.url, locale)
 
     return (
     <main>
         <JsonLd data={breadcrumbSchema} />
+        <JsonLd data={pageSchema} />
         {/* Hero */}
         <section className="
             relative lg:min-h-170
