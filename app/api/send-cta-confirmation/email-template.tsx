@@ -1,16 +1,26 @@
 import organization from "@/data/fortales/organization";
 import { availableLocales } from "@/data/locales";
 import type { LocaleKey } from "@/lib/types/localeKey";
-import type { getTranslations } from "next-intl/server";
 
-interface Props {
-    name: string;
-    locale: LocaleKey;
-    t: Awaited<ReturnType<typeof getTranslations>>;
+export interface ConfirmationEmailCopy {
+    preview: string;
+    heading: string;
+    greeting: string;
+    intro: string;
+    nextHeading: string;
+    nextCopy: string;
+    replyCopy: string;
+    signOff: string;
+    tagline: string;
+    whatsapp: string;
 }
 
-export default function EmailTemplate({ name, locale, t }: Props) {
-    const phone = organization.phone.replace(/^(\+593)(\d{2})(\d{3})(\d{4})$/, '$1 $2 $3 $4');
+interface Props {
+    locale: LocaleKey;
+    copy: ConfirmationEmailCopy;
+}
+
+export default function EmailTemplate({ locale, copy }: Props) {
     const linkStyle = { color: '#b74716', textDecoration: 'underline' };
 
     return (
@@ -32,7 +42,7 @@ export default function EmailTemplate({ name, locale, t }: Props) {
                 <div
                     style={{ display: 'none', maxHeight: 0, overflow: 'hidden', opacity: 0 }}
                 >
-                    {t('preview')}
+                    {copy.preview}
                 </div>
                 <table
                     role="presentation"
@@ -73,37 +83,37 @@ export default function EmailTemplate({ name, locale, t }: Props) {
                                                 <h1
                                                     style={{ margin: '0 0 24px', fontFamily: 'Georgia, serif', fontSize: 28, lineHeight: '36px' }}
                                                 >
-                                                    {t('heading')}
+                                                    {copy.heading}
                                                 </h1>
                                                 <p
                                                     style={{ margin: '0 0 16px' }}
                                                 >
-                                                    {t('greeting', { name })}
+                                                    {copy.greeting}
                                                 </p>
                                                 <p
                                                     style={{ margin: '0 0 24px' }}
                                                 >
-                                                    {t('intro')}
+                                                    {copy.intro}
                                                 </p>
                                                 <h2
                                                     style={{ margin: '0 0 8px', fontSize: 18 }}
                                                 >
-                                                    {t('nextHeading')}
+                                                    {copy.nextHeading}
                                                 </h2>
                                                 <p
                                                     style={{ margin: '0 0 20px' }}
                                                 >
-                                                    {t('nextCopy')}
+                                                    {copy.nextCopy}
                                                 </p>
                                                 <p
                                                     style={{ margin: '0 0 28px' }}
                                                 >
-                                                    {t('replyCopy')}
+                                                    {copy.replyCopy}
                                                 </p>
                                                 <p
                                                     style={{ margin: '0 0 16px' }}
                                                 >
-                                                    {t('signOff')}
+                                                    {copy.signOff}
                                                 </p>
                                                 <div
                                                     style={{ borderTop: '1px solid #eeeae4', paddingTop: 20, fontStyle: 'italic' }}
@@ -116,7 +126,7 @@ export default function EmailTemplate({ name, locale, t }: Props) {
                                                     <p
                                                         style={{ margin: '0 0 16px', color: '#555555' }}
                                                     >
-                                                        {t('tagline')}
+                                                        {copy.tagline}
                                                     </p>
                                                     <p
                                                         style={{ margin: 0, overflowWrap: 'anywhere' }}
@@ -139,7 +149,7 @@ export default function EmailTemplate({ name, locale, t }: Props) {
                                                             href={`https://wa.me/${organization.phone.replace(/\D/g, '')}`}
                                                             style={linkStyle}
                                                         >
-                                                            {t('whatsapp', { phone })}
+                                                            {copy.whatsapp}
                                                         </a>
                                                     </p>
                                                 </div>

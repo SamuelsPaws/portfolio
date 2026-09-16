@@ -4,6 +4,7 @@
         "flagAlt": "Drapeau de la France"
     },
     "Reusable": {
+        "portfolio": "Réalisations",
         "home": "Accueil",
         "contact": "Contact",
         "prices": "Tarifs",
@@ -232,6 +233,14 @@
         "a3": "Nous répondons généralement sous 24 heures les jours ouvrés.",
         "q4": "Que se passe-t-il après vous avoir contactés ?",
         "a4": "Nous examinerons votre message, poserons les questions nécessaires et, si nous pouvons répondre à vos besoins, vous enverrons une proposition claire précisant le périmètre, le calendrier et le tarif."
+    },
+    "FortPortfolio": {
+        "heroBrow": "NOS RÉALISATIONS",
+        "h1": "Des sites web qui font la différence.",
+        "heroCopy": "Une sélection de sites web et d’expériences numériques conçus pour valoriser votre entreprise, simplifier son quotidien et accompagner sa croissance.",
+        "exploreCta": "Découvrez nos réalisations",
+        "h2Projects": "Nos projets à la une",
+        "caseStudyCta": "Découvrir le projet"
     },
     "FortAbout": {
         "heroBrow": "À propos de Fortales",

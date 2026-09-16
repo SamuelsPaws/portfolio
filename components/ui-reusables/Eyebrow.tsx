@@ -1,13 +1,19 @@
+import clsx from "clsx";
+
 interface Props {
     text: string;
+    desat?: boolean;
+    wide?: boolean;
 }
 
-const Eyebrow = ({ text }: Props) => {
+const Eyebrow = ({ text, desat = false, wide = false }: Props) => {
     return (
-    <span className="
-        block mb-4
-        text-my-md text-br-orange-main font-semibold"
-    >
+    <span className={clsx(
+        "block mb-4",
+        "text-my-md font-semibold",
+        desat ? "text-br-orange-main-desat" : "text-br-orange-main",
+        wide ? "tracking-wider" : "tracking-normal"
+    )}>
         {text}
     </span>
     )

@@ -4,6 +4,7 @@
         "flagAlt": "Flag of the USA"
     },
     "Reusable": {
+        "portfolio": "Portfolio",
         "home": "Home",
         "contact": "Contact",
         "prices": "Prices",
@@ -235,6 +236,14 @@
         "a3": "We usually reply within 24 hours on business days.",
         "q4": "What happens after I contact you?",
         "a4": "We’ll review your message, ask any necessary questions, and, if we’re a good fit, send you a clear proposal with scope, timeline, and pricing."
+    },
+    "FortPortfolio": {
+        "heroBrow": "SELECTED WORK",
+        "h1": "Work built to perform.",
+        "heroCopy": "A selection of websites and digital experiences designed to help businesses look stronger, work better, and grow with confidence.",
+        "exploreCta": "Explore our work",
+        "h2Projects": "Our featured projects",
+        "caseStudyCta": "View case study"
     },
     "FortAbout": {
         "heroBrow": "About Fortales",

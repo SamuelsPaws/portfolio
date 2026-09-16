@@ -9,7 +9,7 @@ interface Props {
 const FortSectionSt = ({ title, bgColor, children }: Props) => {
     return (
     <section className={clsx(
-        "px-8 py-16",
+        "px-8 py-16 relative",
         "md:px-16 md:py-32",
         "xl:px-32 xl:py-32",
         bgColor,

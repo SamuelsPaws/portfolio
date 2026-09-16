@@ -4,6 +4,7 @@
         "flagAlt": "Bandiera dell'Italia"
     },
     "Reusable": {
+        "portfolio": "Portfolio",
         "home": "Home",
         "contact": "Contatto",
         "prices": "Prezzi",
@@ -232,6 +233,14 @@
         "a3": "Di solito rispondiamo entro 24 ore nei giorni lavorativi.",
         "q4": "Cosa succede dopo che vi contatto?",
         "a4": "Leggeremo il tuo messaggio, faremo le domande necessarie e, se possiamo aiutarti, ti invieremo una proposta chiara con l’ambito del progetto, le tempistiche e il prezzo."
+    },
+    "FortPortfolio": {
+        "heroBrow": "PROGETTI SELEZIONATI",
+        "h1": "Siti web che portano risultati.",
+        "heroCopy": "Una selezione di siti web ed esperienze digitali pensati per valorizzare la tua attività, semplificare il lavoro quotidiano e aiutarti a crescere con fiducia.",
+        "exploreCta": "Esplora i nostri progetti",
+        "h2Projects": "I nostri progetti in evidenza",
+        "caseStudyCta": "Scopri il progetto"
     },
     "FortAbout": {
         "heroBrow": "Chi siamo",

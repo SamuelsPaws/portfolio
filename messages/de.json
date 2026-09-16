@@ -4,6 +4,7 @@
         "flagAlt": "Flagge Deutschlands"
     },
     "Reusable": {
+        "portfolio": "Referenzen",
         "home": "Startseite",
         "contact": "Kontakt",
         "prices": "Preise",
@@ -232,6 +233,14 @@
         "a3": "Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen.",
         "q4": "Was passiert, nachdem ich euch kontaktiert habe?",
         "a4": "Wir lesen deine Nachricht, stellen die nötigen Fragen und schicken dir, wenn wir zu deinem Projekt passen, ein klares Angebot mit Leistungsumfang, Zeitplan und Kosten."
+    },
+    "FortPortfolio": {
+        "heroBrow": "AUSGEWÄHLTE PROJEKTE",
+        "h1": "Websites, die etwas bewegen.",
+        "heroCopy": "Eine Auswahl an Websites und digitalen Erlebnissen, die Unternehmen helfen, überzeugender aufzutreten, Abläufe zu vereinfachen und mit Zuversicht zu wachsen.",
+        "exploreCta": "Entdecke unsere Projekte",
+        "h2Projects": "Unsere ausgewählten Projekte",
+        "caseStudyCta": "Projekt im Detail ansehen"
     },
     "FortAbout": {
         "heroBrow": "Über Fortales",

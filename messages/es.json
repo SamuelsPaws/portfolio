@@ -4,6 +4,7 @@
         "flagAlt": "Bandera de España"
     },
     "Reusable": {
+        "portfolio": "Portafolio",
         "home": "Inicio",
         "contact": "Contacto",
         "prices": "Precios",
@@ -232,6 +233,14 @@
         "a3": "Normalmente respondemos en un plazo de 24 horas en días laborables.",
         "q4": "¿Qué pasa después de contactarlos?",
         "a4": "Revisaremos tu mensaje, haremos las preguntas necesarias y, si podemos ayudarte, te enviaremos una propuesta clara con el alcance, los plazos y el precio."
+    },
+    "FortPortfolio": {
+        "heroBrow": "PROYECTOS DESTACADOS",
+        "h1": "Sitios web que dan resultados.",
+        "heroCopy": "Una selección de sitios web y experiencias digitales pensados para fortalecer la imagen de tu empresa, facilitar su día a día y ayudarte a crecer con confianza.",
+        "exploreCta": "Explora nuestros proyectos",
+        "h2Projects": "Nuestros proyectos destacados",
+        "caseStudyCta": "Ver el proyecto en detalle"
     },
     "FortAbout": {
         "heroBrow": "Sobre Fortales",

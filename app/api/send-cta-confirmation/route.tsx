@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 import { CtaFormSubmission } from '@/lib/types/emailTemplates';
-import EmailTemplate from './email-template';
+import EmailTemplate, { type ConfirmationEmailCopy } from './email-template';
 import { hasLocale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
@@ -19,7 +19,20 @@ export async function POST(req: Request) {
         const body: CtaFormSubmission & { locale?: string } = await req.json()
         const locale = hasLocale(routing.locales, body.locale) ? body.locale : routing.defaultLocale;
         const t = await getTranslations({ locale, namespace: 'CtaConfirmationEmail' });
-        const html = await renderConfirmation({ name: body.name, locale, t });
+        const phone = organization.phone.replace(/^(\+593)(\d{2})(\d{3})(\d{4})$/, '$1 $2 $3 $4');
+        const copy: ConfirmationEmailCopy = {
+            preview: t('preview'),
+            heading: t('heading'),
+            greeting: t('greeting', { name: body.name }),
+            intro: t('intro'),
+            nextHeading: t('nextHeading'),
+            nextCopy: t('nextCopy'),
+            replyCopy: t('replyCopy'),
+            signOff: t('signOff'),
+            tagline: t('tagline'),
+            whatsapp: t('whatsapp', { phone })
+        };
+        const html = await renderConfirmation({ locale, copy });
         
         const { data, error } = await resend.emails.send({
             from: 'Fortales Automatic <automatic@fortal.es>',

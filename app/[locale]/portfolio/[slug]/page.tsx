@@ -1,0 +1,146 @@
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { getTranslations } from "next-intl/server";
+import FortSectionSt from "@/components/FortSectionSt";
+import TargetForScroll from "@/components/TargetForScroll";
+import Eyebrow from "@/components/ui-reusables/Eyebrow";
+import FortCtaBtn from "@/components/ui-reusables/FortCtaBtn";
+import { portfolio } from "@/data/fortales/portfolio";
+import type { LocaleKey } from "@/lib/types/localeKey";
+import ImplementationItem from "../components/project-card/subcomponents/ImplementationItem";
+import HighlightItem from "../components/project-card/subcomponents/HighlightItem";
+import CenteredP from "@/components/ui-reusables/CenteredP";
+import GoalItem from "./components/GoalItem";
+import CenterH2 from "@/components/CenterH2";
+import SimpleH3 from "@/components/SimpleH3";
+import Gallery from "@/components/gallery/Gallery";
+import { showcaseGalleries } from "@/data/galleries";
+import SolutionCard from "./components/SolutionCard";
+
+type Props = {
+    params: Promise<{
+        locale: LocaleKey;
+        slug: string;
+    }>;
+};
+
+export default async function PortfolioProjectPage({ params }: Props) {
+    const { locale, slug } = await params;
+    const project = portfolio.find(project => project.slug === slug);
+
+    if (!project) notFound();
+
+    const t = await getTranslations({ locale, namespace: 'FortPortfolio' });
+
+    return (
+        <main className="pt-header-height">
+            <section className="
+                px-8 py-12 sm:py-16 md:px-16 lg:py-24 xl:px-32
+                flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16
+                bg-main"
+            >
+                {/* Left div */}
+                <div className="w-full min-w-0 lg:w-1/2">
+                    <Image
+                        src={project.ogImage}
+                        width={project.imgW}
+                        height={project.imgH}
+                        alt={project.imgAlt[locale]}
+                        sizes="(min-width: 1024px) 50vw, 100vw"
+                        className="
+                            w-full aspect-[3/2] lg:aspect-auto lg:h-140
+                            object-contain rounded-2xl sm:rounded-4xl shadow-img"
+                    />
+                </div>
+                {/* Right div */}
+                <div className="w-full min-w-0 lg:flex-1 wrap-break-word">
+                    <Eyebrow
+                        text={project.eyebrow[locale]}
+                        desat
+                        wide
+                    />
+                    <h1 className="
+                        mb-6
+                        text-4xl sm:text-5xl xl:text-7xl leading-tight
+                        text-main font-['Source_Serif_4']"
+                    >
+                        {project.title}
+                    </h1>
+                    <p className="mb-6 sm:mb-8 text-my-md text-secondary leading-relaxed">
+                        {project.copy[locale]}
+                    </p>
+                    <div className="mb-6 sm:mb-8 flex flex-wrap gap-2 sm:gap-4">
+                        {project.implementations.map((implementation, index) => (
+                            <ImplementationItem
+                                key={index}
+                                text={implementation[locale]}
+                            />
+                        ))}
+                    </div>
+                    <div className="
+                        mb-8 pt-6
+                        grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6
+                        border-t border-gray-300"
+                    >
+                        {project.highlights.map(highlight => (
+                            <HighlightItem
+                                key={`${highlight.iconId}-${highlight.text[locale]}`}
+                                iconId={highlight.iconId}
+                                text={highlight.text[locale]}
+                            />
+                        ))}
+                    </div>
+                    <div className="max-w-full [&_a]:whitespace-normal [&_a]:text-center [&_a_span]:min-w-0 [&_svg]:shrink-0">
+                        <FortCtaBtn
+                            href="#content"
+                            label={t('caseStudyCta')}
+                        />
+                    </div>
+                </div>
+            </section>
+            <FortSectionSt
+                title="The challenge"
+                bgColor="bg-secondary"
+            >
+                <TargetForScroll id="content" />
+                <CenteredP
+                    text={project.challengeCopy[locale]}
+                />
+                <CenterH2
+                    text="What we wanted to improve"
+                />
+                <div className="
+                    w-fit mx-auto
+                    flex flex-col gap-4"
+                >
+                    {project.goals.map((goal, index) => (
+                        <GoalItem
+                            key={`${goal.iconId}-${index}`}
+                            iconId={goal.iconId}
+                            text={goal.text[locale]}
+                        />
+                    ))}
+                </div>
+            </FortSectionSt>
+            <FortSectionSt
+                title="The solution"
+                bgColor="bg-main"
+            >
+                <div className="flex flex-col gap-16">
+                    {project.solution.map((el, index) => (
+                        <SolutionCard
+                            key={index}
+                            title={el.title[locale]}
+                            copy={el.copy[locale]}
+                            media={el.gallery ? el.gallery.map(src => ({
+                                type: 'image',
+                                src: src,
+                                info: null
+                            })) : null}
+                        />
+                    ))}
+                </div>
+            </FortSectionSt>
+        </main>
+    );
+}

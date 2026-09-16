@@ -44,6 +44,12 @@ export const navLinksFort = [
         dropdown: null
     },
     {
+        labelKey: 'portfolio',
+        href: '/portfolio',
+        external: false,
+        dropdown: null
+    },
+    {
         labelKey: 'about',
         href: '/about',
         external: false,
