@@ -1,6 +1,69 @@
 import FormTemplate, { type FormInputDefinition } from "@/components/form-template/FormTemplate";
 import FortSectionSt from "@/components/FortSectionSt";
+import organization from "@/data/fortales/organization";
+import { availableLocales } from "@/data/locales";
+import type { LocaleKey } from "@/lib/types/localeKey";
+import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+
+const BASE_URL = organization.url;
+
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: LocaleKey }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale,
+        namespace: "Metadata.DiscoveryForm",
+    });
+    const canonical = `${BASE_URL}/${locale}/discovery-form`;
+
+    return {
+        metadataBase: new URL(BASE_URL),
+        title: t("title"),
+        description: t("description"),
+        applicationName: organization.name,
+        authors: [{ name: organization.author }],
+        creator: organization.author,
+        publisher: organization.author,
+        alternates: { canonical },
+        openGraph: {
+            title: t("ogTitle"),
+            description: t("ogDescription"),
+            url: canonical,
+            siteName: organization.name,
+            locale: availableLocales[locale],
+            type: "website",
+            images: [
+                {
+                    url: organization.image,
+                    width: 1200,
+                    height: 630,
+                    alt: organization.name,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: t("twitterTitle"),
+            description: t("twitterDescription"),
+            images: [organization.image],
+        },
+        robots: {
+            index: false,
+            follow: false,
+            nocache: true,
+            googleBot: {
+                index: false,
+                follow: false,
+                noimageindex: true,
+            },
+        },
+    };
+}
 
 export default function DiscoveryForm() {
     const t = useTranslations('DiscoveryForm')

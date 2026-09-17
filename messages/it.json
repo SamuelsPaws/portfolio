@@ -405,6 +405,14 @@
         "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
+        "DiscoveryForm": {
+            "title": "Questionario per il sito web | Fortales",
+            "description": "Condividi le informazioni su attività, brand, contenuti e aspetti tecnici che servono a Fortales per preparare il tuo progetto web.",
+            "ogTitle": "Raccontaci il tuo progetto web | Fortales",
+            "ogDescription": "Compila questo questionario privato per aiutarci a comprendere la tua attività, gli obiettivi, il brand e le esigenze del sito.",
+            "twitterTitle": "Questionario per il sito web | Fortales",
+            "twitterDescription": "Raccontaci la tua attività, gli obiettivi, il brand e le esigenze del sito prima di iniziare il progetto."
+        },
         "FortPortfolioSlug": {
             "IlaloHotel": {
                 "title": "Sito Ilaló Garden Hotel | Caso studio Fortales",

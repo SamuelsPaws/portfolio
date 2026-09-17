@@ -388,6 +388,14 @@
         "whatsapp": "WhatsApp : {phone}"
     },
     "Metadata": {
+        "DiscoveryForm": {
+            "title": "Formulaire de découverte de site web | Fortales",
+            "description": "Partagez les informations sur votre activité, votre marque, vos contenus et vos besoins techniques pour préparer votre projet web.",
+            "ogTitle": "Parlez-nous de votre projet web | Fortales",
+            "ogDescription": "Remplissez ce formulaire privé pour nous aider à comprendre votre activité, vos objectifs, votre marque et vos besoins web.",
+            "twitterTitle": "Formulaire de découverte de site web | Fortales",
+            "twitterDescription": "Présentez-nous votre activité, vos objectifs, votre marque et vos besoins web avant le début du projet."
+        },
         "FortPortfolioSlug": {
             "IlaloHotel": {
                 "title": "Site d’Ilaló Garden Hotel | Étude de cas Fortales",

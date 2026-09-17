@@ -403,6 +403,14 @@
         "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
+        "DiscoveryForm": {
+            "title": "Website-Briefing | Fortales",
+            "description": "Teilen Sie die geschäftlichen, gestalterischen, inhaltlichen und technischen Details, die Fortales für Ihr Website-Projekt benötigt.",
+            "ogTitle": "Erzählen Sie uns von Ihrem Website-Projekt | Fortales",
+            "ogDescription": "Füllen Sie dieses private Briefing aus, damit wir Ihr Unternehmen, Ihre Ziele, Ihre Marke und Ihre Website-Anforderungen verstehen.",
+            "twitterTitle": "Website-Briefing | Fortales",
+            "twitterDescription": "Informieren Sie uns vor Projektbeginn über Ihr Unternehmen, Ihre Ziele, Ihre Marke und Ihre Website-Anforderungen."
+        },
         "FortPortfolioSlug": {
             "IlaloHotel": {
                 "title": "Ilaló Garden Hotel: Website-Projekt | Fortales",

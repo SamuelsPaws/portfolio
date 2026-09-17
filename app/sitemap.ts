@@ -8,6 +8,7 @@ import getLangAlternates from '@/lib/utils/getLangAlternates'
 import type { MetadataRoute } from 'next'
 
 const BASE_URL = organization.url
+const EXCLUDED_ROUTES = new Set(['/discovery-form'])
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const routes = new Set([
@@ -16,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...portfolio.map(project => `/portfolio/${project.slug}`),
     ])
 
-    return Array.from(routes).flatMap(route => {
+    return Array.from(routes).filter(route => !EXCLUDED_ROUTES.has(route)).flatMap(route => {
         const path = route === '/' ? '' : route
         const languages = getLangAlternates(path, BASE_URL)
 
