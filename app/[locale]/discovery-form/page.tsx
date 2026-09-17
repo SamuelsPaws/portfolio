@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         namespace: "Metadata.DiscoveryForm",
     });
     const canonical = `${BASE_URL}/${locale}/discovery-form`;
-    const ogImage = '/assets/og/discovery-es.jpg'
+    const ogImage = `/assets/og/discovery-${locale}.jpg`
 
     return {
         metadataBase: new URL(BASE_URL),

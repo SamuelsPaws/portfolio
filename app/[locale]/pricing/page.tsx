@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
     });
 
     const canonical = `${BASE_URL}/${locale}/pricing`;
+    const ogImage = `/assets/og/pricing-${locale}.jpg`
 
     return {
         metadataBase: new URL(BASE_URL),
@@ -62,7 +63,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
             type: "website",
             images: [
                 {
-                    url: organization.image,
+                    url: ogImage,
                     width: 1200,
                     height: 630,
                     alt: organization.name,
@@ -74,7 +75,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
             card: "summary_large_image",
             title: t("twitterTitle"),
             description: t("twitterDescription"),
-            images: [organization.image],
+            images: [ogImage],
         },
 
         category: t('category'),
