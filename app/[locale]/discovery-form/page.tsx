@@ -7,13 +7,15 @@ import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
+type Props = {
+    params: Promise<{
+        locale: LocaleKey
+    }>
+}
+
 const BASE_URL = organization.url;
 
-export async function generateMetadata({
-    params,
-}: {
-    params: Promise<{ locale: LocaleKey }>;
-}): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({
         locale,
@@ -39,7 +41,7 @@ export async function generateMetadata({
             type: "website",
             images: [
                 {
-                    url: organization.image,
+                    url: `/${locale}/discovery-form/opengraph-image.jpg`,
                     width: 1200,
                     height: 630,
                     alt: organization.name,
@@ -198,7 +200,10 @@ export default function DiscoveryForm() {
                 w-full md:w-1/2
                 flex flex-col gap-4 md:gap-8"
             >
-                <h1 className="text-4xl md:text-6xl text-main font-['Source_Serif_4'] leading-16">
+                <h1 className="
+                    text-4xl md:text-6xl text-main
+                    font-['Source_Serif_4'] leading-10 md:leading-16"
+                >
                     {t('h1')}
                 </h1>
                 <p className="text-my-md text-secondary">
@@ -212,12 +217,12 @@ export default function DiscoveryForm() {
             >
                 <img
                     src="/assets/fortales-logo.svg"
-                    className="w-16 md:w-25"
+                    className="w-12 md:w-25"
                     alt="Logo de Fortales"
                 />
                 <img
                     src="/assets/fortales-text.svg"
-                    className="w-40 md:w-70 -translate-x-0"
+                    className="w-30 md:w-70 -translate-x-0"
                     alt="Logo de Fortales"
                 />
             </div>
