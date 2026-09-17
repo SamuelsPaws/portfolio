@@ -1,4 +1,7 @@
+"use client";
 import CustomIcon, { IconId } from "@/components/CustomIcon";
+import { stepCardHover, stepCardReveal } from "@/lib/motion-variants/stepCardMotion";
+import { motion, useReducedMotion } from "motion/react";
 
 interface Props {
     iconId: IconId;
@@ -9,13 +12,22 @@ interface Props {
 }
 
 const StepCard = ({ iconId, num, title, copy, iconCn }: Props) => {
+    const reducedMotion = useReducedMotion() ?? false;
+
     return (
-    <div className="
-        w-full md:w-100
-        p-8
-        flex flex-col
-        bg-br-white dark:bg-br-gray-800
-        border border-gray-300 rounded-4xl shadow-img-sm"
+    <motion.article
+        className="
+            w-full md:w-100
+            p-8
+            flex flex-col
+            bg-br-white dark:bg-br-gray-800
+            border border-gray-300 rounded-4xl"
+        variants={stepCardReveal}
+        custom={reducedMotion}
+        initial="hidden"
+        whileInView="visible"
+        whileHover={reducedMotion ? undefined : stepCardHover}
+        viewport={{ once: true, amount: 0.3 }}
     >
         {/* Upper part */}
         <div className="
@@ -49,7 +61,7 @@ const StepCard = ({ iconId, num, title, copy, iconCn }: Props) => {
         <p className="text-secondary text-my-md">
             {copy}
         </p>
-    </div>
+    </motion.article>
     )
 }
 

@@ -129,17 +129,22 @@ export default async function About({ params }: Props) {
                     <h1 className="
                         mb-4 md:mb-8
                         text-most-h2 text-main
-                        font-['Source_Serif_4'] leading-10 md:leading-16"
+                        font-['Source_Serif_4'] leading-10 md:leading-16
+                        opacity-0 animate-fade-in-right-600"
                     >
                         {t('h1')}
                     </h1>
                     <p className="
                         mb-4
-                        text-my-md text-secondary"
+                        text-my-md text-secondary
+                        opacity-0 animate-fade-in-right-1000"
                     >
                         {t('subhead1')}
                     </p>
-                    <p className="text-my-md text-secondary">
+                    <p className="
+                        text-my-md text-secondary
+                        opacity-0 animate-fade-in-right-1200"
+                    >
                         {t('subhead2')}
                     </p>
                 </div>
@@ -152,7 +157,8 @@ export default async function About({ params }: Props) {
                         w-full md:w-1/2
                         h-80 md:h-120
                         object-cover object-top
-                        rounded-4xl shadow-img"
+                        rounded-4xl shadow-img
+                        opacity-0 animate-fade-in-left-slow"
                     alt="Foto del equipo de Fortales"
                     priority
                 />

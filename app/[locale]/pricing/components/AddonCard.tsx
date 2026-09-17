@@ -1,6 +1,9 @@
+'use client'
+import { stepCardHover, stepCardReveal } from "@/lib/motion-variants/stepCardMotion";
 import { AddOn } from "@/lib/types/fortales/addons"
 import { LocaleKey } from "@/lib/types/localeKey";
 import { formatPrice } from "@/lib/utils/formatPrice";
+import { motion, useReducedMotion } from "motion/react";
 
 interface Props {
     item: AddOn;
@@ -8,13 +11,22 @@ interface Props {
 }
 
 const AddonCard = ({ item, locale }: Props) => {
+    const reducedMotion = useReducedMotion() ?? false;
+
     return (
-    <div className="
-        w-full
-        p-8
-        flex flex-col justify-between
-        bg-br-white dark:bg-br-gray-800
-        border border-gray-300 rounded-4xl shadow-img-sm"
+    <motion.div 
+        className="
+            w-full
+            p-8
+            flex flex-col justify-between
+            bg-br-white dark:bg-br-gray-800
+            border border-gray-300 rounded-4xl"
+        variants={stepCardReveal}
+        custom={reducedMotion}
+        initial="hidden"
+        whileInView="visible"
+        whileHover={reducedMotion ? undefined : stepCardHover}
+        viewport={{ once: true, amount: 0.3 }}
     >
         <h4 className="
             mb-4
@@ -36,7 +48,7 @@ const AddonCard = ({ item, locale }: Props) => {
                 / {item.paymentDetail[locale].toLowerCase()}
             </span>
         </div>
-    </div>
+    </motion.div>
     )
 }
 

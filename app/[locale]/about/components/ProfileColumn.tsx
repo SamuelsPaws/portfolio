@@ -1,5 +1,8 @@
+'use client'
 import Image from "next/image";
 import ProfileSkillBullet from "./ProfileSkillBullet";
+import { motion } from "motion/react";
+import { smoothReveal } from "@/lib/motion-variants/smoothReveal";
 
 interface Props {
     image: {
@@ -15,12 +18,17 @@ interface Props {
 
 const ProfileColumn = ({ image, name, role, description, skills }: Props) => {
     return (
-    <div className="
-        w-full md:w-1/2
-        p-8 md:p-16
-        flex flex-col items-center gap-4 md:gap-8
-        bg-secondary
-        border border-gray-400 rounded-4xl"
+    <motion.div
+        className="
+            w-full md:w-1/2
+            p-8 md:p-16
+            flex flex-col items-center gap-4 md:gap-8
+            bg-secondary
+            border border-gray-400 rounded-4xl"
+        variants={smoothReveal}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: '-24px 0px' }}
     >
         <Image
             src={image.src}
@@ -50,7 +58,7 @@ const ProfileColumn = ({ image, name, role, description, skills }: Props) => {
                 />
             ))}
         </ul>
-    </div>
+    </motion.div>
     )
 }
 

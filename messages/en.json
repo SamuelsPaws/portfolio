@@ -29,6 +29,7 @@
         "formPhone": "Phone",
         "formCompany": "Company",
         "formNeed": "What kind of project do you need?",
+        "formProjectNeed": "What kind of project do you need?",
         "formBudget": "Budget",
         "formTimeline": "How soon do you need it?",
         "optional": "Optional",

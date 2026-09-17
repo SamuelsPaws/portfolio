@@ -38,6 +38,7 @@
 	--animate-fade-in-right-600: fade-in-right 600ms ease-out forwards;
 	--animate-fade-in-right-800: fade-in-right 600ms ease-out 200ms forwards;
 	--animate-fade-in-right-1000: fade-in-right 600ms ease-out 400ms forwards;
+	--animate-fade-in-right-1200: fade-in-right 600ms ease-out 600ms forwards;
 	--animate-fade-in-up-1200: fade-in-up 600ms ease-out 600ms forwards;
 	--animate-fade-in-left-slow: fade-in-left 1200ms ease-out forwards;
 	--animate-fade-out-200: fade-out 200ms ease-out forwards;

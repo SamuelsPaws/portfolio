@@ -23,6 +23,7 @@ import { generateBreadcrumbSchema, generateContactSchema } from "@/lib/seo/schem
 import JsonLd from "@/components/JsonLd";
 import { getBreadcrumbs } from "@/data/breadcrumbs";
 import FormTemplate, { FormFieldType } from "@/components/form-template/FormTemplate";
+import CtaSection from "./components/cta-section/CtaSection";
 
 type Props = {
     params: Promise<{
@@ -160,33 +161,37 @@ export default async function Contact({ params }: Props) {
                 <Eyebrow text={t('heroBrow')} />
                 <h1 className="
                     mb-8
-                    text-4xl md:text-5xl xl:text-6xl font-['Source_Serif_4'] leading-tight xl:leading-16"
+                    text-4xl md:text-5xl xl:text-6xl font-['Source_Serif_4'] leading-tight xl:leading-16
+                    opacity-0 animate-fade-in-right-600"
                 >
                     {t('h1')}
                 </h1>
                 <p className="
                     mb-8
-                    text-my-md text-secondary"
+                    text-my-md text-secondary
+                    opacity-0 animate-fade-in-right-800"
                 >
                     {t('heroCopy')}
                 </p>
                 {/* Bullet points */}
                 <div className="
                     w-full mb-8
-                    flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6"
+                    flex flex-col sm:flex-row sm:flex-wrap gap-4 sm:gap-6
+                    opacity-0 animate-fade-in-right-800"
                 >
                     <HeroBulletItem text={t('consultationBullet')} />
                     <HeroBulletItem text={t('quoteBullet')} />
                     <HeroBulletItem text={t('replyBullet')} />
                 </div>
                 <Image
-                    src="/assets/hero-img.jpg"
+                    src="/assets/fort-contact-hero.jpg"
                     width={1280}
                     height={720}
                     className="
                         w-full h-56 sm:h-64 lg:h-100
                         object-cover object-center
-                        rounded-4xl shadow-img"
+                        rounded-4xl shadow-img
+                        opacity-0 animate-fade-in-up-1200"
                     alt={t('heroImageAlt')}
                     priority
                 />
@@ -385,42 +390,7 @@ export default async function Contact({ params }: Props) {
                 </div>
             </div>
         </FortSectionSt>
-        <FortSectionSt
-            bgColor="bg-main"
-        >
-            <div className="
-                w-full max-w-200 mx-auto mb-4 md:mb-8
-                flex items-center justify-center gap-3 md:gap-4"
-            >
-                <div className="
-                    w-8 md:w-16 h-[1px] shrink-0
-                    bg-br-orange-main"
-                />
-                <span className="min-w-0 text-center text-my-sm md:text-my-md text-br-orange-main font-semibold">
-                    {t('ctaBrow')}
-                </span>
-                <div className="
-                    w-8 md:w-16 h-[1px] shrink-0
-                    bg-br-orange-main"
-                />
-            </div>
-            <h2 className="
-                w-full max-w-200 mx-auto mb-4 md:mb-8
-                text-4xl md:text-5xl xl:text-7xl text-center font-['Source_Serif_4'] leading-tight xl:leading-22"
-            >
-                {t('h2Cta')}
-            </h2>
-            <CenteredP
-                halfMargin
-                text={t('ctaCopy')}
-            />
-            <FortCtaBtn
-                href=""
-                label={t('conversationCta')}
-                centered
-                external
-            />
-        </FortSectionSt>
+        <CtaSection />
     </main>
     )
 }
