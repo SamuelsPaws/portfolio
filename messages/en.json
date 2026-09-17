@@ -34,7 +34,11 @@
         "optional": "Optional",
         "formSubmit": "Get my free quote",
         "requestSubmit": "Submit request",
-        "waEncodedFill": "Hi%20Fortales%21%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business.%20I%27d%20love%20to%20learn%20more%20about%20your%20services%20and%20get%20a%20quote."
+        "waEncodedFill": "Hi%20Fortales%21%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20business.%20I%27d%20love%20to%20learn%20more%20about%20your%20services%20and%20get%20a%20quote.",
+        "submitSuccessTitle": "Your request has been sent.",
+        "submitSuccessCopy": "Thank you for reaching out. We'll carefully review your project details and get back to you with a personalized proposal as soon as possible. You can now close this window.",
+        "submitErrorTitle": "Something went wrong.",
+        "submitErrorCopy": "We couldn't send your request at this time. Please try again in a moment. If the issue persists, feel free to contact us directly and we'll be happy to help."
     },
     "ProjectPage": {
         "liveLink": "Visit Live Site",
@@ -148,10 +152,6 @@
         "formSubmit": "Get my free quote",
         "preferWhatsapp": "Prefer WhatsApp?",
         "whatsappCta": "Chat with us",
-        "submitSuccessTitle": "Your request has been sent.",
-        "submitSuccessCopy": "Thank you for reaching out. We'll carefully review your project details and get back to you with a personalized proposal as soon as possible. You can now close this window.",
-        "submitErrorTitle": "Something went wrong.",
-        "submitErrorCopy": "We couldn't send your request at this time. Please try again in a moment. If the issue persists, feel free to contact us directly and we'll be happy to help.",
         "everythingIn": "Everything in"
     },
     "FortPricing": {
@@ -203,6 +203,13 @@
         "quoteBullet": "No-obligation quote",
         "replyBullet": "Reply within 24 hours",
         "heroImageAlt": "People together",
+        "formName": "Name",
+        "formEmail": "Email",
+        "formCompany": "Company",
+        "formProjectNeed": "What kind of project do you need?",
+        "formMessage": "Message",
+        "formFootnote1": "Usually replies within 24 hours.",
+        "formFootnote2": "You don't need to have everything figured out yet. We're here to help.",
         "h2WhatNext": "What happens after you reach out?",
         "whatNextCopy": "A simple process, with no pressure and no unnecessary back-and-forth.",
         "h3Step1": "We review your message",

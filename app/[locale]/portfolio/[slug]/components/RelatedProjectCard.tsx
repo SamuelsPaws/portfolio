@@ -18,7 +18,7 @@ export default function RelatedProjectCard({ project, locale, ctaLabel }: Props)
             className="
                 group min-w-0 flex h-full flex-col overflow-hidden
                 rounded-3xl border border-gray-300 bg-main
-                transition-[border-color,box-shadow] duration-200 ease-out
+                transition-[border-color,box-shadow] duration-400 ease-out
                 hover:border-br-orange-main/50 hover:shadow-lg
                 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-br-orange-main
                 motion-reduce:transition-none"

@@ -1,5 +1,5 @@
 import { Resend } from 'resend';
-import { CtaFormSubmission } from '@/lib/types/emailTemplates';
+import type { ConfirmationEmailSubmission } from '@/lib/types/emailTemplates';
 import EmailTemplate, { type ConfirmationEmailCopy } from './email-template';
 import { hasLocale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
@@ -16,7 +16,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
     try {
-        const body: CtaFormSubmission & { locale?: string } = await req.json()
+        const body: ConfirmationEmailSubmission = await req.json()
         const locale = hasLocale(routing.locales, body.locale) ? body.locale : routing.defaultLocale;
         const t = await getTranslations({ locale, namespace: 'CtaConfirmationEmail' });
         const phone = organization.phone.replace(/^(\+593)(\d{2})(\d{3})(\d{4})$/, '$1 $2 $3 $4');

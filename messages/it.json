@@ -34,7 +34,11 @@
         "optional": "Facoltativo",
         "formSubmit": "Ottieni il mio preventivo gratuito",
         "requestSubmit": "Invia la richiesta",
-        "waEncodedFill": "Ciao%20Fortales%21%20Sono%20interessato%20a%20realizzare%20un%20sito%20web%20per%20la%20mia%20attivit%C3%A0.%20Mi%20piacerebbe%20saperne%20di%20pi%C3%B9%20sui%20vostri%20servizi%20e%20ricevere%20un%20preventivo."
+        "waEncodedFill": "Ciao%20Fortales%21%20Sono%20interessato%20a%20realizzare%20un%20sito%20web%20per%20la%20mia%20attivit%C3%A0.%20Mi%20piacerebbe%20saperne%20di%20pi%C3%B9%20sui%20vostri%20servizi%20e%20ricevere%20un%20preventivo.",
+        "submitSuccessTitle": "La tua richiesta è stata inviata.",
+        "submitSuccessCopy": "Grazie per averci contattato. Esamineremo con attenzione i dettagli del tuo progetto e ti ricontatteremo al più presto con una proposta personalizzata. Ora puoi chiudere questa finestra.",
+        "submitErrorTitle": "Si è verificato un problema.",
+        "submitErrorCopy": "Non è stato possibile inviare la tua richiesta in questo momento. Ti invitiamo a riprovare tra qualche istante. Se il problema dovesse persistere, puoi contattarci direttamente e saremo felici di aiutarti."
     },
     "ProjectPage": {
         "liveLink": "Visita il Sito",
@@ -146,10 +150,6 @@
         "preferWhatsapp": "Preferisci WhatsApp?",
         "whatsappCta": "Chatta con noi",
         "optional": "Facoltativo",
-        "submitSuccessTitle": "La tua richiesta è stata inviata.",
-        "submitSuccessCopy": "Grazie per averci contattato. Esamineremo con attenzione i dettagli del tuo progetto e ti ricontatteremo al più presto con una proposta personalizzata. Ora puoi chiudere questa finestra.",
-        "submitErrorTitle": "Si è verificato un problema.",
-        "submitErrorCopy": "Non è stato possibile inviare la tua richiesta in questo momento. Ti invitiamo a riprovare tra qualche istante. Se il problema dovesse persistere, puoi contattarci direttamente e saremo felici di aiutarti.",
         "everythingIn": "Tutto ciò che include"
     },
     "FortPricing": {
@@ -201,6 +201,13 @@
         "quoteBullet": "Preventivo senza impegno",
         "replyBullet": "Risposta entro 24 ore",
         "heroImageAlt": "Persone insieme",
+        "formName": "Nome",
+        "formEmail": "Indirizzo email",
+        "formCompany": "Azienda",
+        "formProjectNeed": "Di che tipo di progetto hai bisogno?",
+        "formMessage": "Messaggio",
+        "formFootnote1": "Di solito rispondiamo entro 24 ore.",
+        "formFootnote2": "Non serve avere già tutto definito. Siamo qui per aiutarti.",
         "h2WhatNext": "Cosa succede dopo che ci contatti?",
         "whatNextCopy": "Un processo semplice, senza pressioni né scambi inutili.",
         "h3Step1": "Leggiamo il tuo messaggio",

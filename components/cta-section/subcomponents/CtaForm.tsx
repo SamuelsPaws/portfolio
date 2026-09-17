@@ -83,7 +83,7 @@ const CtaForm = () => {
                 }
                 handleSuccess()
 
-                fetch("/api/send-cta-confirmation", {
+                fetch("/api/send-confirmation", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

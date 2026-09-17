@@ -194,14 +194,14 @@ export default async function PortfolioProjectPage({ params }: Props) {
                     </div>
                     <div className="flex flex-col md:flex-row gap-4">
                         <FortCtaBtn
-                            href="#content"
-                            label={t('caseStudyCta')}
-                        />
-                        <FortCtaBtn
                             href={project.liveUrl}
                             label={t('seeLiveSite')}
-                            type="secondary"
                             external
+                        />
+                        <FortCtaBtn
+                            href="#content"
+                            label={t('caseStudyCta')}
+                            type="secondary"
                         />
                     </div>
                 </div>

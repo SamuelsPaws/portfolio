@@ -22,6 +22,7 @@ import FortCtaBtn from "@/components/ui-reusables/FortCtaBtn";
 import { generateBreadcrumbSchema, generateContactSchema } from "@/lib/seo/schema";
 import JsonLd from "@/components/JsonLd";
 import { getBreadcrumbs } from "@/data/breadcrumbs";
+import FormTemplate, { FormFieldType } from "@/components/form-template/FormTemplate";
 
 type Props = {
     params: Promise<{
@@ -110,6 +111,41 @@ export default async function Contact({ params }: Props) {
     const contactSchema = await generateContactSchema(locale)
     const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['contact'], organization.url, locale)
 
+    const heroFormFields = [
+        {
+            id: 'name',
+            label: t('formName'),
+        },
+        {
+            id: 'email',
+            label: t('formEmail'),
+            type: 'email' as FormFieldType
+        },
+        {
+            id: 'company',
+            label: t('formCompany'),
+            optional: true,
+            className: 'col-span-2'
+        },
+        {
+            id: 'projectNeed',
+            label: t('formProjectNeed'),
+            className: 'col-span-2'
+        },
+        {
+            id: 'message',
+            label: t('formMessage'),
+            type: 'textarea' as FormFieldType,
+            className: 'col-span-2',
+            optional: true,
+        },
+    ]
+
+    const heroFormEndpoints = [
+        '/api/send-contact-form',
+        '/api/send-confirmation'
+    ]
+
     return (
     <main>
         <JsonLd data={contactSchema} />
@@ -117,10 +153,10 @@ export default async function Contact({ params }: Props) {
         {/* Hero */}
         <section className="
             px-8 py-24 md:px-16 md:py-32 xl:px-32
-            flex flex-col md:flex-row gap-8 md:gap-16"
+            flex flex-col xl:flex-row gap-8 md:gap-16"
         >
             {/* Left div */}
-            <div className="w-full min-w-0 md:w-1/2">
+            <div className="w-full min-w-0 xl:w-1/2">
                 <Eyebrow text={t('heroBrow')} />
                 <h1 className="
                     mb-8
@@ -148,7 +184,7 @@ export default async function Contact({ params }: Props) {
                     width={1280}
                     height={720}
                     className="
-                        w-full h-56 sm:h-64 lg:h-80
+                        w-full h-56 sm:h-64 lg:h-100
                         object-cover object-center
                         rounded-4xl shadow-img"
                     alt={t('heroImageAlt')}
@@ -156,6 +192,26 @@ export default async function Contact({ params }: Props) {
                 />
             </div>
             {/* Right div */}
+            <div className="
+                w-full xl:w-1/2
+                flex justify-center items-start"
+            >
+                <FormTemplate
+                    fields={heroFormFields}
+                    endpoints={heroFormEndpoints}
+                    after={
+                        <div className="
+                            w-full col-span-2
+                            flex flex-col items-center gap-4 md:gap-8"
+                        >
+                            <div className="w-full h-[1px] bg-gray-300" />
+                            <p className="text-my-sm text-secondary">
+                                {t('formFootnote2')}
+                            </p>
+                        </div>
+                    }
+                />
+            </div>
         </section>
         <FortSectionSt
             title={t('h2WhatNext')}

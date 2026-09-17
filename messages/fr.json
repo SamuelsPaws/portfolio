@@ -24,7 +24,11 @@
         "freeQuoteTitle": "Obtenez un devis gratuit",
         "freeQuoteCopy": "Parlez-nous de votre projet et nous vous aiderons à trouver la solution adaptée, sans engagement et avec des conseils honnêtes.",
         "waCta": "Discutez avec nous",
-        "waEncodedFill": "Bonjour%20Fortales%20%21%20Je%20souhaite%20cr%C3%A9er%20un%20site%20web%20pour%20mon%20entreprise.%20J%27aimerais%20en%20savoir%20plus%20sur%20vos%20services%20et%20obtenir%20un%20devis."
+        "waEncodedFill": "Bonjour%20Fortales%20%21%20Je%20souhaite%20cr%C3%A9er%20un%20site%20web%20pour%20mon%20entreprise.%20J%27aimerais%20en%20savoir%20plus%20sur%20vos%20services%20et%20obtenir%20un%20devis.",
+        "submitSuccessTitle": "Votre demande a été envoyée.",
+        "submitSuccessCopy": "Merci de nous avoir contactés. Nous allons examiner attentivement les détails de votre projet et reviendrons vers vous dans les plus brefs délais avec une proposition personnalisée. Vous pouvez maintenant fermer cette fenêtre.",
+        "submitErrorTitle": "Un problème est survenu.",
+        "submitErrorCopy": "Nous n'avons pas pu envoyer votre demande pour le moment. Veuillez réessayer dans quelques instants. Si le problème persiste, n'hésitez pas à nous contacter directement, nous serons ravis de vous aider."
     },
     "ProjectPage": {
         "liveLink": "Voir le Site",
@@ -136,10 +140,6 @@
         "formSubmit": "Obtenir mon devis gratuit",
         "preferWhatsapp": "Vous préférez WhatsApp ?",
         "whatsappCta": "Discuter avec nous",
-        "submitSuccessTitle": "Votre demande a été envoyée.",
-        "submitSuccessCopy": "Merci de nous avoir contactés. Nous allons examiner attentivement les détails de votre projet et reviendrons vers vous dans les plus brefs délais avec une proposition personnalisée. Vous pouvez maintenant fermer cette fenêtre.",
-        "submitErrorTitle": "Un problème est survenu.",
-        "submitErrorCopy": "Nous n'avons pas pu envoyer votre demande pour le moment. Veuillez réessayer dans quelques instants. Si le problème persiste, n'hésitez pas à nous contacter directement, nous serons ravis de vous aider.",
         "everythingIn": "Tout ce qui est inclus dans"
     },
     "FortPricing": {
@@ -201,6 +201,13 @@
         "quoteBullet": "Devis sans engagement",
         "replyBullet": "Réponse sous 24 heures",
         "heroImageAlt": "Des personnes réunies",
+        "formName": "Nom",
+        "formEmail": "Adresse e-mail",
+        "formCompany": "Entreprise",
+        "formProjectNeed": "De quel type de projet avez-vous besoin ?",
+        "formMessage": "Message",
+        "formFootnote1": "Nous répondons généralement sous 24 heures.",
+        "formFootnote2": "Vous n’avez pas besoin d’avoir déjà tout défini. Nous sommes là pour vous aider.",
         "h2WhatNext": "Que se passe-t-il après votre prise de contact ?",
         "whatNextCopy": "Un processus simple, sans pression ni échanges inutiles.",
         "h3Step1": "Nous examinons votre message",

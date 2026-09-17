@@ -34,7 +34,11 @@
         "optional": "Optional",
         "formSubmit": "Mein kostenloses Angebot erhalten",
         "requestSubmit": "Anfrage senden",
-        "waEncodedFill": "Hallo%20Fortales%21%20Ich%20interessiere%20mich%20f%C3%BCr%20eine%20Website%20f%C3%BCr%20mein%20Unternehmen.%20Ich%20w%C3%BCrde%20gerne%20mehr%20%C3%BCber%20Ihre%20Leistungen%20erfahren%20und%20ein%20Angebot%20erhalten."
+        "waEncodedFill": "Hallo%20Fortales%21%20Ich%20interessiere%20mich%20f%C3%BCr%20eine%20Website%20f%C3%BCr%20mein%20Unternehmen.%20Ich%20w%C3%BCrde%20gerne%20mehr%20%C3%BCber%20Ihre%20Leistungen%20erfahren%20und%20ein%20Angebot%20erhalten.",
+        "submitSuccessTitle": "Ihre Anfrage wurde gesendet.",
+        "submitSuccessCopy": "Vielen Dank für Ihre Anfrage. Wir werden die Details Ihres Projekts sorgfältig prüfen und uns so bald wie möglich mit einem individuellen Angebot bei Ihnen melden. Sie können dieses Fenster nun schließen.",
+        "submitErrorTitle": "Etwas ist schiefgelaufen.",
+        "submitErrorCopy": "Ihre Anfrage konnte im Moment nicht gesendet werden. Bitte versuchen Sie es in wenigen Augenblicken erneut. Sollte das Problem weiterhin bestehen, können Sie uns jederzeit direkt kontaktieren. Wir helfen Ihnen gerne weiter."
     },
     "ProjectPage": {
         "liveLink": "Live-Website Besuchen",
@@ -146,10 +150,6 @@
         "preferWhatsapp": "Lieber per WhatsApp?",
         "whatsappCta": "Mit uns chatten",
         "optional": "Optional",
-        "submitSuccessTitle": "Ihre Anfrage wurde gesendet.",
-        "submitSuccessCopy": "Vielen Dank für Ihre Anfrage. Wir werden die Details Ihres Projekts sorgfältig prüfen und uns so bald wie möglich mit einem individuellen Angebot bei Ihnen melden. Sie können dieses Fenster nun schließen.",
-        "submitErrorTitle": "Etwas ist schiefgelaufen.",
-        "submitErrorCopy": "Ihre Anfrage konnte im Moment nicht gesendet werden. Bitte versuchen Sie es in wenigen Augenblicken erneut. Sollte das Problem weiterhin bestehen, können Sie uns jederzeit direkt kontaktieren. Wir helfen Ihnen gerne weiter.",
         "everythingIn": "Alles in"
     },
     "FortPricing": {
@@ -201,6 +201,13 @@
         "quoteBullet": "Unverbindliches Angebot",
         "replyBullet": "Antwort innerhalb von 24 Stunden",
         "heroImageAlt": "Menschen zusammen",
+        "formName": "Name",
+        "formEmail": "E-Mail-Adresse",
+        "formCompany": "Unternehmen",
+        "formProjectNeed": "Welche Art von Projekt brauchst du?",
+        "formMessage": "Nachricht",
+        "formFootnote1": "Wir antworten in der Regel innerhalb von 24 Stunden.",
+        "formFootnote2": "Du musst noch nicht alles durchdacht haben. Wir helfen dir gerne weiter.",
         "h2WhatNext": "Was passiert nach deiner Kontaktaufnahme?",
         "whatNextCopy": "Ein einfacher Ablauf, ohne Druck und ohne unnötiges Hin und Her.",
         "h3Step1": "Wir lesen deine Nachricht",
