@@ -1,10 +1,10 @@
-import FormTemplate, { FormFieldType } from "@/components/form-template/FormTemplate"
+import FormTemplate, { type FormInputDefinition } from "@/components/form-template/FormTemplate"
 import { useTranslations } from "next-intl"
 
 const CtaForm = () => {
     const t = useTranslations('Reusable')
 
-    const fields = [
+    const fields: FormInputDefinition[] = [
         {
             id: 'name',
             label: t('formName'),
@@ -12,7 +12,7 @@ const CtaForm = () => {
         {
             id: 'email',
             label: t('formEmail'),
-            type: 'email' as FormFieldType
+            type: 'email'
         },
         {
             id: 'company',
@@ -23,7 +23,7 @@ const CtaForm = () => {
         {
             id: 'projectNeed',
             label: t('formProjectNeed'),
-            type: 'textarea' as FormFieldType,
+            type: 'textarea',
             className: 'col-span-2'
         },
         {

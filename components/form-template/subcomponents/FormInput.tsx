@@ -1,97 +1,184 @@
 import clsx from "clsx";
-import { ChangeEvent } from "react";
 
-interface Props {
+export type FormFieldType = 'text' | 'email' | 'textarea' | 'number' | 'checkbox' | 'radio';
+export type FormValue = string | boolean | string[];
+
+export interface FormFieldOption {
     label: string;
-    inputId: string;
-    onChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
-    className?: string;
-    optional?: boolean;
-    type?: 'text' | 'email' | 'textarea' | 'number';
-    optionalLabel: string;
+    value: string;
 }
+
+interface BaseFormInputDefinition {
+    id: string;
+    label: string;
+    optional?: boolean;
+    className?: string;
+}
+
+export type FormInputDefinition = BaseFormInputDefinition & (
+    | {
+        type?: Exclude<FormFieldType, 'checkbox' | 'radio'>;
+        options?: never;
+    }
+    | {
+        type: 'checkbox';
+        options?: FormFieldOption[];
+    }
+    | {
+        type: 'radio';
+        options: FormFieldOption[];
+    }
+);
+
+type Props = FormInputDefinition & {
+    value: FormValue;
+    onChange: (value: FormValue) => void;
+    optionalLabel: string;
+};
 
 const FormInput = ({
     label,
-    inputId,
+    id: inputId,
+    value,
     onChange,
     className,
+    options,
     optional = false,
     type = 'text',
-    optionalLabel
+    optionalLabel,
 }: Props) => {
     const oneLineInputCn = `
         px-4 py-2
         text-myf-md text-secondary
         border border-gray-300 rounded-full
-    `
+    `;
+    const stringValue = typeof value === 'string' ? value : '';
+    const selectedOptions = Array.isArray(value) ? value : [];
 
-    const textInputComponent = (
-        <input
-            id={inputId}
-            name={inputId}
-            type="text"
-            onChange={onChange}
-            className={oneLineInputCn}
-        />
-    )
-    
-    const emailInputComponent = (
-        <input
-            id={inputId}
-            name={inputId}
-            onChange={onChange}
-            type="email"
-            className={oneLineInputCn}
-        />
-    )
-    
-    const textAreaComponent = (
-        <textarea
-            id={inputId}
-            name={inputId}
-            onChange={onChange}
-            className="
-                h-16
-                px-4 py-2
-                text-myf-md text-secondary
-                border border-gray-300 rounded-xl"
-        />
-    )
-    
-    const getInputComponent = (): React.ReactNode => {
-        switch (type) {
-            case 'text':
-                return textInputComponent;
-            case 'email':
-                return emailInputComponent;
-            case 'textarea':
-                return textAreaComponent;
-            default:
-                return textInputComponent;
-        }
-    }
-
-    return (
-    <div className={clsx(
-        "w-full",
-        "flex flex-col gap-4",
-        className
-    )}>
-        <label
-            htmlFor={inputId}
-            className="text-myf-md text-main font-semibold"
-        >
+    const labelContent = (
+        <>
             <span>{label}</span>
             {optional && (
                 <span className="text-secondary">
                     {` (${optionalLabel})`}
                 </span>
             )}
-        </label>
-        {getInputComponent()}
-    </div>
-    )
-}
+        </>
+    );
 
-export default FormInput
+    if (type === 'checkbox' && !options?.length) {
+        return (
+            <div className={clsx("w-full", className)}>
+                <label
+                    htmlFor={inputId}
+                    className="flex items-start gap-4 text-myf-md text-main font-semibold cursor-pointer"
+                >
+                    <input
+                        id={inputId}
+                        name={inputId}
+                        type="checkbox"
+                        checked={value === true}
+                        required={!optional}
+                        onChange={(event) => onChange(event.target.checked)}
+                        className="w-5 h-5 shrink-0 accent-br-orange-main cursor-pointer"
+                    />
+                    <span>{labelContent}</span>
+                </label>
+            </div>
+        );
+    }
+
+    if (type === 'checkbox' || type === 'radio') {
+        return (
+            <fieldset
+                className={clsx("w-full flex flex-col gap-4", className)}
+                aria-required={!optional}
+            >
+                <legend className="mb-4 text-myf-md text-main font-semibold">
+                    {labelContent}
+                </legend>
+                <div className="flex flex-col gap-4">
+                    {options?.map((option, index) => {
+                        const optionId = `${inputId}-${index}`;
+                        const checked = type === 'radio'
+                            ? stringValue === option.value
+                            : selectedOptions.includes(option.value);
+
+                        return (
+                            <label
+                                key={option.value}
+                                htmlFor={optionId}
+                                className="flex items-center gap-4 text-myf-md text-secondary cursor-pointer"
+                            >
+                                <input
+                                    id={optionId}
+                                    name={inputId}
+                                    type={type}
+                                    value={option.value}
+                                    checked={checked}
+                                    required={
+                                        !optional && (
+                                            type === 'radio'
+                                            || (index === 0 && selectedOptions.length === 0)
+                                        )
+                                    }
+                                    onChange={(event) => {
+                                        if (type === 'radio') {
+                                            onChange(event.target.value);
+                                            return;
+                                        }
+
+                                        onChange(
+                                            event.target.checked
+                                                ? [...selectedOptions, option.value]
+                                                : selectedOptions.filter(item => item !== option.value)
+                                        );
+                                    }}
+                                    className="w-5 h-5 shrink-0 accent-br-orange-main cursor-pointer"
+                                />
+                                <span>{option.label}</span>
+                            </label>
+                        );
+                    })}
+                </div>
+            </fieldset>
+        );
+    }
+
+    return (
+        <div className={clsx("w-full flex flex-col gap-4", className)}>
+            <label
+                htmlFor={inputId}
+                className="text-myf-md text-main font-semibold"
+            >
+                {labelContent}
+            </label>
+            {type === 'textarea' ? (
+                <textarea
+                    id={inputId}
+                    name={inputId}
+                    value={stringValue}
+                    required={!optional}
+                    onChange={(event) => onChange(event.target.value)}
+                    className="
+                        h-16
+                        px-4 py-2
+                        text-myf-md text-secondary
+                        border border-gray-300 rounded-2xl"
+                />
+            ) : (
+                <input
+                    id={inputId}
+                    name={inputId}
+                    type={type}
+                    value={stringValue}
+                    required={!optional}
+                    onChange={(event) => onChange(event.target.value)}
+                    className={oneLineInputCn}
+                />
+            )}
+        </div>
+    );
+};
+
+export default FormInput;

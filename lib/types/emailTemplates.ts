@@ -23,6 +23,36 @@ export interface ContactFormSumbission {
     message?: string;
 }
 
+export interface DiscoveryFormSubmission {
+    businessName: string;
+    businessDescription: string;
+    targetAudience: string;
+    brandTone: Array<
+        | 'professional'
+        | 'friendly'
+        | 'premium'
+        | 'bold'
+        | 'minimal'
+        | 'playful'
+    >;
+    brandColors?: string;
+    hasAssets: Array<'photography' | 'videos' | 'logo' | 'design-guide'>;
+    hasHosting: 'yes' | 'no';
+    hasDomain: 'yes' | 'no';
+    mainGoals: Array<
+        | 'credibility'
+        | 'showcase'
+        | 'sell-products'
+        | 'publish-content'
+        | 'generate-inquiries'
+        | 'bookings'
+        | 'other'
+    >;
+    contactMethods: Array<'whatsapp' | 'email' | 'phone' | 'social-media'>;
+    additional?: string;
+    locale?: string;
+}
+
 export interface PackageFormSubmission {
     name: string;
     email: string;

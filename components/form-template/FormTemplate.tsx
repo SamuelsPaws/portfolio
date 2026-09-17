@@ -2,10 +2,20 @@
 import { useLocale, useTranslations } from "next-intl"
 import CustomIcon from "@/components/CustomIcon"
 import clsx from "clsx"
-import { ChangeEvent, useState } from "react"
+import { useState } from "react"
 import SubmissionModal from "./subcomponents/SubmissionModal"
-import FormInput from "./subcomponents/FormInput"
+import FormInput, {
+    type FormInputDefinition,
+    type FormValue,
+} from "./subcomponents/FormInput"
 import { fetchEndpoint } from "@/lib/utils/fetch"
+
+export type {
+    FormFieldOption,
+    FormFieldType,
+    FormInputDefinition,
+    FormValue,
+} from "./subcomponents/FormInput"
 
 type FormState =
     | 'idle'
@@ -13,22 +23,21 @@ type FormState =
     | 'success'
     | 'error';
 
-export type FormFieldType = 'text' | 'email' | 'textarea' | 'number'
-
-interface InputDefinition {
-    id: string;
-    label: string;
-    type?: FormFieldType;
-    optional?: boolean;
-    className?: string;
-}
-
 interface Props {
     before?: React.ReactNode;
     after?: React.ReactNode;
-    fields: InputDefinition[];
+    fields: FormInputDefinition[];
     endpoints: string[];
 }
+
+const getInitialFormData = (fields: FormInputDefinition[]): Record<string, FormValue> => (
+    Object.fromEntries(fields.map(field => [
+        field.id,
+        field.type === 'checkbox'
+            ? field.options?.length ? [] : false
+            : '',
+    ]))
+)
 
 function FormTemplate({
     before,
@@ -37,22 +46,18 @@ function FormTemplate({
     endpoints
 }: Props) {
     const locale = useLocale()
-    const [formData, setFormData] = useState<{[K in typeof fields[number]['id']]: string}>(
-        Object.fromEntries(
-            fields.map(el => [el.id, ''])
-        )
+    const [formData, setFormData] = useState<Record<string, FormValue>>(
+        () => getInitialFormData(fields)
     )
     const [formState, setFormState] = useState<FormState>('idle')
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
     const [modalState, setModalState] = useState<'success' | 'error'>('success')
     const t = useTranslations('Reusable')
 
-    const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target
-
+    const handleInputChange = (name: string, value: FormValue) => {
         setFormData(prev => ({
             ...prev,
-            [name]: value
+            [name]: value,
         }))
     }
 
@@ -60,37 +65,30 @@ function FormTemplate({
         setFormState('success')
         setModalState('success')
         setIsModalOpen(true)
-        setFormData(Object.fromEntries(
-            fields.map(el => [el.id, ''])
-        ))
+        setFormData(getInitialFormData(fields))
     }
 
     const handleError = () => {
         setFormState('error')
         setModalState('error')
         setIsModalOpen(true)
-        setFormData(Object.fromEntries(
-            fields.map(el => [el.id, ''])
-        ))
+        setFormData(getInitialFormData(fields))
     }
 
     const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
         e.preventDefault()
 
-        // handle required fields
-        if (true) {
-            setFormState('processing')
+        setFormState('processing')
 
-            try {
-                await Promise.all(endpoints.map(el => (
-                    fetchEndpoint(el, { ...formData, locale })
-                ))) 
+        try {
+            await Promise.all(endpoints.map(el => (
+                fetchEndpoint(el, { ...formData, locale })
+            ))) 
 
-                handleSuccess()
-            } catch (err) {
-                console.error(err)
-                handleError()
-            }
+            handleSuccess()
+        } catch (err) {
+            console.error(err)
+            handleError()
         }
     }
 
@@ -109,19 +107,16 @@ function FormTemplate({
             px-4 py-4 md:p-8
             grid grid-cols-2 items-end gap-4 md:gap-8
             bg-main
-            border border-gray-300 rounded-4xl shadow-img-sm"
+            border border-gray-300 rounded-2xl md:rounded-4xl shadow-img-sm"
     >
         {before}
-        {fields.map((el, index) => (
+        {fields.map((el) => (
             <FormInput
-                key={index}
-                label={el.label}
-                inputId={el.id}
-                type={el.type}
-                onChange={handleInputChange}
-                optional={el.optional}
+                key={el.id}
+                {...el}
+                value={formData[el.id]}
+                onChange={(value) => handleInputChange(el.id, value)}
                 optionalLabel={t('optional')}
-                className={el.className}
             />
         ))}
         <button

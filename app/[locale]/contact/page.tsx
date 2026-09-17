@@ -22,7 +22,7 @@ import FortCtaBtn from "@/components/ui-reusables/FortCtaBtn";
 import { generateBreadcrumbSchema, generateContactSchema } from "@/lib/seo/schema";
 import JsonLd from "@/components/JsonLd";
 import { getBreadcrumbs } from "@/data/breadcrumbs";
-import FormTemplate, { FormFieldType } from "@/components/form-template/FormTemplate";
+import FormTemplate, { type FormInputDefinition } from "@/components/form-template/FormTemplate";
 import CtaSection from "./components/cta-section/CtaSection";
 
 type Props = {
@@ -112,7 +112,7 @@ export default async function Contact({ params }: Props) {
     const contactSchema = await generateContactSchema(locale)
     const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['contact'], organization.url, locale)
 
-    const heroFormFields = [
+    const heroFormFields: FormInputDefinition[] = [
         {
             id: 'name',
             label: t('formName'),
@@ -120,7 +120,7 @@ export default async function Contact({ params }: Props) {
         {
             id: 'email',
             label: t('formEmail'),
-            type: 'email' as FormFieldType
+            type: 'email'
         },
         {
             id: 'company',
@@ -136,7 +136,7 @@ export default async function Contact({ params }: Props) {
         {
             id: 'message',
             label: t('formMessage'),
-            type: 'textarea' as FormFieldType,
+            type: 'textarea',
             className: 'col-span-2',
             optional: true,
         },
