@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         namespace: "Metadata.DiscoveryForm",
     });
     const canonical = `${BASE_URL}/${locale}/discovery-form`;
+    const ogImage = '/og/discovery-es.jpg'
 
     return {
         metadataBase: new URL(BASE_URL),
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             type: "website",
             images: [
                 {
-                    url: `/${locale}/discovery-form/opengraph-image.jpg`,
+                    url: ogImage,
                     width: 1200,
                     height: 630,
                     alt: organization.name,
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             card: "summary_large_image",
             title: t("twitterTitle"),
             description: t("twitterDescription"),
-            images: [organization.image],
+            images: [ogImage],
         },
         robots: {
             index: false,
