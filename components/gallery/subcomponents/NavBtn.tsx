@@ -9,13 +9,18 @@ interface Props {
 const NavBtn = ({ onClick, direction }: Props) => {
     return (
     <button
-        onClick={onClick}
+        type="button"
+        onClick={(event) => {
+            event.stopPropagation()
+            onClick()
+        }}
+        aria-label={direction === 'prev' ? 'Previous media' : 'Next media'}
         className={clsx(
             "fixed top-1/2 -translate-y-1/2 z-[9920]",
             direction === 'prev' ? "left-0" : 'right-0',
             "h-40 w-16",
             "hidden lg:block",
-            "bg-white/40 lg:hover:bg-white/70 duration-200",
+            "bg-white/40 lg:hover:bg-white/70 duration-200 active:scale-[0.97]",
             "text-5xl text-gray-800",
             direction === 'prev' ? "rounded-r-full" : 'rounded-l-full'
         )}

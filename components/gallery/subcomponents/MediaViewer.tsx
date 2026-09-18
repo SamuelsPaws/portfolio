@@ -14,7 +14,8 @@ const MediaViewer = ({ media }: Props) => {
                 src={media.src}
                 fill
                 sizes="100%"
-                className="w-full h-full object-contain md:object-contain z-[9960]"
+                draggable={false}
+                className="w-full h-full object-contain md:object-contain z-[9960] select-none"
                 priority
                 alt="Fotografía propiedad de Ilaló Garden Hotel"
             />
@@ -28,6 +29,7 @@ const MediaViewer = ({ media }: Props) => {
                 autoPlay
                 loop
                 playsInline
+                draggable={false}
                 className="w-full h-full object-cover z-[9960]"
             ></video>
         )

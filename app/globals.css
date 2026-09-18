@@ -291,6 +291,30 @@ a {
 	clip-path: url('#down-arrow');
 }
 
+@media (prefers-reduced-transparency: reduce) {
+	.lightbox-scrim,
+	.lightbox-surface,
+	.lightbox-info-material {
+		backdrop-filter: none;
+		-webkit-backdrop-filter: none;
+	}
+
+	.lightbox-surface {
+		background-color: #1f2024;
+	}
+
+	.lightbox-info-material {
+		background-color: #020206;
+	}
+}
+
+@media (prefers-contrast: more) {
+	.lightbox-surface,
+	.lightbox-info-material {
+		border-color: #fafafa;
+	}
+}
+
 @property --scroll-fill-threshold {
   syntax: '<percentage>';
   inherits: false;
