@@ -167,7 +167,7 @@ const Footer = () => {
 						{t('freeQuoteCopy')}
 					</p>
 					<a
-						href=""
+						href={`https://wa.me/${organization.phone}?text=${t('waEncodedFill')}`}
 						className="
 							px-8 py-4
 							bg-whatsapp-400

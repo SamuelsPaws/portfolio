@@ -47,7 +47,6 @@ const SummaryForm = ({ packageSlug }: Props) => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
     const [modalState, setModalState] = useState<'success' | 'error'>('success')
     const t = useTranslations('Reusable')
-    const tH = useTranslations('FortHome')
 
     const addOnsState = useAddOnsStore((state) => state.addOns)
     const addOnsSelected = Array.from(
