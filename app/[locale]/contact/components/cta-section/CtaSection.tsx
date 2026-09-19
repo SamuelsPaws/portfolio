@@ -4,9 +4,11 @@ import FortCtaBtn from "@/components/ui-reusables/FortCtaBtn"
 import { useTranslations } from "next-intl"
 import ContactCtaH2 from "./subcomponents/ContactCtaH2"
 import ContactCtaBrow from "./subcomponents/ContactCtaBrow"
+import organization from "@/data/fortales/organization"
 
 const CtaSection = () => {
     const t = useTranslations('FortContact')
+    const tR = useTranslations('Reusable')
 
     return (
     <FortSectionSt
@@ -19,7 +21,7 @@ const CtaSection = () => {
             text={t('ctaCopy')}
         />
         <FortCtaBtn
-            href=""
+            href={`https://wa.me/${organization.phone}?text=${tR('waEncodedFill')}`}
             label={t('conversationCta')}
             centered
             external

@@ -220,11 +220,11 @@ export default async function FortalesHome({ params }: Props) {
         </FortSectionSt> */}
         {/* Portfolio */}
         <FortSectionSt
-            title="Featured portfolio works"
+            title={t('h2FeaturedPortfolio')}
             bgColor="bg-main"
         >
             <CenteredP
-                text="A selection of websites and digital experiences created to solve real business needs. From stronger visibility and faster performance to smoother customer journeys."
+                text={t('featuredPortfolioCopy')}
             />
             <div className="
                 w-fit mx-auto

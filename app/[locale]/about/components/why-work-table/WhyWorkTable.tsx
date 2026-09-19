@@ -8,7 +8,7 @@ const WhyWorkTable = () => {
     return (
     <div className="
         w-full md:w-200 mx-auto
-        grid grid-cols-2
+        grid grid-cols-[0.8fr_1.2fr] md:grid-cols-2
         border border-gray-200
         rounded-4xl shadow-img-sm overflow-hidden"
     >

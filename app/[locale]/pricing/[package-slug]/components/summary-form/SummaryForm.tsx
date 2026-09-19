@@ -115,9 +115,16 @@ const SummaryForm = ({ packageSlug }: Props) => {
                     handleError()
                     throw new Error("Failed to submit request.");
                 }
-    
-                // const data = await response.json();
+
                 handleSuccess()
+
+                fetch("/api/send-confirmation", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formPayload),
+                })
             } catch (err) {
                 console.error(err);
                 handleError()
@@ -207,10 +214,10 @@ const SummaryForm = ({ packageSlug }: Props) => {
         isOpen={isModalOpen}
         state={modalState}
         onClose={closeModal}
-        successTitleLabel={tH('submitSuccessTitle')}
-        successCopyLabel={tH('submitSuccessCopy')}
-        errorTitleLabel={tH('submitErrorTitle')}
-        errorCopyLabel={tH('submitErrorCopy')}
+        successTitleLabel={t('submitSuccessTitle')}
+        successCopyLabel={t('submitSuccessCopy')}
+        errorTitleLabel={t('submitErrorTitle')}
+        errorCopyLabel={t('submitErrorCopy')}
     />
     </>
     )

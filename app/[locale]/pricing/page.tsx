@@ -197,8 +197,8 @@ export default async function Pricing({ params }: Props) {
                 {t('h3CustomAddOns')}
             </h3>
             <p className="
-                w-2/3 mx-auto
-                text-my-md text-secondary text-center leading-8"
+                w-full md:w-2/3 mx-auto
+                text-my-md text-secondary text-center leading-6 md:leading-8"
             >
                 {t('customAddOnsCopy')}
             </p>

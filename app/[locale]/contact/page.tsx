@@ -210,7 +210,7 @@ export default async function Contact({ params }: Props) {
                             flex flex-col items-center gap-4 md:gap-8"
                         >
                             <div className="w-full h-[1px] bg-gray-300" />
-                            <p className="text-my-sm text-secondary">
+                            <p className="text-my-sm text-secondary text-center">
                                 {t('formFootnote2')}
                             </p>
                         </div>
@@ -371,8 +371,8 @@ export default async function Contact({ params }: Props) {
                     >
                         {t('questionCopy')}
                     </p>
-                    <Link
-                        href="/contact"
+                    <a
+                        href={emailHref}
                         className="
                             w-full
                             py-2 md:hover:pl-4 duration-200
@@ -386,7 +386,7 @@ export default async function Contact({ params }: Props) {
                             iconId="arrowR"
                             className="scale-110"
                         />
-                    </Link>
+                    </a>
                 </div>
             </div>
         </FortSectionSt>
