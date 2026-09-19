@@ -166,6 +166,7 @@ export default async function FortalesHome({ params }: Props) {
                     src="/assets/thinking-woman.jpg"
                     width={900}
                     height={900}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 360px, 480px"
                     className="
                         w-full md:w-90 xl:w-120 aspect-square
                         object-cover object-center

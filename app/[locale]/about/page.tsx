@@ -153,6 +153,7 @@ export default async function About({ params }: Props) {
                     src="/assets/about-hero.jpg"
                     width={935}
                     height={995}
+                    sizes="(max-width: 768px) 100vw, 40vw"
                     className="
                         w-full md:w-1/2
                         h-80 md:h-120

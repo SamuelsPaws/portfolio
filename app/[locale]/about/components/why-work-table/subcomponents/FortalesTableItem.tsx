@@ -22,7 +22,7 @@ const FortalesTableItem = ({ text }: Props) => {
                     iconId="check"
                 />
             </div>
-            <span className="flex-1 text-main text-my-md font-semibold">
+            <span className="flex-1 text-main text-my-md font-semibold wrap-anywhere">
                 {text}
             </span>
         </div>

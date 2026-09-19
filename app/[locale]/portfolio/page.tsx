@@ -142,7 +142,7 @@ export default async function Portfolio({ params }: Props) {
                     w-full min-w-0 aspect-[4/3] lg:aspect-auto lg:w-1/2 lg:h-120 object-cover
                     rounded-2xl sm:rounded-4xl shadow-img
                     opacity-0 animate-fade-in-left-800"
-                sizes="(min-width: 1024px) 60vw, 100vw"
+                sizes="(min-width: 1024px) 40vw, 100vw"
                 alt=""
                 priority
             />

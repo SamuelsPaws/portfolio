@@ -10,7 +10,7 @@ const WhyWorkRow = ({ otherText, fortalesText }: Props) => {
     return (
     <>
     <WhyWorkItem>
-        <span className="text-my-md text-secondary">
+        <span className="text-my-md text-secondary wrap-break-word">
             {otherText}
         </span>
     </WhyWorkItem>

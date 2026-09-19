@@ -34,6 +34,7 @@ const ProfileColumn = ({ image, name, role, description, skills }: Props) => {
             src={image.src}
             width={image.width}
             height={image.height}
+            sizes="(max-width: 768px) 80vw, 260px"
             className="
                 w-[80%] md:w-65 aspect-square
                 object-cover object-[50%_10%]

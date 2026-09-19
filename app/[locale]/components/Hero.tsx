@@ -80,7 +80,7 @@ const Hero = () => {
             <Image
                 src="/assets/hero-img.jpg"
                 fill
-                sizes='100%'
+                sizes="(max-width: 768px) 100vw, 540px"
                 className="h-full w-full object-cover object-center"
                 alt="Personas observando una computadora"
                 priority
