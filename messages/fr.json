@@ -19,7 +19,7 @@
         "fortalesSlogan": "Impulsando el crecimiento de tu negocio, un sitio web a la vez.",
         "navigation": "Navegación",
         "allRights": "Todos los derechos reservados",
-        "terms": "Términos del servicio",
+        "terms": "Conditions d’utilisation",
         "privacy": "Política de privacidad",
         "freeQuoteTitle": "Obtenez un devis gratuit",
         "freeQuoteCopy": "Parlez-nous de votre projet et nous vous aiderons à trouver la solution adaptée, sans engagement et avec des conseils honnêtes.",
@@ -30,6 +30,167 @@
         "submitSuccessCopy": "Merci de nous avoir contactés. Nous allons examiner attentivement les détails de votre projet et reviendrons vers vous dans les plus brefs délais avec une proposition personnalisée. Vous pouvez maintenant fermer cette fenêtre.",
         "submitErrorTitle": "Un problème est survenu.",
         "submitErrorCopy": "Nous n'avons pas pu envoyer votre demande pour le moment. Veuillez réessayer dans quelques instants. Si le problème persiste, n'hésitez pas à nous contacter directement, nous serons ravis de vous aider."
+    },
+    "TermsOfService": {
+        "title": "Conditions d’utilisation",
+        "logoAlt": "Logo de Fortales",
+        "lastUpdatedLabel": "Dernière mise à jour",
+        "lastUpdated": "19 septembre 2026",
+        "privacyPolicy": "Politique de confidentialité",
+        "introduction": [
+            "Bienvenue chez Fortales. Les présentes Conditions d’utilisation régissent votre accès à notre site web, https://fortal.es, et son utilisation, notamment son contenu, ses fonctionnalités, ses formulaires de contact et les informations relatives à nos services.",
+            "Veuillez lire attentivement ces conditions avant d’utiliser notre site web. En accédant au site ou en l’utilisant, vous acceptez les présentes Conditions d’utilisation, dans la mesure permise par la législation applicable.",
+            "Si vous avez des questions concernant ces conditions, vous pouvez nous contacter à l’aide des coordonnées figurant à la fin du présent document."
+        ],
+        "sections": [
+            {
+                "title": "1. À propos de Fortales",
+                "paragraphs": [
+                    "Fortales est une agence de conception et de développement web exploitée par {legalName}, personne physique exerçant sous le nom commercial Fortales et établie en Équateur.",
+                    "Dans les présentes conditions, « Fortales », « nous », « notre » et « nos » désignent {legalName}, la personne responsable de l’exploitation de ce site web.",
+                    "Notre site présente des informations sur nos services de conception web, de développement et autres services numériques connexes, met en avant certains projets et permet aux clients potentiels de nous contacter ou de demander une proposition de projet.",
+                    "Les présentes Conditions d’utilisation s’appliquent à l’utilisation de notre site web public. La fourniture de services payants est régie par la proposition, l’accord ou le contrat spécifique conclu entre Fortales et le client."
+                ]
+            },
+            {
+                "title": "2. Utilisation de notre site web",
+                "paragraphs": [
+                    "Vous pouvez accéder à notre site et l’utiliser à des fins licites, notamment pour découvrir nos services, consulter notre portfolio, prendre connaissance de nos tarifs et nous contacter au sujet de projets potentiels.",
+                    "Lorsque vous utilisez notre site web, vous vous engagez à ne pas :",
+                    "Nous pouvons prendre des mesures raisonnables pour protéger le site et empêcher toute utilisation non autorisée ou nuisible.",
+                    "Aucune disposition des présentes conditions ne restreint les droits dont vous bénéficiez en vertu de la législation applicable."
+                ],
+                "bullets": [
+                    "Utiliser le site à des fins illégales, frauduleuses ou trompeuses.",
+                    "Tenter d’accéder sans autorisation au site, à ses serveurs ou aux systèmes associés.",
+                    "Perturber le fonctionnement, la sécurité ou la disponibilité du site.",
+                    "Introduire des logiciels malveillants, du code nuisible ou tout autre élément visant à compromettre le site.",
+                    "Utiliser nos formulaires pour envoyer du spam, des demandes frauduleuses ou du contenu contraire à la législation applicable.",
+                    "Reproduire ou exploiter commercialement le contenu de notre site sans autorisation, sauf lorsque la loi le permet."
+                ]
+            },
+            {
+                "title": "3. Nos services et les tarifs publiés",
+                "paragraphs": [
+                    "Fortales fournit des services de conception web, de développement de sites web et d’autres services numériques connexes.",
+                    "Notre site peut présenter des offres de services, des descriptions, les fonctionnalités incluses, des délais estimatifs et des prix de départ afin d’aider les clients potentiels à comprendre notre offre.",
+                    "Les prix publiés représentent le coût de départ des services correspondants. Le prix final d’un projet peut varier selon ses exigences, son périmètre, sa complexité, les fonctionnalités demandées, les intégrations, les besoins en contenu et d’autres considérations pertinentes.",
+                    "Tout coût supplémentaire, impôt applicable et condition propre au projet sera communiqué dans le devis ou la proposition correspondante avant que le client ne conclue un accord payant.",
+                    "L’envoi d’une demande, le remplissage d’un formulaire de découverte ou la sélection d’une offre ne constitue pas, en soi, un achat et ne crée aucune obligation de payer des services.",
+                    "Un projet ne devient une prestation payante que lorsque les parties ont accepté les conditions commerciales applicables au moyen d’un accord ou d’un contrat approprié.",
+                    "Nous pouvons modifier nos services, nos offres et nos prix de départ publiés. Ces changements ne modifieront pas automatiquement les conditions d’un accord déjà accepté par un client."
+                ]
+            },
+            {
+                "title": "4. Demandes et propositions de projet",
+                "paragraphs": [
+                    "Notre site propose des formulaires de contact et de découverte permettant aux clients potentiels de nous présenter leur entreprise, leurs objectifs et les exigences de leur projet.",
+                    "Après réception d’une demande, nous pouvons vous contacter afin d’obtenir des informations supplémentaires, de préciser vos besoins, d’échanger sur des solutions possibles ou de préparer une proposition de projet.",
+                    "Nous pouvons estimer qu’un projet demandé ne relève pas de nos services, de nos compétences ou de notre capacité actuelle. Dans ce cas, nous pouvons refuser de soumettre une proposition ou de conclure un accord de services, sous réserve de la législation applicable.",
+                    "Toute proposition que nous fournissons peut décrire la solution recommandée, le périmètre des travaux, les livrables, le prix, le calendrier estimatif, les conditions de paiement et les autres modalités pertinentes du projet proposé.",
+                    "Sauf accord exprès contraire, une proposition n’autorise pas Fortales à commencer un travail payant et n’oblige pas le client potentiel à poursuivre le projet.",
+                    "Les conditions spécifiques régissant un projet accepté seront définies dans l’accord ou le contrat correspondant.",
+                    "Si un accord de projet contient des dispositions différentes des présentes Conditions d’utilisation du site, l’accord propre au projet régira les services concernés, sous réserve de la législation applicable."
+                ]
+            },
+            {
+                "title": "5. Informations transmises au moyen de nos formulaires",
+                "paragraphs": [
+                    "Lorsque vous contactez Fortales ou soumettez une demande de projet, vous êtes responsable de fournir des informations exactes au mieux de vos connaissances.",
+                    "Vous ne devez transmettre que des informations que vous êtes autorisé à partager.",
+                    "Évitez d’inclure des mots de passe, des données de carte de paiement, des identifiants d’accès confidentiels ou d’autres informations sensibles dans nos formulaires généraux de contact et de découverte, sauf si nous les avons expressément demandés par un canal de communication approprié et sécurisé.",
+                    "Nous utilisons les informations fournies pour répondre aux demandes, évaluer les exigences des projets, préparer des propositions et gérer les relations avec les clients potentiels.",
+                    "Des informations supplémentaires sur la collecte, le traitement, le stockage et la protection des données personnelles sont disponibles dans notre {privacyPolicy}."
+                ]
+            },
+            {
+                "title": "6. Propriété intellectuelle",
+                "paragraphs": [
+                    "Sauf indication contraire, le site web de Fortales et son contenu original, notamment son identité de marque, ses logos, ses textes, ses éléments graphiques, ses mises en page et autres éléments créatifs, appartiennent à Fortales ou sont utilisés avec l’autorisation appropriée.",
+                    "Ces éléments sont protégés par les lois applicables en matière de propriété intellectuelle.",
+                    "Vous pouvez consulter notre site et utiliser son contenu à des fins personnelles ou pour une évaluation commerciale légitime.",
+                    "Vous ne pouvez pas reproduire, distribuer, modifier, vendre ou exploiter commercialement le contenu original de notre site sans autorisation préalable, sauf lorsque la législation applicable le permet.",
+                    "Notre portfolio peut inclure des marques, logos, photographies, conceptions de sites web et autres éléments appartenant à nos clients ou à des tiers. Leur présence ne transfère aucun droit de propriété et n’autorise pas les visiteurs à les utiliser.",
+                    "La propriété, les licences, les droits d’utilisation et la livraison de la propriété intellectuelle créée pour chaque projet client sont régis par les accords de projet correspondants.",
+                    "Aucune disposition des présentes Conditions d’utilisation ne transfère aux visiteurs la propriété intellectuelle de Fortales."
+                ]
+            },
+            {
+                "title": "7. Informations relatives au portfolio et aux projets",
+                "paragraphs": [
+                    "Notre site peut présenter certains projets afin d’illustrer notre expérience, nos compétences et notre approche de la conception et du développement web.",
+                    "Les descriptions, captures d’écran, mesures de performance et autres informations publiées se rapportent aux projets et aux circonstances spécifiques décrits.",
+                    "Les résultats réels peuvent varier selon les exigences, la mise en œuvre, l’environnement d’hébergement, les services tiers, le contenu et d’autres facteurs propres à chaque projet.",
+                    "Les mesures de performance et les exemples présentés dans notre portfolio ne garantissent pas que chaque projet futur obtiendra des résultats identiques.",
+                    "Tout objectif de performance, livrable ou engagement mesurable propre à un projet client doit être expressément défini dans l’accord de projet correspondant."
+                ]
+            },
+            {
+                "title": "8. Liens externes et services tiers",
+                "paragraphs": [
+                    "Notre site peut contenir des liens vers des sites externes, notamment les sites de clients, des plateformes de réseaux sociaux et des services tiers.",
+                    "Ces sites externes sont exploités indépendamment et peuvent disposer de leurs propres conditions, politiques de confidentialité et pratiques.",
+                    "Fortales ne contrôle ni le contenu, ni la disponibilité, ni le fonctionnement des sites tiers.",
+                    "La présence d’un lien externe ne signifie pas nécessairement que nous approuvons l’ensemble du contenu, des produits ou des services proposés sur ce site.",
+                    "Lorsque vous consultez des sites tiers, nous vous encourageons à prendre connaissance de leurs conditions et politiques de confidentialité applicables.",
+                    "Notre site peut également recourir à des services techniques tiers pour l’hébergement, les communications et d’autres besoins opérationnels. Les informations relatives aux prestataires tiers participant au traitement des données personnelles figurent dans notre Politique de confidentialité."
+                ]
+            },
+            {
+                "title": "9. Disponibilité et informations du site web",
+                "paragraphs": [
+                    "Nous déployons des efforts raisonnables pour maintenir le site et fournir des informations exactes, utiles et à jour sur Fortales et ses services.",
+                    "Toutefois, le site peut occasionnellement être indisponible en raison d’opérations de maintenance, de problèmes techniques, de défaillances d’infrastructure ou de circonstances échappant raisonnablement à notre contrôle.",
+                    "Nous pouvons modifier, mettre à jour ou suspendre temporairement certaines parties du site lorsque cela est nécessaire pour des raisons de maintenance, de sécurité ou de fonctionnement.",
+                    "Nous déployons également des efforts raisonnables pour que les descriptions de services, les informations tarifaires et les autres informations commerciales publiées reflètent fidèlement notre offre actuelle.",
+                    "Si vous avez des questions concernant un service, sa disponibilité, son prix ou l’application d’une fonctionnalité particulière à votre projet, veuillez nous demander des précisions avant de conclure un accord.",
+                    "Aucune disposition de la présente section n’exclut ni ne limite une responsabilité qui ne peut légalement être exclue ou limitée en vertu de la législation applicable."
+                ]
+            },
+            {
+                "title": "10. Confidentialité et données personnelles",
+                "paragraphs": [
+                    "Le respect de votre vie privée est important pour nous.",
+                    "Lorsque vous transmettez des informations par notre site ou communiquez avec Fortales, nous traitons des données personnelles afin de répondre aux demandes, d’évaluer des projets potentiels, de gérer les relations commerciales et de poursuivre les autres finalités décrites dans notre Politique de confidentialité.",
+                    "Notre Politique de confidentialité explique quelles informations nous collectons, comment nous les utilisons et les protégeons, dans quelles circonstances des prestataires tiers peuvent les traiter et comment vous pouvez exercer les droits qui vous sont reconnus en matière de protection des données.",
+                    "Veuillez consulter notre {privacyPolicy} pour plus d’informations."
+                ]
+            },
+            {
+                "title": "11. Modification des présentes conditions",
+                "paragraphs": [
+                    "Nous pouvons mettre à jour les présentes Conditions d’utilisation pour tenir compte des changements apportés à notre site, à nos services, à nos activités ou aux exigences légales applicables.",
+                    "Lorsque nous apportons des modifications, nous actualisons la date de « Dernière mise à jour » figurant au début du présent document.",
+                    "Les conditions révisées s’appliqueront aux utilisations ultérieures du site à compter de leur date d’entrée en vigueur, sous réserve de la législation applicable.",
+                    "Les modifications des présentes conditions du site ne modifieront pas automatiquement les modalités d’un accord client existant. Toute modification d’un accord de projet accepté doit être effectuée conformément à cet accord et à la législation applicable.",
+                    "Nous encourageons les visiteurs à consulter régulièrement cette page."
+                ]
+            },
+            {
+                "title": "12. Droit applicable",
+                "paragraphs": [
+                    "Les présentes Conditions d’utilisation sont régies par les lois de la République de l’Équateur, sans préjudice des protections légales impératives applicables aux visiteurs du site ou aux clients.",
+                    "Tout différend découlant de l’utilisation de ce site doit d’abord être signalé à Fortales au moyen des coordonnées ci-dessous afin que les parties puissent tenter de le résoudre directement.",
+                    "Si un différend ne peut être résolu par communication directe, les parties peuvent recourir aux mécanismes de règlement des différends prévus par la législation applicable.",
+                    "Aucune disposition des présentes conditions ne limite les droits impératifs de protection des consommateurs ni les autres droits établis par la législation applicable."
+                ]
+            },
+            {
+                "title": "13. Coordonnées",
+                "paragraphs": [
+                    "Si vous avez des questions concernant les présentes Conditions d’utilisation, notre site web ou les services qui y sont présentés, vous pouvez nous contacter aux coordonnées suivantes :",
+                    "Nous déploierons des efforts raisonnables pour répondre aux demandes reçues par nos canaux de contact officiels."
+                ]
+            }
+        ],
+        "contact": {
+            "commercialName": "Nom commercial",
+            "websiteOperator": "Exploitant du site",
+            "businessIdentification": "Identification de l’entreprise",
+            "businessAddress": "Adresse professionnelle",
+            "email": "E-mail",
+            "website": "Site web"
+        }
     },
     "ProjectPage": {
         "liveLink": "Voir le Site",
@@ -88,6 +249,10 @@
         "subhead": "Nous aidons les marques à renforcer leur présence numérique grâce à des sites web performants et des systèmes digitaux conçus pour vendre.",
         "ctaMain": "Voir nos tarifs",
         "ctaSecond": "En savoir plus",
+        "performanceFirst": "PERFORMANCE D’ABORD",
+        "fastByDesign": "Rapide par conception",
+        "seoBuiltIn": "SEO INTÉGRÉ",
+        "readyToBeFound": "Prêt à être trouvé",
         "h2WhoFor": "Des sites web conçus pour attirer plus de clients vers votre entreprise",
         "idealFor": "Idéal pour",
         "h3SmallBiz": "Les petites entreprises prêtes à se développer",
@@ -388,6 +553,14 @@
         "whatsapp": "WhatsApp : {phone}"
     },
     "Metadata": {
+        "TermsOfService": {
+            "title": "Conditions d’utilisation | Fortales",
+            "description": "Consultez les conditions qui régissent l’accès au site de Fortales, les demandes de projet, les tarifs publiés, la propriété intellectuelle et les services associés.",
+            "ogTitle": "Conditions d’utilisation | Fortales",
+            "ogDescription": "Les conditions régissant l’utilisation du site de Fortales et les informations sur nos services de conception et de développement web.",
+            "twitterTitle": "Conditions d’utilisation | Fortales",
+            "twitterDescription": "Les conditions régissant l’utilisation du site de Fortales et les informations relatives à nos services."
+        },
         "DiscoveryForm": {
             "title": "Formulaire de découverte de site web | Fortales",
             "description": "Partagez les informations sur votre activité, votre marque, vos contenus et vos besoins techniques pour préparer votre projet web.",

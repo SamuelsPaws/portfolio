@@ -7,7 +7,7 @@ interface Props {
 
 const LinksColumn = ({ title, children }: Props) => {
     return (
-    <div className="flex flex-col items-end">
+    <div className="flex flex-col md:items-end">
         <ColumnTitle
             text={title}
         />

@@ -116,13 +116,15 @@ export default async function Portfolio({ params }: Props) {
                 <Eyebrow text={t('heroBrow')} />
                 <h1 className="
                     mb-4 md:mb-8
-                    text-4xl sm:text-5xl xl:text-7xl leading-tight text-main font-['Source_Serif_4']"
+                    text-4xl sm:text-5xl xl:text-7xl text-main font-['Source_Serif_4']
+                    opacity-0 animate-fade-in-right-600"
                 >
                     {t('h1')}
                 </h1>
                 <p className="
                     mb-8
-                    text-my-md text-secondary leading-relaxed"
+                    text-my-md text-secondary leading-relaxed
+                    opacity-0 animate-fade-in-right-800"
                 >
                     {t('heroCopy')}
                 </p>
@@ -133,12 +135,13 @@ export default async function Portfolio({ params }: Props) {
             </div>
             {/* Right image */}
             <Image
-                src="/assets/fort-portfolio.webp"
+                src="/assets/fort-portfolio.jpg"
                 width={1448}
                 height={1086}
                 className="
                     w-full min-w-0 aspect-[4/3] lg:aspect-auto lg:w-1/2 lg:h-120 object-cover
-                    rounded-2xl sm:rounded-4xl shadow-img"
+                    rounded-2xl sm:rounded-4xl shadow-img
+                    opacity-0 animate-fade-in-left-800"
                 sizes="(min-width: 1024px) 60vw, 100vw"
                 alt=""
                 priority

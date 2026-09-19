@@ -11,6 +11,7 @@ import ColumnList from "./subcomponents/ColumnList"
 import organization from "@/data/fortales/organization"
 import ContactLink from "./subcomponents/ContactLink"
 import formatPhoneEC from "@/lib/utils/formatPhoneEC"
+import EmblemCard from "./subcomponents/EmblemCard"
 
 const Footer = () => {
 	const t = useTranslations('Reusable')
@@ -100,33 +101,16 @@ const Footer = () => {
 		{/* Content container */}
 		<div className="
 			w-full
-			flex flex-col md:flex-row justify-between items-start gap-16 md:gap-0"
+			flex flex-col items-start gap-16 flex-wrap
+			md:flex-row md:justify-between md:gap-8"
 		>
 			{/* Emblem card */}
-			<div className="
-				w-full md:w-80 order-1 md:order-0
-				flex flex-col items-center"
-			>
-				<img
-					src="/assets/fortales-logo-light.svg"
-					className="w-[40%] md:w-[60%] mb-8"
-					alt="Logo de la empresa"
-				/>
-				<span className="
-					mb-4
-					text-my-2xl text-br-white text-center
-					font-semibold tracking-wider"
-				>
-					FORTALES
-				</span>
-				<span className="text-my-md text-gray-300 text-center">
-					{t('fortalesSlogan')}
-				</span>
-			</div>
+			<EmblemCard slogan={t('fortalesSlogan')} />
 			{/* Link columns */}
 			<div className="
 				w-full md:w-auto
-				flex flex-col md:flex-row items-end md:items-start gap-8 md:gap-24"
+				flex items-start justify-between
+				md:justify-center md:gap-24"
 			>
 				<LinksColumn title={t('navigation')}>
 					<ColumnList>
@@ -164,7 +148,7 @@ const Footer = () => {
 				</LinksColumn>}
 			</div>
 			<div className="
-				w-full md:w-110 self-stretch
+				w-full md:w-[30%] md:min-w-80 md:max-w-110 self-stretch
 				order-2
 				p-8
 				flex flex-col justify-between
@@ -210,11 +194,11 @@ const Footer = () => {
 			{/* Foot links */}
 			<ul className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
 				<LowerFootLink
-					href="/"
+					href="/terms-of-service"
 					text={t('terms').toUpperCase()}
 				/>
 				<LowerFootLink
-					href="/"
+					href="/privacy-policy"
 					text={t('privacy').toUpperCase()}
 				/>
 			</ul>

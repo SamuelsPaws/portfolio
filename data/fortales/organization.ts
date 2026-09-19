@@ -9,7 +9,7 @@ const phone = '+593984892528'
 // image against url when building JSON-LD. Fill or omit empty placeholders.
 const organization = {
     name: 'Fortales',
-    legalName: '', // TODO: Registered business name, if applicable.
+    legalName: 'Samuel Santiago Baquero Jacome',
     alternateName: [] as string[], // TODO: Other established business names.
     description: {
         en: 'Fortales designs and develops fast, modern, multilingual websites that help businesses strengthen their online presence and connect with their customers. Our services include custom web development, search engine optimization, integrations, and ongoing website support.',

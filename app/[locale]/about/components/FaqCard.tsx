@@ -1,9 +1,7 @@
 'use client'
 import CustomIcon from "@/components/CustomIcon";
 import ExpandableArea from "@/components/ExpandableArea";
-import { stepCardRevealNoShadow } from "@/lib/motion-variants/stepCardMotion";
 import clsx from "clsx";
-import { motion } from "motion/react";
 import { useState } from "react";
 
 interface Props {
@@ -19,7 +17,7 @@ const FaqCard = ({ question, answer }: Props) => {
     }
 
     return (
-    <motion.button
+    <button
         onClick={toggleExpanded}
         className="
             w-full
@@ -28,10 +26,6 @@ const FaqCard = ({ question, answer }: Props) => {
             bg-black/5 dark:bg-white/5
             rounded-xl
             md:hover:bg-black/10 dark:md:hover:bg-white/10 duration-400"
-        variants={stepCardRevealNoShadow}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: '-24px 0px' }}
     >
         {/* Upper part */}
         <div className="flex items-center justify-between">
@@ -58,7 +52,7 @@ const FaqCard = ({ question, answer }: Props) => {
                 </p>
             </div>
         </ExpandableArea>
-    </motion.button>
+    </button>
     )
 }
 

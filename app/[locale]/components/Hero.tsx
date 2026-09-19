@@ -9,9 +9,10 @@ const Hero = () => {
     return (
     <section className="
         px-8 py-24
-        md:px-32 md:py-32
+        md:px-16 md:py-32
+        xl:px-32 xl:py-32
         flex flex-col gap-8
-        md:flex-row md:justify-center md:gap-16
+        md:flex-row md:justify-center md:gap-8 xl:gap-16
         bg-main"
     >
         {/* Left div */}
@@ -22,7 +23,7 @@ const Hero = () => {
             <h1 className="
                 text-4xl md:text-5xl xl:text-6xl text-center md:text-left
                 text-black dark:text-br-white
-                font-serif font-semibold leading-12 md:leading-18 tracking-wide
+                font-serif font-semibold leading-12 md:leading-18 tracking-wide wrap-break-word
                 opacity-0 animate-fade-in-right-600"
             >
                 {t('h1-1')} <span className="text-br-orange-main">{t('h1-2')}</span> {t('h1-3')}
@@ -39,7 +40,7 @@ const Hero = () => {
             <div className="
                 w-full md:w-auto
                 flex flex-col gap-4 flex-wrap
-                md: md:flex-row md:gap-4
+                md:flex-row md:gap-4
                 opacity-0 animate-fade-in-right-1000"
             >
                 <FortCtaBtn
@@ -47,7 +48,7 @@ const Hero = () => {
                     label={t('ctaMain')}
                 />
                 <FortCtaBtn
-                    href='/prices'
+                    href='/about'
                     label={t('ctaSecond')}
                     type='secondary'
                 />
@@ -60,12 +61,12 @@ const Hero = () => {
                 opacity-0 animate-fade-in-up-1200"
             >
                 <StatStamp
-                    num={30}
-                    label='Satisfied Clients'
+                    head={t('performanceFirst')}
+                    body={t('fastByDesign')}
                 />
                 <StatStamp
-                    num={10}
-                    label='Testimonials'
+                    head={t('seoBuiltIn')}
+                    body={t('readyToBeFound')}
                 />
             </div>
         </div>
@@ -74,7 +75,7 @@ const Hero = () => {
             w-full h-80 relative
             md:w-[540px] md:h-auto md:max-h-140 md:aspect-square
             rounded-4xl overflow-hidden shadow-img
-            opacity-0 animate-fade-in-left-slow"
+            opacity-0 animate-fade-in-left-slow-1200"
         >
             <Image
                 src="/assets/hero-img.jpg"

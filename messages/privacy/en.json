@@ -1,0 +1,983 @@
+{
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "logoAlt": "Fortales logo",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "September 19, 2026",
+    "introduction": [
+      "At Fortales, we respect your privacy and are committed to handling your personal information responsibly and transparently.",
+      "This Privacy Policy explains how we collect, use, store, protect, and share personal information when you visit https://fortal.es, contact us, submit a project inquiry, or communicate with us about our services.",
+      "It also explains your rights regarding your personal information and how you can contact us about the way your information is handled."
+    ],
+    "sections": [
+      {
+        "title": "1. Who We Are",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Fortales is a web design and development agency operated by {legalName}, an individual operating under the commercial name Fortales, based in Ecuador."
+          },
+          {
+            "type": "paragraph",
+            "text": "Throughout this Privacy Policy, \"Fortales,\" \"we,\" \"us,\" and \"our\" refer to {legalName}, the person responsible for determining how and why personal information collected through our website and business communication channels is processed."
+          },
+          {
+            "type": "paragraph",
+            "text": "Our contact information is:"
+          },
+          {
+            "type": "paragraph",
+            "text": "Commercial name: Fortales"
+          },
+          {
+            "type": "paragraph",
+            "text": "Data controller: {legalName}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Business identification: {businessIdentification}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Legal address: {businessAddress}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Telephone: {phone}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Privacy contact email: {privacyEmail}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Website: https://fortal.es"
+          },
+          {
+            "type": "paragraph",
+            "text": "You can contact us using the information above if you have questions about this Privacy Policy or wish to exercise your personal data protection rights."
+          }
+        ]
+      },
+      {
+        "title": "2. Information We Collect",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We collect information that you voluntarily provide when contacting Fortales, submitting a project inquiry, requesting a quotation, or communicating with us about our services."
+          },
+          {
+            "type": "paragraph",
+            "text": "Depending on the nature of your inquiry, this information may include:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Your name and email address.",
+              "Your telephone number or WhatsApp contact information.",
+              "Your company or business name.",
+              "Your business website or other relevant online presence.",
+              "Information about your business, its objectives, and its digital needs.",
+              "Project descriptions, goals, requirements, and preferences.",
+              "Estimated project budgets and timelines.",
+              "Messages, questions, and other information you choose to share with us.",
+              "Records of our communications with you.",
+              "Your preferences regarding promotional communications, including any marketing authorization you provide."
+            ]
+          },
+          {
+            "type": "subheading",
+            "text": "Information received through other communication channels"
+          },
+          {
+            "type": "paragraph",
+            "text": "In addition to our website forms, you may contact Fortales through our business email, WhatsApp Business, social media accounts, or telephone."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you contact us through these channels, we may receive and process the information you provide, including your contact details, the content of your messages, and information relevant to your inquiry."
+          },
+          {
+            "type": "paragraph",
+            "text": "Communications conducted through third-party platforms, such as WhatsApp or social media services, may also be subject to the privacy policies and data-processing practices of those platforms."
+          },
+          {
+            "type": "subheading",
+            "text": "Information collected automatically"
+          },
+          {
+            "type": "paragraph",
+            "text": "Our website is hosted on Vercel."
+          },
+          {
+            "type": "paragraph",
+            "text": "When you access our website, Vercel may process technical information necessary to deliver website content, maintain infrastructure, and protect its services."
+          },
+          {
+            "type": "paragraph",
+            "text": "This information may include IP addresses, request timestamps, browser information, and other technical connection data."
+          },
+          {
+            "type": "paragraph",
+            "text": "Fortales does not currently use this information to create behavioral advertising profiles of website visitors."
+          },
+          {
+            "type": "paragraph",
+            "text": "We do not currently use website analytics, advertising pixels, or behavioral tracking tools."
+          },
+          {
+            "type": "paragraph",
+            "text": "Further information about cookies and browser storage is provided in Section 8."
+          }
+        ]
+      },
+      {
+        "title": "3. How We Use Your Information",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We process personal information for specific purposes associated with operating Fortales, responding to inquiries, and providing our services."
+          },
+          {
+            "type": "paragraph",
+            "text": "These purposes include the following."
+          },
+          {
+            "type": "subheading",
+            "text": "Responding to inquiries"
+          },
+          {
+            "type": "paragraph",
+            "text": "We use your contact information and the details you provide to answer your questions, respond to messages, and communicate with you about our services."
+          },
+          {
+            "type": "subheading",
+            "text": "Understanding your project"
+          },
+          {
+            "type": "paragraph",
+            "text": "When you submit a contact or discovery form, we use the information provided to understand your business, evaluate your requirements, and determine how Fortales may be able to assist you."
+          },
+          {
+            "type": "subheading",
+            "text": "Preparing quotations and proposals"
+          },
+          {
+            "type": "paragraph",
+            "text": "We may use your information to prepare project recommendations, quotations, proposals, and other communications related to a potential business relationship."
+          },
+          {
+            "type": "subheading",
+            "text": "Managing prospective client relationships"
+          },
+          {
+            "type": "paragraph",
+            "text": "We maintain a prospect management spreadsheet containing selected information about potential clients."
+          },
+          {
+            "type": "paragraph",
+            "text": "This allows us to organize inquiries, track proposal status, schedule follow-ups, and manage ongoing discussions about potential projects."
+          },
+          {
+            "type": "subheading",
+            "text": "Providing contracted services"
+          },
+          {
+            "type": "paragraph",
+            "text": "If you become a Fortales client, we may process information necessary to communicate with you, manage your project, deliver the agreed services, and fulfill applicable contractual and legal obligations."
+          },
+          {
+            "type": "paragraph",
+            "text": "Information that is no longer necessary for prospect management is removed from our prospect spreadsheet when you become a client."
+          },
+          {
+            "type": "paragraph",
+            "text": "Information necessary for the client relationship may be retained separately."
+          },
+          {
+            "type": "subheading",
+            "text": "Sending promotional communications"
+          },
+          {
+            "type": "paragraph",
+            "text": "Where you have provided valid authorization, we may use your contact information to send occasional communications about Fortales' services, new offerings, or promotional opportunities."
+          },
+          {
+            "type": "paragraph",
+            "text": "Promotional communications are optional and are separate from the communications necessary to respond to your inquiry or provide an agreed service."
+          },
+          {
+            "type": "paragraph",
+            "text": "Further information about promotional communications and your choices is provided in Section 9."
+          }
+        ]
+      },
+      {
+        "title": "4. Legal Bases for Processing",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We process personal information when an applicable legal basis permits us to do so."
+          },
+          {
+            "type": "paragraph",
+            "text": "The legal basis depends on the purpose for which the information is being processed."
+          },
+          {
+            "type": "subheading",
+            "text": "Precontractual measures requested by you"
+          },
+          {
+            "type": "paragraph",
+            "text": "When you contact Fortales to request information, discuss a potential project, or obtain a quotation, processing certain personal information may be necessary to respond to your request and take steps toward a possible service agreement."
+          },
+          {
+            "type": "subheading",
+            "text": "Performance of a contract"
+          },
+          {
+            "type": "paragraph",
+            "text": "If you become a client, we may process personal information necessary to perform the agreed services, manage the contractual relationship, and fulfill our obligations to you."
+          },
+          {
+            "type": "subheading",
+            "text": "Compliance with legal obligations"
+          },
+          {
+            "type": "paragraph",
+            "text": "We may process or retain certain information when necessary to comply with applicable legal, accounting, tax, or other regulatory obligations."
+          },
+          {
+            "type": "subheading",
+            "text": "Consent"
+          },
+          {
+            "type": "paragraph",
+            "text": "Where consent is the applicable legal basis, we request your authorization for specific processing purposes."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, we may request your separate, optional authorization to receive promotional communications from Fortales."
+          },
+          {
+            "type": "paragraph",
+            "text": "You may withdraw your consent at any time by contacting us at {privacyEmail} or using the applicable unsubscribe mechanism."
+          },
+          {
+            "type": "paragraph",
+            "text": "Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal or processing that is supported by another applicable legal basis."
+          },
+          {
+            "type": "paragraph",
+            "text": "We will not treat the submission of a contact or discovery form as automatic authorization to receive unrelated promotional communications."
+          }
+        ]
+      },
+      {
+        "title": "5. How We Receive and Store Your Information",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Fortales uses a limited number of services to receive inquiries, communicate with prospective clients, and maintain relevant business records."
+          },
+          {
+            "type": "subheading",
+            "text": "Website forms and email delivery"
+          },
+          {
+            "type": "paragraph",
+            "text": "When you submit a contact or discovery form, your information is transmitted using Resend, a third-party email delivery service."
+          },
+          {
+            "type": "paragraph",
+            "text": "Resend delivers the submitted information to our business email inbox, which is provided by Namecheap Private Email."
+          },
+          {
+            "type": "paragraph",
+            "text": "We use the information received to review your inquiry, communicate with you, and evaluate your project requirements."
+          },
+          {
+            "type": "paragraph",
+            "text": "Our website does not currently maintain a separate database of contact or discovery form submissions."
+          },
+          {
+            "type": "subheading",
+            "text": "Prospect management spreadsheet"
+          },
+          {
+            "type": "paragraph",
+            "text": "Relevant information from received inquiries is manually recorded in a Microsoft Excel spreadsheet stored through Microsoft OneDrive."
+          },
+          {
+            "type": "paragraph",
+            "text": "The spreadsheet contains selected information used to manage prospective client relationships, including:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Names and contact details.",
+              "Business names and websites.",
+              "Proposal status and relevant follow-up dates.",
+              "Marketing authorization status and date, where applicable."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "We do not routinely copy complete form submissions into the prospect spreadsheet."
+          },
+          {
+            "type": "subheading",
+            "text": "Access to information"
+          },
+          {
+            "type": "paragraph",
+            "text": "Personal information is accessed by Fortales founders and authorized team members who require it for their responsibilities."
+          },
+          {
+            "type": "paragraph",
+            "text": "Our prospect spreadsheet is maintained through Microsoft OneDrive, and its sharing permissions are managed through that service."
+          },
+          {
+            "type": "paragraph",
+            "text": "We are implementing restricted sharing permissions to limit access to specifically authorized team members."
+          },
+          {
+            "type": "paragraph",
+            "text": "Access to our business email and other relevant accounts is protected using strong, unique passwords."
+          },
+          {
+            "type": "paragraph",
+            "text": "We do not publish our prospect database on our website or intentionally make its contents available to the general public."
+          }
+        ]
+      },
+      {
+        "title": "6. How Long We Retain Your Information",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We retain personal information for periods that correspond to the purposes for which it was collected, subject to applicable legal obligations and other justified retention requirements."
+          },
+          {
+            "type": "paragraph",
+            "text": "Different retention periods apply to prospect records, original communications, and client information."
+          },
+          {
+            "type": "subheading",
+            "text": "Prospect spreadsheet records"
+          },
+          {
+            "type": "paragraph",
+            "text": "If you contact Fortales but do not become a client, your prospect record is retained in our management spreadsheet for up to three months from the date of your original inquiry."
+          },
+          {
+            "type": "paragraph",
+            "text": "At the end of this period, we delete the prospect record, including the associated contact information and marketing authorization information."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you become a client before the end of this period, we remove your prospect record and retain only the information necessary for the client relationship."
+          },
+          {
+            "type": "subheading",
+            "text": "Original inquiry emails"
+          },
+          {
+            "type": "paragraph",
+            "text": "Original inquiry emails may be retained in our business email system for up to one year from the date they are received."
+          },
+          {
+            "type": "paragraph",
+            "text": "This allows us to maintain a limited record of previous communications, respond to follow-up inquiries, and refer to relevant project discussions."
+          },
+          {
+            "type": "paragraph",
+            "text": "Retaining an original inquiry email does not mean that the sender remains an active prospect or is authorized to receive promotional communications."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once the applicable retention period expires, the original inquiry email is deleted unless continued retention is necessary for an applicable legal obligation or another lawful and justified purpose."
+          },
+          {
+            "type": "subheading",
+            "text": "Promotional communications"
+          },
+          {
+            "type": "paragraph",
+            "text": "Marketing authorization associated with a prospect is retained only while the corresponding prospect record remains active, subject to withdrawal of consent."
+          },
+          {
+            "type": "paragraph",
+            "text": "When the prospect record reaches its three-month retention limit, the record is deleted and Fortales stops sending promotional communications to that person on the basis of that authorization."
+          },
+          {
+            "type": "paragraph",
+            "text": "Any original inquiry emails retained separately are not used to continue promotional communications after the prospect record has been removed."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you withdraw your marketing authorization before the end of the retention period, we stop using your information for promotional communications."
+          },
+          {
+            "type": "paragraph",
+            "text": "Where necessary, we may retain a limited record of your withdrawal for the purpose of respecting your communication preferences and avoiding unauthorized future contact."
+          },
+          {
+            "type": "subheading",
+            "text": "Client information"
+          },
+          {
+            "type": "paragraph",
+            "text": "If you become a Fortales client, we retain information necessary to manage the contractual relationship, provide the agreed services, and comply with applicable legal obligations."
+          },
+          {
+            "type": "paragraph",
+            "text": "Client information may be subject to retention periods different from those applicable to unsuccessful inquiries."
+          },
+          {
+            "type": "paragraph",
+            "text": "The applicable period will depend on the nature of the information, the contractual relationship, and any relevant legal, accounting, or regulatory obligations."
+          },
+          {
+            "type": "subheading",
+            "text": "Third-party systems and backups"
+          },
+          {
+            "type": "paragraph",
+            "text": "Information may temporarily remain in technical logs, email delivery systems, or backups maintained by our service providers according to their applicable retention procedures."
+          },
+          {
+            "type": "paragraph",
+            "text": "Where deletion is required, we take appropriate steps to address the relevant information in the systems under our control and through our service providers, subject to applicable law and technical limitations."
+          }
+        ]
+      },
+      {
+        "title": "7. Third-Party Service Providers and International Processing",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Fortales uses third-party services to operate its website, receive communications, and maintain business information."
+          },
+          {
+            "type": "paragraph",
+            "text": "These services may process personal information on our behalf or as part of providing their respective services."
+          },
+          {
+            "type": "paragraph",
+            "text": "Our current providers include:"
+          },
+          {
+            "type": "subheading",
+            "text": "Vercel"
+          },
+          {
+            "type": "paragraph",
+            "text": "Vercel hosts the Fortales website and provides the infrastructure necessary to deliver its content to visitors."
+          },
+          {
+            "type": "paragraph",
+            "text": "As part of providing these services, Vercel may process technical information associated with website requests, infrastructure operations, and security."
+          },
+          {
+            "type": "subheading",
+            "text": "Resend"
+          },
+          {
+            "type": "paragraph",
+            "text": "Resend is used to transmit contact and discovery form submissions to our business email inbox."
+          },
+          {
+            "type": "paragraph",
+            "text": "As part of this process, Resend processes information contained in the submitted messages."
+          },
+          {
+            "type": "subheading",
+            "text": "Namecheap Private Email"
+          },
+          {
+            "type": "paragraph",
+            "text": "Namecheap Private Email provides our business email service."
+          },
+          {
+            "type": "paragraph",
+            "text": "Information received through website forms and direct email communications is processed and stored through this service."
+          },
+          {
+            "type": "subheading",
+            "text": "Microsoft"
+          },
+          {
+            "type": "paragraph",
+            "text": "We use Microsoft Excel and OneDrive to organize and store selected information relating to prospective clients."
+          },
+          {
+            "type": "paragraph",
+            "text": "Microsoft processes this information as part of providing its spreadsheet and cloud storage services."
+          },
+          {
+            "type": "subheading",
+            "text": "Other communication platforms"
+          },
+          {
+            "type": "paragraph",
+            "text": "When you contact us through WhatsApp Business or social media, the relevant platform may process information associated with your communication according to its own privacy policy and applicable service arrangements."
+          },
+          {
+            "type": "paragraph",
+            "text": "We do not sell your personal information to advertisers or data brokers."
+          },
+          {
+            "type": "paragraph",
+            "text": "We do not share prospect information with unrelated third parties for their independent promotional activities."
+          },
+          {
+            "type": "paragraph",
+            "text": "We may disclose information when required by applicable law, a valid legal process, or a competent authority."
+          },
+          {
+            "type": "subheading",
+            "text": "International processing"
+          },
+          {
+            "type": "paragraph",
+            "text": "Fortales operates from Ecuador. However, the third-party services we use may process or store personal information using infrastructure located outside Ecuador."
+          },
+          {
+            "type": "paragraph",
+            "text": "This may occur when information is transmitted through Resend, stored through Microsoft OneDrive or Namecheap Private Email, processed through Vercel, or communicated through third-party messaging platforms."
+          },
+          {
+            "type": "paragraph",
+            "text": "International processing is associated with the operation of our website, business communications, prospect management, and related services."
+          },
+          {
+            "type": "paragraph",
+            "text": "Where applicable, we will ensure that international transfers or processing arrangements comply with Ecuadorian data protection requirements and that appropriate legal mechanisms and safeguards are in place."
+          }
+        ]
+      },
+      {
+        "title": "8. Cookies, Analytics, and Tracking",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Fortales does not currently use cookies, local storage, or session storage to store visitor preferences or track browsing behavior."
+          },
+          {
+            "type": "paragraph",
+            "text": "We do not currently use:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Website analytics services.",
+              "Advertising pixels or behavioral tracking tools.",
+              "Third-party advertising cookies.",
+              "Visitor profiling systems.",
+              "Browser storage for persistent website preferences."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Our website does not currently use Vercel Analytics or Vercel Speed Insights."
+          },
+          {
+            "type": "paragraph",
+            "text": "The absence of these technologies does not prevent our hosting provider from processing technical connection information necessary to deliver and operate the website."
+          },
+          {
+            "type": "paragraph",
+            "text": "If we introduce cookies, analytics, or other tracking technologies in the future, we will update this Privacy Policy and implement any additional notices or consent mechanisms required by applicable law."
+          }
+        ]
+      },
+      {
+        "title": "9. Promotional Communications and Your Choices",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Fortales may occasionally send information about its services, new offerings, or promotional opportunities to individuals who have authorized us to contact them for these purposes."
+          },
+          {
+            "type": "paragraph",
+            "text": "Promotional communications are separate from the messages necessary to respond to a requested inquiry, prepare a quotation, or manage an existing client relationship."
+          },
+          {
+            "type": "subheading",
+            "text": "How marketing authorization is obtained"
+          },
+          {
+            "type": "paragraph",
+            "text": "Where consent is required, we request it through a separate, optional checkbox on our website forms."
+          },
+          {
+            "type": "paragraph",
+            "text": "The checkbox explicitly identifies email and WhatsApp as the communication channels for which authorization is requested."
+          },
+          {
+            "type": "paragraph",
+            "text": "The checkbox is not selected by default."
+          },
+          {
+            "type": "paragraph",
+            "text": "You may submit an inquiry or request a quotation without authorizing promotional communications."
+          },
+          {
+            "type": "subheading",
+            "text": "Communication channels"
+          },
+          {
+            "type": "paragraph",
+            "text": "Where you have authorized us to do so, we may send promotional communications through email or WhatsApp, according to the authorization you provided."
+          },
+          {
+            "type": "paragraph",
+            "text": "We do not interpret authorization for email and WhatsApp communications as automatic permission to send promotional messages through unrelated channels."
+          },
+          {
+            "type": "paragraph",
+            "text": "Promotional messages through social media direct messages are sent only where the individual has explicitly authorized that form of communication."
+          },
+          {
+            "type": "subheading",
+            "text": "Recording marketing authorization"
+          },
+          {
+            "type": "paragraph",
+            "text": "Where you authorize promotional communications through our website forms, we record your authorization status and the date it was provided in our prospect management spreadsheet."
+          },
+          {
+            "type": "paragraph",
+            "text": "This information is used to manage your communication preferences and distinguish authorized promotional contact from ordinary project-related correspondence."
+          },
+          {
+            "type": "subheading",
+            "text": "Withdrawing authorization"
+          },
+          {
+            "type": "paragraph",
+            "text": "You may withdraw your authorization to receive promotional communications at any time."
+          },
+          {
+            "type": "paragraph",
+            "text": "You can do so by:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Replying to a promotional message and requesting that we stop contacting you.",
+              "Contacting us at {privacyEmail}.",
+              "Using the unsubscribe mechanism included in an email, where available."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "When we receive your withdrawal request, we stop sending promotional communications covered by that authorization."
+          },
+          {
+            "type": "paragraph",
+            "text": "Withdrawing authorization does not prevent us from communicating with you when necessary to respond to an ongoing inquiry, manage an existing project, or fulfill applicable contractual or legal obligations."
+          },
+          {
+            "type": "subheading",
+            "text": "Marketing retention"
+          },
+          {
+            "type": "paragraph",
+            "text": "We do not retain unsuccessful prospects indefinitely for promotional purposes."
+          },
+          {
+            "type": "paragraph",
+            "text": "When a prospect record is deleted after its three-month retention period, the associated marketing authorization is also removed, and promotional contact based on that authorization ends."
+          },
+          {
+            "type": "paragraph",
+            "text": "Original inquiry emails retained separately are not used to reestablish marketing contact without an appropriate legal basis."
+          }
+        ]
+      },
+      {
+        "title": "10. Security of Your Information",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Fortales takes measures to protect personal information against unauthorized access, disclosure, alteration, loss, or misuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "Our current practices include using strong, unique passwords for relevant business accounts and limiting the handling of prospect information to authorized founders and team members."
+          },
+          {
+            "type": "paragraph",
+            "text": "We use established third-party providers for website hosting, email delivery, business communications, and cloud storage."
+          },
+          {
+            "type": "paragraph",
+            "text": "We are also implementing more restrictive OneDrive sharing permissions to limit access to our prospect spreadsheet to specifically authorized individuals."
+          },
+          {
+            "type": "paragraph",
+            "text": "We review our information-handling practices as our business and technical requirements evolve."
+          },
+          {
+            "type": "paragraph",
+            "text": "Although no electronic storage or transmission system can guarantee absolute security, we aim to maintain safeguards appropriate to the nature of the information we process."
+          },
+          {
+            "type": "paragraph",
+            "text": "If a personal data security incident occurs, we will assess the incident and take the actions required by applicable law, including any applicable notification obligations."
+          }
+        ]
+      },
+      {
+        "title": "11. Your Personal Data Protection Rights",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Under Ecuadorian data protection law, you have rights regarding the personal information we process about you."
+          },
+          {
+            "type": "paragraph",
+            "text": "Depending on the circumstances and applicable legal requirements, these rights include:"
+          },
+          {
+            "type": "subheading",
+            "text": "Access"
+          },
+          {
+            "type": "paragraph",
+            "text": "You may request information about the personal data we hold about you and how it is processed."
+          },
+          {
+            "type": "subheading",
+            "text": "Rectification and updating"
+          },
+          {
+            "type": "paragraph",
+            "text": "You may request the correction or updating of personal information that is inaccurate or incomplete."
+          },
+          {
+            "type": "subheading",
+            "text": "Deletion"
+          },
+          {
+            "type": "paragraph",
+            "text": "You may request the deletion of your personal information where the applicable legal conditions are met."
+          },
+          {
+            "type": "subheading",
+            "text": "Objection"
+          },
+          {
+            "type": "paragraph",
+            "text": "You may object to certain processing activities where permitted by applicable law."
+          },
+          {
+            "type": "subheading",
+            "text": "Suspension of processing"
+          },
+          {
+            "type": "paragraph",
+            "text": "You may request the suspension or limitation of certain processing activities in circumstances established by law."
+          },
+          {
+            "type": "subheading",
+            "text": "Withdrawal of consent"
+          },
+          {
+            "type": "paragraph",
+            "text": "You may withdraw consent previously provided for processing activities based on that consent."
+          },
+          {
+            "type": "subheading",
+            "text": "Data portability"
+          },
+          {
+            "type": "paragraph",
+            "text": "You may request the portability of your personal information where the applicable legal requirements are met."
+          },
+          {
+            "type": "subheading",
+            "text": "Rights concerning automated decisions"
+          },
+          {
+            "type": "paragraph",
+            "text": "You may exercise applicable rights relating to decisions based exclusively on automated processing, including profiling."
+          },
+          {
+            "type": "subheading",
+            "text": "How to exercise your rights"
+          },
+          {
+            "type": "paragraph",
+            "text": "To exercise your rights, contact us at:"
+          },
+          {
+            "type": "paragraph",
+            "text": "{privacyEmail}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Please describe the request you wish to make and provide the information reasonably necessary for us to identify the relevant personal data."
+          },
+          {
+            "type": "paragraph",
+            "text": "We may request additional information where necessary to verify your identity and protect your personal information from unauthorized disclosure."
+          },
+          {
+            "type": "paragraph",
+            "text": "We will review and respond to your request within the time limits established by applicable law."
+          },
+          {
+            "type": "paragraph",
+            "text": "Where a request cannot be fulfilled in whole or in part, we will explain the applicable reasons where required by law."
+          },
+          {
+            "type": "paragraph",
+            "text": "Certain information may need to be retained when continued processing is required or permitted by an applicable legal obligation or another valid legal basis."
+          }
+        ]
+      },
+      {
+        "title": "12. Automated Decision-Making and Profiling",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Fortales does not currently use automated decision-making or profiling systems to make decisions about website visitors or prospective clients that produce legal or similarly significant effects."
+          },
+          {
+            "type": "paragraph",
+            "text": "Project inquiries and potential business relationships are evaluated through our ordinary internal review and communication processes."
+          },
+          {
+            "type": "paragraph",
+            "text": "If we introduce automated processing activities that materially affect individuals' rights or the handling of their personal information, we will update this Privacy Policy and provide any additional information required by applicable law."
+          }
+        ]
+      },
+      {
+        "title": "13. Children's Privacy",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Our website is publicly accessible but is not specifically directed toward children."
+          },
+          {
+            "type": "paragraph",
+            "text": "Fortales provides web design, development, and related digital services primarily intended for businesses and individuals seeking professional services."
+          },
+          {
+            "type": "paragraph",
+            "text": "We do not intentionally collect personal information from children for marketing purposes."
+          },
+          {
+            "type": "paragraph",
+            "text": "If we become aware that personal information relating to a child has been collected or processed in circumstances that require additional safeguards or authorization, we will take appropriate steps in accordance with applicable law."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you believe that a child has submitted personal information through our website inappropriately, please contact us at {privacyEmail}."
+          }
+        ]
+      },
+      {
+        "title": "14. Information About Other Individuals",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Our contact and discovery forms are intended for individuals submitting legitimate business inquiries or requesting information about our services."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you provide personal information about another individual, such as a business partner, colleague, or company representative, you should ensure that you are authorized to share that information and that doing so complies with applicable law."
+          },
+          {
+            "type": "paragraph",
+            "text": "Please avoid including unnecessary personal information about third parties in your inquiries."
+          }
+        ]
+      },
+      {
+        "title": "15. Changes to This Privacy Policy",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "We may update this Privacy Policy to reflect changes in our website, services, business operations, data-processing practices, or applicable legal requirements."
+          },
+          {
+            "type": "paragraph",
+            "text": "When we make changes, we will update the \"Last updated\" date at the beginning of this document."
+          },
+          {
+            "type": "paragraph",
+            "text": "Where required by law, we will provide additional notice or request new authorization before implementing changes that materially affect the processing of your personal information."
+          },
+          {
+            "type": "paragraph",
+            "text": "The current version of this Privacy Policy will remain available on our website."
+          }
+        ]
+      },
+      {
+        "title": "16. Questions, Requests, and Complaints",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "If you have questions about this Privacy Policy, wish to exercise your personal data protection rights, or would like additional information about how Fortales handles your information, please contact us using the following details:"
+          },
+          {
+            "type": "paragraph",
+            "text": "Commercial name: Fortales"
+          },
+          {
+            "type": "paragraph",
+            "text": "Data controller: {legalName}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Business identification: {businessIdentification}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Legal address: {businessAddress}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Telephone: {phone}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Privacy contact email: {privacyEmail}"
+          },
+          {
+            "type": "paragraph",
+            "text": "Website: https://fortal.es"
+          },
+          {
+            "type": "paragraph",
+            "text": "We will review and respond to privacy-related requests in accordance with applicable law."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you believe your personal data protection rights have been violated, you may also submit a complaint to Ecuador's Superintendencia de Protección de Datos Personales through the procedures and channels established by that authority."
+          },
+          {
+            "type": "paragraph",
+            "text": "Nothing in this Privacy Policy limits your rights under applicable data protection law."
+          }
+        ]
+      }
+    ]
+  },
+  "Metadata": {
+    "PrivacyPolicy": {
+      "title": "Privacy Policy | Fortales",
+      "description": "Learn how Fortales collects, uses, stores, protects, and shares personal information when you visit our website or contact us about our services.",
+      "ogTitle": "Privacy Policy | Fortales",
+      "ogDescription": "How Fortales handles personal information submitted through our website and business communication channels.",
+      "twitterTitle": "Privacy Policy | Fortales",
+      "twitterDescription": "How Fortales collects, uses, stores, protects, and shares personal information."
+    }
+  }
+}

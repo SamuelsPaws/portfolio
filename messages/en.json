@@ -41,6 +41,167 @@
         "submitErrorTitle": "Something went wrong.",
         "submitErrorCopy": "We couldn't send your request at this time. Please try again in a moment. If the issue persists, feel free to contact us directly and we'll be happy to help."
     },
+    "TermsOfService": {
+        "title": "Terms of Service",
+        "logoAlt": "Fortales logo",
+        "lastUpdatedLabel": "Last updated",
+        "lastUpdated": "September 19, 2026",
+        "privacyPolicy": "Privacy Policy",
+        "introduction": [
+            "Welcome to Fortales. These Terms of Service govern your access to and use of our website, https://fortal.es, including its content, features, contact forms, and information about our services.",
+            "Please read these terms carefully before using our website. By accessing or using the website, you agree to these Terms of Service, to the extent permitted by applicable law.",
+            "If you have any questions about these terms, you can contact us using the information provided at the end of this document."
+        ],
+        "sections": [
+            {
+                "title": "1. About Fortales",
+                "paragraphs": [
+                    "Fortales is a web design and development agency operated by {legalName}, an individual operating under the commercial name Fortales, based in Ecuador.",
+                    "Throughout these terms, “Fortales,” “we,” “us,” and “our” refer to {legalName}, the individual responsible for operating this website.",
+                    "Our website provides information about our web design, development, and related digital services, showcases selected projects, and allows prospective clients to contact us or request project proposals.",
+                    "These Terms of Service apply to the use of our public website. The provision of paid services is governed by the specific proposal, agreement, or contract established between Fortales and the client."
+                ]
+            },
+            {
+                "title": "2. Use of Our Website",
+                "paragraphs": [
+                    "You may access and use our website for lawful purposes, including learning about our services, exploring our portfolio, reviewing pricing information, and contacting us about potential projects.",
+                    "When using our website, you agree not to:",
+                    "We may take reasonable measures to protect the website and prevent unauthorized or harmful use.",
+                    "Nothing in these terms restricts your rights under applicable law."
+                ],
+                "bullets": [
+                    "Use the website for unlawful, fraudulent, or misleading purposes.",
+                    "Attempt to gain unauthorized access to the website, its servers, or associated systems.",
+                    "Interfere with the website’s operation, security, or availability.",
+                    "Introduce malicious software, harmful code, or other material intended to compromise the website.",
+                    "Use our forms to submit spam, fraudulent inquiries, or content that violates applicable law.",
+                    "Reproduce or commercially exploit our website content without authorization, except where permitted by law."
+                ]
+            },
+            {
+                "title": "3. Our Services and Published Pricing",
+                "paragraphs": [
+                    "Fortales provides web design, website development, and related digital services.",
+                    "Our website may display service packages, descriptions, included features, estimated timelines, and starting prices to help prospective clients understand our offerings.",
+                    "Published package prices represent the starting cost of the corresponding services. The final price of a project may vary depending on its requirements, scope, complexity, requested features, integrations, content needs, and other relevant considerations.",
+                    "Any additional costs, applicable taxes, and project-specific conditions will be communicated through the relevant quotation or proposal before a client enters into a paid agreement.",
+                    "Submitting an inquiry, completing a discovery form, or selecting a package does not, by itself, constitute a purchase or create an obligation to pay for services.",
+                    "A project becomes a paid engagement only when the parties have agreed to the applicable commercial terms through an appropriate agreement or contract.",
+                    "We may update our published services, packages, and starting prices. Such changes will not automatically modify the terms of an agreement already accepted by a client."
+                ]
+            },
+            {
+                "title": "4. Project Inquiries and Proposals",
+                "paragraphs": [
+                    "Our website provides contact and discovery forms through which prospective clients can tell us about their businesses, goals, and project requirements.",
+                    "After receiving an inquiry, we may contact you to request additional information, clarify your requirements, discuss potential solutions, or prepare a project proposal.",
+                    "We may determine that a requested project falls outside our available services, capabilities, or current capacity. In such cases, we may decline to provide a proposal or enter into a service agreement, subject to applicable law.",
+                    "Any proposal we provide may describe the recommended solution, scope of work, deliverables, pricing, estimated timeline, payment conditions, and other terms relevant to the proposed project.",
+                    "Unless otherwise expressly agreed, a proposal does not authorize Fortales to begin paid work or require the prospective client to proceed with the project.",
+                    "The specific terms governing an accepted project will be established in the corresponding agreement or contract.",
+                    "If a project agreement contains provisions that differ from these website Terms of Service, the project-specific agreement will govern the relevant services, subject to applicable law."
+                ]
+            },
+            {
+                "title": "5. Information Submitted Through Our Forms",
+                "paragraphs": [
+                    "When contacting Fortales or submitting a project inquiry, you are responsible for providing information that is accurate to the best of your knowledge.",
+                    "You should only submit information that you are authorized to share.",
+                    "Please avoid including passwords, payment card details, confidential access credentials, or other sensitive information in our general contact and discovery forms unless we have specifically requested such information through an appropriate, secure communication channel.",
+                    "We use the information you provide to respond to inquiries, evaluate project requirements, prepare proposals, and manage prospective client relationships.",
+                    "Additional information about the collection, processing, storage, and protection of personal information is available in our {privacyPolicy}."
+                ]
+            },
+            {
+                "title": "6. Intellectual Property",
+                "paragraphs": [
+                    "Unless otherwise indicated, the Fortales website and its original content, including its branding, logos, written materials, graphics, layouts, and other creative elements, are owned by Fortales or used with the appropriate authorization.",
+                    "These materials are protected by applicable intellectual property laws.",
+                    "You may browse our website and use its content for personal or legitimate business evaluation purposes.",
+                    "You may not reproduce, distribute, modify, sell, or commercially exploit our original website content without prior authorization, except where permitted by applicable law.",
+                    "Our portfolio may include trademarks, logos, photographs, website designs, and other materials belonging to our clients or third parties. The inclusion of such materials does not transfer ownership or grant visitors permission to use them.",
+                    "Ownership, licensing, usage rights, and delivery of intellectual property created for individual client projects are governed by the corresponding project agreements.",
+                    "Nothing in these Terms of Service transfers ownership of Fortales’ intellectual property to website visitors."
+                ]
+            },
+            {
+                "title": "7. Portfolio and Project Information",
+                "paragraphs": [
+                    "Our website may feature selected projects to illustrate our experience, capabilities, and approach to web design and development.",
+                    "Project descriptions, screenshots, performance measurements, and other published information relate to the specific projects and circumstances described.",
+                    "Actual results may vary depending on a project’s requirements, implementation, hosting environment, third-party services, content, and other relevant factors.",
+                    "Performance measurements and examples presented in our portfolio do not constitute a guarantee that every future project will achieve identical results.",
+                    "Any specific performance targets, deliverables, or measurable commitments for a client project must be expressly established in the relevant project agreement."
+                ]
+            },
+            {
+                "title": "8. External Links and Third-Party Services",
+                "paragraphs": [
+                    "Our website may contain links to external websites, including client websites, social media platforms, and third-party services.",
+                    "These external websites are operated independently and may have their own terms, privacy policies, and practices.",
+                    "Fortales does not control the content, availability, or operation of third-party websites.",
+                    "The inclusion of an external link does not necessarily constitute an endorsement of all content, products, or services available through that website.",
+                    "When visiting third-party websites, we encourage you to review their applicable terms and privacy policies.",
+                    "Our own website may also rely on third-party technical services for hosting, communication, and other operational purposes. Information about third-party providers involved in processing personal data is provided in our Privacy Policy."
+                ]
+            },
+            {
+                "title": "9. Website Availability and Information",
+                "paragraphs": [
+                    "We make reasonable efforts to maintain the website and provide accurate, useful, and up-to-date information about Fortales and its services.",
+                    "However, the website may occasionally be unavailable due to maintenance, technical issues, infrastructure failures, or circumstances beyond our reasonable control.",
+                    "We may modify, update, or temporarily suspend parts of the website when necessary for maintenance, security, or operational reasons.",
+                    "We also make reasonable efforts to ensure that published service descriptions, pricing information, and other commercial information accurately reflect our current offerings.",
+                    "If you have questions about a service, its availability, its price, or the applicability of a particular feature to your project, please contact us for clarification before entering into an agreement.",
+                    "Nothing in this section excludes or limits any responsibility that cannot lawfully be excluded or limited under applicable law."
+                ]
+            },
+            {
+                "title": "10. Privacy and Personal Data",
+                "paragraphs": [
+                    "Your privacy is important to us.",
+                    "When you submit information through our website or communicate with Fortales, we process personal information for purposes associated with responding to inquiries, evaluating potential projects, managing business relationships, and other purposes described in our Privacy Policy.",
+                    "Our Privacy Policy explains what information we collect, how we use and protect it, the circumstances in which third-party service providers may process it, and how you can exercise your applicable data protection rights.",
+                    "Please review our {privacyPolicy} for further information."
+                ]
+            },
+            {
+                "title": "11. Changes to These Terms",
+                "paragraphs": [
+                    "We may update these Terms of Service to reflect changes in our website, services, business operations, or applicable legal requirements.",
+                    "When we make changes, we will update the “Last updated” date at the beginning of this document.",
+                    "The revised terms will apply to subsequent use of the website from their effective date, subject to applicable law.",
+                    "Changes to these website terms will not automatically modify the conditions of an existing client agreement. Any changes to an accepted project agreement must be handled in accordance with that agreement and applicable law.",
+                    "We encourage visitors to review this page periodically."
+                ]
+            },
+            {
+                "title": "12. Applicable Law",
+                "paragraphs": [
+                    "These Terms of Service are governed by the laws of the Republic of Ecuador, without prejudice to any mandatory legal protections applicable to website visitors or clients.",
+                    "Any disagreement arising from the use of this website should initially be communicated to Fortales using the contact information below so that the parties may attempt to resolve the matter directly.",
+                    "If a disagreement cannot be resolved through direct communication, the parties may pursue the dispute resolution mechanisms available under applicable law.",
+                    "Nothing in these terms limits any mandatory consumer protection rights or other rights established by applicable legislation."
+                ]
+            },
+            {
+                "title": "13. Contact Information",
+                "paragraphs": [
+                    "If you have questions about these Terms of Service, our website, or the services presented on it, you can contact us using the following information:",
+                    "We will make reasonable efforts to respond to inquiries received through our official contact channels."
+                ]
+            }
+        ],
+        "contact": {
+            "commercialName": "Commercial name",
+            "websiteOperator": "Website operator",
+            "businessIdentification": "Business identification",
+            "businessAddress": "Business address",
+            "email": "Email",
+            "website": "Website"
+        }
+    },
     "ProjectPage": {
         "liveLink": "Visit Live Site",
         "tech": "Tech",
@@ -100,6 +261,10 @@
         "subhead": "We help brands boost their digital presence through high-converting websites and digital systems built to sell.",
         "ctaMain": "See our prices",
         "ctaSecond": "Learn more",
+        "performanceFirst": "PERFORMANCE-FIRST",
+        "fastByDesign": "Fast by design",
+        "seoBuiltIn": "SEO BUILT IN",
+        "readyToBeFound": "Ready to be found",
         "h2WhoFor": "Websites designed to bring more customers to your business",
         "idealFor": "Ideal for",
         "h3SmallBiz": "Small businesses ready to grow",
@@ -390,6 +555,14 @@
         "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
+        "TermsOfService": {
+            "title": "Terms of Service | Fortales",
+            "description": "Read the terms that govern access to the Fortales website, project inquiries, published pricing, intellectual property, and related services.",
+            "ogTitle": "Terms of Service | Fortales",
+            "ogDescription": "The terms governing use of the Fortales website and information about our web design and development services.",
+            "twitterTitle": "Terms of Service | Fortales",
+            "twitterDescription": "The terms governing use of the Fortales website and information about our services."
+        },
         "DiscoveryForm": {
             "title": "Website Discovery Form | Fortales",
             "description": "Share the business, brand, content, and technical details Fortales needs to prepare your website project.",

@@ -131,11 +131,13 @@ export default async function PortfolioProjectPage({ params }: Props) {
     const t = await getTranslations({ locale, namespace: 'FortPortfolio' });
 
     return (
-        <main className="pt-header-height">
+        <main>
             <JsonLd data={projectSchema} />
             <JsonLd data={breadcrumbSchema} />
             <section className="
-                px-8 py-12 sm:py-16 md:px-16 lg:py-24 xl:px-32
+                px-8 py-24
+                md:px-16 md:py-32
+                xl:px-32 xl:py-32
                 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16
                 bg-main"
             >
@@ -149,8 +151,9 @@ export default async function PortfolioProjectPage({ params }: Props) {
                         sizes="(min-width: 1024px) 50vw, 100vw"
                         className="
                             w-full aspect-[3/2] lg:aspect-auto lg:h-140
-                            bg-gray-200 dark:bg-br-gray-800
-                            object-contain rounded-2xl sm:rounded-4xl shadow-img"
+                            bg-black dark:bg-br-gray-800
+                            object-contain rounded-2xl sm:rounded-4xl shadow-img
+                            opacity-0 animate-fade-in-right-slow-1000"
                         priority
                     />
                 </div>
@@ -164,14 +167,23 @@ export default async function PortfolioProjectPage({ params }: Props) {
                     <h1 className="
                         mb-6
                         text-4xl sm:text-5xl xl:text-7xl leading-tight
-                        text-main font-['Source_Serif_4']"
+                        text-main font-['Source_Serif_4']
+                        opacity-0 animate-fade-in-left-600"
                     >
                         {project.title}
                     </h1>
-                    <p className="mb-6 sm:mb-8 text-my-md text-secondary leading-relaxed">
+                    <p className="
+                        mb-6 sm:mb-8
+                        text-my-md text-secondary leading-relaxed
+                        opacity-0 animate-fade-in-left-700"
+                    >
                         {project.copy[locale]}
                     </p>
-                    <div className="mb-6 sm:mb-8 flex flex-wrap gap-2 sm:gap-4">
+                    <div className="
+                        mb-6 sm:mb-8
+                        flex flex-wrap gap-2 sm:gap-4
+                        animate-fade-in-left-800"
+                    >
                         {project.implementations.map((implementation, index) => (
                             <ImplementationItem
                                 key={index}
@@ -182,7 +194,8 @@ export default async function PortfolioProjectPage({ params }: Props) {
                     <div className="
                         mb-8 pt-6
                         grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6
-                        border-t border-gray-300"
+                        border-t border-gray-300
+                        opacity-0 animate-fade-in-left-900"
                     >
                         {project.highlights.map(highlight => (
                             <HighlightItem
@@ -192,7 +205,11 @@ export default async function PortfolioProjectPage({ params }: Props) {
                             />
                         ))}
                     </div>
-                    <div className="flex flex-col md:flex-row gap-4">
+                    {/* Div with buttons */}
+                    <div className="
+                        flex flex-col md:flex-row gap-4
+                        opacity-0 animate-fade-in-left-1000"
+                    >
                         <FortCtaBtn
                             href={project.liveUrl}
                             label={t('seeLiveSite')}

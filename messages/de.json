@@ -41,6 +41,167 @@
         "submitErrorTitle": "Etwas ist schiefgelaufen.",
         "submitErrorCopy": "Ihre Anfrage konnte im Moment nicht gesendet werden. Bitte versuchen Sie es in wenigen Augenblicken erneut. Sollte das Problem weiterhin bestehen, können Sie uns jederzeit direkt kontaktieren. Wir helfen Ihnen gerne weiter."
     },
+    "TermsOfService": {
+        "title": "Nutzungsbedingungen",
+        "logoAlt": "Fortales-Logo",
+        "lastUpdatedLabel": "Zuletzt aktualisiert",
+        "lastUpdated": "19. September 2026",
+        "privacyPolicy": "Datenschutzerklärung",
+        "introduction": [
+            "Willkommen bei Fortales. Diese Nutzungsbedingungen regeln Ihren Zugriff auf unsere Website https://fortal.es und deren Nutzung, einschließlich ihrer Inhalte, Funktionen, Kontaktformulare und Informationen über unsere Leistungen.",
+            "Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie unsere Website nutzen. Indem Sie auf die Website zugreifen oder sie nutzen, stimmen Sie diesen Nutzungsbedingungen im gesetzlich zulässigen Umfang zu.",
+            "Wenn Sie Fragen zu diesen Bedingungen haben, können Sie uns über die am Ende dieses Dokuments angegebenen Kontaktdaten erreichen."
+        ],
+        "sections": [
+            {
+                "title": "1. Über Fortales",
+                "paragraphs": [
+                    "Fortales ist eine Agentur für Webdesign und Webentwicklung, die von {legalName}, einer unter dem Handelsnamen Fortales tätigen natürlichen Person mit Sitz in Ecuador, betrieben wird.",
+                    "In diesen Bedingungen beziehen sich „Fortales“, „wir“, „uns“ und „unser“ auf {legalName}, die für den Betrieb dieser Website verantwortliche Person.",
+                    "Unsere Website informiert über unsere Leistungen in den Bereichen Webdesign, Entwicklung und verwandte digitale Dienstleistungen, präsentiert ausgewählte Projekte und ermöglicht es potenziellen Kunden, uns zu kontaktieren oder Projektangebote anzufordern.",
+                    "Diese Nutzungsbedingungen gelten für die Nutzung unserer öffentlichen Website. Die Erbringung kostenpflichtiger Leistungen richtet sich nach dem jeweiligen Angebot, der Vereinbarung oder dem Vertrag zwischen Fortales und dem Kunden."
+                ]
+            },
+            {
+                "title": "2. Nutzung unserer Website",
+                "paragraphs": [
+                    "Sie dürfen unsere Website zu rechtmäßigen Zwecken aufrufen und nutzen, etwa um sich über unsere Leistungen zu informieren, unser Portfolio anzusehen, Preisangaben zu prüfen oder uns wegen möglicher Projekte zu kontaktieren.",
+                    "Bei der Nutzung unserer Website verpflichten Sie sich, Folgendes zu unterlassen:",
+                    "Wir dürfen angemessene Maßnahmen ergreifen, um die Website zu schützen und eine unbefugte oder schädliche Nutzung zu verhindern.",
+                    "Keine Bestimmung dieser Bedingungen schränkt Ihre Rechte nach geltendem Recht ein."
+                ],
+                "bullets": [
+                    "Die Website für rechtswidrige, betrügerische oder irreführende Zwecke zu nutzen.",
+                    "Sich unbefugten Zugang zur Website, ihren Servern oder verbundenen Systemen zu verschaffen.",
+                    "Den Betrieb, die Sicherheit oder die Verfügbarkeit der Website zu beeinträchtigen.",
+                    "Schadsoftware, schädlichen Code oder anderes Material einzubringen, das die Website gefährden soll.",
+                    "Unsere Formulare für Spam, betrügerische Anfragen oder Inhalte zu nutzen, die gegen geltendes Recht verstoßen.",
+                    "Inhalte unserer Website ohne Genehmigung zu vervielfältigen oder kommerziell zu verwerten, soweit dies nicht gesetzlich erlaubt ist."
+                ]
+            },
+            {
+                "title": "3. Unsere Leistungen und veröffentlichten Preise",
+                "paragraphs": [
+                    "Fortales bietet Webdesign, Website-Entwicklung und verwandte digitale Dienstleistungen an.",
+                    "Unsere Website kann Leistungspakete, Beschreibungen, enthaltene Funktionen, voraussichtliche Zeitpläne und Einstiegspreise anzeigen, damit potenzielle Kunden unser Angebot besser verstehen können.",
+                    "Veröffentlichte Paketpreise stellen die Ausgangskosten der jeweiligen Leistungen dar. Der endgültige Projektpreis kann je nach Anforderungen, Umfang, Komplexität, gewünschten Funktionen, Integrationen, Inhaltsbedarf und weiteren relevanten Faktoren variieren.",
+                    "Zusätzliche Kosten, anfallende Steuern und projektspezifische Bedingungen werden im jeweiligen Kostenvoranschlag oder Angebot mitgeteilt, bevor ein Kunde eine kostenpflichtige Vereinbarung eingeht.",
+                    "Das Absenden einer Anfrage, das Ausfüllen eines Projektfragebogens oder die Auswahl eines Pakets stellt für sich genommen keinen Kauf dar und begründet keine Zahlungspflicht.",
+                    "Ein Projekt wird erst dann zu einem kostenpflichtigen Auftrag, wenn sich die Parteien durch eine geeignete Vereinbarung oder einen Vertrag auf die anwendbaren Geschäftsbedingungen geeinigt haben.",
+                    "Wir können unsere veröffentlichten Leistungen, Pakete und Einstiegspreise aktualisieren. Solche Änderungen ändern nicht automatisch die Bedingungen einer bereits von einem Kunden angenommenen Vereinbarung."
+                ]
+            },
+            {
+                "title": "4. Projektanfragen und Angebote",
+                "paragraphs": [
+                    "Unsere Website stellt Kontakt- und Projektformulare bereit, über die potenzielle Kunden uns ihr Unternehmen, ihre Ziele und ihre Projektanforderungen beschreiben können.",
+                    "Nach Eingang einer Anfrage können wir Sie kontaktieren, um zusätzliche Informationen anzufordern, Ihre Anforderungen zu klären, mögliche Lösungen zu besprechen oder ein Projektangebot zu erstellen.",
+                    "Wir können feststellen, dass ein angefragtes Projekt außerhalb unserer verfügbaren Leistungen, Fähigkeiten oder aktuellen Kapazitäten liegt. In diesem Fall dürfen wir vorbehaltlich des geltenden Rechts die Abgabe eines Angebots oder den Abschluss einer Leistungsvereinbarung ablehnen.",
+                    "Ein von uns erstelltes Angebot kann die empfohlene Lösung, den Leistungsumfang, die Liefergegenstände, Preise, den voraussichtlichen Zeitplan, Zahlungsbedingungen und weitere für das vorgeschlagene Projekt relevante Bedingungen beschreiben.",
+                    "Sofern nicht ausdrücklich etwas anderes vereinbart wurde, berechtigt ein Angebot Fortales nicht zur Aufnahme kostenpflichtiger Arbeiten und verpflichtet den potenziellen Kunden nicht, das Projekt fortzuführen.",
+                    "Die konkreten Bedingungen für ein angenommenes Projekt werden in der entsprechenden Vereinbarung oder dem entsprechenden Vertrag festgelegt.",
+                    "Enthält eine Projektvereinbarung Bestimmungen, die von diesen Nutzungsbedingungen der Website abweichen, gilt für die betreffenden Leistungen vorbehaltlich des geltenden Rechts die projektspezifische Vereinbarung."
+                ]
+            },
+            {
+                "title": "5. Über unsere Formulare übermittelte Informationen",
+                "paragraphs": [
+                    "Wenn Sie Fortales kontaktieren oder eine Projektanfrage senden, sind Sie dafür verantwortlich, nach bestem Wissen richtige Angaben zu machen.",
+                    "Sie sollten nur Informationen übermitteln, zu deren Weitergabe Sie berechtigt sind.",
+                    "Bitte geben Sie in unseren allgemeinen Kontakt- und Projektformularen keine Passwörter, Zahlungskartendaten, vertraulichen Zugangsdaten oder sonstigen sensiblen Informationen an, es sei denn, wir haben diese ausdrücklich über einen geeigneten und sicheren Kommunikationskanal angefordert.",
+                    "Wir verwenden die von Ihnen bereitgestellten Informationen, um Anfragen zu beantworten, Projektanforderungen zu bewerten, Angebote zu erstellen und Beziehungen zu potenziellen Kunden zu verwalten.",
+                    "Weitere Informationen zur Erhebung, Verarbeitung, Speicherung und zum Schutz personenbezogener Daten finden Sie in unserer {privacyPolicy}."
+                ]
+            },
+            {
+                "title": "6. Geistiges Eigentum",
+                "paragraphs": [
+                    "Sofern nicht anders angegeben, stehen die Fortales-Website und ihre ursprünglichen Inhalte, darunter Markenauftritt, Logos, Texte, Grafiken, Layouts und andere kreative Elemente, im Eigentum von Fortales oder werden mit entsprechender Genehmigung verwendet.",
+                    "Diese Materialien sind durch die geltenden Gesetze zum Schutz geistigen Eigentums geschützt.",
+                    "Sie dürfen unsere Website aufrufen und ihre Inhalte für persönliche Zwecke oder zur legitimen geschäftlichen Bewertung nutzen.",
+                    "Sie dürfen die ursprünglichen Inhalte unserer Website ohne vorherige Genehmigung weder vervielfältigen, verbreiten, verändern, verkaufen noch kommerziell verwerten, soweit dies nicht nach geltendem Recht zulässig ist.",
+                    "Unser Portfolio kann Marken, Logos, Fotografien, Website-Designs und andere Materialien unserer Kunden oder Dritter enthalten. Deren Aufnahme überträgt kein Eigentum und erteilt Besuchern keine Erlaubnis zu ihrer Nutzung.",
+                    "Eigentum, Lizenzen, Nutzungsrechte und Übergabe von geistigem Eigentum, das für einzelne Kundenprojekte geschaffen wird, richten sich nach den jeweiligen Projektvereinbarungen.",
+                    "Keine Bestimmung dieser Nutzungsbedingungen überträgt Besuchern Eigentum am geistigen Eigentum von Fortales."
+                ]
+            },
+            {
+                "title": "7. Portfolio- und Projektinformationen",
+                "paragraphs": [
+                    "Unsere Website kann ausgewählte Projekte zeigen, um unsere Erfahrung, Fähigkeiten und Arbeitsweise im Webdesign und in der Webentwicklung zu veranschaulichen.",
+                    "Projektbeschreibungen, Screenshots, Leistungsmessungen und sonstige veröffentlichte Informationen beziehen sich auf die jeweils beschriebenen Projekte und Umstände.",
+                    "Die tatsächlichen Ergebnisse können je nach Projektanforderungen, Umsetzung, Hosting-Umgebung, Diensten Dritter, Inhalten und weiteren relevanten Faktoren variieren.",
+                    "Die in unserem Portfolio dargestellten Leistungsmessungen und Beispiele garantieren nicht, dass jedes künftige Projekt identische Ergebnisse erzielt.",
+                    "Konkrete Leistungsziele, Liefergegenstände oder messbare Zusagen für ein Kundenprojekt müssen ausdrücklich in der betreffenden Projektvereinbarung festgelegt werden."
+                ]
+            },
+            {
+                "title": "8. Externe Links und Dienste Dritter",
+                "paragraphs": [
+                    "Unsere Website kann Links zu externen Websites enthalten, darunter Kundenwebsites, Social-Media-Plattformen und Dienste Dritter.",
+                    "Diese externen Websites werden unabhängig betrieben und können eigene Bedingungen, Datenschutzerklärungen und Praktiken haben.",
+                    "Fortales kontrolliert weder die Inhalte noch die Verfügbarkeit oder den Betrieb von Websites Dritter.",
+                    "Die Aufnahme eines externen Links bedeutet nicht zwangsläufig, dass wir sämtliche dort verfügbaren Inhalte, Produkte oder Dienstleistungen befürworten.",
+                    "Beim Besuch von Websites Dritter empfehlen wir Ihnen, deren geltende Bedingungen und Datenschutzerklärungen zu prüfen.",
+                    "Auch unsere eigene Website kann für Hosting, Kommunikation und andere betriebliche Zwecke auf technische Dienste Dritter zurückgreifen. Informationen über Drittanbieter, die an der Verarbeitung personenbezogener Daten beteiligt sind, finden Sie in unserer Datenschutzerklärung."
+                ]
+            },
+            {
+                "title": "9. Verfügbarkeit und Informationen der Website",
+                "paragraphs": [
+                    "Wir unternehmen angemessene Anstrengungen, die Website zu pflegen und richtige, nützliche und aktuelle Informationen über Fortales und seine Leistungen bereitzustellen.",
+                    "Die Website kann jedoch gelegentlich aufgrund von Wartungsarbeiten, technischen Problemen, Infrastrukturausfällen oder Umständen außerhalb unserer zumutbaren Kontrolle nicht verfügbar sein.",
+                    "Wir können Teile der Website ändern, aktualisieren oder vorübergehend aussetzen, wenn dies aus Wartungs-, Sicherheits- oder Betriebsgründen erforderlich ist.",
+                    "Wir unternehmen außerdem angemessene Anstrengungen, damit veröffentlichte Leistungsbeschreibungen, Preisangaben und andere geschäftliche Informationen unser aktuelles Angebot zutreffend wiedergeben.",
+                    "Wenn Sie Fragen zu einer Leistung, ihrer Verfügbarkeit, ihrem Preis oder der Eignung einer bestimmten Funktion für Ihr Projekt haben, kontaktieren Sie uns bitte vor Abschluss einer Vereinbarung zur Klärung.",
+                    "Keine Bestimmung dieses Abschnitts schließt eine Haftung aus oder beschränkt sie, soweit sie nach geltendem Recht nicht wirksam ausgeschlossen oder beschränkt werden kann."
+                ]
+            },
+            {
+                "title": "10. Datenschutz und personenbezogene Daten",
+                "paragraphs": [
+                    "Der Schutz Ihrer Privatsphäre ist uns wichtig.",
+                    "Wenn Sie über unsere Website Informationen übermitteln oder mit Fortales kommunizieren, verarbeiten wir personenbezogene Daten, um Anfragen zu beantworten, mögliche Projekte zu bewerten, Geschäftsbeziehungen zu verwalten und weitere in unserer Datenschutzerklärung beschriebene Zwecke zu erfüllen.",
+                    "Unsere Datenschutzerklärung erläutert, welche Informationen wir erheben, wie wir sie verwenden und schützen, unter welchen Umständen Drittanbieter sie verarbeiten können und wie Sie Ihre geltenden Datenschutzrechte ausüben können.",
+                    "Weitere Informationen finden Sie in unserer {privacyPolicy}."
+                ]
+            },
+            {
+                "title": "11. Änderungen dieser Bedingungen",
+                "paragraphs": [
+                    "Wir können diese Nutzungsbedingungen aktualisieren, um Änderungen an unserer Website, unseren Leistungen, unserem Geschäftsbetrieb oder den geltenden rechtlichen Anforderungen Rechnung zu tragen.",
+                    "Bei Änderungen aktualisieren wir das Datum „Zuletzt aktualisiert“ am Anfang dieses Dokuments.",
+                    "Die überarbeiteten Bedingungen gelten ab ihrem Inkrafttreten für die nachfolgende Nutzung der Website, vorbehaltlich des geltenden Rechts.",
+                    "Änderungen dieser Website-Bedingungen ändern nicht automatisch die Bedingungen einer bestehenden Kundenvereinbarung. Änderungen einer angenommenen Projektvereinbarung müssen gemäß dieser Vereinbarung und dem geltenden Recht vorgenommen werden.",
+                    "Wir empfehlen Besuchern, diese Seite regelmäßig zu prüfen."
+                ]
+            },
+            {
+                "title": "12. Anwendbares Recht",
+                "paragraphs": [
+                    "Diese Nutzungsbedingungen unterliegen dem Recht der Republik Ecuador, unbeschadet zwingender gesetzlicher Schutzbestimmungen für Website-Besucher oder Kunden.",
+                    "Meinungsverschiedenheiten, die sich aus der Nutzung dieser Website ergeben, sollten zunächst über die nachstehenden Kontaktdaten an Fortales gemeldet werden, damit die Parteien versuchen können, sie direkt zu lösen.",
+                    "Kann eine Meinungsverschiedenheit nicht durch direkte Kommunikation gelöst werden, können die Parteien die nach geltendem Recht verfügbaren Streitbeilegungsverfahren in Anspruch nehmen.",
+                    "Keine Bestimmung dieser Bedingungen beschränkt zwingende Verbraucherschutzrechte oder andere gesetzlich verankerte Rechte."
+                ]
+            },
+            {
+                "title": "13. Kontaktinformationen",
+                "paragraphs": [
+                    "Wenn Sie Fragen zu diesen Nutzungsbedingungen, unserer Website oder den darauf dargestellten Leistungen haben, können Sie uns über folgende Angaben kontaktieren:",
+                    "Wir werden angemessene Anstrengungen unternehmen, um Anfragen zu beantworten, die über unsere offiziellen Kontaktkanäle eingehen."
+                ]
+            }
+        ],
+        "contact": {
+            "commercialName": "Handelsname",
+            "websiteOperator": "Websitebetreiber",
+            "businessIdentification": "Unternehmensidentifikation",
+            "businessAddress": "Geschäftsanschrift",
+            "email": "E-Mail",
+            "website": "Website"
+        }
+    },
     "ProjectPage": {
         "liveLink": "Live-Website Besuchen",
         "tech": "Technologien",
@@ -98,6 +259,10 @@
         "subhead": "Wir stärken die digitale Präsenz von Marken mit leistungsstarken Websites und digitalen Systemen, die darauf ausgelegt sind, zu verkaufen.",
         "ctaMain": "Preise ansehen",
         "ctaSecond": "Mehr erfahren",
+        "performanceFirst": "PERFORMANCE IM FOKUS",
+        "fastByDesign": "Von Grund auf schnell",
+        "seoBuiltIn": "SEO INTEGRIERT",
+        "readyToBeFound": "Bereit, gefunden zu werden",
         "h2WhoFor": "Websites, die mehr Kunden für Ihr Unternehmen gewinnen",
         "idealFor": "Ideal für",
         "h3SmallBiz": "Kleine Unternehmen mit Wachstumszielen",
@@ -403,6 +568,14 @@
         "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
+        "TermsOfService": {
+            "title": "Nutzungsbedingungen | Fortales",
+            "description": "Lesen Sie die Bedingungen für den Zugriff auf die Fortales-Website, Projektanfragen, veröffentlichte Preise, geistiges Eigentum und verbundene Leistungen.",
+            "ogTitle": "Nutzungsbedingungen | Fortales",
+            "ogDescription": "Die Bedingungen für die Nutzung der Fortales-Website und die Informationen über unsere Webdesign- und Entwicklungsleistungen.",
+            "twitterTitle": "Nutzungsbedingungen | Fortales",
+            "twitterDescription": "Die Bedingungen für die Nutzung der Fortales-Website und die Informationen über unsere Leistungen."
+        },
         "DiscoveryForm": {
             "title": "Website-Briefing | Fortales",
             "description": "Teilen Sie die geschäftlichen, gestalterischen, inhaltlichen und technischen Details, die Fortales für Ihr Website-Projekt benötigt.",

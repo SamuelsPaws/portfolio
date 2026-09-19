@@ -9,8 +9,18 @@ export default getRequestConfig(async ({requestLocale}) => {
     ? requested
     : routing.defaultLocale;
  
+  const messages = (await import(`../messages/${locale}.json`)).default;
+  const privacyMessages = (await import(`../messages/privacy/${locale}.json`)).default;
+
   return {
     locale,
-    messages: (await import(`../messages/${locale}.json`)).default
+    messages: {
+      ...messages,
+      ...privacyMessages,
+      Metadata: {
+        ...messages.Metadata,
+        ...privacyMessages.Metadata
+      }
+    }
   };
 });

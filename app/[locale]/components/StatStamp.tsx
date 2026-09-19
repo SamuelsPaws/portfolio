@@ -1,20 +1,22 @@
 interface Props {
-    num: number;
-    label: string;
+    head: string;
+    body: string;
 }
 
-const StatStamp = ({ num, label }: Props) => {
+const StatStamp = ({ head, body }: Props) => {
     return (
-    <div className="flex flex-col gap-4">
+    <div className="
+        max-w-60
+        flex flex-col gap-2"
+    >
         <span className="
-            text-4xl
-            text-black dark:text-br-white
+            text-my-xl text-main
             font-bold"
         >
-            {num}+
+            {head}
         </span>
-        <span className="text-sm text-gray-600 dark:text-gray-300 tracking-wider">
-            {label.toUpperCase()}
+        <span className="text-my-sm text-gray-600 dark:text-gray-300 tracking-wider">
+            {body}
         </span>
     </div>
     )

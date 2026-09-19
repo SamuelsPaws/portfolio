@@ -4,7 +4,7 @@ interface Props {
 
 const ColumnList = ({ children }: Props) => {
     return (
-    <ul className="flex flex-col items-end gap-4">
+    <ul className="flex flex-col md:items-end gap-4">
         {children}
     </ul>
     )

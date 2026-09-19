@@ -41,6 +41,167 @@
         "submitErrorTitle": "Ha ocurrido un inconveniente.",
         "submitErrorCopy": "No hemos podido enviar tu solicitud en este momento. Inténtalo de nuevo en unos instantes. Si el problema continúa, puedes ponerte en contacto con nosotros directamente y estaremos encantados de ayudarte."
     },
+    "TermsOfService": {
+        "title": "Términos del servicio",
+        "logoAlt": "Logo de Fortales",
+        "lastUpdatedLabel": "Última actualización",
+        "lastUpdated": "19 de septiembre de 2026",
+        "privacyPolicy": "Política de privacidad",
+        "introduction": [
+            "Te damos la bienvenida a Fortales. Estos Términos del servicio regulan tu acceso y uso de nuestro sitio web, https://fortal.es, incluido su contenido, funcionalidades, formularios de contacto e información sobre nuestros servicios.",
+            "Lee atentamente estos términos antes de utilizar nuestro sitio web. Al acceder al sitio web o utilizarlo, aceptas estos Términos del servicio en la medida permitida por la legislación aplicable.",
+            "Si tienes alguna pregunta sobre estos términos, puedes contactarnos mediante la información proporcionada al final de este documento."
+        ],
+        "sections": [
+            {
+                "title": "1. Acerca de Fortales",
+                "paragraphs": [
+                    "Fortales es una agencia de diseño y desarrollo web operada por {legalName}, persona natural que desarrolla su actividad bajo el nombre comercial Fortales y está establecida en Ecuador.",
+                    "A lo largo de estos términos, “Fortales”, “nosotros”, “nos” y “nuestro” se refieren a {legalName}, la persona responsable de operar este sitio web.",
+                    "Nuestro sitio web ofrece información sobre nuestros servicios de diseño web, desarrollo y otros servicios digitales relacionados, muestra una selección de proyectos y permite que posibles clientes nos contacten o soliciten propuestas de proyectos.",
+                    "Estos Términos del servicio se aplican al uso de nuestro sitio web público. La prestación de servicios remunerados se rige por la propuesta, acuerdo o contrato específico celebrado entre Fortales y el cliente."
+                ]
+            },
+            {
+                "title": "2. Uso de nuestro sitio web",
+                "paragraphs": [
+                    "Puedes acceder a nuestro sitio web y utilizarlo con fines lícitos, entre ellos conocer nuestros servicios, explorar nuestro portafolio, consultar información sobre precios y contactarnos acerca de posibles proyectos.",
+                    "Al utilizar nuestro sitio web, aceptas no:",
+                    "Podemos adoptar medidas razonables para proteger el sitio web y prevenir usos no autorizados o perjudiciales.",
+                    "Nada de lo dispuesto en estos términos restringe los derechos que te correspondan conforme a la legislación aplicable."
+                ],
+                "bullets": [
+                    "Utilizar el sitio web con fines ilícitos, fraudulentos o engañosos.",
+                    "Intentar obtener acceso no autorizado al sitio web, sus servidores o sistemas asociados.",
+                    "Interferir con el funcionamiento, la seguridad o la disponibilidad del sitio web.",
+                    "Introducir software malicioso, código dañino u otro material destinado a comprometer el sitio web.",
+                    "Utilizar nuestros formularios para enviar spam, consultas fraudulentas o contenido que infrinja la legislación aplicable.",
+                    "Reproducir o explotar comercialmente el contenido de nuestro sitio web sin autorización, salvo cuando la ley lo permita."
+                ]
+            },
+            {
+                "title": "3. Nuestros servicios y precios publicados",
+                "paragraphs": [
+                    "Fortales presta servicios de diseño web, desarrollo de sitios web y otros servicios digitales relacionados.",
+                    "Nuestro sitio web puede mostrar paquetes de servicios, descripciones, funcionalidades incluidas, plazos estimados y precios iniciales para ayudar a posibles clientes a comprender nuestra oferta.",
+                    "Los precios publicados de los paquetes representan el costo inicial de los servicios correspondientes. El precio final de un proyecto puede variar según sus requisitos, alcance, complejidad, funcionalidades solicitadas, integraciones, necesidades de contenido y otras consideraciones pertinentes.",
+                    "Cualquier costo adicional, impuesto aplicable y condición específica del proyecto se comunicará mediante la cotización o propuesta correspondiente antes de que el cliente celebre un acuerdo remunerado.",
+                    "Enviar una consulta, completar un formulario de descubrimiento o seleccionar un paquete no constituye por sí solo una compra ni crea una obligación de pagar por servicios.",
+                    "Un proyecto se convierte en una prestación remunerada únicamente cuando las partes han acordado las condiciones comerciales aplicables mediante el acuerdo o contrato correspondiente.",
+                    "Podemos actualizar nuestros servicios, paquetes y precios iniciales publicados. Dichos cambios no modificarán automáticamente las condiciones de un acuerdo ya aceptado por un cliente."
+                ]
+            },
+            {
+                "title": "4. Consultas y propuestas de proyectos",
+                "paragraphs": [
+                    "Nuestro sitio web ofrece formularios de contacto y descubrimiento mediante los cuales posibles clientes pueden informarnos sobre sus negocios, objetivos y requisitos del proyecto.",
+                    "Después de recibir una consulta, podemos contactarte para solicitar información adicional, aclarar tus requisitos, analizar posibles soluciones o preparar una propuesta de proyecto.",
+                    "Podemos determinar que un proyecto solicitado queda fuera de nuestros servicios, capacidades o disponibilidad actuales. En esos casos, podremos negarnos a presentar una propuesta o celebrar un acuerdo de servicios, con sujeción a la legislación aplicable.",
+                    "Cualquier propuesta que presentemos podrá describir la solución recomendada, el alcance del trabajo, los entregables, el precio, el cronograma estimado, las condiciones de pago y otros términos pertinentes para el proyecto propuesto.",
+                    "Salvo acuerdo expreso en contrario, una propuesta no autoriza a Fortales a iniciar trabajos remunerados ni obliga al posible cliente a continuar con el proyecto.",
+                    "Las condiciones específicas que rijan un proyecto aceptado se establecerán en el acuerdo o contrato correspondiente.",
+                    "Si un acuerdo de proyecto contiene disposiciones distintas de estos Términos del servicio del sitio web, el acuerdo específico del proyecto regirá los servicios correspondientes, con sujeción a la legislación aplicable."
+                ]
+            },
+            {
+                "title": "5. Información enviada mediante nuestros formularios",
+                "paragraphs": [
+                    "Al contactar con Fortales o enviar una consulta de proyecto, eres responsable de proporcionar información que sea correcta según tu leal saber y entender.",
+                    "Solo debes enviar información que estés autorizado a compartir.",
+                    "Evita incluir contraseñas, datos de tarjetas de pago, credenciales de acceso confidenciales u otra información sensible en nuestros formularios generales de contacto y descubrimiento, salvo que hayamos solicitado específicamente dicha información mediante un canal de comunicación adecuado y seguro.",
+                    "Utilizamos la información que proporcionas para responder consultas, evaluar requisitos de proyectos, preparar propuestas y gestionar relaciones con posibles clientes.",
+                    "Puedes consultar información adicional sobre la recopilación, el tratamiento, el almacenamiento y la protección de datos personales en nuestra {privacyPolicy}."
+                ]
+            },
+            {
+                "title": "6. Propiedad intelectual",
+                "paragraphs": [
+                    "Salvo que se indique lo contrario, el sitio web de Fortales y su contenido original, incluidos su identidad de marca, logotipos, materiales escritos, gráficos, diseños y otros elementos creativos, pertenecen a Fortales o se utilizan con la autorización correspondiente.",
+                    "Estos materiales están protegidos por la legislación aplicable en materia de propiedad intelectual.",
+                    "Puedes navegar por nuestro sitio web y utilizar su contenido con fines personales o para una evaluación comercial legítima.",
+                    "No puedes reproducir, distribuir, modificar, vender ni explotar comercialmente el contenido original de nuestro sitio web sin autorización previa, salvo cuando la legislación aplicable lo permita.",
+                    "Nuestro portafolio puede incluir marcas, logotipos, fotografías, diseños de sitios web y otros materiales pertenecientes a nuestros clientes o a terceros. La inclusión de dichos materiales no transfiere su propiedad ni concede a los visitantes permiso para utilizarlos.",
+                    "La titularidad, las licencias, los derechos de uso y la entrega de la propiedad intelectual creada para proyectos individuales de clientes se rigen por los acuerdos de proyecto correspondientes.",
+                    "Nada de lo dispuesto en estos Términos del servicio transfiere a los visitantes la propiedad intelectual de Fortales."
+                ]
+            },
+            {
+                "title": "7. Información del portafolio y los proyectos",
+                "paragraphs": [
+                    "Nuestro sitio web puede presentar una selección de proyectos para ilustrar nuestra experiencia, capacidades y enfoque del diseño y desarrollo web.",
+                    "Las descripciones de proyectos, capturas de pantalla, mediciones de rendimiento y demás información publicada se refieren a los proyectos y circunstancias específicos descritos.",
+                    "Los resultados reales pueden variar según los requisitos, la implementación, el entorno de alojamiento, los servicios de terceros, el contenido y otros factores relevantes de cada proyecto.",
+                    "Las mediciones de rendimiento y los ejemplos presentados en nuestro portafolio no garantizan que todos los proyectos futuros obtengan resultados idénticos.",
+                    "Cualquier objetivo específico de rendimiento, entregable o compromiso medible para un proyecto de cliente deberá establecerse expresamente en el acuerdo de proyecto correspondiente."
+                ]
+            },
+            {
+                "title": "8. Enlaces externos y servicios de terceros",
+                "paragraphs": [
+                    "Nuestro sitio web puede contener enlaces a sitios externos, incluidos sitios de clientes, plataformas de redes sociales y servicios de terceros.",
+                    "Estos sitios externos funcionan de manera independiente y pueden tener sus propios términos, políticas de privacidad y prácticas.",
+                    "Fortales no controla el contenido, la disponibilidad ni el funcionamiento de sitios web de terceros.",
+                    "La inclusión de un enlace externo no implica necesariamente que respaldemos todo el contenido, producto o servicio disponible a través de dicho sitio.",
+                    "Cuando visites sitios web de terceros, te recomendamos revisar sus términos y políticas de privacidad aplicables.",
+                    "Nuestro sitio web también puede depender de servicios técnicos de terceros para alojamiento, comunicaciones y otros fines operativos. La información sobre los proveedores externos que intervienen en el tratamiento de datos personales se encuentra en nuestra Política de privacidad."
+                ]
+            },
+            {
+                "title": "9. Disponibilidad e información del sitio web",
+                "paragraphs": [
+                    "Realizamos esfuerzos razonables para mantener el sitio web y proporcionar información correcta, útil y actualizada sobre Fortales y sus servicios.",
+                    "No obstante, el sitio web puede no estar disponible ocasionalmente debido a mantenimiento, problemas técnicos, fallos de infraestructura o circunstancias fuera de nuestro control razonable.",
+                    "Podemos modificar, actualizar o suspender temporalmente partes del sitio web cuando sea necesario por motivos de mantenimiento, seguridad u operación.",
+                    "También realizamos esfuerzos razonables para asegurar que las descripciones de servicios, la información de precios y demás información comercial publicada reflejen correctamente nuestra oferta vigente.",
+                    "Si tienes preguntas sobre un servicio, su disponibilidad, su precio o la aplicabilidad de una funcionalidad concreta a tu proyecto, contáctanos para solicitar aclaraciones antes de celebrar un acuerdo.",
+                    "Nada de lo dispuesto en esta sección excluye ni limita responsabilidades que no puedan excluirse o limitarse legalmente conforme a la legislación aplicable."
+                ]
+            },
+            {
+                "title": "10. Privacidad y datos personales",
+                "paragraphs": [
+                    "Tu privacidad es importante para nosotros.",
+                    "Cuando envías información mediante nuestro sitio web o te comunicas con Fortales, tratamos datos personales para responder consultas, evaluar posibles proyectos, gestionar relaciones comerciales y cumplir otros fines descritos en nuestra Política de privacidad.",
+                    "Nuestra Política de privacidad explica qué información recopilamos, cómo la utilizamos y protegemos, las circunstancias en las que proveedores externos pueden tratarla y cómo puedes ejercer los derechos de protección de datos que te correspondan.",
+                    "Consulta nuestra {privacyPolicy} para obtener más información."
+                ]
+            },
+            {
+                "title": "11. Cambios en estos términos",
+                "paragraphs": [
+                    "Podemos actualizar estos Términos del servicio para reflejar cambios en nuestro sitio web, nuestros servicios, nuestras operaciones comerciales o los requisitos legales aplicables.",
+                    "Cuando realicemos cambios, actualizaremos la fecha de “Última actualización” al comienzo de este documento.",
+                    "Los términos revisados se aplicarán al uso posterior del sitio web desde su fecha de entrada en vigor, con sujeción a la legislación aplicable.",
+                    "Los cambios en estos términos del sitio web no modificarán automáticamente las condiciones de un acuerdo existente con un cliente. Cualquier cambio en un acuerdo de proyecto aceptado deberá gestionarse de conformidad con dicho acuerdo y la legislación aplicable.",
+                    "Recomendamos a los visitantes revisar esta página periódicamente."
+                ]
+            },
+            {
+                "title": "12. Legislación aplicable",
+                "paragraphs": [
+                    "Estos Términos del servicio se rigen por las leyes de la República del Ecuador, sin perjuicio de cualquier protección legal obligatoria aplicable a los visitantes del sitio web o a los clientes.",
+                    "Cualquier desacuerdo derivado del uso de este sitio web deberá comunicarse inicialmente a Fortales mediante la información de contacto indicada a continuación, para que las partes puedan intentar resolverlo directamente.",
+                    "Si un desacuerdo no puede resolverse mediante comunicación directa, las partes podrán recurrir a los mecanismos de resolución de controversias disponibles conforme a la legislación aplicable.",
+                    "Nada de lo dispuesto en estos términos limita los derechos obligatorios de protección al consumidor ni otros derechos establecidos por la legislación aplicable."
+                ]
+            },
+            {
+                "title": "13. Información de contacto",
+                "paragraphs": [
+                    "Si tienes preguntas sobre estos Términos del servicio, nuestro sitio web o los servicios que se presentan en él, puedes contactarnos mediante la siguiente información:",
+                    "Realizaremos esfuerzos razonables para responder las consultas recibidas a través de nuestros canales oficiales de contacto."
+                ]
+            }
+        ],
+        "contact": {
+            "commercialName": "Nombre comercial",
+            "websiteOperator": "Operador del sitio web",
+            "businessIdentification": "Identificación comercial",
+            "businessAddress": "Dirección comercial",
+            "email": "Correo electrónico",
+            "website": "Sitio web"
+        }
+    },
     "ProjectPage": {
         "liveLink": "Visitar Sitio Web",
         "tech": "Tecnologías",
@@ -98,6 +259,10 @@
         "subhead": "Ayudamos a las marcas a potenciar su presencia digital con sitios web que convierten y sistemas digitales diseñados para vender.",
         "ctaMain": "Ver nuestros precios",
         "ctaSecond": "Saber más",
+        "performanceFirst": "RENDIMIENTO PRIMERO",
+        "fastByDesign": "Rápido por diseño",
+        "seoBuiltIn": "SEO INTEGRADO",
+        "readyToBeFound": "Listo para que te encuentren",
         "h2WhoFor": "Sitios web diseñados para atraer más clientes a tu negocio",
         "idealFor": "Ideal para",
         "h3SmallBiz": "Pequeños negocios listos para crecer",
@@ -388,6 +553,14 @@
         "whatsapp": "WhatsApp: {phone}"
     },
     "Metadata": {
+        "TermsOfService": {
+            "title": "Términos del servicio | Fortales",
+            "description": "Consulta los términos que regulan el acceso al sitio web de Fortales, las consultas de proyectos, los precios publicados, la propiedad intelectual y los servicios relacionados.",
+            "ogTitle": "Términos del servicio | Fortales",
+            "ogDescription": "Los términos que regulan el uso del sitio web de Fortales y la información sobre nuestros servicios de diseño y desarrollo web.",
+            "twitterTitle": "Términos del servicio | Fortales",
+            "twitterDescription": "Los términos que regulan el uso del sitio web de Fortales y la información sobre nuestros servicios."
+        },
         "DiscoveryForm": {
             "title": "Formulario de descubrimiento web | Fortales",
             "description": "Comparte la información comercial, de marca, contenido y aspectos técnicos que Fortales necesita para preparar tu proyecto web.",

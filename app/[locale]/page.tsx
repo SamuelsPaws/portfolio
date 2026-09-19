@@ -21,7 +21,7 @@ import { availableLocales, localeCodesArray } from "@/data/locales";
 import { generateBreadcrumbSchema, generateOrgSchema } from "@/lib/seo/schema";
 import JsonLd from "@/components/JsonLd";
 import CenteredP from "@/components/ui-reusables/CenteredP";
-import breadcrumbs, { getBreadcrumbs } from "@/data/breadcrumbs";
+import { getBreadcrumbs } from "@/data/breadcrumbs";
 
 type Props = {
     params: Promise<{
