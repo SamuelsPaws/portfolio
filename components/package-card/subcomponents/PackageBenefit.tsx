@@ -9,7 +9,7 @@ interface Props {
 
 const PackageBenefit = ({ text, theme }: Props) => {
     return (
-    <div className="
+    <li className="
         w-full
         flex items-start gap-4"
     >
@@ -28,7 +28,7 @@ const PackageBenefit = ({ text, theme }: Props) => {
         <p className="flex-1 text-myf-md text-secondary">
             {text}
         </p>
-    </div>
+    </li>
     )
 }
 

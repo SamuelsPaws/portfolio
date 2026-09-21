@@ -9,7 +9,7 @@ interface Props {
 
 const CtaTrustItem = ({ text }: Props) => {
     return (
-    <motion.div
+    <motion.li
         className="
             w-full
             flex items-center gap-4"
@@ -31,7 +31,7 @@ const CtaTrustItem = ({ text }: Props) => {
         <p className="flex-1 text-my-xl text-secondary">
             {text}
         </p>
-    </motion.div>
+    </motion.li>
     )
 }
 
