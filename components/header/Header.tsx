@@ -10,6 +10,7 @@ import { navLinksFort, navLinksSamPort } from "@/data/nav"
 import NavLinkDesk from "./subcomponents/nav/NavLinkDesk"
 import ThemeBtn from "./subcomponents/ThemeBtn"
 import { usePathname } from "next/navigation"
+import Image from "next/image"
 
 const Header = () => {
     const [isAtTop, setIsAtTop] = useState<boolean>(true);
@@ -34,8 +35,16 @@ const Header = () => {
 
     const navLinks = isSamPortfolio ? navLinksSamPort : navLinksFort
 
-    return (
-    // pl is 6 not 8 to compensate for Home btn padding
+    return (<>
+    {!isSamPortfolio && (
+        <a
+            href="#main-content"
+            className="fixed left-4 top-4 z-[9999] -translate-y-24 rounded-full bg-black px-4 py-2 text-br-white transition-transform duration-200 focus-visible:translate-y-0 dark:bg-br-white dark:text-black"
+        >
+            {t('skipToContent')}
+        </a>
+    )}
+    {/* pl is 6 not 8 to compensate for Home btn padding */}
     <header className={clsx(
         "fixed top-0 left-0",
         "w-full h-mob-header-height lg:h-header-height",
@@ -65,10 +74,12 @@ const Header = () => {
                     flex items-center gap-2
                     text-xl"
             >
-                <img
+                <Image
                     src="/assets/fortales-logo.svg"
-                    alt="Company Logo"
-                    className="w-8"
+                    width={32}
+                    height={32}
+                    alt="Fortales"
+                    className="w-8 h-auto"
                 />
             </Link>
         )}
@@ -81,7 +92,7 @@ const Header = () => {
             <LangContainerMob />
             <BurgerMenu navLinks={navLinks} />
         </div>
-        <nav className="
+        <nav aria-label={t('navigation')} className="
             h-full
             hidden lg:flex items-center gap-8
             text-md tracking-wider"
@@ -102,6 +113,7 @@ const Header = () => {
             </ul>
         </nav>
     </header>
+    </>
   )
 }
 

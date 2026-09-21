@@ -108,7 +108,7 @@ export default async function About({ params }: Props) {
     const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['about'], organization.url, locale)
 
     return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
         <JsonLd data={breadcrumbSchema} />
         <JsonLd data={pageSchema} />
         {/* Hero */}

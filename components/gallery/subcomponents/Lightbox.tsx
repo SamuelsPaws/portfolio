@@ -59,6 +59,7 @@ const Lightbox = ({ isOpen, onClose, media, previousMedia, nextMedia, currPos, g
     useEffect(() => {
         if (!isOpen) return
 
+        const previouslyFocused = document.activeElement as HTMLElement | null
         const originalOverflow = document.body.style.overflow;
         document.body.style.overflow = "hidden";
 
@@ -73,6 +74,7 @@ const Lightbox = ({ isOpen, onClose, media, previousMedia, nextMedia, currPos, g
         return () => {
             document.body.style.overflow = originalOverflow;
             window.removeEventListener("keydown", handleKeyDown);
+            previouslyFocused?.focus()
         }
     }, [changeMedia, isOpen, onClose])
 

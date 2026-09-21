@@ -2,7 +2,7 @@
 import { useLocale, useTranslations } from "next-intl"
 import CustomIcon from "@/components/CustomIcon"
 import clsx from "clsx"
-import { useState } from "react"
+import { useId, useState } from "react"
 import SubmissionModal from "./subcomponents/SubmissionModal"
 import FormInput, {
     type FormInputDefinition,
@@ -53,6 +53,7 @@ function FormTemplate({
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
     const [modalState, setModalState] = useState<'success' | 'error'>('success')
     const t = useTranslations('Reusable')
+    const formId = useId()
 
     const handleInputChange = (name: string, value: FormValue) => {
         setFormData(prev => ({
@@ -114,6 +115,7 @@ function FormTemplate({
             <FormInput
                 key={el.id}
                 {...el}
+                domId={`${formId}-${el.id}`}
                 value={formData[el.id]}
                 onChange={(value) => handleInputChange(el.id, value)}
                 optionalLabel={t('optional')}
@@ -121,6 +123,8 @@ function FormTemplate({
         ))}
         <button
             type="submit"
+            disabled={formState === 'processing'}
+            aria-busy={formState === 'processing'}
             className={clsx(
                 "w-full col-span-2 group",
                 "py-4",
@@ -142,10 +146,13 @@ function FormTemplate({
                 </div>
             )}
             {formState === 'processing' && (
-                <CustomIcon
-                    iconId="spinner-two"
-                    className="animate-spin-loop"
-                />
+                <span role="status" className="flex items-center gap-4">
+                    <CustomIcon
+                        iconId="spinner-two"
+                        className="animate-spin-loop"
+                    />
+                    <span className="no-padding">Submitting</span>
+                </span>
             )}
         </button>
         {after}

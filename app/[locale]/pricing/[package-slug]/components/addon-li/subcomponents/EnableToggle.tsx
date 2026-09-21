@@ -7,9 +7,10 @@ import clsx from "clsx";
 interface Props {
     addOnState: AddOnState;
     addOnSlug: (typeof addOns)[number]['slug'];
+    label: string;
 }
 
-const EnableToggle = ({ addOnState, addOnSlug }: Props) => {
+const EnableToggle = ({ addOnState, addOnSlug, label }: Props) => {
     const setAddOnEnabled = useAddOnsStore((state) => state.setAddOnEnabled)
 
     const toggleEnabled = () => {
@@ -18,7 +19,11 @@ const EnableToggle = ({ addOnState, addOnSlug }: Props) => {
 
     return (
     <button
+        type="button"
         onClick={toggleEnabled}
+        role="switch"
+        aria-checked={addOnState.enabled}
+        aria-label={label}
         className={clsx(
             "w-10 min-w-10 h-6",
             "md:w-12 md:min-w-12 md:h-6 relative",

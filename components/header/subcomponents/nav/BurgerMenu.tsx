@@ -30,11 +30,26 @@ const BurgerMenu = ({ navLinks }: Props) => {
         }
     }, []);
 
+    useEffect(() => {
+        if (!isOpen) return
+
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') setIsOpen(false)
+        }
+
+        window.addEventListener('keydown', handleKeyDown)
+        return () => window.removeEventListener('keydown', handleKeyDown)
+    }, [isOpen])
+
     return (
         <div className="h-6 aspect-square lg:hidden">
             {/* Burger icon */}
             <button
+                type="button"
                 onClick={toggleMenu}
+                aria-label={t('navigation')}
+                aria-expanded={isOpen}
+                aria-controls="mobile-navigation"
                 className="w-full h-full z-50 relative"
             >
                 <div className={`
@@ -59,7 +74,10 @@ const BurgerMenu = ({ navLinks }: Props) => {
                 ></div>
             </button>
             {/* Actual menu */}
-            <div className={clsx(
+            <nav
+                id="mobile-navigation"
+                aria-label={t('navigation')}
+                className={clsx(
                 isOpen ? 'fixed' : 'hidden',
                 "top-0 left-0",
                 "w-screen h-[75vh]",
@@ -82,7 +100,7 @@ const BurgerMenu = ({ navLinks }: Props) => {
                     ))}
                 </ul>
                 <ThemeBtn />
-            </div>
+            </nav>
         </div>
     )
 }

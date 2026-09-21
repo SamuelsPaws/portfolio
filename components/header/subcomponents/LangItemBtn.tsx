@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
-import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import Image from "next/image"
 
 interface Props {
@@ -15,6 +14,7 @@ const LangItemBtn = ({ label, changeLocale, assocLocale, isLast }: Props) => {
 
     return (
     <button
+        type="button"
         onClick={() => changeLocale(assocLocale)}
         className={clsx(
             "px-4 py-4",

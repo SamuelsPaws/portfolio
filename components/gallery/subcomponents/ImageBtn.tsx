@@ -41,7 +41,9 @@ const ImageBtn = ({
 
     return (
     <motion.button
+        type="button"
         onClick={handleClick}
+        aria-label={`${t('viewGallery')}: ${alt}`}
         className={clsx(
             "relative",
             "group cursor-pointer",

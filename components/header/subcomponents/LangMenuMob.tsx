@@ -3,7 +3,7 @@ import { motion } from "motion/react"
 import LangItemBtn from "./LangItemBtn"
 import clsx from "clsx";
 import { useParams } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { RefObject, useEffect, useRef } from "react";
 
 const locales = [
     'en',
@@ -30,13 +30,14 @@ const variants = {
 }
 
 interface Props {
+    id: string;
     changeLocale: (locale: string) => void;
     isMenuOpen: boolean;
     onClose: () => void;
-    langBtnCurrent: HTMLButtonElement | null;
+    langBtnRef: RefObject<HTMLButtonElement | null>;
 }
 
-const LangMenuMob = ({ changeLocale, isMenuOpen, onClose, langBtnCurrent }: Props) => {
+const LangMenuMob = ({ id, changeLocale, isMenuOpen, onClose, langBtnRef }: Props) => {
     const { locale } = useParams<{ locale: string }>()
     const ref = useRef<HTMLDivElement>(null)
 
@@ -46,7 +47,7 @@ const LangMenuMob = ({ changeLocale, isMenuOpen, onClose, langBtnCurrent }: Prop
         function handlePointerDown(e: PointerEvent) {
             if (!ref.current) return
     
-            if (!ref.current.contains(e.target as Node) && !langBtnCurrent?.contains(e.target as Node)) {
+            if (!ref.current.contains(e.target as Node) && !langBtnRef.current?.contains(e.target as Node)) {
                 onClose()
             }
         }
@@ -56,10 +57,13 @@ const LangMenuMob = ({ changeLocale, isMenuOpen, onClose, langBtnCurrent }: Prop
         return () => {
             document.removeEventListener("pointerdown", handlePointerDown);
         };
-    }, [isMenuOpen, onClose])
+    }, [isMenuOpen, langBtnRef, onClose])
 
     return (
     <motion.div
+        id={id}
+        aria-hidden={!isMenuOpen}
+        inert={!isMenuOpen}
         className={clsx(
             "absolute top-full left-1/2 -translate-x-1/2",
             'flex flex-col',

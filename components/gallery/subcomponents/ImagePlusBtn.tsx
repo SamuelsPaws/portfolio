@@ -22,7 +22,7 @@ const ImagePlusBtn = ({
     setSelectedMediaIndex,
     numberLabel
 }: Props) => {
-    const t = useTranslations('General')
+    const t = useTranslations('Reusable')
 
     const handleClick = () => {
         setSelectedMediaIndex(thisMediaIndex)
@@ -30,7 +30,9 @@ const ImagePlusBtn = ({
 
     return (
     <button
+        type="button"
         onClick={handleClick}
+        aria-label={`${t('viewGallery')}: ${alt}`}
         className={clsx(
             "relative",
             "group cursor-pointer",

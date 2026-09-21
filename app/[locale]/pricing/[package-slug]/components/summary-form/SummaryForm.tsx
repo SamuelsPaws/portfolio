@@ -1,5 +1,5 @@
 'use client'
-import { _Translator, useTranslations } from "next-intl"
+import { useTranslations } from "next-intl"
 import FormInput from "./subcomponents/FormInput"
 import CustomIcon from "@/components/CustomIcon"
 import clsx from "clsx"
@@ -181,6 +181,8 @@ const SummaryForm = ({ packageSlug }: Props) => {
         />
         <button
             type="submit"
+            disabled={formState === 'processing'}
+            aria-busy={formState === 'processing'}
             className={clsx(
                 "w-full col-span-2 group",
                 "py-4",
@@ -202,10 +204,13 @@ const SummaryForm = ({ packageSlug }: Props) => {
                 </div>
             )}
             {formState === 'processing' && (
-                <CustomIcon
-                    iconId="spinner-two"
-                    className="animate-spin-loop"
-                />
+                <span role="status" className="flex items-center gap-4">
+                    <CustomIcon
+                        iconId="spinner-two"
+                        className="animate-spin-loop"
+                    />
+                    <span className="no-padding">Submitting</span>
+                </span>
             )}
         </button>
     </form>

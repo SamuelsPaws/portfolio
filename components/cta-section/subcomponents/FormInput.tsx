@@ -31,6 +31,7 @@ const FormInput = ({
             id={inputId}
             name={inputId}
             type="text"
+            required={!optional}
             onChange={onChange}
             className={oneLineInputCn}
         />
@@ -42,6 +43,7 @@ const FormInput = ({
             name={inputId}
             onChange={onChange}
             type="email"
+            required={!optional}
             className={oneLineInputCn}
         />
     )
@@ -50,12 +52,13 @@ const FormInput = ({
         <textarea
             id={inputId}
             name={inputId}
+            required={!optional}
             onChange={onChange}
             className="
                 h-16
                 px-4 py-2
                 text-myf-md text-secondary
-                border border-gray-300 rounded-xl"
+                border border-gray-300 rounded-2xl"
         />
     )
     

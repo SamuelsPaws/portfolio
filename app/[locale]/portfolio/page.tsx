@@ -101,7 +101,7 @@ export default async function Portfolio({ params }: Props) {
     const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['portfolio'], organization.url, locale)
 
     return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
         <JsonLd data={breadcrumbSchema} />
         <JsonLd data={pageSchema} />
         {/* Hero */}

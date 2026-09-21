@@ -20,7 +20,7 @@ const ImageBtnNoAnim = ({
     thisMediaIndex,
     setSelectedMediaIndex
 }: Props) => {
-    const t = useTranslations('General')
+    const t = useTranslations('Reusable')
 
     const handleClick = () => {
         setSelectedMediaIndex(thisMediaIndex)
@@ -28,7 +28,9 @@ const ImageBtnNoAnim = ({
 
     return (
     <button
+        type="button"
         onClick={handleClick}
+        aria-label={`${t('viewGallery')}: ${alt}`}
         className={clsx(
             "relative",
             "group cursor-pointer overflow-hidden",

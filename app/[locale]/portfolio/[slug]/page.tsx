@@ -131,7 +131,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
     const t = await getTranslations({ locale, namespace: 'FortPortfolio' });
 
     return (
-        <main>
+        <main id="main-content" tabIndex={-1}>
             <JsonLd data={projectSchema} />
             <JsonLd data={breadcrumbSchema} />
             <section className="

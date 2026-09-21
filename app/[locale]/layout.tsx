@@ -43,7 +43,7 @@ export default async function RootLayout({
 
     return (
     <html
-      lang="es"
+      lang={locale}
       className="h-full antialiased"
       suppressHydrationWarning
     >

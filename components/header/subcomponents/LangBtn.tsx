@@ -1,16 +1,16 @@
 import { useTranslations } from 'next-intl'
-import GlobeIcon from '../../icons/GlobeIcon'
 import { Ref, SetStateAction } from 'react'
 import CustomIcon from '@/components/CustomIcon';
 import clsx from 'clsx';
 
 interface Props {
+    menuId: string;
     isMenuOpen: boolean;
     setIsMenuOpen: React.Dispatch<SetStateAction<boolean>>;
     ref?: Ref<HTMLButtonElement>;
 }
 
-const LangBtn = ({ ref, isMenuOpen, setIsMenuOpen }: Props) => {
+const LangBtn = ({ ref, menuId, isMenuOpen, setIsMenuOpen }: Props) => {
     const t = useTranslations("Meta")
 
     const handleClick = () => {
@@ -19,7 +19,11 @@ const LangBtn = ({ ref, isMenuOpen, setIsMenuOpen }: Props) => {
 
     return (
     <button
+        type="button"
         onClick={handleClick}
+        aria-label={`Language: ${t('languageName')}`}
+        aria-expanded={isMenuOpen}
+        aria-controls={menuId}
         className="
             px-0
             flex gap-1 items-center

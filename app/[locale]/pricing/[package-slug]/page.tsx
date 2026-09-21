@@ -151,7 +151,7 @@ export default async function PricingPackagePage({ params }: Props) {
     const featuresFromOther = getFeaturesFromOther()
 
     return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
         <JsonLd data={packageSchema} />
         <JsonLd data={breadcrumbSchema} />
         <section className="
@@ -248,12 +248,12 @@ export default async function PricingPackagePage({ params }: Props) {
                     seeMoreLabel={t('seeMoreAO')}
                     seeLessLabel={t('seeLessAO')}
                 />
-                <p className="
+                <label htmlFor="custom-request" className="
                     mt-4 md:mt-8 mb-4
-                    text-my-md text-secondary"
+                    block text-my-md text-secondary"
                 >
                     {t('customCopy')}
-                </p>
+                </label>
                 <textarea
                     name="custom-request"
                     id="custom-request"
@@ -262,7 +262,7 @@ export default async function PricingPackagePage({ params }: Props) {
                         p-4
                         bg-main
                         text-my-md text-secondary
-                        border border-gray-300 rounded-md"
+                        border border-gray-300 rounded-2xl"
                     placeholder={t('customPlaceholder')}
                 >
                 </textarea>

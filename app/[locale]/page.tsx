@@ -108,7 +108,7 @@ export default async function FortalesHome({ params }: Props) {
     const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['home'], organization.url, locale)
 
     return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
         <JsonLd data={orgSchema} />
         <JsonLd data={breadcrumbSchema} />
         <Hero />

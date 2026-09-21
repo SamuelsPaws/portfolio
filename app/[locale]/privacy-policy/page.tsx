@@ -103,7 +103,7 @@ export default function PrivacyPolicy() {
     }
 
     return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
         <section className="
             px-8 py-24
             md:px-16 md:py-32

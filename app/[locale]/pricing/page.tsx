@@ -102,7 +102,7 @@ export default async function Pricing({ params }: Props) {
     const breadcrumbSchema = generateBreadcrumbSchema(getBreadcrumbs(locale)['pricing'], organization.url, locale)
 
     return (
-    <main className="pt-18 md:pt-24 bg-br-white dark:bg-br-black">
+    <main id="main-content" tabIndex={-1} className="pt-18 md:pt-24 bg-br-white dark:bg-br-black">
         <JsonLd data={pricingSchema} />
         <JsonLd data={breadcrumbSchema} />
         <FortSectionSt

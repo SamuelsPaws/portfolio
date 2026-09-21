@@ -1,6 +1,5 @@
 import { motion } from "motion/react"
-import Link from "next/link"
-import { SetStateAction, useEffect, useRef } from "react";
+import { RefObject, SetStateAction, useEffect, useRef } from "react";
 import { NavDdItemType } from "@/lib/types/nav";
 import NavDdItemDesk from "./NavDdItemDesk";
 
@@ -21,13 +20,14 @@ const variants = {
 }
 
 interface Props {
+    id: string;
     isDdOpen: boolean;
     setIsDdOpen: React.Dispatch<SetStateAction<boolean>>;
-    btnCurrent: HTMLButtonElement | null;
+    btnRef: RefObject<HTMLButtonElement | null>;
     items: NavDdItemType[] | null;
 }
 
-const NavDdMenuDesk = ({ isDdOpen, setIsDdOpen, btnCurrent, items }: Props) => {
+const NavDdMenuDesk = ({ id, isDdOpen, setIsDdOpen, btnRef, items }: Props) => {
     const ref = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
@@ -36,7 +36,7 @@ const NavDdMenuDesk = ({ isDdOpen, setIsDdOpen, btnCurrent, items }: Props) => {
         function handlePointerDown(e: PointerEvent) {
             if (!ref.current) return
         
-            if (!ref.current.contains(e.target as Node) && !btnCurrent?.contains(e.target as Node)) {
+            if (!ref.current.contains(e.target as Node) && !btnRef.current?.contains(e.target as Node)) {
                 setIsDdOpen(false)
             }
         }
@@ -46,7 +46,7 @@ const NavDdMenuDesk = ({ isDdOpen, setIsDdOpen, btnCurrent, items }: Props) => {
         return () => {
             document.removeEventListener("pointerdown", handlePointerDown);
         }
-    }, [btnCurrent, isDdOpen])
+    }, [btnRef, isDdOpen, setIsDdOpen])
 
     const handleClick = () => {
         setIsDdOpen(false)
@@ -54,6 +54,9 @@ const NavDdMenuDesk = ({ isDdOpen, setIsDdOpen, btnCurrent, items }: Props) => {
 
     return (
     <motion.div
+        id={id}
+        aria-hidden={!isDdOpen}
+        inert={!isDdOpen}
         ref={ref}
         className="
             w-max

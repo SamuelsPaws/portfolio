@@ -2,7 +2,7 @@
 import CustomIcon from "@/components/CustomIcon";
 import ExpandableArea from "@/components/ExpandableArea";
 import clsx from "clsx";
-import { useState } from "react";
+import { useId, useState } from "react";
 
 interface Props {
     question: string;
@@ -11,24 +11,28 @@ interface Props {
 
 const FaqCard = ({ question, answer }: Props) => {
     const [isExpanded, setIsExpanded] = useState<boolean>(false)
+    const answerId = useId()
 
     const toggleExpanded = () => {
         setIsExpanded(prev => !prev)
     }
 
     return (
-    <button
-        onClick={toggleExpanded}
-        className="
+    <div className="
             w-full
             p-4 md:p-8
             flex flex-col
             bg-black/5 dark:bg-white/5
-            rounded-xl
+            rounded-2xl md:rounded-4xl
             md:hover:bg-black/10 dark:md:hover:bg-white/10 duration-400"
     >
-        {/* Upper part */}
-        <div className="flex items-center justify-between">
+        <button
+            type="button"
+            onClick={toggleExpanded}
+            aria-expanded={isExpanded}
+            aria-controls={answerId}
+            className="flex w-full items-center justify-between text-left"
+        >
             <h3 className="text-my-lg text-gray-title text-left font-semibold">
                 {question}
             </h3>
@@ -38,12 +42,12 @@ const FaqCard = ({ question, answer }: Props) => {
                     className={clsx(isExpanded ? "-rotate-180" : "rotate-0", "duration-400")}
                 />
             </div>
-        </div>
+        </button>
         <ExpandableArea
             isExpanded={isExpanded}
             className="w-full"
         >
-            <div className="
+            <div id={answerId} className="
                 w-full mt-8
                 flex justify-start"
             >
@@ -52,7 +56,7 @@ const FaqCard = ({ question, answer }: Props) => {
                 </p>
             </div>
         </ExpandableArea>
-    </button>
+    </div>
     )
 }
 

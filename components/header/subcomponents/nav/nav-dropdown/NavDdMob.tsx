@@ -3,7 +3,7 @@ import { NavLinkType } from "@/lib/types/nav"
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { useState } from "react";
+import { useId, useState } from "react";
 
 interface Props {
     item: NavLinkType;
@@ -13,6 +13,7 @@ interface Props {
 const NavDdMob = ({ item, onLinkClick }: Props) => {
     const [isExpanded, setIsExpanded] = useState<boolean>(false)
     const t = useTranslations('Reusable')
+    const contentId = useId()
 
     const handleBtnClick = () => {
         setIsExpanded(prev => !prev)
@@ -25,7 +26,10 @@ const NavDdMob = ({ item, onLinkClick }: Props) => {
         isExpanded ? "border-brandwhite py-4" : "border-transparent py-0"
     )}>
         <button
+            type="button"
             onClick={handleBtnClick}
+            aria-expanded={isExpanded}
+            aria-controls={contentId}
             className="
                 px-2
                 flex items-center gap-1
@@ -37,7 +41,11 @@ const NavDdMob = ({ item, onLinkClick }: Props) => {
                 className={clsx("scale-110 duration-400", isExpanded && "-rotate-180")}
             />
         </button>
-        <div className={clsx(
+        <div
+            id={contentId}
+            aria-hidden={!isExpanded}
+            inert={!isExpanded}
+            className={clsx(
             "grid transition-[grid-template-rows] duration-400 ease-out",
             isExpanded ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
         )}>

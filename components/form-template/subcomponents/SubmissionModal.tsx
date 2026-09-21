@@ -1,6 +1,7 @@
 import CustomIcon from "@/components/CustomIcon";
 import clsx from "clsx";
-import { useEffect } from "react";
+import { useEffect, useId, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 interface Props {
     isOpen: boolean;
@@ -21,16 +22,31 @@ const SubmissionModal = ({
     errorTitleLabel,
     errorCopyLabel
 }: Props) => {
+    const dialogRef = useRef<HTMLDivElement>(null)
+    const titleId = useId()
+    const descriptionId = useId()
+    const t = useTranslations('Reusable')
+
     useEffect(() => {
         if (!isOpen) return
 
+        const previouslyFocused = document.activeElement as HTMLElement | null
         const originalOverflow = document.body.style.overflow;
         document.body.style.overflow = "hidden";
+        dialogRef.current?.focus()
+
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') onClose()
+        }
+
+        window.addEventListener('keydown', handleKeyDown)
 
         return () => {
             document.body.style.overflow = originalOverflow;
+            window.removeEventListener('keydown', handleKeyDown)
+            previouslyFocused?.focus()
         }
-    }, [isOpen])
+    }, [isOpen, onClose])
 
     if (!isOpen) return null
 
@@ -39,19 +55,27 @@ const SubmissionModal = ({
         {/* Backdrop */}
         <div
             onClick={onClose}
+            aria-hidden="true"
             className="
                 fixed top-0 left-0 z-[9900]
                 w-screen h-screen
                 bg-black/80"
         />
         {/* Modal area */}
-        <div className={clsx(
+        <div
+            ref={dialogRef}
+            role="alertdialog"
+            aria-modal="true"
+            aria-labelledby={titleId}
+            aria-describedby={descriptionId}
+            tabIndex={-1}
+            className={clsx(
             "fixed top-1/2 left-1/2 -translate-1/2 z-[9950]",
             "w-[80vw] h-[70vh] md:w-[40vw] md:h-[50vh]",
             "p-8",
             "flex flex-col items-center justify-center gap-4 md:gap-8",
             "bg-br-white",
-            "rounded-xl md:rounded-2xl overflow-hidden shadow-lg",
+            "rounded-2xl md:rounded-4xl overflow-hidden shadow-lg",
             false && "animate-fade-in-up-1200"
         )}>
             {/* Check */}
@@ -65,15 +89,17 @@ const SubmissionModal = ({
                 />
             </div>
             {/* Title */}
-            <p className="text-2xl md:text-4xl text-black text-center font-semibold">
+            <p id={titleId} className="text-2xl md:text-4xl text-black text-center font-semibold">
                 {state === 'success' ? successTitleLabel : errorTitleLabel}
             </p>
             {/* Copy */}
-            <p className="text-myf-md text-secondary text-center">
+            <p id={descriptionId} className="text-myf-md text-secondary text-center">
                 {state === 'success' ? successCopyLabel : errorCopyLabel}
             </p>
             <button
+                type="button"
                 onClick={onClose}
+                aria-label={t('closeDialog')}
                 className="
                     absolute top-4 right-4
                     w-8 aspect-square

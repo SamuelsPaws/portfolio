@@ -2,10 +2,12 @@
 import CustomIcon from "@/components/CustomIcon";
 import clsx from "clsx";
 import { useEffect, useState } from "react"
+import { useTranslations } from "next-intl";
 
 const ThemeBtn = () => {
     const [dark, setDark] = useState<boolean>(false)
     const [hasPressed, setHasPressed] = useState<boolean>(false)
+    const t = useTranslations('Reusable')
 
     useEffect(() => {
         const saved = localStorage.getItem("theme");
@@ -28,7 +30,10 @@ const ThemeBtn = () => {
 
     return (
     <button
+        type="button"
         onClick={toggleTheme}
+        aria-label={dark ? t('switchToLightTheme') : t('switchToDarkTheme')}
+        aria-pressed={dark}
         className="
             h-7 w-14 relative 
             px-[2px] duration-400
@@ -82,6 +87,7 @@ const ThemeBtn = () => {
         >
             <CustomIcon
                 iconId="sun"
+                className="pointer-events-none"
             />
         </div>
         <div className="
@@ -91,6 +97,7 @@ const ThemeBtn = () => {
         >
             <CustomIcon
                 iconId="moon"
+                className="pointer-events-none"
             />
         </div>
     </button>

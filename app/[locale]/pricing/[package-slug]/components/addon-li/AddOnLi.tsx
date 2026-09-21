@@ -4,7 +4,7 @@ import EnableToggle from "./subcomponents/EnableToggle";
 import { AddOn } from "@/lib/types/fortales/addons";
 import { LocaleKey } from "@/lib/types/localeKey";
 import ExpandableArea from "@/components/ExpandableArea";
-import { useState } from "react";
+import { useId, useState } from "react";
 import CustomIcon from "@/components/CustomIcon";
 import clsx from "clsx";
 import { formatPrice } from "@/lib/utils/formatPrice";
@@ -20,6 +20,7 @@ interface Props {
 const AddOnLi = ({ addOnData, addOnSlug, locale }: Props) => {
     const addOnState = useAddOnsStore((state) => state.addOns[addOnSlug])
     const [isInfoExpanded, setIsInfoExpanded] = useState<boolean>(false)
+    const infoId = useId()
 
     const toggleInfoExpanded = () => {
         setIsInfoExpanded(prev => !prev)
@@ -44,12 +45,16 @@ const AddOnLi = ({ addOnData, addOnSlug, locale }: Props) => {
                     <EnableToggle
                         addOnState={addOnState}
                         addOnSlug={addOnSlug}
+                        label={addOnData.title[locale]}
                     />
                     <h3 className="text-my-md text-br-gray-600 font-semibold">
                         {addOnData.title[locale]}
                     </h3>
                     <button
+                        type="button"
                         onClick={toggleInfoExpanded}
+                        aria-expanded={isInfoExpanded}
+                        aria-controls={infoId}
                         className="
                             flex items-center gap-1
                             text-my-sm text-br-gray-500
@@ -88,7 +93,7 @@ const AddOnLi = ({ addOnData, addOnSlug, locale }: Props) => {
                 isExpanded={isInfoExpanded}
                 className="w-full"
             >
-                <p className="
+                <p id={infoId} className="
                     mt-4
                     text-my-sm text-gray-600 text-left"
                 >

@@ -101,7 +101,7 @@ export default function TermsOfService() {
     }
 
     return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
         {/* Banner */}
         <section className="
             px-8 py-24

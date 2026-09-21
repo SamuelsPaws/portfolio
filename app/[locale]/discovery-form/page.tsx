@@ -186,7 +186,7 @@ export default function DiscoveryForm() {
     ]
 
     return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
         {/* Banner */}
         <section className="
             h-auto md:h-100 xl:h-120

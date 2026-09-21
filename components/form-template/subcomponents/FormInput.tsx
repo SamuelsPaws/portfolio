@@ -31,6 +31,7 @@ export type FormInputDefinition = BaseFormInputDefinition & (
 );
 
 type Props = FormInputDefinition & {
+    domId?: string;
     value: FormValue;
     onChange: (value: FormValue) => void;
     optionalLabel: string;
@@ -39,6 +40,7 @@ type Props = FormInputDefinition & {
 const FormInput = ({
     label,
     id: inputId,
+    domId = inputId,
     value,
     onChange,
     className,
@@ -70,11 +72,11 @@ const FormInput = ({
         return (
             <div className={clsx("w-full", className)}>
                 <label
-                    htmlFor={inputId}
+                    htmlFor={domId}
                     className="flex items-start gap-4 text-myf-md text-main font-semibold cursor-pointer"
                 >
                     <input
-                        id={inputId}
+                        id={domId}
                         name={inputId}
                         type="checkbox"
                         checked={value === true}
@@ -99,7 +101,7 @@ const FormInput = ({
                 </legend>
                 <div className="flex flex-col gap-4">
                     {options?.map((option, index) => {
-                        const optionId = `${inputId}-${index}`;
+                        const optionId = `${domId}-${index}`;
                         const checked = type === 'radio'
                             ? stringValue === option.value
                             : selectedOptions.includes(option.value);
@@ -148,14 +150,14 @@ const FormInput = ({
     return (
         <div className={clsx("w-full flex flex-col gap-4", className)}>
             <label
-                htmlFor={inputId}
+                htmlFor={domId}
                 className="text-myf-md text-main font-semibold"
             >
                 {labelContent}
             </label>
             {type === 'textarea' ? (
                 <textarea
-                    id={inputId}
+                    id={domId}
                     name={inputId}
                     value={stringValue}
                     required={!optional}
@@ -168,7 +170,7 @@ const FormInput = ({
                 />
             ) : (
                 <input
-                    id={inputId}
+                    id={domId}
                     name={inputId}
                     type={type}
                     value={stringValue}

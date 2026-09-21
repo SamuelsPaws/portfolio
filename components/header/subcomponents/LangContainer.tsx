@@ -1,5 +1,5 @@
 'use client'
-import { useRef, useState } from 'react'
+import { useId, useRef, useState } from 'react'
 import LangBtn from './LangBtn'
 import LangMenu from './LangMenu'
 import { useRouter, usePathname } from '@/i18n/navigation'
@@ -9,6 +9,7 @@ const LangContainer = () => {
     const router = useRouter()
     const pathname = usePathname()
     const langBtnRef = useRef<HTMLButtonElement>(null)
+    const menuId = useId()
 
     const changeLocale = (locale: string) => {
         router.replace(pathname, { locale })
@@ -21,15 +22,17 @@ const LangContainer = () => {
     return (
     <div className='h-full hidden lg:flex items-center relative'>
         <LangBtn
+            menuId={menuId}
             isMenuOpen={isMenuOpen}
             setIsMenuOpen={setIsMenuOpen}
             ref={langBtnRef}
         />
         <LangMenu
+            id={menuId}
             changeLocale={changeLocale}
             isMenuOpen={isMenuOpen}
             onClose={() => setIsMenuOpen(false)}
-            langBtnCurrent={langBtnRef.current}
+            langBtnRef={langBtnRef}
         />
     </div>
     )

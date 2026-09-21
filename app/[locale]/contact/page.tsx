@@ -148,7 +148,7 @@ export default async function Contact({ params }: Props) {
     ]
 
     return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
         <JsonLd data={contactSchema} />
         <JsonLd data={breadcrumbSchema} />
         {/* Hero */}
@@ -261,13 +261,13 @@ export default async function Contact({ params }: Props) {
                 <div className="w-full min-w-0 lg:flex-1">
                     {/* Eyebrow */}
                     <Eyebrow text={t('directBrow')} />
-                    <h1 className="
+                    <h2 className="
                         mb-4 md:mb-8
                         text-most-h2 text-main
                         font-['Source_Serif_4'] leading-10 md:leading-16"
                     >
                         {t('h2Direct')}
-                    </h1>
+                    </h2>
                     <p className="
                         mb-4
                         text-my-md text-secondary"
