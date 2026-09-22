@@ -23,8 +23,12 @@ const FaqCard = ({ question, answer }: Props) => {
         aria-expanded={isExpanded}
         aria-controls={answerId}
         className="
-        rounded-2xl md:rounded-4xl
-        md:hover:bg-black/10 dark:md:hover:bg-white/10 duration-400"
+            w-full
+            p-4 md:p-8
+            flex flex-col
+            bg-black/5 dark:bg-white/5
+            rounded-xl
+            md:hover:bg-black/10 dark:md:hover:bg-white/10 duration-400"
     >
         {/* Upper part */}
         <div className="flex items-center justify-between">
