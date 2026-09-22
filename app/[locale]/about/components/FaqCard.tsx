@@ -18,21 +18,16 @@ const FaqCard = ({ question, answer }: Props) => {
     }
 
     return (
-    <div className="
-            w-full
-            p-4 md:p-8
-            flex flex-col
-            bg-black/5 dark:bg-white/5
-            rounded-2xl md:rounded-4xl
-            md:hover:bg-black/10 dark:md:hover:bg-white/10 duration-400"
+    <button
+        onClick={toggleExpanded}
+        aria-expanded={isExpanded}
+        aria-controls={answerId}
+        className="
+        rounded-2xl md:rounded-4xl
+        md:hover:bg-black/10 dark:md:hover:bg-white/10 duration-400"
     >
-        <button
-            type="button"
-            onClick={toggleExpanded}
-            aria-expanded={isExpanded}
-            aria-controls={answerId}
-            className="flex w-full items-center justify-between text-left"
-        >
+        {/* Upper part */}
+        <div className="flex items-center justify-between">
             <h3 className="text-my-lg text-gray-title text-left font-semibold">
                 {question}
             </h3>
@@ -42,7 +37,7 @@ const FaqCard = ({ question, answer }: Props) => {
                     className={clsx(isExpanded ? "-rotate-180" : "rotate-0", "duration-400")}
                 />
             </div>
-        </button>
+        </div>
         <ExpandableArea
             isExpanded={isExpanded}
             className="w-full"
@@ -56,7 +51,7 @@ const FaqCard = ({ question, answer }: Props) => {
                 </p>
             </div>
         </ExpandableArea>
-    </div>
+    </button>
     )
 }
 
