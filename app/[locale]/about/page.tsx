@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
         publisher: organization.author,
         alternates: {
             canonical,
-            languages: getLangAlternates('/about'),
+            languages: getLangAlternates('/about', BASE_URL),
         },
 
         openGraph: {

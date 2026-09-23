@@ -22,6 +22,7 @@ import { generateBreadcrumbSchema, generateOrgSchema } from "@/lib/seo/schema";
 import JsonLd from "@/components/JsonLd";
 import CenteredP from "@/components/ui-reusables/CenteredP";
 import { getBreadcrumbs } from "@/data/breadcrumbs";
+import getLangAlternates from "@/lib/utils/getLangAlternates";
 
 type Props = {
     params: Promise<{
@@ -57,7 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
         publisher: organization.author,
         alternates: {
             canonical,
-            languages: Object.fromEntries(localeCodesArray.map(el => [el[0], `${BASE_URL}/${el[1]}`])),
+            languages: getLangAlternates('', BASE_URL),
         },
 
         openGraph: {
