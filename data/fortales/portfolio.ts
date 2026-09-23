@@ -531,7 +531,7 @@ export const portfolio: PortfolioProject[] = [
         featured: true,
         slug: 'plasma-vida-center',
         liveUrl: 'https://plasmavidacenter.com/', // TODO: Add the live website URL.
-        ogImage: '/assets/plasma-vida.webp', // TODO: Replace with the project's Open Graph image.
+        ogImage: '/assets/plasma-vida.jpg', // TODO: Replace with the project's Open Graph image.
         imgSrc: '/assets/plasma-vida-lifestyle.jpg',
         imgW: 1364,
         imgH: 1063,
