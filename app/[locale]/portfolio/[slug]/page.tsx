@@ -152,7 +152,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
                         className="
                             w-full aspect-[40/21]
                             object-cover rounded-2xl sm:rounded-4xl
-                            opacity-0 animate-fade-in-right-slow-1000"
+                            opacity-0 animate-fade-in-right-slow-1000 shadow-img"
                         priority
                     />
                 </div>
