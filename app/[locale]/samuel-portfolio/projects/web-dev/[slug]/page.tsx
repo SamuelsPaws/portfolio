@@ -8,6 +8,7 @@ import portfolioSam from "@/data/portfolioSam";
 import { getTranslations } from "next-intl/server";
 import getLangAlternates from "@/lib/utils/getLangAlternates";
 import { availableLocales } from "@/data/locales";
+import organization from "@/data/fortales/organization";
 
 // export async function generateStaticParams() {
 //     return [
@@ -61,7 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         
         alternates: {
             canonical,
-            languages: getLangAlternates(`/projects/web-dev/${slug}`),
+            languages: getLangAlternates(`/projects/web-dev/${slug}`, `${organization.url}/${locale}/samuel-portfolio`),
         },
 
         openGraph: {
