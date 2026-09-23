@@ -23,9 +23,9 @@ export default function RelatedProjectCard({ project, locale, ctaLabel }: Props)
                 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-br-orange-main
                 motion-reduce:transition-none"
         >
-            <div className="h-80 md:h-90 overflow-hidden bg-secondary">
+            <div className="aspect-[40/21] overflow-hidden bg-secondary">
                 <Image
-                    src={project.imgSrc}
+                    src={project.ogImage}
                     width={project.imgW}
                     height={project.imgH}
                     alt={project.imgAlt[locale]}

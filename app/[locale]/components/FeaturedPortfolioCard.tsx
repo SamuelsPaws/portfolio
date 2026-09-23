@@ -30,7 +30,7 @@ export default function FeaturedPortfolioCard({
     <Link
         href={href}
         className="
-            group w-full md:w-80
+            group w-full md:w-90
             flex flex-col
             rounded-4xl focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-current"
     >
@@ -41,7 +41,7 @@ export default function FeaturedPortfolioCard({
                 height={imgHeight}
                 sizes="(min-width: 768px) 320px, 100vw"
                 className="
-                    w-full h-60 md:h-80 object-cover
+                    w-full aspect-[40/21] object-cover
                     md:group-hover:scale-105 duration-400"
                 alt={imgAlt}
             />

@@ -150,9 +150,8 @@ export default async function PortfolioProjectPage({ params }: Props) {
                         alt={project.imgAlt[locale]}
                         sizes="(min-width: 1024px) 40vw, 100vw"
                         className="
-                            w-full aspect-[3/2] lg:aspect-auto lg:h-140
-                            bg-black dark:bg-br-gray-800
-                            object-contain rounded-2xl sm:rounded-4xl shadow-img
+                            w-full aspect-[40/21]
+                            object-cover rounded-2xl sm:rounded-4xl
                             opacity-0 animate-fade-in-right-slow-1000"
                         priority
                     />

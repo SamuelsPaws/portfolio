@@ -236,7 +236,7 @@ export default async function FortalesHome({ params }: Props) {
                     <FeaturedPortfolioCard
                         key={project.slug}
                         href={`/portfolio/${project.slug}`}
-                        imgSrc={project.imgSrc}
+                        imgSrc={project.ogImage}
                         imgWidth={project.imgW}
                         imgHeight={project.imgH}
                         imgAlt={project.imgAlt[locale]}
