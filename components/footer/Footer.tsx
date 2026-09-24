@@ -68,7 +68,7 @@ const Footer = () => {
 						mb-8 lg:mb-8
 						text-xl lg:text-2xl text-black/60 tracking-wider"
 					>
-						{t('tech')}{isSamPortfolio && 'NIGGA'}
+						{t('tech')}
 					</p>
 					{/* Divs with tech, one per row */}
 					<div className="mb-4 select-none flex items-center gap-4 lg:gap-8">
