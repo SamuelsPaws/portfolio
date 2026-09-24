@@ -28,6 +28,7 @@ interface Props {
     after?: React.ReactNode;
     fields: FormInputDefinition[];
     endpoints: string[];
+    getAdditionalPayload?: () => Record<string, unknown>;
 }
 
 const getInitialFormData = (fields: FormInputDefinition[]): Record<string, FormValue> => (
@@ -43,7 +44,8 @@ function FormTemplate({
     before,
     after,
     fields,
-    endpoints
+    endpoints,
+    getAdditionalPayload,
 }: Props) {
     const locale = useLocale()
     const [formData, setFormData] = useState<Record<string, FormValue>>(
@@ -82,8 +84,14 @@ function FormTemplate({
         setFormState('processing')
 
         try {
+            const payload = {
+                ...getAdditionalPayload?.(),
+                ...formData,
+                locale,
+            }
+
             await Promise.all(endpoints.map(el => (
-                fetchEndpoint(el, { ...formData, locale })
+                fetchEndpoint(el, payload)
             ))) 
 
             handleSuccess()

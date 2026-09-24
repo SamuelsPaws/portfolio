@@ -205,10 +205,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
                         ))}
                     </div>
                     {/* Div with buttons */}
-                    <div className="
-                        flex flex-col md:flex-row gap-4
-                        opacity-0 animate-fade-in-left-1000"
-                    >
+                    <div className="flex flex-col md:flex-row gap-4">
                         <FortCtaBtn
                             href={project.liveUrl}
                             label={t('seeLiveSite')}
