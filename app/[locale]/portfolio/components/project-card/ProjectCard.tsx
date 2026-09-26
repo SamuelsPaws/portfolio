@@ -41,10 +41,13 @@ const ProjectCard = (props: Props) => {
             custom={reducedMotion}
         >
             <Image
-                src={props.imgSrc}
+                src={props.ogImage}
                 width={props.imgW}
                 height={props.imgH}
-                className="w-full aspect-[3/2] lg:aspect-auto lg:h-120 xl:h-155 object-cover rounded-2xl sm:rounded-4xl"
+                className="
+                    w-full aspect-[40/21]
+                    object-cover
+                    rounded-2xl sm:rounded-4xl"
                 sizes="(min-width: 1280px) 60vw, (min-width: 1024px) 50vw, 100vw"
                 alt={props.imgAlt[props.locale]}
             />
