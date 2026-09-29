@@ -12,6 +12,7 @@ interface Props {
 const SummaryForm = ({ packageSlug }: Props) => {
     const t = useTranslations('Reusable')
     const addOnsState = useAddOnsStore((state) => state.addOns)
+    const customRequest = useAddOnsStore((state) => state.customRequest)
 
     const fields: FormInputDefinition[] = [
         {
@@ -47,6 +48,7 @@ const SummaryForm = ({ packageSlug }: Props) => {
                 slug: slug as (typeof addOns)[number]['slug'],
                 quantity: 'quantity' in state ? state.quantity : null,
             })),
+        customRequest: customRequest.trim(),
     })
 
     return (

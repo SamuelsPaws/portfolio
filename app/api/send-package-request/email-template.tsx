@@ -7,7 +7,8 @@ export default function EmailTemplate({
 	company,
 	phone,
 	packageName,
-	addOnsSelected
+	addOnsSelected,
+	customRequest
 }: PackageFormSubmission) {
 	return (
 	<div>
@@ -39,6 +40,12 @@ export default function EmailTemplate({
 				return null
 			})}
 		</ul>
+		{customRequest && (
+			<>
+				<p>Custom request:</p>
+				<p>{customRequest}</p>
+			</>
+		)}
 	</div>
 	)
 }

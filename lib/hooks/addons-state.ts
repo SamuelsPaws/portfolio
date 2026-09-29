@@ -20,6 +20,7 @@ const addOnsInitialState: AddOnsState = Object.fromEntries(
 
 type Store = {
     addOns: AddOnsState,
+    customRequest: string,
     setAddOnEnabled: (
         slug: keyof AddOnsState,
         enabled: boolean
@@ -27,11 +28,13 @@ type Store = {
     setAddOnQuantity: (
         slug: keyof AddOnsState,
         quantity: number
-    ) => void
+    ) => void,
+    setCustomRequest: (customRequest: string) => void
 }
 
 export const useAddOnsStore = create<Store>()((set) => ({
     addOns: addOnsInitialState,
+    customRequest: '',
     setAddOnEnabled: (slug, enabled) => (
         set((state) => ({
             addOns: {
@@ -53,5 +56,6 @@ export const useAddOnsStore = create<Store>()((set) => ({
                 }
             }
         }))
-    )
+    ),
+    setCustomRequest: (customRequest) => set({ customRequest })
 }))

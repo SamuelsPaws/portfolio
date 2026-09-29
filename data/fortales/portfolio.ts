@@ -417,18 +417,18 @@ export const portfolio: PortfolioProject[] = [
             },
             {
                 "title": {
-                    "en": "From services to a tailored estimate",
-                    "es": "De los servicios a una cotización a medida",
-                    "fr": "Des services à une estimation sur mesure",
-                    "de": "Von der Leistung zur Kostenschätzung",
-                    "it": "Dai servizi a una stima su misura"
+                    "en": "From services to a clear inquiry",
+                    "es": "De los servicios a una consulta clara",
+                    "fr": "Des services à une demande claire",
+                    "de": "Von Leistungen zur klaren Anfrage",
+                    "it": "Dai servizi a una richiesta chiara"
                 },
                 "copy": {
-                    "en": "An interactive quote builder lets visitors configure services and see estimated price ranges as their selections change. It gives prospective clients a clearer starting point for discussing a project with the studio.",
-                    "es": "Un cotizador interactivo permite elegir servicios y ver rangos de precios estimados según la selección. Así, los posibles clientes llegan con una idea más clara a la conversación sobre su proyecto.",
-                    "fr": "Un outil de devis interactif permet de choisir des services et de voir les fourchettes de prix estimées évoluer selon la sélection. Les futurs clients disposent ainsi d’une base plus claire pour discuter de leur projet avec le studio.",
-                    "de": "Ein interaktiver Kostenrechner zeigt geschätzte Preisspannen passend zu den ausgewählten Leistungen. So erhalten Interessenten eine klare Grundlage für das anschließende Projektgespräch mit dem Studio.",
-                    "it": "Uno strumento interattivo permette di scegliere i servizi e vedere fasce di prezzo indicative aggiornate in base alla selezione. I potenziali clienti hanno così un punto di partenza più chiaro per discutere il progetto con lo studio."
+                    "en": "Straightforward forms let visitors share the services they need and key project details, creating an easy path to a focused conversation with the studio.",
+                    "es": "Formularios sencillos permiten indicar los servicios necesarios y los detalles clave del proyecto, facilitando una conversación clara con el estudio.",
+                    "fr": "Des formulaires simples permettent d’indiquer les services recherchés et les informations clés du projet, facilitant ainsi un échange précis avec le studio.",
+                    "de": "Übersichtliche Formulare ermöglichen es Besuchern, benötigte Leistungen und wichtige Projektdetails mitzuteilen und so gezielt mit dem Studio ins Gespräch zu kommen.",
+                    "it": "Moduli semplici permettono di indicare i servizi richiesti e i dettagli principali del progetto, facilitando un confronto mirato con lo studio."
                 },
                 "gallery": [
                     {
@@ -473,11 +473,11 @@ export const portfolio: PortfolioProject[] = [
             {
                 iconId: 'message-bubble',
                 text: {
-                    en: "Help visitors explore services and estimate costs",
-                    es: "Facilitar la elección de servicios y la estimación de costos",
-                    fr: "Faciliter le choix des services et l’estimation des coûts",
-                    de: "Die Auswahl von Leistungen und Kostenschätzung erleichtern",
-                    it: "Facilitare la scelta dei servizi e la stima dei costi"
+                    en: "Help visitors explore services and submit inquiries",
+                    es: "Facilitar la exploración de servicios y el envío de consultas",
+                    fr: "Faciliter la découverte des services et l’envoi de demandes",
+                    de: "Die Auswahl von Leistungen und das Senden von Anfragen erleichtern",
+                    it: "Facilitare la scoperta dei servizi e l’invio di richieste"
                 }
             },
         ],
@@ -489,11 +489,11 @@ export const portfolio: PortfolioProject[] = [
             it: "La sfida era tradurre l’identità creativa dello studio in un sito riconoscibile, intuitivo e veloce. Gallerie, tipografia e animazioni discrete dovevano valorizzare i lavori senza compromettere i Core Web Vitals, grazie a un caricamento ottimizzato delle immagini e a un uso misurato delle animazioni."
         },
         copy: {
-            en: 'A portfolio website for a commercial photography and video studio, bringing its visual identity to life with dynamic project galleries, easy content management, and an interactive quote builder.',
-            es: 'Un portafolio web para un estudio de fotografía y video comercial que refleja su identidad visual, con galerías dinámicas, contenido fácil de gestionar y un cotizador interactivo.',
-            fr: 'Un site portfolio pour un studio de photographie et de vidéo publicitaires, fidèle à son identité visuelle, avec des galeries dynamiques, des contenus faciles à gérer et un outil interactif d’estimation de devis.',
-            de: 'Eine Portfolio-Website für ein Studio für Werbefotografie und Filmproduktion, die seine visuelle Identität aufgreift – mit dynamischen Projektgalerien, einfacher Inhaltspflege und einem interaktiven Kostenrechner.',
-            it: 'Un sito portfolio per uno studio di fotografia e video pubblicitari che ne valorizza l’identità visiva, con gallerie dinamiche, contenuti facili da gestire e uno strumento interattivo per stimare i preventivi.'
+            en: 'A portfolio website for a commercial photography and video studio, bringing its visual identity to life with dynamic project galleries, easy content management, and straightforward inquiry forms.',
+            es: 'Un portafolio web para un estudio de fotografía y video comercial que refleja su identidad visual, con galerías dinámicas, contenido fácil de gestionar y formularios de consulta sencillos.',
+            fr: 'Un site portfolio pour un studio de photographie et de vidéo publicitaires, fidèle à son identité visuelle, avec des galeries dynamiques, des contenus faciles à gérer et des formulaires de demande simples.',
+            de: 'Eine Portfolio-Website für ein Studio für Werbefotografie und Filmproduktion, die seine visuelle Identität aufgreift – mit dynamischen Projektgalerien, einfacher Inhaltspflege und unkomplizierten Anfrageformularen.',
+            it: 'Un sito portfolio per uno studio di fotografia e video pubblicitari che ne valorizza l’identità visiva, con gallerie dinamiche, contenuti facili da gestire e moduli di richiesta semplici.'
         },
         implementations: [
             {

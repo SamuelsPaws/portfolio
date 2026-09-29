@@ -58,6 +58,7 @@ export interface PackageFormSubmission {
     email: string;
     company?: string;
     phone?: string;
+    customRequest?: string;
     packageName: string;
     addOnsSelected: {
         slug: (typeof addOns)[number]['slug'],

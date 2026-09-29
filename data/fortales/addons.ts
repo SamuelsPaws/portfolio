@@ -496,11 +496,11 @@ export const addOns = [
         hasUsageCosts: false,
         supportsQuantity: false,
         copy: {
-            en: "Showcase your business with high-quality photography that builds trust and makes your website stand out.",
-            es: "Muestra tu negocio con fotografías de alta calidad que generen confianza y hagan destacar tu sitio web.",
-            fr: "Mettez votre entreprise en valeur grâce à des photographies professionnelles qui inspirent confiance et renforcent votre image.",
-            de: "Präsentieren Sie Ihr Unternehmen mit hochwertigen Fotos, die Vertrauen schaffen und Ihre Website hervorheben.",
-            it: "Valorizza la tua attività con fotografie professionali di alta qualità che trasmettono fiducia e fanno risaltare il tuo sito web."
+            en: "Professional photography that's yours to use across your website, ads, presentations, print, and beyond.",
+            es: "Fotografías profesionales que podrás usar en tu sitio web, anuncios, presentaciones, material impreso y mucho más.",
+            fr: "Des photographies professionnelles à utiliser sur votre site web, dans vos publicités, présentations, supports imprimés et bien plus encore.",
+            de: "Professionelle Fotos für Ihre Website, Werbung, Präsentationen, Printmedien und vieles mehr.",
+            it: "Fotografie professionali da usare sul tuo sito web, in pubblicità, presentazioni, materiali stampati e molto altro."
         },
         includedIn: [],
         slug: 'professional-photography'

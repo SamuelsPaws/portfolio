@@ -17,6 +17,7 @@ import organization from "@/data/fortales/organization"
 import { Metadata } from "next"
 import getLangAlternates from "@/lib/utils/getLangAlternates"
 import { availableLocales } from "@/data/locales"
+import CustomRequestField from "./components/CustomRequestField"
 
 const themes = {
 }
@@ -248,24 +249,10 @@ export default async function PricingPackagePage({ params }: Props) {
                     seeMoreLabel={t('seeMoreAO')}
                     seeLessLabel={t('seeLessAO')}
                 />
-                <label htmlFor="custom-request" className="
-                    mt-4 md:mt-8 mb-4
-                    block text-my-md text-secondary"
-                >
-                    {t('customCopy')}
-                </label>
-                <textarea
-                    name="custom-request"
-                    id="custom-request"
-                    className="
-                        w-full
-                        p-4
-                        bg-main
-                        text-my-md text-secondary
-                        border border-gray-300 rounded-2xl"
+                <CustomRequestField
+                    label={t('customCopy')}
                     placeholder={t('customPlaceholder')}
-                >
-                </textarea>
+                />
             </div>
         </section>
         <FortSectionSt
