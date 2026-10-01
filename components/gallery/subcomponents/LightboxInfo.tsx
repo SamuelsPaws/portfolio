@@ -5,6 +5,7 @@ import { MediaInfoItem } from "@/lib/types/galleryTypes";
 import clsx from "clsx";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useId } from "react";
+import { useTranslations } from "next-intl";
 import MediaInfoElement from "./MediaInfoElement";
 import {
     lightboxInfoContentMotion,
@@ -23,6 +24,7 @@ const stopPropagation = (event: React.PointerEvent<HTMLButtonElement>) => event.
 const LightboxInfo = ({ position, items, isOpen, onClick }: Props) => {
     const shouldReduceMotion = useReducedMotion() ?? false
     const contentId = useId()
+    const t = useTranslations('Reusable')
 
     return (
     <button
@@ -40,7 +42,9 @@ const LightboxInfo = ({ position, items, isOpen, onClick }: Props) => {
         <div className="flex w-full items-center justify-between gap-4 p-4 md:p-8">
             <span className="flex items-center gap-2 text-my-lg">
                 <CustomIcon iconId="info-o" />
-                <span className="font-semibold">Comments</span>
+                <span className="font-semibold">
+                    {t('comments')}
+                </span>
             </span>
 
             <span className="flex size-8 shrink-0 items-center justify-center rounded-full border border-gray-500 text-2xl text-gray-500 duration-200 group-hover:border-gray-200 group-hover:text-gray-200 group-hover:shadow-sm">

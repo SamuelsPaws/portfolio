@@ -367,7 +367,6 @@ export const portfolio: PortfolioProject[] = [
             it: 'PRODUZIONE AUDIOVISIVA'
         },
         title: 'Hivissual',
-        // TODO: Replace gallery placeholders with screenshots of each solution.
         solution: [
             {
                 "title": {
@@ -387,7 +386,7 @@ export const portfolio: PortfolioProject[] = [
                 "gallery": [
                     {
                         "type": "image",
-                        "src": "/assets/hivissual-lifestyle.jpg",
+                        "src": "/assets/galleries/hivissual/portfolio-gallery.jpg",
                         "info": null
                     }
                 ]
@@ -406,14 +405,7 @@ export const portfolio: PortfolioProject[] = [
                     "fr": "Les projets, témoignages et contenus sont gérés dans un CMS headless. Des modèles structurés et une formation permettent au studio de publier ses nouvelles réalisations et de tenir son portfolio à jour sans intervention d’un développeur.",
                     "de": "Projekte, Kundenstimmen und Website-Inhalte werden in einem Headless CMS gepflegt. Strukturierte Inhaltsmodelle und eine Schulung ermöglichen dem Studio, neue Arbeiten ohne Unterstützung durch Entwickler zu veröffentlichen.",
                     "it": "Progetti, testimonianze e contenuti sono gestiti tramite un CMS headless. Modelli strutturati e formazione consentono allo studio di pubblicare nuovi lavori e aggiornare il portfolio senza l’intervento di uno sviluppatore."
-                },
-                "gallery": [
-                    {
-                        "type": "image",
-                        "src": "/assets/hivissual-lifestyle.jpg",
-                        "info": null
-                    }
-                ]
+                }
             },
             {
                 "title": {
@@ -433,9 +425,38 @@ export const portfolio: PortfolioProject[] = [
                 "gallery": [
                     {
                         "type": "image",
-                        "src": "/assets/hivissual-lifestyle.jpg",
+                        "src": "/assets/galleries/hivissual/form.jpg",
                         "info": null
-                    }
+                    },
+                    {
+                        "type": "image",
+                        "src": "/assets/galleries/hivissual/client-email.jpg",
+                        "info": {
+                            "position": "left",
+                            "items": [
+                                {
+                                    "type": "title",
+                                    "content": {
+                                        "en": "Every inquiry, ready to read",
+                                        "es": "Cada consulta, lista para leer",
+                                        "fr": "Chaque demande, prête à être lue",
+                                        "de": "Jede Anfrage auf einen Blick",
+                                        "it": "Ogni richiesta, pronta da leggere"
+                                    }
+                                },
+                                {
+                                    "type": "paragraph",
+                                    "content": {
+                                        "en": "Each form submission arrives as a clear, branded email, with the visitor’s needs and project details organized for quick review. It helps the studio understand the inquiry at a glance and respond with the right context from the start.",
+                                        "es": "Cada formulario llega como un correo claro y alineado con la marca, con las necesidades del visitante y los detalles del proyecto organizados para revisarlos rápidamente. Así, el estudio puede entender la consulta de un vistazo y responder con el contexto adecuado desde el inicio.",
+                                        "fr": "Chaque formulaire arrive sous la forme d’un e-mail clair et soigné, aux couleurs de la marque, où les besoins du visiteur et les détails du projet sont organisés pour une lecture rapide. Le studio peut ainsi comprendre la demande d’un coup d’œil et répondre avec le bon contexte dès le départ.",
+                                        "de": "Jede Formularanfrage kommt als übersichtliche, zur Marke passende E-Mail an. Bedürfnisse und Projektdetails sind so gegliedert, dass das Studio die Anfrage schnell erfassen und von Anfang an mit dem richtigen Kontext antworten kann.",
+                                        "it": "Ogni modulo inviato arriva come un’e-mail chiara e coordinata con il brand, con le esigenze del visitatore e i dettagli del progetto organizzati per una lettura rapida. Lo studio può così comprendere subito la richiesta e rispondere fin dall’inizio con il giusto contesto."
+                                    }
+                                }
+                            ]
+                        }
+                    },
                 ]
             }
         ],
