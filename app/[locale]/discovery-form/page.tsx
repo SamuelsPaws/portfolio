@@ -191,7 +191,7 @@ export default function DiscoveryForm() {
         {/* Banner */}
         <section className="
             h-auto md:h-100 xl:h-120
-            px-4 pt-24 pb-16
+            px-8 pt-24 pb-16
             md:px-16 md:py-32
             xl:px-32 xl:py-32
             flex flex-col md:flex-row items-center gap-8 md:gap-16
@@ -231,6 +231,7 @@ export default function DiscoveryForm() {
         </section>
         <FortSectionSt
             bgColor="bg-secondary"
+            mobileWider
         >
             {/* Wrapper */}
             <div className="

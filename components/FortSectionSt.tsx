@@ -4,12 +4,13 @@ interface Props {
     title?: string;
     bgColor: string;
     children?: React.ReactNode;
+    mobileWider?: boolean;
 }
 
-const FortSectionSt = ({ title, bgColor, children }: Props) => {
+const FortSectionSt = ({ title, bgColor, children, mobileWider = false }: Props) => {
     return (
     <section className={clsx(
-        "px-8 py-16 relative",
+        mobileWider ? "px-4" : "px-8", "py-16 relative",
         "md:px-16 md:py-32",
         "xl:px-32 xl:py-32",
         bgColor,
