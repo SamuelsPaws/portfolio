@@ -43,6 +43,7 @@ export interface DiscoveryFormSubmission {
         | 'credibility'
         | 'showcase'
         | 'sell-products'
+        | 'online-store'
         | 'publish-content'
         | 'generate-inquiries'
         | 'bookings'
