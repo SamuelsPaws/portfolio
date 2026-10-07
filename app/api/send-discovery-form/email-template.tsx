@@ -19,8 +19,8 @@ const assetLabels: Record<DiscoveryFormSubmission['hasAssets'][number], string> 
 const goalLabels: Record<DiscoveryFormSubmission['mainGoals'][number], string> = {
     credibility: 'Build credibility and trust',
     showcase: 'Showcase services or previous work',
-    'sell-products': 'Showcase products in a catalog so customers can contact you about them (without online payments)',
-    'online-store': 'Sell products through an online store with online payments',
+    'sell-products': 'Showcase products or services in a catalog so customers can contact you about them (without online payments)',
+    'online-store': 'Sell products or services through an online store with online payments',
     'publish-content': 'Publish a blog, news, or other content',
     'generate-inquiries': 'Receive more customer inquiries',
     bookings: 'Accept bookings or appointments',
