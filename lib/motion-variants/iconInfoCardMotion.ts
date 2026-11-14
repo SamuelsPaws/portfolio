@@ -21,7 +21,7 @@ export const iconInfoCardMotion: Variants = {
     hovered: {
         transform: "translate3d(4px, -4px, 0)",
         transition: {
-            duration: 0.4,
+            duration: 0.2,
             ease: 'easeOut',
         },
     },

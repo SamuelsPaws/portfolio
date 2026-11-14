@@ -125,6 +125,16 @@ export default function DiscoveryForm() {
             className: 'col-span-2',
         },
         {
+            id: 'projectStartingPoint',
+            label: t('projectStartingPoint'),
+            type: 'radio',
+            options: [
+                { value: 'from-scratch', label: t('projectFromScratch') },
+                { value: 'existing-project', label: t('projectContinueExisting') },
+            ],
+            className: 'col-span-2',
+        },
+        {
             id: 'hasHosting',
             label: t('hasHosting'),
             type: 'radio',

@@ -26,7 +26,6 @@ const StepCard = ({ iconId, num, title, copy, iconCn }: Props) => {
         custom={reducedMotion}
         initial="hidden"
         whileInView="visible"
-        whileHover={reducedMotion ? undefined : stepCardHover}
         viewport={{ once: true, amount: 0.3 }}
     >
         {/* Upper part */}

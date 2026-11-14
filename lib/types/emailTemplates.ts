@@ -37,6 +37,7 @@ export interface DiscoveryFormSubmission {
     >;
     brandColors?: string;
     hasAssets: Array<'photography' | 'videos' | 'logo' | 'design-guide'>;
+    projectStartingPoint: 'from-scratch' | 'existing-project'
     hasHosting: 'yes' | 'no';
     hasDomain: 'yes' | 'no';
     mainGoals: Array<

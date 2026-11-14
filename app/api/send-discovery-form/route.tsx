@@ -11,6 +11,13 @@ function createDiscoveryEmail(props: DiscoveryFormSubmission) {
 export async function POST(req: Request) {
     try {
         const body: DiscoveryFormSubmission = await req.json()
+
+        if (body.projectStartingPoint !== 'from-scratch' && body.projectStartingPoint !== 'existing-project') {
+            return Response.json(
+                { error: 'Please choose whether to build a website from scratch or continue an existing project.' },
+                { status: 400 },
+            )
+        }
         
         const { data, error } = await resend.emails.send({
             from: 'Fortales Automatic <automatic@fortal.es>',

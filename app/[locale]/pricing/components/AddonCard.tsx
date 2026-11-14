@@ -7,11 +7,11 @@ import { motion, useReducedMotion } from "motion/react";
 
 interface Props {
     item: AddOn;
-    locale: LocaleKey
+    locale: LocaleKey;
 }
 
 const AddonCard = ({ item, locale }: Props) => {
-    const reducedMotion = useReducedMotion() ?? false;
+    const reducedMotion = useReducedMotion() ?? false
 
     return (
     <motion.div 

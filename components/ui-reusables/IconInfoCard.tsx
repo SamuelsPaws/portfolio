@@ -1,9 +1,8 @@
-"use client";
-
+"use client"
 import clsx from "clsx";
 import CustomIcon, { IconId } from "../CustomIcon"
-import { iconInfoCardMotion, iconInfoIconMotion } from "@/lib/motion-variants/iconInfoCardMotion";
 import { motion, useReducedMotion } from "motion/react";
+import { stepCardHover, stepCardReveal } from "@/lib/motion-variants/stepCardMotion";
 
 interface Props {
     iconId: IconId;
@@ -22,11 +21,10 @@ const IconInfoCard = ({ iconId, title, description, bgColor = "bg-main" }: Props
             bgColor,
             "rounded-4xl border border-gray-300 shadow-img-sm",
         )}
-        variants={iconInfoCardMotion}
+        variants={stepCardReveal}
         custom={reducedMotion}
         initial="hidden"
         whileInView="visible"
-        whileHover={reducedMotion ? undefined : "hovered"}
         viewport={{ once: true, amount: 0.35 }}
     >
         <div className="

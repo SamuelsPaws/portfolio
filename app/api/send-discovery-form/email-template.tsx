@@ -34,6 +34,11 @@ const contactLabels: Record<DiscoveryFormSubmission['contactMethods'][number], s
     'social-media': 'Social media',
 };
 
+const projectStartingPointLabels: Record<DiscoveryFormSubmission['projectStartingPoint'], string> = {
+    'from-scratch': 'Build a new website from scratch',
+    'existing-project': 'Continue or complete an existing website project',
+}
+
 function AnswerList({ items }: { items: string[] }) {
     if (!items.length) return <p>None provided</p>;
 
@@ -51,6 +56,7 @@ export default function EmailTemplate({
     brandTone,
     brandColors,
     hasAssets,
+    projectStartingPoint,
     hasHosting,
     hasDomain,
     mainGoals,
@@ -75,6 +81,9 @@ export default function EmailTemplate({
             <AnswerList items={hasAssets.map(asset => assetLabels[asset])} />
 
             <h2>Current setup</h2>
+            <p>
+                <strong>Project starting point:</strong> {projectStartingPointLabels[projectStartingPoint] || 'Not provided'}
+            </p>
             <p><strong>Has hosting:</strong> {hasHosting === 'yes' ? 'Yes' : 'No'}</p>
             <p><strong>Has a domain:</strong> {hasDomain === 'yes' ? 'Yes' : 'No'}</p>
 
